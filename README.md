@@ -1,16 +1,29 @@
-### Hi there 👋
+# Introduction 
+KpokPatagon Framework is a development framework aimed to help
+developers to easyly build enterprise applications.
 
-<!--
-**KpokPatagon/KpokPatagon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Getting Started
+To used this framework simply add the NuGet packages as required.
 
-Here are some ideas to get you started:
+## Core packages
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- KpokPatagon
+- KpokPatagon.I18n
+- KpokPatagon.Data
+- KpokPatagon.Data.MySql
+- KpokPatagon.Data.Oracle
+- KpokPatagon.Data.SQLite
+- KpokPatagon.Data.SqlServer
+
+## Library packages
+
+- KpokPatagon.CLI
+- KpokPatagon.Commons
+- KpokPatagon.Models
+- KpokPatagon.Multitenancy
+
+## Web packages
+
+- KpokPatagon.Web
+- KpokPatagon.AspNet
+- KpokPatagon.AspNet.Multitenancy
