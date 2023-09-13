@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Domain object models - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">
+                Kpok Patagon Framework
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <h1>Domain object models</h1>
+                
+                <h2 id="abstracts" class="mt-5">Abstracts</h2>
+                <p>
+                    A domain object model is an object that represent application data as
+                    a user, an employee, a product, etc.
+                </p>
+                <p>
+                    Within this framework a domain object model (or simple a model) is a
+                    class that implement <code>KpokPatagon.Data.IDataModel</code> or that inherits
+                    from <code>KpokPatagon.Data.DataModel</code> (recommended), for example:
+                </p>
+
+                <pre class="bg-light">
+                    <code>
+        public class Audit : DataModel
+        {
+            //...   
+        }
+                    </code>
+                </pre>
+
+                <div class="alert alert-info">
+                    A complete sample of a data model class can be found 
+                    <a href="https://github.com/KpokPatagon/KpokPatagon/blob/main/samples/Audit.cs">here</a>.
+                </div>
+
+                <h2 id="data-properties" class="mt-5">Defining data properties</h2>
+                <p>
+                    A data property is a property that represents application data that will be
+                    ultimately stored in a database.
+                </p>
+                <p>
+                    A data property is defined as a normal C# property and it is decorated
+                    with an attribute that inherits from <code>KpokPatagon.Data.IDataProperty</code>,
+                    for example:
+                </p>
+
+                <pre class="bg-light">
+                    <code>
+        public class Audit : DataModel
+        {
+            string _id;
+
+            [TextDataProperty("Id", DbType.Text, MinLength = 0, MaxLength = 50, FieldName = "_id", PrimaryKey = 1, AutomaticType = AutomaticType.Identity, Caption = "AuditIdCaption", ResourceType = typeof(ModelLabels))]
+            public string Id
+            {
+                get { return _id; }
+                set
+                {
+                    _id = value;
+                    NotifyPropertyChanged(_id);
+                }
+            }
+        }
+                    </code>
+                </pre>
+
+                <h2 id="actions" class="mt-5">Creating, modifying and deleting</h2>
+                <p>
+                    Data models are created, modified and deleted through the used of the methods 
+                    <code>Insert(...)</code>, <code>Update(...)</code>, <code>Delete(...)</code>, etc.
+                    from their respected <a class="nav-link" href="./data-service.html">data service</a>.
+                </p>
+                <p>
+                    Execution of this methods will execute the appropiated commands againts the database.
+                </p>
+
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+                    <p><strong>In this document</strong></p>
+                    <ul class="list-unstyled">
+                        <li><a href="#top">Top</a></li>
+                        <li><a href="#abstracts">Abstracts</a></li>
+                        <li><a href="#data-properties">Data properties</a></li>
+                        <li><a href="#actions">Creating, modifying and deleting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

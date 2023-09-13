@@ -1,0 +1,149 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Configuration - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">
+                Kpok Patagon Framework
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <h1>Configuration</h1>
+
+                <h2 id="abstracts" class="mt-5">Abstracts</h2>
+                <p>
+                    Applications based on this frameworks requires to be configured
+                    using an <strong>appsettings.json</strong> file that will contains
+                    sections that defines the application desired configuration.
+                </p>
+
+                <h2 id="appsettingsJson" class="mt-5">Settings.json file</h2>
+                <p>
+                    The <code>appsettings.json</code> file can contains the following sections:
+                </p>
+
+                <ul>
+                    <li><a href="#connection-strings">Connection strings</a></li>
+                    <li><a href="#cryptography">KpokPatagon : Cryptography</a></li>
+                    <li><a href="#data">KpokPatagon : Data</a></li>
+                </ul>
+
+                <p>
+                    This file should contains all the different secciones following the rules
+                    of a json syntax as in the following example.
+                </p>
+
+                <pre class="bg-light">
+                <code>
+        {
+            "ConnectionStrings": { ... },
+            "KpokPatagon": { 
+              "Cryptography": { ... }
+              "Data": { ... }
+            }
+        }</code>
+                </pre>
+
+                <h3 id="connection-strings" class="mt-3">Connection strings</h3>
+                <p>
+                    Connection strings are configured as the standard .NET configuration.
+                </p>
+                <p>
+                    The connection string names (Default and Host in the following example) 
+                    must match the name os the <strong>DatabaseApis</strong> objects defined 
+                    within the <strong>KpokPatagon</strong> : <strong>Data</strong> : <strong>DatabaseApis</strong>
+                    section.
+                </p>
+
+                <pre class="bg-light">
+                <code>
+        { 
+            "ConnectionStrings": { 
+                "Default": "Data Source=&lt;server-name-or-ip&gt;;Initial Catalog= &lt;catalog-name&gt;;Integrated Security=True;Persist Security Info=false", 
+                "Host": "Data Source=&lt;server-name-or-ip&gt;;Initial Catalog=&lt;catalog-name&gt;;Integrated Security=True;Persist Security Info=false" 
+            }
+        }</code>
+                </pre>
+
+                <h3 id="cryptography" class="mt-3">Cryptography</h3>
+                <p>
+                    The cryptography sections allows to configured the cryptography functionality
+                    from <code>KpokPatagon.Security.Cryptography</code>.
+                </p>
+
+                <pre class="bg-light">
+                <code>
+        { 
+            "Cryptography": { 
+                "AsymmetricKeyFileName": "&lt;asymmetric-key-file-name&gt;",
+                "HashAlgorithmType": "", 
+                "HashAlgorithmSaltEnabled": true, 
+                "SymmetricAlgorithmType": "", 
+                "SymmetricAlgorithmKeyFileName": "&lt;symmetric-key-file-name&gt;",
+                "PreviousSymmetricAlgorithmKeyFileName": "&lt;previous-symmetric-key-file-name&gt;"
+            } 
+        }</code>
+                </pre>
+
+                <blockquote>
+                    This configures the cryptography sub-system to use: <code>SHA1Manage</code> as a hash algorithm
+                    for hashing and <code>Aes</code> as a symmetric algorithm for encryption.
+                </blockquote>
+
+
+                <h3 id="data" class="mt-3">Data</h3>
+                <p>This section configures the <code>KpokPatagon.Data</code> sub-system.</p>
+
+                <pre class="bg-light">
+                <code>
+        { ...
+        }</code>
+                </pre>
+
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+                    <p><strong>In this document</strong></p>
+                    <ul class="list-unstyled">
+                        <li><a href="#top">Top</a></li>
+                        <li><a href="#abstracts">Abstracts</a></li>
+                        <li><a href="#appsettingsJson">Settings.json file</a></li>
+                        <li>
+                            <ul>
+                                <li><a href="#connection-strings">Connection strings</a></li>
+                                <li><a href="#cryptography">KpokPatagon : Cryptography</a></li>
+                                <li><a href="#data">KpokPatagon : Data</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

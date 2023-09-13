@@ -1,0 +1,353 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>SimplePredicate - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>SimplePredicate</h1>
+<p class="lead">Represents a simple predicate for a filter condition</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.Query</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">KpokPatagon.Data.Query.Predicate</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Data.Query.SimplePredicate.#ctor" class="mb-5">
+    <h3 class="lead text-info">SimplePredicate</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SimplePredicate()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Data.Query.SimplePredicate.#ctor(KpokPatagon.Data.Query.PredicateColumn,KpokPatagon.Data.ComparisonOperator,System.Object)" class="mb-5">
+    <h3 class="lead text-info">SimplePredicate</h3>
+    <p>Initializes a new instance of <strong>SimplePredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SimplePredicate(column, op, value)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-predicatecolumn.html">PredicateColumn</a></td>
+        <td>Column to which the predicate acts on.</td>
+    </tr>
+    <tr>
+        <td>op</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-comparisonoperator.html">ComparisonOperator</a></td>
+        <td>Comparison operator.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The value to compare with.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.SimplePredicate.#ctor(KpokPatagon.Data.Query.PredicateColumn,KpokPatagon.Data.ComparisonOperator,System.Object,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">SimplePredicate</h3>
+    <p>Initializes a new instance of <strong>SimplePredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SimplePredicate(column, op, value, caseSensitive)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-predicatecolumn.html">PredicateColumn</a></td>
+        <td>Column to which the predicate acts on.</td>
+    </tr>
+    <tr>
+        <td>op</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-comparisonoperator.html">ComparisonOperator</a></td>
+        <td>Comparison operator.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The value to compare with.</td>
+    </tr>
+    <tr>
+        <td>caseSensitive</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Indicates whether the search must be case sensitive.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.SimplePredicate.#ctor(KpokPatagon.Data.Query.PredicateColumn,KpokPatagon.Data.ComparisonOperator,System.Object,System.Boolean,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">SimplePredicate</h3>
+    <p>Initializes a new instance of <strong>SimplePredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SimplePredicate(column, op, value, caseSensitive, useParenthesis)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-predicatecolumn.html">PredicateColumn</a></td>
+        <td>Column to which the predicate acts on.</td>
+    </tr>
+    <tr>
+        <td>op</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-comparisonoperator.html">ComparisonOperator</a></td>
+        <td>Comparison operator.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The value to compare with.</td>
+    </tr>
+    <tr>
+        <td>caseSensitive</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Indicates whether the search must be case sensitive.</td>
+    </tr>
+    <tr>
+        <td>useParenthesis</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Indicates whether the predicate must be enclosed in parenthesis.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.SimplePredicate.#ctor(KpokPatagon.Data.RelationalOperator,KpokPatagon.Data.Query.PredicateColumn,KpokPatagon.Data.ComparisonOperator,System.Object)" class="mb-5">
+    <h3 class="lead text-info">SimplePredicate</h3>
+    <p>Initializes a new instance of <strong>SimplePredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SimplePredicate(relation, column, op, value)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>relation</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-relationaloperator.html">RelationalOperator</a></td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-relation.html">Relation</a> between predicates.</td>
+    </tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-predicatecolumn.html">PredicateColumn</a></td>
+        <td>Column to which the predicate acts on.</td>
+    </tr>
+    <tr>
+        <td>op</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-comparisonoperator.html">ComparisonOperator</a></td>
+        <td>Comparison operator.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The value to compare with.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.SimplePredicate.#ctor(KpokPatagon.Data.RelationalOperator,KpokPatagon.Data.Query.PredicateColumn,KpokPatagon.Data.ComparisonOperator,System.Object,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">SimplePredicate</h3>
+    <p>Initializes a new instance of <strong>SimplePredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SimplePredicate(relation, column, op, value, caseSensitive)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>relation</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-relationaloperator.html">RelationalOperator</a></td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-relation.html">Relation</a> between predicates.</td>
+    </tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-predicatecolumn.html">PredicateColumn</a></td>
+        <td>Column to which the predicate acts on.</td>
+    </tr>
+    <tr>
+        <td>op</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-comparisonoperator.html">ComparisonOperator</a></td>
+        <td>Comparison operator.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The value to compare with.</td>
+    </tr>
+    <tr>
+        <td>caseSensitive</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Indicates whether the search must be case sensitive.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.SimplePredicate.#ctor(KpokPatagon.Data.RelationalOperator,KpokPatagon.Data.Query.PredicateColumn,KpokPatagon.Data.ComparisonOperator,System.Object,System.Boolean,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">SimplePredicate</h3>
+    <p>Initializes a new instance of <strong>SimplePredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SimplePredicate(relation, column, op, value, caseSensitive, useParenthesis)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>relation</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-relationaloperator.html">RelationalOperator</a></td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-relation.html">Relation</a> between predicates.</td>
+    </tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-predicatecolumn.html">PredicateColumn</a></td>
+        <td>Column to which the predicate acts on.</td>
+    </tr>
+    <tr>
+        <td>op</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-comparisonoperator.html">ComparisonOperator</a></td>
+        <td>Comparison operator.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The value to compare with.</td>
+    </tr>
+    <tr>
+        <td>caseSensitive</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Indicates whether the search must be case sensitive.</td>
+    </tr>
+    <tr>
+        <td>useParenthesis</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Indicates whether the predicate must be enclosed in parenthesis.</td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Data.Query.SimplePredicate.CaseSensitive" class="mb-5">
+    <h3 class="lead text-info">CaseSensitive</h3>
+    <p>Indicates whether the search must be case sensitive.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> CaseSensitive { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.Query.SimplePredicate.Column" class="mb-5">
+    <h3 class="lead text-info">Column</h3>
+    <p>Column to which the predicate acts on.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-predicatecolumn.html">PredicateColumn</a> Column { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.Query.SimplePredicate.Operator" class="mb-5">
+    <h3 class="lead text-info">Operator</h3>
+    <p>Comparison operator.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-comparisonoperator.html">ComparisonOperator</a> Operator { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.Query.SimplePredicate.Value" class="mb-5">
+    <h3 class="lead text-info">Value</h3>
+    <p>Comparison value.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> Value { get; set; }</code></dd>
+</dl>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Data.Query.SimplePredicate.CaseSensitive">CaseSensitive</a></li>
+        <li><a href="#P:KpokPatagon.Data.Query.SimplePredicate.Column">Column</a></li>
+        <li><a href="#P:KpokPatagon.Data.Query.SimplePredicate.Operator">Operator</a></li>
+        <li><a href="#P:KpokPatagon.Data.Query.SimplePredicate.Value">Value</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

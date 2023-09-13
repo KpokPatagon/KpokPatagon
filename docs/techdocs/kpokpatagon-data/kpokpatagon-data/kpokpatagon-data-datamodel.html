@@ -1,0 +1,360 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>DataModel - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>DataModel</h1>
+<p class="lead"><strong>DataModel</strong> is an abstract base class for data model objects.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
+<dd class="col-sm-9">KpokPatagon.Data.IDataModel, System.ComponentModel.INotifyPropertyChanged</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">DataModel</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> DataModel()</code></dd>
+</dl>
+</div>
+<h2 id="events" class="mt-5">Events</h2>
+<table class="table">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Summary</th>
+    <tr>
+</thead>
+<tbody>
+<tr>
+    <td><span class="text-info" title="System.ComponentModel.PropertyChangedEventHandler">PropertyChangedEventHandler</span></td>
+    <td><strong>PropertyChanged</strong></td>
+    <td><span class="text-info" title="KpokPatagon.Data.DataModel.PropertyChanged">PropertyChanged</span> event fires when a property has change its value.</td>
+</tr>
+</tbody></table>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Data.DataModel.DataProperties" class="mb-5">
+    <h3 class="lead text-info">DataProperties</h3>
+    <p>Get the collection of data properties definitions.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.IDataProperty}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a>&gt;</span> DataProperties { get; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DataModel.EnforceModelValidation" class="mb-5">
+    <h3 class="lead text-info">EnforceModelValidation</h3>
+    <p>Get whether the validation of the object must be enforced
+            through a <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodelvalidator.html">IDataModelValidator</a>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DataModel.Item(System.String)" class="mb-5">
+    <h3 class="lead text-info">Item</h3>
+    <p>Get or set data properties.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> Item { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DataModel.SequenceName" class="mb-5">
+    <h3 class="lead text-info">SequenceName</h3>
+    <p>Get or set the name of a sequence to use for numeration.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SequenceName { get; set; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.DataModel.GetDataPropertyValue(System.String)" class="mb-5">
+    <h3 class="lead text-info">GetDataPropertyValue</h3>
+    <p>Returns the value of the internal property field.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetDataPropertyValue(property)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The value of the property field.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>property</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The property to get it internal value.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">property</strong> is <strong class="text-info">null</strong> or empty..</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.PropertyNotSupportedException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown wher the specified property is not supported.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.DataModel.HasData(System.String)" class="mb-5">
+    <h3 class="lead text-info">HasData</h3>
+    <p>Test if a data property has data.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasData(property)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the property contains data.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>property</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the property to test.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">property</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.PropertyNotSupportedException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown when the specified property is not supported.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.DataModel.IsModified" class="mb-5">
+    <h3 class="lead text-info">IsModified</h3>
+    <p>Tests if the data model has been modified.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsModified()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Data.DataModel.IsModified(System.String)" class="mb-5">
+    <h3 class="lead text-info">IsModified</h3>
+    <p>Tests if a data property has been modified.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsModified(property)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the property has been modified.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>property</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the property.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">property</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.PropertyNotSupportedException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown when the specified data property is not supported.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.DataModel.NotifyPropertyChanged(System.Object,System.String)" class="mb-5">
+    <h3 class="lead text-info">NotifyPropertyChanged</h3>
+    <p>Set property information and lauches the PropertyChanged event if assigned.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> NotifyPropertyChanged(value, propertyName)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The current value assigned to the property.</td>
+    </tr>
+    <tr>
+        <td>propertyName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the property.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.DataModel.SetDataPropertyValue(System.String,System.Object)" class="mb-5">
+    <h3 class="lead text-info">SetDataPropertyValue</h3>
+    <p>Sets the value od the internal property field.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SetDataPropertyValue(property, value)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>property</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The property to set it's internal value.</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The new value for the property.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when the argument <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
+        <td>Thrown when the property field is not found.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.PropertyNotSupportedException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-propertynotsupportedexception.html">PropertyNotSupportedException</a></span></td>
+        <td>Thrown when the specified property is not supported.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.UnableToSetDataPropertyValueException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-unabletosetdatapropertyvalueexception.html">UnableToSetDataPropertyValueException</a></span></td>
+        <td>Thrown when the value cannot be setted.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Data.DataModel.DataProperties">DataProperties</a></li>
+        <li><a href="#P:KpokPatagon.Data.DataModel.EnforceModelValidation">EnforceModelValidation</a></li>
+        <li><a href="#P:KpokPatagon.Data.DataModel.Item(System.String)">Item</a></li>
+        <li><a href="#P:KpokPatagon.Data.DataModel.SequenceName">SequenceName</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.DataModel.GetDataPropertyValue(System.String)">GetDataPropertyValue</a></li>
+        <li><a href="#M:KpokPatagon.Data.DataModel.HasData(System.String)">HasData</a></li>
+        <li><a href="#M:KpokPatagon.Data.DataModel.IsModified">IsModified</a></li>
+        <li><a href="#M:KpokPatagon.Data.DataModel.IsModified(System.String)">IsModified</a></li>
+        <li><a href="#M:KpokPatagon.Data.DataModel.NotifyPropertyChanged(System.Object,System.String)">NotifyPropertyChanged</a></li>
+        <li><a href="#M:KpokPatagon.Data.DataModel.SetDataPropertyValue(System.String,System.Object)">SetDataPropertyValue</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

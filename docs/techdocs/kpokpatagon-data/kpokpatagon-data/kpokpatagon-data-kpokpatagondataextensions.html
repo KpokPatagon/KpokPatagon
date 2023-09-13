@@ -1,0 +1,553 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>KpokPatagonDataExtensions - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>KpokPatagonDataExtensions</h1>
+<p class="lead">Provides commonly used extensions.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.FormatForLogging(System.Data.IDbCommand,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">FormatForLogging</h3>
+    <p>Formats the command to by written.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> FormatForLogging(command, writeParameterValues)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A textual representation of a command.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>command</td>
+        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td>Command to be written.</td>
+    </tr>
+    <tr>
+        <td>writeParameterValues</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Whether to write parameter values.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.GetAutomaticDataProperty(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.IDataProperty},KpokPatagon.Data.AutomaticType)" class="mb-5">
+    <h3 class="lead text-info">GetAutomaticDataProperty</h3>
+    <p>Gets the first <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a> within the dictionary that matches the
+            <strong class="text-info">automaticType</strong> property. If no property matches the automatic
+            type or <b>automaticType</b> is <span class="text-info" title="KpokPatagon.Data.AutomaticType.None">None</span><strong class="text-info">null</strong> is returned.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a> GetAutomaticDataProperty(properties, automaticType)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a> of <strong class="text-info">null</strong> if none matches.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>properties</td>
+        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.IDataProperty}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a>&gt;</span></td>
+        <td>A dictionary of properties.</td>
+    </tr>
+    <tr>
+        <td>automaticType</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-automatictype.html">AutomaticType</a></td>
+        <td>Automatic type to find.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">properties</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.GetAutomaticField(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field},KpokPatagon.Data.AutomaticType)" class="mb-5">
+    <h3 class="lead text-info">GetAutomaticField</h3>
+    <p>Gets the first <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a> within the dictionary that matches the
+            <strong class="text-info">automaticType</strong> property. If no property matches the automatic
+            type or <b>automaticType</b> is <span class="text-info" title="KpokPatagon.Data.AutomaticType.None">None</span><strong class="text-info">null</strong> is returned.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a> GetAutomaticField(fields, automaticType)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a> of <strong class="text-info">null</strong> if none matches.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fields</td>
+        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>&gt;</span></td>
+        <td>A dictionary of fields.</td>
+    </tr>
+    <tr>
+        <td>automaticType</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-automatictype.html">AutomaticType</a></td>
+        <td>Automatic type to find.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">fields</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.GetAutomaticFieldEntry(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field},KpokPatagon.Data.AutomaticType)" class="mb-5">
+    <h3 class="lead text-info">GetAutomaticFieldEntry</h3>
+    <p>Gets the first dictionary entry for a field with the specified <strong class="text-info">automaticType</strong>
+            or the default of KeyValuePair{string, Field} if not such field exists or <strong class="text-info">automaticType</strong> is
+            <span class="text-info" title="KpokPatagon.Data.AutomaticType.None">None</span>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.KeyValuePair{System.String,KpokPatagon.Data.Field}">KeyValuePair&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>&gt;</span> GetAutomaticFieldEntry(fields, automaticType)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The dictionary entry with the specified <strong class="text-info">automaticType</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fields</td>
+        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>&gt;</span></td>
+        <td>Fields dictionary.</td>
+    </tr>
+    <tr>
+        <td>automaticType</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-automatictype.html">AutomaticType</a></td>
+        <td>Automatic type to find.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">fields</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.GetDataProperties(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetDataProperties</h3>
+    <p>Gets a dictionary of <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a>s from the <strong class="text-info">type</strong><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a> attributes.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.IDataProperty}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a>&gt;</span> GetDataProperties(type)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A dictionary of <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a>s keyed by property name.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td><span class="text-info" title="System.Type">Type</span> to search.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">type</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.GetParentNavigationalPropertyInfo(System.Type,System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetParentNavigationalPropertyInfo</h3>
+    <p>Gets the <span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span> of a property assignable from <strong class="text-info">parentType</strong> 
+            that has the <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-parentnavigationalpropertyattribute.html">ParentNavigationalPropertyAttribute</a>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span> GetParentNavigationalPropertyInfo(type, parentType)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A <span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span> of <strong class="text-info">null</strong> if not such property.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>A <span class="text-info" title="System.Type">Type</span> to search.</td>
+    </tr>
+    <tr>
+        <td>parentType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The <span class="text-info" title="System.Type">Type</span> of the property.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">type</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">parentType</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.GetPartitionKeyPropertyName(KpokPatagon.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">GetPartitionKeyPropertyName</h3>
+    <p>Gets the name of the partition key data property or <strong class="text-info">null</strong> 
+            if <strong class="text-info">model</strong> does not has a partition key property.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetPartitionKeyPropertyName(model)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The name of the partition key property or <strong class="text-info">null</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>model</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.GetPartitionKeyValue(KpokPatagon.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">GetPartitionKeyValue</h3>
+    <p>Gets the value of the partition key data property or <strong class="text-info">null</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> GetPartitionKeyValue(model)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The value of the partition key property or <strong class="text-info">null</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>model</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.HasPrimaryKeys(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.IDataProperty})" class="mb-5">
+    <h3 class="lead text-info">HasPrimaryKeys</h3>
+    <p>Finds if the <strong class="text-info">properties</strong> dictionary has primary key properties.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasPrimaryKeys(properties)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the dictionary has primary key properties.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>properties</td>
+        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.IDataProperty}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a>&gt;</span></td>
+        <td>A dictionary of properties.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">properties</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.HasPrimaryKeys(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field})" class="mb-5">
+    <h3 class="lead text-info">HasPrimaryKeys</h3>
+    <p>Finds if the <strong class="text-info">fields</strong> dictionary has primary key fields.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasPrimaryKeys(fields)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the dictionary has primary key fields.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fields</td>
+        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>&gt;</span></td>
+        <td>A dictionary of fields.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">fields</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.IsDataProperty(System.Reflection.PropertyInfo)" class="mb-5">
+    <h3 class="lead text-info">IsDataProperty</h3>
+    <p>Checks whether the property is an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsDataProperty(property)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if <strong class="text-info">property</strong> is an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a>, otherwise <strong class="text-info">false</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>property</td>
+        <td><span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span></td>
+        <td>A <span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span> for the property to check.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">property</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.KpokPatagonDataExtensions.ThrowIfHasErrors(KpokPatagon.Data.ValidationException)" class="mb-5">
+    <h3 class="lead text-info">ThrowIfHasErrors</h3>
+    <p>Throws <strong class="text-info">validationException</strong> is it has errors.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ThrowIfHasErrors(validationException)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>validationException</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.FormatForLogging(System.Data.IDbCommand,System.Boolean)">FormatForLogging</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.GetAutomaticDataProperty(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.IDataProperty},KpokPatagon.Data.AutomaticType)">GetAutomaticDataProperty</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.GetAutomaticField(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field},KpokPatagon.Data.AutomaticType)">GetAutomaticField</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.GetAutomaticFieldEntry(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field},KpokPatagon.Data.AutomaticType)">GetAutomaticFieldEntry</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.GetDataProperties(System.Type)">GetDataProperties</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.GetParentNavigationalPropertyInfo(System.Type,System.Type)">GetParentNavigationalPropertyInfo</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.GetPartitionKeyPropertyName(KpokPatagon.Data.IDataModel)">GetPartitionKeyPropertyName</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.GetPartitionKeyValue(KpokPatagon.Data.IDataModel)">GetPartitionKeyValue</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.HasPrimaryKeys(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.IDataProperty})">HasPrimaryKeys</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.HasPrimaryKeys(System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field})">HasPrimaryKeys</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.IsDataProperty(System.Reflection.PropertyInfo)">IsDataProperty</a></li>
+        <li><a href="#M:KpokPatagon.Data.KpokPatagonDataExtensions.ThrowIfHasErrors(KpokPatagon.Data.ValidationException)">ThrowIfHasErrors</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

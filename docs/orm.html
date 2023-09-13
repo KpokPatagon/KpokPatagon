@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>ORM - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">
+                Kpok Patagon Framework
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <h1>ORM</h1>
+                
+                <h2 id="abstracts" class="mt-5">Abstracts</h2>
+                <p>
+                    Object Relational Mapping (ORM) within this framework is the funcionality that
+                    maps the database table columns, represented by the <code>Fields</code> property
+                    of a <a href="./data-service.html">data service</a> object to data properties
+                    of a <a href="./models.html">domain object model</a> object.
+                </p>
+
+                <h2 id="mappings" class="mt-5">Configuring mappings</h2>
+                <p>
+                    The mapping is configured by setting the fields collection of the data service
+                    with a key equals to the data property name of the data model object.
+                </p>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+                    <p><strong>In this document</strong></p>
+                    <ul class="list-unstyled">
+                        <li><a href="#top">Top</a></li>
+                        <li><a href="#abstracts">Abstracts</a></li>
+                        <li><a href="#mappings">Configuring mappings</a></li>
+                        <li><a href="#configuring">Configuring using the application context</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Getting started - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">
+                Kpok Patagon Framework
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <h1>Getting started with Kpok Patagon Framework</h1>
+                
+                <h2 id="abstracts" class="mt-5">Abstracts</h2>
+                <p>
+                    This framework provides to the application developers the
+                    following functionalities (among others).
+                </p>
+                <ul>
+                    <li>ORM</li>
+                    <li>Cryptography.</li>
+                    <li>Domain object modeling</li>
+                    <li>Data services</li>
+                    <li>Common components and models used by most applications</li>
+                </ul>
+                
+                <p class=lead>To use this framework just include the packages you need in your project and go.</p>
+                
+                <h2 id="packages" class="mt-5">Packages</h2>
+                <p>It is composed by the following components provided as NuGet packages.</p>
+                <p>Technical documentation can be found here: <a href="./techdocs/index.html">Kpok Patagon Framework class library</a>.
+                </p>
+                
+                <h4 class="mt-5">Core</h4>
+                <ul>
+                    <li>
+                        <span class="text-info">KpokPatagon</span>
+                        <p>The core component and the root of all other packages.</p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Data</span>
+                        <p>
+                            The data component that allows the development of domain model objects,
+                            data services, ORM and more, in a database agnostics way, so the code
+                            can be used for any database engine.
+                        </p>
+                    </li>
+                </ul>
+                
+                <h4 class="mt-5">Data access layer</h4>
+                <ul>
+                    <li>
+                        <span class="text-info">KpokPatagon.Data.MySql</span>
+                        <p>
+                            This package provides components that transparantly allows the developer
+                            to store application data in a <strong>MySql</strong> database.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Data.Oracle</span>
+                        <p>
+                            This package provides components that transparantly allows the developer
+                            to store the application data in an <strong>Oracle</strong> database.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Data.SQLite</span>
+                        <p>
+                            This package provides components that transparantly allows the developer
+                            to store the application data in a <strong>SQLite</strong> database.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Data.SqlServer</span>
+                        <p>
+                            This package provides components that transparantly allows the developer
+                            to store the application data in a <strong>Microsoft Sql Server</strong> database.
+                        </p>
+                    </li>
+                </ul>
+                
+                <h4 class="mt-5">Library</h4>
+                <ul>
+                    <li>
+                        <span class="text-info">KpokPatagon.Auditing</span>
+                        <p>
+                            This package provides services to generate and process data model 
+                            modification auditing information.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.CLI</span>
+                        <p>
+                            This package provides common models and services usefull for develop CLI applications.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Commons</span>
+                        <p>
+                            This package provides common components, domain object models, their data services,
+                            a numerator and a parameter service, usefull for many applications.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Models</span>
+                        <p>
+                            This packages provides common models usefull for many applications.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Multitenancy</span>
+                        <p>
+                            Provides components for multi-tenenat applications.
+                        </p>
+                    </li>
+                </ul>
+                
+                <h4 class="mt-5">Web</h4>
+                <ul>
+                    <li>
+                        <span class="text-info">KpokPatagon.AspNet</span>
+                        <p>
+                            Provides components for building Asp.Net web applications.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.AspNet.Multitenancy</span>
+                        <p>
+                            Provides components for multi-tenant Asp.Net web applications like model
+                            binders, tenant providers and more.
+                        </p>
+                    </li>
+                </ul>
+                
+                <h2 id="architecture" class="mt-5">Architecture</h2>
+                <p>
+                    You develop an application by creating class libraries that will contain the
+                    application business logic, data model objects and data services.
+                </p>
+                <p>
+                    This class library will reference (at a minimum) the core and the data component,
+                    this will made the application database agnostic.
+                </p>
+                <p>
+                    Then you will create a web application (or other kind: UWP, Console, etc.) for the user
+                    interface and within this (the deployable binaries) you will include the components for
+                    the database to use (Oracle or Sql Server, etc.) and use the IoC container to inject
+                    an appropiate set of components according to the actual environment.
+                </p>
+                
+                <h2 id="whatsnext" class="mt-5">What's next</h2>
+                <p>
+                    From the <a href="./index.html">home</a> page of this documentation explore the
+                    framework topics like <a href="./configuration.html">configuration</a>,
+                    <a href="./models.html">domain object models</a>,
+                    <a href="./data-services.html">data services</a>,
+                    <a href="./orm.html">ORM</a>, etc. or see the
+                    <a href="./techdocs/index.html">technical documentation</a>.
+                </p>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+                    <p><strong>In this document</strong></p>
+                    <ul class="list-unstyled">
+                        <li><a href="#top">Top</a></li>
+                        <li><a href="#abstracts">Abstracts</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#architecture">Architecture</a></li>
+                        <li><a href="#whatsnext">What's next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

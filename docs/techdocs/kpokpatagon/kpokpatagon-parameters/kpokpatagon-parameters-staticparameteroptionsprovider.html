@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>StaticParameterOptionsProvider - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>StaticParameterOptionsProvider</h1>
+<p class="lead">Implements an <a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-iparameteroptionsprovider.html">IParameterOptionsProvider</a> that reads the options from
+            the parameter Xml configuration document.
+            To configure, add &lt;option value="" text="" /&gt;s to the optionsProvider node.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Parameters</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
+<dd class="col-sm-9">KpokPatagon.Parameters.IParameterOptionsProvider</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Parameters.StaticParameterOptionsProvider.#ctor" class="mb-5">
+    <h3 class="lead text-info">StaticParameterOptionsProvider</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> StaticParameterOptionsProvider()</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Parameters.StaticParameterOptionsProvider.GetOptionsAsync" class="mb-5">
+    <h3 class="lead text-info">GetOptionsAsync</h3>
+    <p>Returns a list of options for the parameter this provider belong to.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{KpokPatagon.IListItem}}">Task</span> GetOptionsAsync()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A collection of valid options for the specified parameter.</p>
+</div>
+<div id="M:KpokPatagon.Parameters.StaticParameterOptionsProvider.ParseConfig(KpokPatagon.Parameters.ParameterConfiguration,System.Xml.XmlNode)" class="mb-5">
+    <h3 class="lead text-info">ParseConfig</h3>
+    <p>Process configuration node for this <a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-iparameteroptionsprovider.html">IParameterOptionsProvider</a>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ParseConfig(config, configNode)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>config</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterconfiguration.html">ParameterConfiguration</a></td>
+        <td>Parameter configuration.</td>
+    </tr>
+    <tr>
+        <td>configNode</td>
+        <td><span class="text-info" title="System.Xml.XmlNode">XmlNode</span></td>
+        <td>XML configuration node.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">config</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">configNode</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Parameters.StaticParameterOptionsProvider.GetOptionsAsync">GetOptionsAsync</a></li>
+        <li><a href="#M:KpokPatagon.Parameters.StaticParameterOptionsProvider.ParseConfig(KpokPatagon.Parameters.ParameterConfiguration,System.Xml.XmlNode)">ParseConfig</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

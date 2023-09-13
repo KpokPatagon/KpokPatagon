@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Data services - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">
+                Kpok Patagon Framework
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <h1>Data Services</h1>
+               
+                <h2 id="abstracts" class="mt-5">Abstracts</h2>
+                <p>
+                    A data service is a component that provides methods to access 
+                    <a href="./models.html">domain object models</a> from a database by reading
+                    them from tables and producing a model or a list of models.
+                </p>
+                <p>
+                    They can also provide methods that produces changes in the database.
+                </p>
+                <p>
+                    Within this framework a data service is a class that implement 
+                    <code>KpokPatagon.Data.IDataServices</code> or that inherits from
+                    <code>kpokPatagon.Data.DataServices</code>, for example:
+                </p>
+
+                <pre class="bg-light">
+                    <code>
+        public class AuditDataServices : DataServices
+        {
+            //...   
+        }
+                    </code>
+                </pre>
+
+                <h2 id="description" class="mt-5">Description</h2>
+                <p>
+                    A data service will provide the following information related to a database table,
+                    this information is provided by their respected properties.
+                </p>
+
+                <ul>
+                    <li>The table <code>Schema</code>.</li>
+                    <li>An <code>Alias</code> for the table.</li>
+                    <li>The table name (through the <code>Table</code> property.</li>
+                    <li>A collection of table columns throught the <code>Fields</code> property.</li>
+                </ul>
+
+                <h2 id="filtering" class="mt-5">Filtering table data</h2>
+                <p>
+                    Table data are filtered from methods within data services, this methods
+                    will use the infrastructure provided by the namespace
+                    <code>KpokPatagon.Data.Query</code> to construct query commands in a 
+                    database agnostic way.
+                </p>
+            </div>
+            <div class="col-2 d-none d-lg-block">
+                <div class="position-fixed">
+                    <p><strong>In this document</strong></p>
+                    <ul class="list-unstyled">
+                        <li><a href="#top">Top</a></li>
+                        <li><a href="#abstracts">Abstracts</a></li>
+                        <li><a href="#description">Description</a></li>
+                        <li><a href="#filtering">Filtering table data</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-light bg-dark mt-5">
+        <div class="text-right py-2">
+            <a href="#top" class="text-light mx-3">Top</a>
+        </div>
+    </div>
+</body>
+</html>

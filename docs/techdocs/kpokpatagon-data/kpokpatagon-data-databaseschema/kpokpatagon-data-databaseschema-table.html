@@ -1,0 +1,213 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Table - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>Table</h1>
+<p class="lead">Models a database table or view.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.DatabaseSchema</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">Table</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Table()</code></dd>
+</dl>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Caption" class="mb-5">
+    <h3 class="lead text-info">Caption</h3>
+    <p>Caption.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Caption { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Columns" class="mb-5">
+    <h3 class="lead text-info">Columns</h3>
+    <p>A collection of <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a>s.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.TableColumn}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a>&gt;</span> Columns { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.ConnectionName" class="mb-5">
+    <h3 class="lead text-info">ConnectionName</h3>
+    <p>Name of the connection where this table must be created.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ConnectionName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.FileGroup" class="mb-5">
+    <h3 class="lead text-info">FileGroup</h3>
+    <p>The file group or table space where the tabla is stored.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> FileGroup { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.ForeignKeys" class="mb-5">
+    <h3 class="lead text-info">ForeignKeys</h3>
+    <p>A collection of <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-foreignkey.html">ForeignKey</a>s.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.ForeignKey}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-foreignkey.html">ForeignKey</a>&gt;</span> ForeignKeys { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Grant" class="mb-5">
+    <h3 class="lead text-info">Grant</h3>
+    <p>Grant to be applied upon table or view creation.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-grant.html">Grant</a> Grant { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Indexes" class="mb-5">
+    <h3 class="lead text-info">Indexes</h3>
+    <p>A collection of <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a>es.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.Index}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a>&gt;</span> Indexes { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.IsView" class="mb-5">
+    <h3 class="lead text-info">IsView</h3>
+    <p>Whether the information modeled is a View instead of a Table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsView { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Kindom" class="mb-5">
+    <h3 class="lead text-info">Kindom</h3>
+    <p>Kindom to which the table belongs to.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-databaseobjectkindom.html">DatabaseObjectKindom</a> Kindom { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Name" class="mb-5">
+    <h3 class="lead text-info">Name</h3>
+    <p>The name of the object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.PrimaryKey" class="mb-5">
+    <h3 class="lead text-info">PrimaryKey</h3>
+    <p><strong>Table</strong>'s primary key information.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a> PrimaryKey { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.ResourceTypeName" class="mb-5">
+    <h3 class="lead text-info">ResourceTypeName</h3>
+    <p>Type name of the resource used for localization.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ResourceTypeName { get; set; }</code></dd>
+</dl>
+<h6 class="mt-1">Example</h6>
+<div class="mb-4">KpokPatagon.I18n.DataLables, KpokPatagon.I18n [, Version=1.0.0.0] [, Culture=neutral] [, PublicKeyToken=none]</div>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Schema" class="mb-5">
+    <h3 class="lead text-info">Schema</h3>
+    <p>Schema to which the table blongs to.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Schema { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.SequenceName" class="mb-5">
+    <h3 class="lead text-info">SequenceName</h3>
+    <p>Name of a sequence (optional).</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SequenceName { get; set; }</code></dd>
+</dl>
+<h6 class="mt-1">Remarks</h6>
+<p><p>This property is not captured by any schema discoverer.</p><p>The main purpose is to store the name of a sequence that needs to be created in Oracle databases.</p></p>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.DatabaseSchema.Table.ToString" class="mb-5">
+    <h3 class="lead text-info">ToString</h3>
+    <p>Returns a textual representation of this table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+</dl>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Caption">Caption</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Columns">Columns</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.ConnectionName">ConnectionName</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.FileGroup">FileGroup</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.ForeignKeys">ForeignKeys</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Grant">Grant</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Indexes">Indexes</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.IsView">IsView</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Kindom">Kindom</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Name">Name</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.PrimaryKey">PrimaryKey</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.ResourceTypeName">ResourceTypeName</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Schema">Schema</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.SequenceName">SequenceName</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.DatabaseSchema.Table.ToString">ToString</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

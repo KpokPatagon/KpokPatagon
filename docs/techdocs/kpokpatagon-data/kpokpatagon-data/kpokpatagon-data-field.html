@@ -1,0 +1,238 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Field - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>Field</h1>
+<p class="lead">Represents the definition of a table field.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
+<dd class="col-sm-9">System.IEquatable{KpokPatagon.Data.Field}</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Data.Field.#ctor(System.String,KpokPatagon.Data.DbType,System.Int32,KpokPatagon.Data.AutomaticType)" class="mb-5">
+    <h3 class="lead text-info">Field</h3>
+    <p>Initializes a new instance of <strong>Field</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Field(name, type, primaryKey, automaticType)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the column.</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td>The type of the column.</td>
+    </tr>
+    <tr>
+        <td>primaryKey</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>The position of the column within the primary key.</td>
+    </tr>
+    <tr>
+        <td>automaticType</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-automatictype.html">AutomaticType</a></td>
+        <td>The type of automation of the column</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Data.Field.AutomaticType" class="mb-5">
+    <h3 class="lead text-info">AutomaticType</h3>
+    <p>Gets the type of automation of the column.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-automatictype.html">AutomaticType</a> AutomaticType { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.Field.IsPrimaryKey" class="mb-5">
+    <h3 class="lead text-info">IsPrimaryKey</h3>
+    <p>Gets whether the column is part of the primary key.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsPrimaryKey { get; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.Field.Name" class="mb-5">
+    <h3 class="lead text-info">Name</h3>
+    <p>Gets the name of the column.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.Field.PrimaryKey" class="mb-5">
+    <h3 class="lead text-info">PrimaryKey</h3>
+    <p>Gets the position of the column within the primary key.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> PrimaryKey { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.Field.Type" class="mb-5">
+    <h3 class="lead text-info">Type</h3>
+    <p>Gets the column type.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a> Type { get; set; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.Field.Equals(KpokPatagon.Data.Field)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks whether <strong class="text-info">other</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if they are equals.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>other</td>
+        <td><strong>Field</strong></td>
+        <td>An object to compare.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Field.Equals(System.Object)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks whether <strong class="text-info">obj</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if they are equals.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>obj</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>An object to compare</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Field.GetHashCode" class="mb-5">
+    <h3 class="lead text-info">GetHashCode</h3>
+    <p>Not required implemented to avoid warnings.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Data.Field.ToString" class="mb-5">
+    <h3 class="lead text-info">ToString</h3>
+    <p>Returns a textual representation of the <strong>Field</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+</dl>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Data.Field.AutomaticType">AutomaticType</a></li>
+        <li><a href="#P:KpokPatagon.Data.Field.IsPrimaryKey">IsPrimaryKey</a></li>
+        <li><a href="#P:KpokPatagon.Data.Field.Name">Name</a></li>
+        <li><a href="#P:KpokPatagon.Data.Field.PrimaryKey">PrimaryKey</a></li>
+        <li><a href="#P:KpokPatagon.Data.Field.Type">Type</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.Field.Equals(KpokPatagon.Data.Field)">Equals</a></li>
+        <li><a href="#M:KpokPatagon.Data.Field.Equals(System.Object)">Equals</a></li>
+        <li><a href="#M:KpokPatagon.Data.Field.GetHashCode">GetHashCode</a></li>
+        <li><a href="#M:KpokPatagon.Data.Field.ToString">ToString</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
