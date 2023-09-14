@@ -45,12 +45,12 @@
                 </p><p>If protection is <code>Encripted</code> the <code>Cryptographer.EncryptToBase64String</code> method is used.</p><p>If protection is <code>Hash</code> or <code>Password</code> the <code>Cryptographer.ComputeHash</code> is used and
                 the result is then converted to a Base64 string.</p></p>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.AspNet.Binders.DataModelModelBinder.#ctor(System.Collections.Generic.IDictionary{Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder},Microsoft.Extensions.Logging.ILoggerFactory)" class="mb-5">
+<div id="M:KpokPatagon.AspNet.Binders.DataModelModelBinder.#ctor(System.Collections.Generic.IDictionary{Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata,Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder},Microsoft.Extensions.Logging.ILoggerFactory,KpokPatagon.Security.Cryptography.Cryptographer)" class="mb-5">
     <h3 class="lead text-info">DataModelModelBinder</h3>
     <p>Initializes a new instance of <strong>DataModelModelBinder</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DataModelModelBinder(propertyBinders, loggerFactory)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DataModelModelBinder(propertyBinders, loggerFactory, cryptographer)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -71,6 +71,11 @@
         <td>loggerFactory</td>
         <td><span class="text-info" title="Microsoft.Extensions.Logging.ILoggerFactory">ILoggerFactory</span></td>
         <td>A <span class="text-info" title="Microsoft.Extensions.Logging.ILoggerFactory">ILoggerFactory</span>.</td>
+    </tr>
+    <tr>
+        <td>cryptographer</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographer.html">Cryptographer</a></td>
+        <td>A <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographer.html">Cryptographer</a>.</td>
     </tr>
 </tbody></table>
 </div>

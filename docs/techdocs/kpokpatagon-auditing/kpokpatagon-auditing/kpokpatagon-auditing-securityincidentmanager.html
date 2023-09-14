@@ -40,12 +40,12 @@
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Auditing.SecurityIncidentManager.#ctor(KpokPatagon.Auditing.Store.SecurityIncidentDataService,KpokPatagon.Auditing.Store.AuditDataService,System.Security.Claims.ClaimsPrincipal)" class="mb-5">
+<div id="M:KpokPatagon.Auditing.SecurityIncidentManager.#ctor(KpokPatagon.Auditing.Store.SecurityIncidentDataService,KpokPatagon.Auditing.Store.AuditDataService,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Auditing.SecurityUtility)" class="mb-5">
     <h3 class="lead text-info">SecurityIncidentManager</h3>
-    <p>Creates a new instance of <strong>SecurityIncidentManager</strong>.</p>
+    <p>Initializes a new instance of <strong>SecurityIncidentManager</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SecurityIncidentManager(securityIncidentDataService, auditDataService, currentPrincipal)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SecurityIncidentManager(securityIncidentDataService, auditDataService, currentPrincipal, securityUtility)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -72,19 +72,10 @@
         <td><span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span></td>
         <td></td>
     </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
     <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td><p>Thrown when <strong class="text-info">securityIncidentDataService</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">auditDataService</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">currentPrincipal</strong> is <strong class="text-info">null</strong>.</p></td>
+        <td>securityUtility</td>
+        <td><a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityutility.html">SecurityUtility</a></td>
+        <td></td>
     </tr>
 </tbody></table>
 </div>

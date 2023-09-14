@@ -45,12 +45,12 @@
 <dd class="col-sm-9">KpokPatagon.Data.IDataModelAuditor</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Auditing.DefaultDataModelAuditor.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Auditing.DefaultDataModelAuditor},System.IServiceProvider,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Auditing.Store.AuditDataService,KpokPatagon.Auditing.Store.SecurityIncidentDataService)" class="mb-5">
+<div id="M:KpokPatagon.Auditing.DefaultDataModelAuditor.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Auditing.DefaultDataModelAuditor},System.IServiceProvider,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Auditing.SecurityUtility,KpokPatagon.Auditing.Store.AuditDataService,KpokPatagon.Auditing.Store.SecurityIncidentDataService)" class="mb-5">
     <h3 class="lead text-info">DefaultDataModelAuditor</h3>
     <p>Initializes a new instance of <strong>DefaultDataModelAuditor</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DefaultDataModelAuditor(logger, serviceProvider, currentPrincipal, auditDataService, securityIncidentDataService)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DefaultDataModelAuditor(logger, serviceProvider, currentPrincipal, securityUtility, auditDataService, securityIncidentDataService)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -75,6 +75,11 @@
     <tr>
         <td>currentPrincipal</td>
         <td><span class="text-info" title="System.Security.Claims.ClaimsPrincipal">ClaimsPrincipal</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>securityUtility</td>
+        <td><a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityutility.html">SecurityUtility</a></td>
         <td></td>
     </tr>
     <tr>

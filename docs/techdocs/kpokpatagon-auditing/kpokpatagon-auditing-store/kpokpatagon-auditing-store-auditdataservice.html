@@ -126,56 +126,6 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Auditing.Store.AuditDataService.GetLastAuditBySource(System.String,System.String,System.Int32)" class="mb-5">
-    <h3 class="lead text-info">GetLastAuditBySource</h3>
-    <p>Gets the last audit record for the specified source item of the current tenant.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-auditing/kpokpatagon-auditing-store/kpokpatagon-auditing-store-audit.html">Audit</a> GetLastAuditBySource(sourceTypeName, sourceId, tenantId)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>An <a href="../../kpokpatagon-auditing/kpokpatagon-auditing-store/kpokpatagon-auditing-store-audit.html">Audit</a> or <strong class="text-info">null</strong> if not found.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>sourceTypeName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
-        <td>Source protocol to look for.</td>
-    </tr>
-    <tr>
-        <td>sourceId</td>
-        <td><span class="text-info" title="System.String">String</span></td>
-        <td>Source id to look for.</td>
-    </tr>
-    <tr>
-        <td>tenantId</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
-        <td>Tenant Id.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
-        <td><p>Thrown when <strong class="text-info">sourceTypeName</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or-</p><p>When <strong class="text-info">sourceId</strong> is <strong class="text-info">null</strong> or empty.</p></td>
-    </tr>
-</tbody></table>
-</div>
 <div id="M:KpokPatagon.Auditing.Store.AuditDataService.GetSourceTypesAsync(System.Int32)" class="mb-5">
     <h3 class="lead text-info">GetSourceTypesAsync</h3>
     <p>Gets a collection of <a href="../../kpokpatagon/kpokpatagon/kpokpatagon-listitem.html">ListItem</a>s by grouping all available source types.</p>
@@ -246,7 +196,6 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Auditing.Store.AuditDataService.FindById(System.String)">FindById</a></li>
         <li><a href="#M:KpokPatagon.Auditing.Store.AuditDataService.FindByIdAsync(System.String)">FindByIdAsync</a></li>
-        <li><a href="#M:KpokPatagon.Auditing.Store.AuditDataService.GetLastAuditBySource(System.String,System.String,System.Int32)">GetLastAuditBySource</a></li>
         <li><a href="#M:KpokPatagon.Auditing.Store.AuditDataService.GetSourceTypesAsync(System.Int32)">GetSourceTypesAsync</a></li>
         <li><a href="#M:KpokPatagon.Auditing.Store.AuditDataService.GetUsersAsync(System.Int32)">GetUsersAsync</a></li>
     </ul>

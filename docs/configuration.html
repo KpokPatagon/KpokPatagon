@@ -37,7 +37,7 @@
                     sections that defines the application desired configuration.
                 </p>
 
-                <h2 id="appsettingsJson" class="mt-5">appsettings.json file</h2>
+                <h2 id="appsettings" class="mt-5">appsettings.json file</h2>
                 <p>
                     Use the <code>appsettings.json</code> to configure framework options as explained below.
                 </p>
@@ -53,8 +53,8 @@
                     Connection strings are configured as a standard .NET configuration.
                 </p>
                 <p>
-                    The connection string names (Default and Host in the following example) 
-                    must match the name os the <strong>DatabaseApis</strong> objects defined 
+                    The connection string names (Default and Host in the following example)
+                    must match the name os the <strong>DatabaseApis</strong> objects defined
                     within the <strong>KpokPatagon</strong> : <strong>Data</strong> : <strong>DatabaseApis</strong>
                     section.
                 </p>
@@ -78,6 +78,7 @@
                 <pre class="bg-light">
                 <code>
 {
+  ...
   "KpokPatagon": {
     "Security": {
       "Cryptography": { 
@@ -94,20 +95,254 @@
 }</code>
                 </pre>
 
-                <blockquote>
-                    This configures the cryptography sub-system to use: <code>SHA1Manage</code> as a hash algorithm
-                    for hashing and <code>Aes</code> as a symmetric algorithm for encryption.
-                </blockquote>
+                <h4 class="mt-3">Cryptography configuration options</h4>
+
+                <h5>AsymmetricKeyFileName</h5>
+                <p>
+                    Specifies the path to a file that contains the keys used for asymmetric encryption.
+                </p>
+
+                <h5>HashAlgorithmType</h5>
+                <p>
+                    Specifies the type of the hashing algorithm to use as a qualified type name.
+                    If nothing is provided <code>SHA1Manage</code> algorithm is used.
+                </p>
+
+                <h5>HashAlgorithmSaltEnabled</h5>
+                <p>
+                    Specifies if a <string>Salt</string> is used when hashing information.
+                </p>
+
+                <h5>SymmetricAlgorithmType</h5>
+                <p>
+                    Specifies the type of the symmetric algorithm to use for encryption as a qualified type name.
+                    If nothing is provided <code>Aes</code> algorithm is used.
+                </p>
+
+                <h5>SymmetricAlgorithmKeyFileName</h5>
+                <p>
+                    Specifies the path to a file that contains the key used for symmetric encryption.
+                </p>
+
+                <h5>PreviousSymmetricAlgorithmKeyFileName</h5>
+                <p>
+                    Specifies the path to a file that contains the key used previously for symmetric encryption.
+                </p>
 
 
-                <h3 id="data" class="mt-4">Data</h3>
-                <p>This section configures the <code>KpokPatagon.Data</code> sub-system.</p>
+                <h3 id="data" class="mt-5">Data access layer</h3>
+                <p>This section configures the data access layer of the framework.</p>
 
                 <pre class="bg-light">
                 <code>
-        { ...
-        }</code>
+{
+  ...
+  "KpokPatagon": {
+    "Security": { ... }
+    "Data": {
+      "DatabaseApis": [
+        {
+          "Type": "SqlServerDbAccess",
+          "Name": "Default",
+          "DefaultSchema": "dbo"
+        }
+      ],
+      "CommandBuilders": [
+        {
+          "Type": "SqlServerDbCmdBuilder",
+          "Name": "Default",
+          "DatabaseApiName": "Default",
+          "FormatterName": "Default",
+          "NameQualifierName": "Default"
+        }
+      ],
+      "Formatters": [
+        {
+          "Type": "SqlServerDbFormatter",
+          "Name": "Default"
+        }
+      ],
+      "NameQualifiers": [
+        {
+          "Type": "SqlServerDbNameQualifier",
+          "Name": "Default",
+          "DatabaseApiName": "Default",
+          "FormatterName": "Default"
+        }
+      ],
+      "DataModelCommandBuilders": [
+        {
+          "Type": "DataModelCmdBuilder",
+          "Name": "Default",
+          "CommandBuilderName": "Default"
+        }
+      ],
+      "DatabaseSchema": {
+        "SchemaDiscoverers": [
+          {
+            "Type": "SqlServerSchemaDiscoverer",
+            "Name": "Default",
+            "CommandBuilderName": "Default"
+          }
+        ],
+        "SchemaProvisioners": [
+          {
+            "Type": "SqlServerSchemaProvisioner",
+            "Name": "Default",
+            "CommandBuilderName": "Default"
+          }
+        ],
+        "ViewBuilders": [
+          {
+            "Type": "SqlServerViewBuilder",
+            "Name": "Default",
+            "DatabaseApiName": "Default",
+            "FormatterName": "Default",
+            "NameQualifierName": "Default"
+          }
+        ]
+      }
+    }
+  }
+}</code>
                 </pre>
+
+                <h4 class="mt-3">Data access layer configuration options</h4>
+
+                <h5>DatabaseApis</h5>
+                <p>
+                    The <code>DatabaseApis</code> collection configures one or more services
+                    used to access relational database servers.
+                </p>
+                <p>
+                    Each service must be configured with the <strong>Type</strong> to use, 
+                    a <strong>Name</strong> and any other property required as the 
+                    <strong>DefaultSchema</strong> as in the example above.
+                </p>
+
+                <h5>CommandBuilders</h5>
+                <p>
+                    The <code>CommandBuilders</code> collection configures one or more services
+                    used to build SQL command to execute against databases.
+                </p>
+                <p>
+                    Each service must be configured with the <strong>Type</strong> to use, 
+                    a <strong>Name</strong>.
+                </p>
+                <p>
+                    This kind of service requires other services to work properly, as in the example
+                    they are: a <strong>DatabaseApi</strong>, a <strong>Formatter</strong> and a
+                    <strong>NameQualifier</strong>. This services are provided by dependency injection
+                    and are identified by the assigned "name" as shown in the example.
+                </p>
+
+                <h5>Formatters</h5>
+                <p>
+                    The <code>Formatters</code> collection configures one or more services
+                    used to format SQL commands.
+                </p>
+                <p>
+                    Each service must be configured with the <strong>Type</strong> to use, 
+                    a <strong>Name</strong>.
+                </p>
+
+                <h5>NameQualifiers</h5>
+                <p>
+                    The <code>NameQualifiers</code> collection configures one or more services
+                    used to get obtain the name of database objects.
+                </p>
+                <p>
+                    Each service must be configured with the <strong>Type</strong> to use, 
+                    a <strong>Name</strong>.
+                </p>
+                <p>
+                    This kind of service requires other services to work properly, as in the example
+                    they are: a <strong>DatabaseApi</strong> and a <strong>Formatter</strong>. 
+                    This services are provided by dependency injection
+                    and are identified by the assigned "name" as shown in the example.
+                </p>
+
+                <h5>DataModelCommandBuilders</h5>
+                <p>
+                    The <code>DataModelCommandBuilders</code> collection configures one or more services
+                    used to build SQL command for data model objects.
+                </p>
+                <p>
+                    Each service must be configured with the <strong>Type</strong> to use, 
+                    a <strong>Name</strong>.
+                </p>
+                <p>
+                    This kind of service require other service to work properly, as in the example
+                    it is a <strong>CommandBuilder</strong>. This services are provided by dependency
+                    injection and are identified by the assigned "name" as shown in the example.
+                </p>
+
+                <h5>DatabaseSchema</h5>
+                <p>
+                    The <strong>DatabaseSchema</strong> object allows the configuration of services
+                    that provides functionality to manupulare database schemas.
+                </p>
+                <p>
+                    Three types of objects can be configured:
+                </p>
+                <ul>
+                    <li>
+                        <strong>SchemaDiscoverers</strong>: A service that provides information 
+                        about the database schema.
+                    </li>
+                    <li>
+                        <strong>SchemaProvisioners</strong>: A service that provides schema manipulation.
+                    </li>
+                    <li>
+                        <strong>ViewBuilder</strong>: A service that provides functions to create database views.
+                    </li>
+                </ul>
+
+                <h5>SchemaDiscoverers</h5>
+                <p>
+                    The <code>SchemaDiscoverers</code> collection configures one or more schema
+                    discoverer services.
+                </p>
+                <p>
+                    Each service must be configured with the <strong>Type</strong> to use, 
+                    a <strong>Name</strong>.
+                </p>
+                <p>
+                    This kind of service require other service to work properly, as in the example
+                    it is a <strong>CommandBuilder</strong>. This services are provided by dependency
+                    injection and are identified by the assigned "name" as shown in the example.
+                </p>
+
+                <h5>SchemaProvisioners</h5>
+                <p>
+                    The <code>SchemaProvisioners</code> collection configures one or more schema
+                    provisioner services.
+                </p>
+                <p>
+                    Each service must be configured with the <strong>Type</strong> to use, 
+                    a <strong>Name</strong>.
+                </p>
+                <p>
+                    This kind of service require other service to work properly, as in the example
+                    it is a <strong>CommandBuilder</strong>. This services are provided by dependency
+                    injection and are identified by the assigned "name" as shown in the example.
+                </p>
+
+                <h5>ViewBuilders</h5>
+                <p>
+                    The <code>ViewBuilders</code> collection configures one or more services
+                    used to create database views.
+                </p>
+                <p>
+                    Each service must be configured with the <strong>Type</strong> to use, 
+                    a <strong>Name</strong>.
+                </p>
+                <p>
+                    This kind of service requires other services to work properly, as in the example
+                    they are: a <strong>DatabaseApi</strong>, a <strong>Formatter</strong> and a
+                    <strong>NameQualifier</strong>. This services are provided by dependency injection
+                    and are identified by the assigned "name" as shown in the example.
+                </p>
 
             </div>
             <div class="col-2 d-none d-lg-block">
@@ -116,22 +351,17 @@
                     <ul class="list-unstyled">
                         <li><a href="#top">Top</a></li>
                         <li><a href="#abstracts">Abstracts</a></li>
-                        <li><a href="#appsettingsJson">Settings.json file</a></li>
+                        <li><a href="#appsettings">appsettings.json file</a></li>
                         <li>
                             <ul>
                                 <li><a href="#connection-strings">Connection strings</a></li>
-                                <li><a href="#cryptography">KpokPatagon : Cryptography</a></li>
-                                <li><a href="#data">KpokPatagon : Data</a></li>
+                                <li><a href="#crypto">Cryptography</a></li>
+                                <li><a href="#data">Data access layer</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="text-light bg-dark mt-5">
-        <div class="text-right py-2">
-            <a href="#top" class="text-light mx-3">Top</a>
         </div>
     </div>
 </body>
