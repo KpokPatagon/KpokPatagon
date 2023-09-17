@@ -1,0 +1,868 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>KpokPatagon.Data - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Index</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>KpokPatagon.Data</h1>
+<hr />
+<p class="lead">Assembly</p>
+<dl class="mt-4 row">
+    <dt class="text-truncate col-3">Version:</dt>
+    <dd class="col-9">7.0.23260.1</dd>
+    <dt class="text-truncate col-3">Product version:</dt>
+    <dd class="col-9">KpokPatagon-CI_main_20230917.1</dd>
+    <dt class="text-truncate col-3">Product:</dt>
+    <dd class="col-9">Kpok Patagon Framework</dd>
+    <dt class="text-truncate col-3">Culture:</dt>
+    <dd class="col-9">neutral</dd>
+    <dt class="text-truncate col-3">Public key token:</dt>
+    <dd class="col-9">856a2402e38a9992</dd>
+</dl>
+<h2 class="mt-5">Namespaces (8)</h2>
+<h3 id="kpokpatagon-data" class="mt-5">KpokPatagon.Data</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-afterdeleteeventhandler.html">AfterDeleteEventHandler</a></td>
+<td>Raised after a data model delete operation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-afterinserteventhandler.html">AfterInsertEventHandler</a></td>
+<td>Raised after a data model insert operation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-afterupdateeventhandler.html">AfterUpdateEventHandler</a></td>
+<td>Raised after a data model update operation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-auditingexception.html">AuditingException</a></td>
+<td>Thrown when an auditing process fails or cannot be completed successfully.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-automatictype.html">AutomaticType</a></td>
+<td>Application supported automatic field types</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-beforedeleteeventhandler.html">BeforeDeleteEventHandler</a></td>
+<td>Raised before a data model delete operation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-beforeinserteventhandler.html">BeforeInsertEventHandler</a></td>
+<td>Raised before a data model insert operation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-beforeupdateeventhandler.html">BeforeUpdateEventHandler</a></td>
+<td>Raised before a data model update operation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-binaryattachment.html">BinaryAttachment</a></td>
+<td>Allows the storing of files into a database.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-binaryattachmentformatexception.html">BinaryAttachmentFormatException</a></td>
+<td>Thrown when a byte array could not be deserialized into a BinaryAttachment.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-catalognotfoundexception.html">CatalogNotFoundException</a></td>
+<td>Thrown when the database catalog is not found.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-comparisonoperator.html">ComparisonOperator</a></td>
+<td>Data comparison operators.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-concurrectactionmissedexception.html">ConcurrectActionMissedException</a></td>
+<td>Thrown when a UPDATE or DELETE does not affect the expected record
+            because the concurrency WHERE predicate did not match.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-concurrencymode.html">ConcurrencyMode</a></td>
+<td>The mode for checking concurrency.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-constraintviolationexception.html">ConstraintViolationException</a></td>
+<td>Thrown when a database constraint is violated by a data modification command.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-credentialsexpiredexception.html">CredentialsExpiredException</a></td>
+<td>Thrown when the password of the database connection user has expired.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></td>
+<td>Thrown when an error occurred and the system is not able to identify it accuratly.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dataaction.html">DataAction</a></td>
+<td>Enumerates the available data actions to be execute on data model objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dataactioneventargs.html">DataActionEventArgs</a></td>
+<td>Arguments for events raised for data actions on domain models.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html">DatabaseObjectNotFoundException</a></td>
+<td>Thrown when a database object as a table, view, field, etc. specified in a SQL query does not exist.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-databaseoperationnotsupportedexception.html">DatabaseOperationNotSupportedException</a></td>
+<td>Thrown when a database operation is not supported.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-datamodel.html">DataModel</a></td>
+<td><strong>DataModel</strong> is an abstract base class for data model objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-datamodelcmdbuilder.html">DataModelCmdBuilder</a></td>
+<td><strong>DataModelCmdBuilder</strong> implements an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodelcmdbuilder.html">IDataModelCmdBuilder</a>
+            that builds database commands for <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a> objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dataproperty.html">DataProperty</a></td>
+<td><strong>DataProperty</strong> implements <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a> as
+            an <b>Attribute</b>, and it's the base class for those that 
+            implements specific data property functionality.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dataservice.html">DataService</a></td>
+<td>This is the base clase for DataService classes that implements <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a>.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dbaccess.html">DbAccess</a></td>
+<td>Abstract base class for implementator of IDbAccess</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dbcmdbuilder.html">DbCmdBuilder</a></td>
+<td>Abstract base class implementation of <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbcmdbuilder.html">IDbCmdBuilder</a>.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dberror.html">DbError</a></td>
+<td>Represents an error or informational message from a database engine.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dbformatter.html">DbFormatter</a></td>
+<td>Generic base class that implements IDbFormatter</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dbnamequalifier.html">DbNameQualifier</a></td>
+<td><strong>DbNameQualifier</strong> is the base class for those classes
+            that provides the functionality of construct full qualified names for
+            database objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+<td>Application supported data types</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-decimaldataproperty.html">DecimalDataProperty</a></td>
+<td><strong>DecimalDataProperty</strong> implements a data property
+            attribute for a decimal data property.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-defaultstringtodbtypeconverter.html">DefaultStringToDbTypeConverter</a></td>
+<td>Implements a defautl conversión of string to a type.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-duplicatedprimarykeyexception.html">DuplicatedPrimaryKeyException</a></td>
+<td><strong>DuplicatedPrimaryKeyException</strong> is thrown when a data modification
+            command violates a primary key or unique index constraint.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-emailtextdataproperty.html">EmailTextDataProperty</a></td>
+<td><strong>EmailTextDataProperty</strong> implements a data property
+            attribute for a text data property that validates as an email.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-field.html">Field</a></td>
+<td>Represents the definition of a table field.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-floatdataproperty.html">FloatDataProperty</a></td>
+<td><strong>FloatDataProperty</strong> implements a data property attribute for a float data property.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-genericdataproperty.html">GenericDataProperty</a></td>
+<td><strong>GenericDataProperty</strong> implements an attribute for a generic data property.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-guididentity.html">GuidIdentity</a></td>
+<td><strong>GuidIdentity</strong> generates a Guid identity field data.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-iattachment.html">IAttachment</a></td>
+<td>Allows the implementation of wrappers for store files into database fields.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+<td>Allows the implementation of domain model objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idatamodelauditor.html">IDataModelAuditor</a></td>
+<td>Allows implementing classes to log data modifications.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idatamodelcmdbuilder.html">IDataModelCmdBuilder</a></td>
+<td>Allows the implementation of database command builders that are based of data model objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idatamodelvalidator.html">IDataModelValidator</a></td>
+<td>Allows the validation of data model objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idataproperty.html">IDataProperty</a></td>
+<td>Allows the implementation of classes that defines data properties.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+<td>Allows implementation data services for domain models.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a></td>
+<td>Allows the implementation of database access.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idbcmdbuilder.html">IDbCmdBuilder</a></td>
+<td>Allows the implementation of Command Builders for specific database engine.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idbformatter.html">IDbFormatter</a></td>
+<td>Allows implementers to provide SQL queries formatting capabilities.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idbnamequalifier.html">IDbNameQualifier</a></td>
+<td>Allows the implementation of qualifiers that provides full database object names.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-idescriptivedatamodel.html">IDescriptiveDataModel</a></td>
+<td>Allows the implementation of a descriptive object. A descriptive object is
+            an object that has a code or ID and a name or description, used to typify
+            another object or objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-iidentity.html">IIdentity</a></td>
+<td>Allows the implementation of Identity generation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-infomessageeventargs.html">InfoMessageEventArgs</a></td>
+<td>Provides data for the KpokPatagon.Data.IDbAccess.InfoMessage event.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-infomessageeventhandler.html">InfoMessageEventHandler</a></td>
+<td>Represents the method that will be handle the KpokPatagon.Data.IDbAccess.InfoMessage event.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-integerdataproperty.html">IntegerDataProperty</a></td>
+<td><strong>IntegerDataProperty</strong> implements a data property
+            attribute for an integer data property.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-inumerator.html">INumerator</a></td>
+<td>Allows the implementation of numerators.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-invalidcharactersexception.html">InvalidCharactersException</a></td>
+<td>hrown when invalid characters has been detected for a text property.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-invalidcredentialsexception.html">InvalidCredentialsException</a></td>
+<td>Thrown when the credentials for the database server are invalid.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-invaliddataactionexception.html">InvalidDataActionException</a></td>
+<td>Thrown when the DataAction is not valid for the executed operation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-invalidemailexception.html">InvalidEmailException</a></td>
+<td>Thrown when an e-mail property does not contains a valid e-mail address.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-invalidnumericlengthexception.html">InvalidNumericLengthException</a></td>
+<td>Thrown when a numeric value does not conform to the maximum length of integers and decimals digits.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-invalidprimarykeyexception.html">InvalidPrimaryKeyException</a></td>
+<td>Thrown when a primary key property contains invalid data.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-invalidtextlengthexception.html">InvalidTextLengthException</a></td>
+<td>Thrown when  a text property has an invalid length of characters.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-isecureddatamodel.html">ISecuredDataModel</a></td>
+<td>Allows the implementation of data model that can be securely audited.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-istringtodbtypeconverter.html">IStringToDbTypeConverter</a></td>
+<td>Allows the convertion of string to a specified data type.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-kpokpatagondataextensions.html">KpokPatagonDataExtensions</a></td>
+<td>Provides commonly used extensions.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-loggerextensions.html">LoggerExtensions</a></td>
+<td>Extensions for high performance logging.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-missingmandatorypropertyexception.html">MissingMandatoryPropertyException</a></td>
+<td>Thrown  when a mandatory property is missing.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-missingpartitionkeyexception.html">MissingPartitionKeyException</a></td>
+<td>Thrown when a required partition key is missing.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-missingwhereclauseexception.html">MissingWhereClauseException</a></td>
+<td>Thrown when no  where clause is provided for and update or delete command.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-notfoundexception.html">NotFoundException</a></td>
+<td>This is a base class for throwing not found exceptions.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></td>
+<td>Thrown when an error occured while opening a database connection.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-openedconnectionrequiredexception.html">OpenedConnectionRequiredException</a></td>
+<td>Thrown when an opened connection if required for the operation and the connection is closed.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-parentnavigationalpropertyattribute.html">ParentNavigationalPropertyAttribute</a></td>
+<td>Allows to mark a property that will contains the parent object.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-partitionkeyattribute.html">PartitionKeyAttribute</a></td>
+<td>Marks a property as the multi-tenant partition key.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-primarykeytextdataproperty.html">PrimaryKeyTextDataProperty</a></td>
+<td><strong>PrimaryKeyTextDataProperty</strong> implements a data property 
+            attribute for a text data property that validates as a primary key.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-propertyoutofrangeexception.html">PropertyOutOfRangeException</a></td>
+<td>Thrown when a numeric property is out of range.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-protectiontype.html">ProtectionType</a></td>
+<td>Types of protections applied to data properties</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-querybuilderexception.html">QueryBuilderException</a></td>
+<td>Generic query building exception</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-relationaloperator.html">RelationalOperator</a></td>
+<td>Represents a relation between predicates.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+<td>This is the base class for exceptions that reports error while manipulatind tha database schema.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-serverunavailableexception.html">ServerUnavailableException</a></td>
+<td>Thrown when the database server is not available.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-textdataproperty.html">TextDataProperty</a></td>
+<td><strong>TextDataProperty</strong> implements a data property 
+            attribute for a text data property.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-textguididentity.html">TextGuidIdentity</a></td>
+<td><strong>TextGuidIdentity</strong> generates a Guid identity field data as a string.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-textguididentityoptions.html">TextGuidIdentityOptions</a></td>
+<td>Options to configure the <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-textguididentity.html">TextGuidIdentity</a> service.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-timestampkind.html">TimestampKind</a></td>
+<td>Defines usable kinds of timestamp fields.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-transactionrequiredexception.html">TransactionRequiredException</a></td>
+<td>Thrown when there is no active transaction and one is required.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-unabletosetdatapropertyvalueexception.html">UnableToSetDataPropertyValueException</a></td>
+<td>Thrown when a property value cannot be setted.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-untrusteddatabaseservercertificateexception.html">UntrustedDatabaseServerCertificateException</a></td>
+<td>Thrown when open a connection using an encrypted channel and the server certificated is untrust.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></td>
+<td>This is the base class for validation exception that are
+            thrown when data inside data model objects is invalid.</td>
+</tr>
+</tbody></table>
+<h3 id="kpokpatagon-data-dataannotations" class="mt-5">KpokPatagon.Data.DataAnnotations</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./kpokpatagon-data-dataannotations/kpokpatagon-data-dataannotations-descriptivedatamodeldescriptor.html">DescriptiveDataModelDescriptor</a></td>
+<td>Models the information for building a dynamic user 
+            interface for <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idescriptivedatamodel.html">IDescriptiveDataModel</a> types.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-dataannotations/kpokpatagon-data-dataannotations-emailattribute.html">EmailAttribute</a></td>
+<td><strong>EmailAttribute</strong> is a validation attribute used to validate e-mail addresses.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-dataannotations/kpokpatagon-data-dataannotations-textcontroldescriptor.html">TextControlDescriptor</a></td>
+<td>Models the information required for building a simple
+            text control into a user interface.</td>
+</tr>
+</tbody></table>
+<h3 id="kpokpatagon-data-databaseschema" class="mt-5">KpokPatagon.Data.DatabaseSchema</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-catalog.html">Catalog</a></td>
+<td>Models the information of a Catalog or Database.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+<td>Models a column constraint.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-constrainttype.html">ConstraintType</a></td>
+<td>Types of constraint that can be apply to columns.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-databaseobjectduplicatedexception.html">DatabaseObjectDuplicatedException</a></td>
+<td>Thrown when a database object cannot be created because another with the same name exists.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-databaseobjectkindom.html">DatabaseObjectKindom</a></td>
+<td>Enumerates the kindom of database objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-direction.html">Direction</a></td>
+<td>Direction for key creation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-dscexception.html">DSCException</a></td>
+<td>Base exception for schema DSC.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+<td>Models a foreign key</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-foreignkeycolumn.html">ForeignKeyColumn</a></td>
+<td>Models a foreign key column.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-grant.html">Grant</a></td>
+<td>Models a grant statement to be executed.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a></td>
+<td>Models an index.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-indexcolumn.html">IndexColumn</a></td>
+<td>Models an index column.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-indextype.html">IndexType</a></td>
+<td><strong>IndexType</strong> defines index types.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-ischemadiscoverer.html">ISchemaDiscoverer</a></td>
+<td>Allows the implementation of code that discover a database schema.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-ischemaprovisioner.html">ISchemaProvisioner</a></td>
+<td>Allows the implementation of a provisiones that provision schema objects for databases.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-itablecomparisonservice.html">ITableComparisonService</a></td>
+<td>Allows the implementation of a service that compares tables.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-iviewbuilder.html">IViewBuilder</a></td>
+<td>Allows the implementation of database agnostinc builders that builds the text of a view.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactionforcolumnconstraint.html">MissActionForColumnConstraint</a></td>
+<td>Models the action to be executed when a column constraint has a configuration miss.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactionforforeignkey.html">MissActionForForeignKey</a></td>
+<td>Models the action to be executed when a foreign key has a configuration miss.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactionforindex.html">MissActionForIndex</a></td>
+<td>Models the action to be executed when an index has a configuration miss.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactionfortablecolumn.html">MissActionForTableColumn</a></td>
+<td>Models the action to be executed when a table column has a configuration miss.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactiontype.html">MissActionType</a></td>
+<td>Defines the type of action to execute when the configuration missed the desired.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-permission.html">Permission</a></td>
+<td>Permissions that can be granted to database objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-referentialaction.html">ReferentialAction</a></td>
+<td><strong>ReferentialAction</strong> defines the referential actions for foreign keys.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-schema.html">Schema</a></td>
+<td>Models a database schema u owner.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-schemadiscoverer.html">SchemaDiscoverer</a></td>
+<td>Implements basic functionality for <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-ischemadiscoverer.html">ISchemaDiscoverer</a>s.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-schemaprovisioner.html">SchemaProvisioner</a></td>
+<td>Implements basic functionality for a <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-ischemaprovisioner.html">ISchemaProvisioner</a>.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-sequence.html">Sequence</a></td>
+<td>Models a sequence configuration.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+<td>Models a database table or view.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+<td>Models the information of a table column.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecomparisonmissresulttype.html">TableComparisonMissResultType</a></td>
+<td>Typification of a miss result of a table comparison.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecomparisonresult.html">TableComparisonResult</a></td>
+<td>Models the result of a table configuration comparison.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablename.html">TableName</a></td>
+<td>Models the name of a table or view.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></td>
+<td>Thrown when a table or view is not found.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-view.html">View</a></td>
+<td>Models a database view.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-viewbuilder.html">ViewBuilder</a></td>
+<td>Implements the basic functionality of an <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-iviewbuilder.html">IViewBuilder</a>.</td>
+</tr>
+</tbody></table>
+<h3 id="kpokpatagon-data-dependencyinjection" class="mt-5">KpokPatagon.Data.DependencyInjection</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-dataservicetypeattribute.html">DataServiceTypeAttribute</a></td>
+<td>Declares the type of the <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a> for an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-kpokpatagondatabuilderextensions.html">KpokPatagonDataBuilderExtensions</a></td>
+<td>Builder extensions methods to register services.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-kpokpatagondataserviceproviderextensions.html">KpokPatagonDataServiceProviderExtensions</a></td>
+<td>Provides helper extension methods for workking with am <span class="text-info" title="System.IServiceProvider">IServiceProvider</span></td>
+</tr>
+</tbody></table>
+<h3 id="kpokpatagon-data-filtering" class="mt-5">KpokPatagon.Data.Filtering</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-filteredandsortedlisting.html">FilteredAndSortedListing</a></td>
+<td>Models the input required to filtering and sorting data.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-invalidtermcolumnnameexception.html">InvalidTermColumnNameException</a></td>
+<td>Thrown when a <a href="../../kpokpatagon-data/kpokpatagon-data-filtering/kpokpatagon-data-filtering-term.html">Term</a> column does not exists within the <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>s collection.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-listing.html">Listing</a></td>
+<td>Models the result of a filter operation used for list data on pages.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-listing1.html">Listing</a></td>
+<td>Models the result of a filter operation used for list data on pages.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-listingresult1.html">ListingResult</a></td>
+<td>Models the result of a listing operation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-matchkind.html">MatchKind</a></td>
+<td>Term matching kind.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-pagedfilteredandsortedlisting.html">PagedFilteredAndSortedListing</a></td>
+<td>Models the input required to filtering, sorting and paging data.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-pagedlistingresult1.html">PagedListingResult</a></td>
+<td>Models the result of paged a listing operation.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-pageinfo.html">PageInfo</a></td>
+<td>Page information of a paged listing.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-staticterm.html">StaticTerm</a></td>
+<td>A filter term that must always be applied while retriving data.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-term.html">Term</a></td>
+<td>Filter term.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-termoperator.html">TermOperator</a></td>
+<td>Operator for filtering data based on user terms.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-truncatedfilteredandsortedlisting.html">TruncatedFilteredAndSortedListing</a></td>
+<td>Models the input required to filtering and sorting data then truncating the results to a maximum.</td>
+</tr>
+</tbody></table>
+<h3 id="kpokpatagon-data-query" class="mt-5">KpokPatagon.Data.Query</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-addingselectcolumneventargs.html">AddingSelectColumnEventArgs</a></td>
+<td><strong>AddingSelectColumnEventArgs</strong> allows the processing of the event 
+            of adding columns to a SELECT statement.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-addingselectcolumneventhandler.html">AddingSelectColumnEventHandler</a></td>
+<td>The <b>AddingSelectColumnEventHandler</b> delegate.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-autonumericcolumn.html">AutonumericColumn</a></td>
+<td><strong>AutonumericColumn</strong> represents a column for an autonumeric field.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-basecmdbuilder1.html">BaseCmdBuilder</a></td>
+<td><strong>BaseCmdBuilder</strong> implements basic functionality for
+            command building based on <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a> objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-betweenpredicate.html">BetweenPredicate</a></td>
+<td>Represents a predicates for the BETWEEN SQL operator.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-coalescecolumn.html">CoalesceColumn</a></td>
+<td>Defines a column that is decorated with a coalesce function</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-column.html">Column</a></td>
+<td>Represents a column of a statement.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-constantcolumn.html">ConstantColumn</a></td>
+<td>Defines a constant column</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-convertcolumn.html">ConvertColumn</a></td>
+<td>Defines a decoration that converts one type into another</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-decoratedcolumn.html">DecoratedColumn</a></td>
+<td>Defines a column with a decoration option</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-decorationtype.html">DecorationType</a></td>
+<td>Decoration type that applies to select columns</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-deletestatement.html">DeleteStatement</a></td>
+<td><strong>DeleteStatement</strong> allows the construction of SQL DELETE statements.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-existspredicate.html">ExistsPredicate</a></td>
+<td>Represents a condition predicate for the EXISTS keyword.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-icmdbuilder.html">ICmdBuilder</a></td>
+<td><strong>ICmdBuilder</strong> allows the implementation of command builders.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-icmdbuilder1.html">ICmdBuilder</a></td>
+<td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-icmdbuilder.html">ICmdBuilder</a> allows the implementation of command builders based on <typeparamref name="TStatement" />s.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-icolumn.html">IColumn</a></td>
+<td>Allows the definition of colum objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-insertcolumnnotsupportedexception.html">InsertColumnNotSupportedException</a></td>
+<td>Thrown when an insert column type is not supported.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-insertselectstatement.html">InsertSelectStatement</a></td>
+<td><strong>InsertSelectStatement</strong> allows the construction of INSERT/SELECT statements.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-insertstatement.html">InsertStatement</a></td>
+<td><strong>InsertStatement</strong> allows the construction of INSERT statement.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-invalidsimplepredicatevalueexception.html">InvalidSimplePredicateValueException</a></td>
+<td>Thrown when the value for a SimplePredicare is not of a valid type</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-modifier.html">Modifier</a></td>
+<td><strong>Modifier</strong> is the base class for <b>Modifier</b> classes.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-noselectcolumnsexception.html">NoSelectColumnsException</a></td>
+<td>Thrown when no select columns have been specified</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-nosetcolumnsexception.html">NoSetColumnsException</a></td>
+<td>Thrown when no SET columns where provided for an UPDATE statement.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-order.html">Order</a></td>
+<td>Models the information for ordering.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-ordercolumn.html">OrderColumn</a></td>
+<td>Represents a column for the ORDER BY clause.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-predicate.html">Predicate</a></td>
+<td>Abstract base class for classes that implement predicates</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-predicatecolumn.html">PredicateColumn</a></td>
+<td>A column to be used on predicates</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-relation.html">Relation</a></td>
+<td>Represents a relation between two data repositories</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-relationtype.html">RelationType</a></td>
+<td>Types of relations between tables or views</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a></td>
+<td><strong>Repository</strong> represents a data table or view.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-scopemodifier.html">ScopeModifier</a></td>
+<td>Represents a scope modifier for a SELECT clause.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-scopetype.html">ScopeType</a></td>
+<td>Define the scopes for diferentes query options</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-searchcondition.html">SearchCondition</a></td>
+<td>Represents a search condition for a WHERE or HAVING clause</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-selectstatement.html">SelectStatement</a></td>
+<td><strong>SelectStatement</strong> allows the construction of SQL SELECT statements.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-setcolumn.html">SetColumn</a></td>
+<td>Defines a set column for an update statement</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-simplepredicate.html">SimplePredicate</a></td>
+<td>Represents a simple predicate for a filter condition</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-sortdirection.html">SortDirection</a></td>
+<td>SQL order by clause order direction</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a></td>
+<td><strong>Statement</strong> is an abstract base class for all statement classes.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-statementnotsupportedexception.html">StatementNotSupportedException</a></td>
+<td>Thrown when a SqlBuilder is not supported and cannot be processed.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-topmodifier.html">TopModifier</a></td>
+<td>Represents a TOP modifier for a SELECT clause</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-truncatestatement.html">TruncateStatement</a></td>
+<td><strong>TruncateStatement</strong> allows the construction of SQL TRUNCATE statements.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-updatestatement.html">UpdateStatement</a></td>
+<td><strong>UpdateStatement</strong> allows the construction of SQL UPDATE statements.</td>
+</tr>
+</tbody></table>
+<h3 id="microsoft-codeanalysis" class="mt-5">Microsoft.CodeAnalysis</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+</tbody></table>
+<h3 id="system-runtime-compilerservices" class="mt-5">System.Runtime.CompilerServices</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+</tbody></table>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#kpokpatagon-data">KpokPatagon.Data</a></li>
+<li><a href="#kpokpatagon-data-dataannotations">KpokPatagon.Data.DataAnnotations</a></li>
+<li><a href="#kpokpatagon-data-databaseschema">KpokPatagon.Data.DatabaseSchema</a></li>
+<li><a href="#kpokpatagon-data-dependencyinjection">KpokPatagon.Data.DependencyInjection</a></li>
+<li><a href="#kpokpatagon-data-filtering">KpokPatagon.Data.Filtering</a></li>
+<li><a href="#kpokpatagon-data-query">KpokPatagon.Data.Query</a></li>
+<li><a href="#microsoft-codeanalysis">Microsoft.CodeAnalysis</a></li>
+<li><a href="#system-runtime-compilerservices">System.Runtime.CompilerServices</a></li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

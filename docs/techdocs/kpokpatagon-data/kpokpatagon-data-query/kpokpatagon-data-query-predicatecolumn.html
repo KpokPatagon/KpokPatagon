@@ -1,0 +1,436 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>PredicateColumn - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>PredicateColumn</h1>
+<p class="lead">A column to be used on predicates</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.Query</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">KpokPatagon.Data.Query.Column</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Data.Query.PredicateColumn.#ctor" class="mb-5">
+    <h3 class="lead text-info">PredicateColumn</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> PredicateColumn()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Data.Query.PredicateColumn.#ctor(KpokPatagon.Data.Field)" class="mb-5">
+    <h3 class="lead text-info">PredicateColumn</h3>
+    <p>Initializes a new instance of <strong>PredicateColumn</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> PredicateColumn(field)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>field</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a></td>
+        <td>Column configuration.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thown when <strong class="text-info">field</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.PredicateColumn.#ctor(KpokPatagon.Data.Field,KpokPatagon.Data.Query.Repository)" class="mb-5">
+    <h3 class="lead text-info">PredicateColumn</h3>
+    <p>Initializes a new instance of <strong>PredicateColumn</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> PredicateColumn(field, repository)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>field</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a></td>
+        <td>Column configuration.</td>
+    </tr>
+    <tr>
+        <td>repository</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a></td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a> to which the column belongs to.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thown when <strong class="text-info">field</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.PredicateColumn.#ctor(KpokPatagon.Data.Field,KpokPatagon.Data.Query.Repository,System.String)" class="mb-5">
+    <h3 class="lead text-info">PredicateColumn</h3>
+    <p>Initializes a new instance of <strong>PredicateColumn</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> PredicateColumn(field, repository, parameterName)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>field</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a></td>
+        <td>Column configuration.</td>
+    </tr>
+    <tr>
+        <td>repository</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a></td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a> to which the column belongs to.</td>
+    </tr>
+    <tr>
+        <td>parameterName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name for the parameter to be added to the command.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thown when <strong class="text-info">field</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.PredicateColumn.#ctor(KpokPatagon.Data.Field,System.String)" class="mb-5">
+    <h3 class="lead text-info">PredicateColumn</h3>
+    <p>Initializes a new instance of <strong>PredicateColumn</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> PredicateColumn(field, parameterName)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>field</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a></td>
+        <td>Column configuration.</td>
+    </tr>
+    <tr>
+        <td>parameterName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name for the parameter to be added to the command.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.PredicateColumn.#ctor(System.String,KpokPatagon.Data.DbType)" class="mb-5">
+    <h3 class="lead text-info">PredicateColumn</h3>
+    <p>Initializes a new instance of <strong>PredicateColumn</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> PredicateColumn(fieldName, type)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fieldName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name of the field.</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td>Data type of the field.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">fieldName</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.PredicateColumn.#ctor(System.String,KpokPatagon.Data.DbType,KpokPatagon.Data.Query.Repository)" class="mb-5">
+    <h3 class="lead text-info">PredicateColumn</h3>
+    <p>Initializes a new instance of <strong>PredicateColumn</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> PredicateColumn(fieldName, type, repository)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fieldName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name of the field.</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td>Data type of the field.</td>
+    </tr>
+    <tr>
+        <td>repository</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a></td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a> to which the column belongs to.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">fieldName</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.PredicateColumn.#ctor(System.String,KpokPatagon.Data.DbType,KpokPatagon.Data.Query.Repository,System.String)" class="mb-5">
+    <h3 class="lead text-info">PredicateColumn</h3>
+    <p>Initializes a new instance of <strong>PredicateColumn</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> PredicateColumn(fieldName, type, repository, parameterName)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fieldName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name of the field.</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td>Data type of the field.</td>
+    </tr>
+    <tr>
+        <td>repository</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a></td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a> to which the column belongs to.</td>
+    </tr>
+    <tr>
+        <td>parameterName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name for the parameter to be added to the command.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">fieldName</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.PredicateColumn.#ctor(System.String,KpokPatagon.Data.DbType,System.String)" class="mb-5">
+    <h3 class="lead text-info">PredicateColumn</h3>
+    <p>Initializes a new instance of <strong>PredicateColumn</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> PredicateColumn(fieldName, type, parameterName)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fieldName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name of the field.</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td>Data type of the field.</td>
+    </tr>
+    <tr>
+        <td>parameterName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name for the parameter to be added to the command.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">fieldName</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Data.Query.PredicateColumn.ParameterName" class="mb-5">
+    <h3 class="lead text-info">ParameterName</h3>
+    <p>Column's parameter name.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ParameterName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.Query.PredicateColumn.Type" class="mb-5">
+    <h3 class="lead text-info">Type</h3>
+    <p>Data type of the column.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a> Type { get; set; }</code></dd>
+</dl>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Data.Query.PredicateColumn.ParameterName">ParameterName</a></li>
+        <li><a href="#P:KpokPatagon.Data.Query.PredicateColumn.Type">Type</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

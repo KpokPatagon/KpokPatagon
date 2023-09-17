@@ -1,0 +1,398 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>SecurityIncident - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-auditing/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>SecurityIncident</h1>
+<p class="lead">Information of a detected security incident.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Auditing.Store</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">KpokPatagon.Data.DataModel</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
+<dd class="col-sm-9">System.IEquatable{KpokPatagon.Auditing.Store.SecurityIncident}</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Auditing.Store.SecurityIncident.#ctor" class="mb-5">
+    <h3 class="lead text-info">SecurityIncident</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SecurityIncident()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Auditing.Store.SecurityIncident.#ctor(System.String)" class="mb-5">
+    <h3 class="lead text-info">SecurityIncident</h3>
+    <p>Initializes a new instance of <strong>SecurityIncident</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SecurityIncident(id)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>id</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Security incident Id</td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.AuditId" class="mb-5">
+    <h3 class="lead text-info">AuditId</h3>
+    <p>Related audit record Id (optional)</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> AuditId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.CreationTime" class="mb-5">
+    <h3 class="lead text-info">CreationTime</h3>
+    <p>Creation date and time on UTC.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> CreationTime { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.Data" class="mb-5">
+    <h3 class="lead text-info">Data</h3>
+    <p>Security incident data</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> Data { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.EnforceModelValidation" class="mb-5">
+    <h3 class="lead text-info">EnforceModelValidation</h3>
+    <p>Whether model validation must be enforced.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.Id" class="mb-5">
+    <h3 class="lead text-info">Id</h3>
+    <p>Security incident Id</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Id { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.Kind" class="mb-5">
+    <h3 class="lead text-info">Kind</h3>
+    <p>Security incident king.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityincidentkind.html">SecurityIncidentKind</a> Kind { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.ResolutionOpinion" class="mb-5">
+    <h3 class="lead text-info">ResolutionOpinion</h3>
+    <p>Resolution opinion</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ResolutionOpinion { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedByUserAuthority" class="mb-5">
+    <h3 class="lead text-info">ResolvedByUserAuthority</h3>
+    <p>Authority of the user that resolved the security incident.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ResolvedByUserAuthority { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedByUserDisplayName" class="mb-5">
+    <h3 class="lead text-info">ResolvedByUserDisplayName</h3>
+    <p>Display name of the user that revolves the incident.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ResolvedByUserDisplayName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedByUserId" class="mb-5">
+    <h3 class="lead text-info">ResolvedByUserId</h3>
+    <p>User Id of the user that resolved the security incident.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ResolvedByUserId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedByUserName" class="mb-5">
+    <h3 class="lead text-info">ResolvedByUserName</h3>
+    <p>Name of the user that resolved the security incident.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ResolvedByUserName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedTime" class="mb-5">
+    <h3 class="lead text-info">ResolvedTime</h3>
+    <p>Data and time of the security incident resolution on Utc.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.DateTime}">Nullable&lt;DateTime&gt;</span> ResolvedTime { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.SourceCaption" class="mb-5">
+    <h3 class="lead text-info">SourceCaption</h3>
+    <p>Caption of the object that sources the audit record.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SourceCaption { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.SourceDisplayInfo" class="mb-5">
+    <h3 class="lead text-info">SourceDisplayInfo</h3>
+    <p>A human readable text for the object that sources the audit record.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SourceDisplayInfo { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.SourceId" class="mb-5">
+    <h3 class="lead text-info">SourceId</h3>
+    <p>Id of the object that sources this security incident (optional)</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SourceId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.SourceTypeName" class="mb-5">
+    <h3 class="lead text-info">SourceTypeName</h3>
+    <p>Protocol of the object that sources this security incident (optional)</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SourceTypeName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.TenantId" class="mb-5">
+    <h3 class="lead text-info">TenantId</h3>
+    <p>Multi-tenant partition key.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> TenantId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.UserAuthority" class="mb-5">
+    <h3 class="lead text-info">UserAuthority</h3>
+    <p>User authority</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserAuthority { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.UserDisplayName" class="mb-5">
+    <h3 class="lead text-info">UserDisplayName</h3>
+    <p>User display name</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserDisplayName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.UserId" class="mb-5">
+    <h3 class="lead text-info">UserId</h3>
+    <p>User Id</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Auditing.Store.SecurityIncident.UserName" class="mb-5">
+    <h3 class="lead text-info">UserName</h3>
+    <p>User name.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserName { get; set; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Auditing.Store.SecurityIncident.Equals(KpokPatagon.Auditing.Store.SecurityIncident)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks if <strong class="text-info">other</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>other</td>
+        <td><strong>SecurityIncident</strong></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Auditing.Store.SecurityIncident.Equals(System.Object)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks if <strong class="text-info">obj</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>obj</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>An object to compare with this object.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Auditing.Store.SecurityIncident.GetHashCode" class="mb-5">
+    <h3 class="lead text-info">GetHashCode</h3>
+    <p>Not required, implemented to avoid warnings, returns base.GetHasCode().</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Auditing.Store.SecurityIncident.GetSecurityIncidentInfo(KpokPatagon.Auditing.SecurityUtility)" class="mb-5">
+    <h3 class="lead text-info">GetSecurityIncidentInfo</h3>
+    <p>Gets incident internal data.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityincidentinfo.html">SecurityIncidentInfo</a> GetSecurityIncidentInfo(securityUtility)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The incident internal data or <strong class="text-info">null</strong> if it is empty.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>securityUtility</td>
+        <td><a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityutility.html">SecurityUtility</a></td>
+        <td></td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Auditing.SecurityIncidentInfoDeserializationException"><a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityincidentinfodeserializationexception.html">SecurityIncidentInfoDeserializationException</a></span></td>
+        <td>Thrown when problems decrypting or de-serializing the internal data.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Auditing.Store.SecurityIncident.ToString" class="mb-5">
+    <h3 class="lead text-info">ToString</h3>
+    <p>Returns a textual represetation.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+</dl>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.AuditId">AuditId</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.CreationTime">CreationTime</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.Data">Data</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.EnforceModelValidation">EnforceModelValidation</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.Id">Id</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.Kind">Kind</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.ResolutionOpinion">ResolutionOpinion</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedByUserAuthority">ResolvedByUserAuthority</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedByUserDisplayName">ResolvedByUserDisplayName</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedByUserId">ResolvedByUserId</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedByUserName">ResolvedByUserName</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.ResolvedTime">ResolvedTime</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.SourceCaption">SourceCaption</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.SourceDisplayInfo">SourceDisplayInfo</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.SourceId">SourceId</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.SourceTypeName">SourceTypeName</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.TenantId">TenantId</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.UserAuthority">UserAuthority</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.UserDisplayName">UserDisplayName</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.UserId">UserId</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.SecurityIncident.UserName">UserName</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Auditing.Store.SecurityIncident.Equals(KpokPatagon.Auditing.Store.SecurityIncident)">Equals</a></li>
+        <li><a href="#M:KpokPatagon.Auditing.Store.SecurityIncident.Equals(System.Object)">Equals</a></li>
+        <li><a href="#M:KpokPatagon.Auditing.Store.SecurityIncident.GetHashCode">GetHashCode</a></li>
+        <li><a href="#M:KpokPatagon.Auditing.Store.SecurityIncident.GetSecurityIncidentInfo(KpokPatagon.Auditing.SecurityUtility)">GetSecurityIncidentInfo</a></li>
+        <li><a href="#M:KpokPatagon.Auditing.Store.SecurityIncident.ToString">ToString</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
