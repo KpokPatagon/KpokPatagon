@@ -7,7 +7,7 @@ To used this framework simply add the NuGet packages as required.
 
 ## Core packages
 
-- KpokPatagon
+- KpokPatagon.Core
 - KpokPatagon.I18n
 - KpokPatagon.Data
 - KpokPatagon.Data.MySql
