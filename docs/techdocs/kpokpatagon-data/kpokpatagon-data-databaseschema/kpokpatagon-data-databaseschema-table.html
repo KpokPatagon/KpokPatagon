@@ -49,28 +49,12 @@
 </dl>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Caption" class="mb-5">
-    <h3 class="lead text-info">Caption</h3>
-    <p>Caption.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Caption { get; set; }</code></dd>
-</dl>
-</div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.Table.Columns" class="mb-5">
     <h3 class="lead text-info">Columns</h3>
     <p>A collection of <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a>s.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.TableColumn}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a>&gt;</span> Columns { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:KpokPatagon.Data.DatabaseSchema.Table.ConnectionName" class="mb-5">
-    <h3 class="lead text-info">ConnectionName</h3>
-    <p>Name of the connection where this table must be created.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ConnectionName { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.Table.FileGroup" class="mb-5">
@@ -89,14 +73,6 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.ForeignKey}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-foreignkey.html">ForeignKey</a>&gt;</span> ForeignKeys { get; set; }</code></dd>
 </dl>
 </div>
-<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Grant" class="mb-5">
-    <h3 class="lead text-info">Grant</h3>
-    <p>Grant to be applied upon table or view creation.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-grant.html">Grant</a> Grant { get; set; }</code></dd>
-</dl>
-</div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.Table.Indexes" class="mb-5">
     <h3 class="lead text-info">Indexes</h3>
     <p>A collection of <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a>es.</p>
@@ -111,14 +87,6 @@
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsView { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:KpokPatagon.Data.DatabaseSchema.Table.Kindom" class="mb-5">
-    <h3 class="lead text-info">Kindom</h3>
-    <p>Kindom to which the table belongs to.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-databaseobjectkindom.html">DatabaseObjectKindom</a> Kindom { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.Table.Name" class="mb-5">
@@ -137,16 +105,6 @@
     <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a> PrimaryKey { get; set; }</code></dd>
 </dl>
 </div>
-<div id="P:KpokPatagon.Data.DatabaseSchema.Table.ResourceTypeName" class="mb-5">
-    <h3 class="lead text-info">ResourceTypeName</h3>
-    <p>Type name of the resource used for localization.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ResourceTypeName { get; set; }</code></dd>
-</dl>
-<h6 class="mt-1">Example</h6>
-<div class="mb-4">KpokPatagon.I18n.DataLables, KpokPatagon.I18n [, Version=1.0.0.0] [, Culture=neutral] [, PublicKeyToken=none]</div>
-</div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.Table.Schema" class="mb-5">
     <h3 class="lead text-info">Schema</h3>
     <p>Schema to which the table blongs to.</p>
@@ -154,16 +112,6 @@
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Schema { get; set; }</code></dd>
 </dl>
-</div>
-<div id="P:KpokPatagon.Data.DatabaseSchema.Table.SequenceName" class="mb-5">
-    <h3 class="lead text-info">SequenceName</h3>
-    <p>Name of a sequence (optional).</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SequenceName { get; set; }</code></dd>
-</dl>
-<h6 class="mt-1">Remarks</h6>
-<p><p>This property is not captured by any schema discoverer.</p><p>The main purpose is to store the name of a sequence that needs to be created in Oracle databases.</p></p>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Data.DatabaseSchema.Table.ToString" class="mb-5">
@@ -182,20 +130,14 @@
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Caption">Caption</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Columns">Columns</a></li>
-        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.ConnectionName">ConnectionName</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.FileGroup">FileGroup</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.ForeignKeys">ForeignKeys</a></li>
-        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Grant">Grant</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Indexes">Indexes</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.IsView">IsView</a></li>
-        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Kindom">Kindom</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Name">Name</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.PrimaryKey">PrimaryKey</a></li>
-        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.ResourceTypeName">ResourceTypeName</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Schema">Schema</a></li>
-        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.SequenceName">SequenceName</a></li>
     </ul>
 </li>
 <li><a href="#methods">Methods</a></li>
