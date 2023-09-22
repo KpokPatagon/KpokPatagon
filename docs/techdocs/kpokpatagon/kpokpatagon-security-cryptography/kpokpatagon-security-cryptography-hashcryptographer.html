@@ -39,16 +39,16 @@
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
 <dt class="text-truncate col-sm-3">Implements:</dt>
-<dd class="col-sm-9">KpokPatagon.Security.Cryptography.IHashProvider</dd>
+<dd class="col-sm-9">KpokPatagon.Security.Cryptography.IHashProvider, System.IDisposable</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Security.Cryptography.HashCryptographer.#ctor(System.Type)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.HashCryptographer.#ctor(System.Security.Cryptography.HashAlgorithm)" class="mb-5">
     <h3 class="lead text-info">HashCryptographer</h3>
     <p>Creates a new instance of <strong>HashCryptographer</strong>
             and initialize it as a salt disabled algorithm.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> HashCryptographer(algorithmType)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> HashCryptographer(algorithm)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -61,19 +61,19 @@
 </thead>
 <tbody>
     <tr>
-        <td>algorithmType</td>
-        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>algorithm</td>
+        <td><span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span></td>
         <td>The <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span> to use.</td>
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.HashCryptographer.#ctor(System.Type,System.Boolean)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.HashCryptographer.#ctor(System.Security.Cryptography.HashAlgorithm,System.Boolean)" class="mb-5">
     <h3 class="lead text-info">HashCryptographer</h3>
     <p>Creates a new instance of <strong>HashCryptographer</strong>
             and initializes it.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> HashCryptographer(algorithmType, saltEnabled)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> HashCryptographer(algorithm, saltEnabled)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -86,8 +86,8 @@
 </thead>
 <tbody>
     <tr>
-        <td>algorithmType</td>
-        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>algorithm</td>
+        <td><span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span></td>
         <td>The <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span> to use.</td>
     </tr>
     <tr>
@@ -107,22 +107,9 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">algorithmType</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
-        <td>Thrown when <strong class="text-info">algorithmType</strong> is not a <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span>.</td>
+        <td>Thrown when <strong class="text-info">algorithm</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
 </tbody></table>
-</div>
-<h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:KpokPatagon.Security.Cryptography.HashCryptographer.AlgorithmType" class="mb-5">
-    <h3 class="lead text-info">AlgorithmType</h3>
-    <p>Gets the <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span> type.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> AlgorithmType { get; set; }</code></dd>
-</dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Security.Cryptography.HashCryptographer.CompareHash(System.Byte[],System.Byte[])" class="mb-5">
@@ -274,6 +261,14 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:KpokPatagon.Security.Cryptography.HashCryptographer.Dispose" class="mb-5">
+    <h3 class="lead text-info">Dispose</h3>
+    <p>Clean up.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Dispose()</code></dd>
+</dl>
+</div>
 <div id="M:KpokPatagon.Security.Cryptography.HashCryptographer.ExtractSalt(System.Byte[])" class="mb-5">
     <h3 class="lead text-info">ExtractSalt</h3>
     <p>Extracts the salt value from the hashed text.</p>
@@ -319,12 +314,6 @@
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
 <li><a href="#constructors">Constructors</a></li>
-<li><a href="#properties">Properties</a></li>
-<li>
-    <ul style="font-size:0.8em;">
-        <li><a href="#P:KpokPatagon.Security.Cryptography.HashCryptographer.AlgorithmType">AlgorithmType</a></li>
-    </ul>
-</li>
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
@@ -332,6 +321,7 @@
         <li><a href="#M:KpokPatagon.Security.Cryptography.HashCryptographer.ComputeHash(System.Byte[])">ComputeHash</a></li>
         <li><a href="#M:KpokPatagon.Security.Cryptography.HashCryptographer.ComputeHash(System.IO.Stream)">ComputeHash</a></li>
         <li><a href="#M:KpokPatagon.Security.Cryptography.HashCryptographer.ComputeHashWithSalt(System.Byte[],System.Byte[])">ComputeHashWithSalt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.HashCryptographer.Dispose">Dispose</a></li>
         <li><a href="#M:KpokPatagon.Security.Cryptography.HashCryptographer.ExtractSalt(System.Byte[])">ExtractSalt</a></li>
     </ul>
 </li>

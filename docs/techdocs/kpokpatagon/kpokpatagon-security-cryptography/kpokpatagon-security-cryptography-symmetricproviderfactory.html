@@ -82,6 +82,57 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:KpokPatagon.Security.Cryptography.SymmetricProviderFactory.Create(System.Byte[],System.Byte[])" class="mb-5">
+    <h3 class="lead text-info">Create</h3>
+    <p>Creates a new instance of a <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-isymmetricprovider.html">ISymmetricProvider</a>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-isymmetricprovider.html">ISymmetricProvider</a> Create(symmetricKey, previousSymmericKey)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>symmetricKey</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>previousSymmericKey</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">symmetricKey</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td>Thrown when there is a problem when creating the symmetric cryptographer.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.SymmetricKeyNotFoundException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-symmetrickeynotfoundexception.html">SymmetricKeyNotFoundException</a></span></td>
+        <td>Thrown when the symmetrick key was not found.</td>
+    </tr>
+</tbody></table>
+</div>
             </div>
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
@@ -90,6 +141,7 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Security.Cryptography.SymmetricProviderFactory.Create(KpokPatagon.Security.Cryptography.Configuration.CryptographyOptions)">Create</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.SymmetricProviderFactory.Create(System.Byte[],System.Byte[])">Create</a></li>
     </ul>
 </li>
 </ul>

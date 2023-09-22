@@ -43,7 +43,7 @@
 <div id="M:KpokPatagon.Security.Cryptography.HashProviderFactory.Create" class="mb-5">
     <h3 class="lead text-info">Create</h3>
     <p>Creates a new instance of an <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-ihashprovider.html">IHashProvider</a> using the
-            <span class="text-info" title="System.Security.Cryptography.SHA512Managed">SHA512Managed</span> algorithm with salt addition disabled.</p>
+            <span class="text-info" title="System.Security.Cryptography.SHA512">SHA512</span> algorithm with salt addition enabled.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-ihashprovider.html">IHashProvider</a> Create()</code></dd>
@@ -56,9 +56,6 @@
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-ihashprovider.html">IHashProvider</a> Create(options)</code></dd>
 </dl>
-<h6 class="mt-1">Remarks</h6>
-<p>If not configured, a <span class="text-info" title="System.Security.Cryptography.SHA512Managed">SHA512Managed</span> algorithm 
-                with salt addition <b>disabled</b> is returned.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -76,17 +73,16 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.HashProviderFactory.Create(System.Type,System.Boolean)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.HashProviderFactory.Create(System.Security.Cryptography.HashAlgorithm,System.Boolean)" class="mb-5">
     <h3 class="lead text-info">Create</h3>
-    <p>Creates a new instance of a <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-ihashprovider.html">IHashProvider</a> based on the
-            <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span> of type <strong class="text-info">algorithmType</strong>.</p>
+    <p>Creates a new instance of a <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-ihashprovider.html">IHashProvider</a> based on the <strong class="text-info">algorithm</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-ihashprovider.html">IHashProvider</a> Create(algorithmType, saltEnabled)</code></dd>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-ihashprovider.html">IHashProvider</a> Create(algorithm, saltEnabled)</code></dd>
 </dl>
 <h6 class="mt-1">Remarks</h6>
-<p>If <strong class="text-info">algorithmType</strong> is <strong class="text-info">null</strong>, a
-                default <span class="text-info" title="System.Security.Cryptography.SHA512Managed">SHA512Managed</span> hash algorithm will be returned.</p>
+<p>If <strong class="text-info">algorithm</strong> is <strong class="text-info">null</strong>, a
+                default <span class="text-info" title="System.Security.Cryptography.SHA512">SHA512</span> hash algorithm will be created.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -98,28 +94,14 @@
 </thead>
 <tbody>
     <tr>
-        <td>algorithmType</td>
-        <td><span class="text-info" title="System.Type">Type</span></td>
-        <td>Type of the hash algorithm.</td>
+        <td>algorithm</td>
+        <td><span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span></td>
+        <td>The <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span>.</td>
     </tr>
     <tr>
         <td>saltEnabled</td>
         <td><span class="text-info" title="System.Boolean">Boolean</span></td>
-        <td><strong class="text-info">true</strong> if salt addition should be enebled.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
-        <td>Thrown when <strong class="text-info">algorithmType</strong> is not a <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span>.</td>
+        <td><strong class="text-info">true</strong> if salt addition should be enabled.</td>
     </tr>
 </tbody></table>
 </div>
@@ -132,7 +114,7 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Security.Cryptography.HashProviderFactory.Create">Create</a></li>
         <li><a href="#M:KpokPatagon.Security.Cryptography.HashProviderFactory.Create(KpokPatagon.Security.Cryptography.Configuration.CryptographyOptions)">Create</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.HashProviderFactory.Create(System.Type,System.Boolean)">Create</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.HashProviderFactory.Create(System.Security.Cryptography.HashAlgorithm,System.Boolean)">Create</a></li>
     </ul>
 </li>
 </ul>

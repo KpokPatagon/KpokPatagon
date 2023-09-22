@@ -105,46 +105,15 @@
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:KpokPatagon.Security.Cryptography.DefaultSymmetricKeyGenerator.GenerateKey(System.Type)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.DefaultSymmetricKeyGenerator.GenerateKey" class="mb-5">
     <h3 class="lead text-info">GenerateKey</h3>
-    <p>Generates an encription key from the two keys for the specified symmetric algorithm.
-            If <strong class="text-info">algorithmType</strong> is <strong class="text-info">null</strong>, <span class="text-info" title="System.Security.Cryptography.RijndaelManaged">RijndaelManaged</span> is used.</p>
+    <p>Generates an encription for the <span class="text-info" title="System.Security.Cryptography.Aes">Aes</span> algorithm.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> GenerateKey(algorithmType)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> GenerateKey()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A computed key.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>algorithmType</td>
-        <td><span class="text-info" title="System.Type">Type</span></td>
-        <td>Algorithm <span class="text-info" title="System.Type">Type</span>.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
-        <td>Thown the <strong class="text-info">algorithmType</strong> is not a <span class="text-info" title="System.Security.Cryptography.SymmetricAlgorithm">SymmetricAlgorithm</span>.</td>
-    </tr>
-</tbody></table>
 </div>
             </div>
             <div class="col-3 d-none d-lg-block">
@@ -161,7 +130,7 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:KpokPatagon.Security.Cryptography.DefaultSymmetricKeyGenerator.GenerateKey(System.Type)">GenerateKey</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.DefaultSymmetricKeyGenerator.GenerateKey">GenerateKey</a></li>
     </ul>
 </li>
 </ul>

@@ -83,9 +83,7 @@
     "Security": {
       "Cryptography": { 
         "AsymmetricKeyFileName": "&lt;asymmetric-key-file-name&gt;",
-        "HashAlgorithmType": "", 
         "HashAlgorithmSaltEnabled": true, 
-        "SymmetricAlgorithmType": "", 
         "SymmetricAlgorithmKeyFileName": "&lt;symmetric-key-file-name&gt;",
         "PreviousSymmetricAlgorithmKeyFileName": "&lt;previous-symmetric-key-file-name&gt;"
       }  
@@ -102,12 +100,6 @@
                     Specifies the path to a file that contains the keys used for asymmetric encryption.
                 </p>
 
-                <h5>HashAlgorithmType</h5>
-                <p>
-                    Specifies the type of the hashing algorithm to use as a qualified type name.
-                    If nothing is provided <code>SHA1Manage</code> algorithm is used.
-                </p>
-
                 <h5>HashAlgorithmSaltEnabled</h5>
                 <p>
                     Specifies if a <string>Salt</string> is used when hashing information.
@@ -117,11 +109,6 @@
                 <p>
                     Specifies the type of the symmetric algorithm to use for encryption as a qualified type name.
                     If nothing is provided <code>Aes</code> algorithm is used.
-                </p>
-
-                <h5>SymmetricAlgorithmKeyFileName</h5>
-                <p>
-                    Specifies the path to a file that contains the key used for symmetric encryption.
                 </p>
 
                 <h5>PreviousSymmetricAlgorithmKeyFileName</h5>
