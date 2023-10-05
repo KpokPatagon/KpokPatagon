@@ -39,10 +39,10 @@
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">System.Object</dd>
 <dt class="text-truncate col-sm-3">Implements:</dt>
-<dd class="col-sm-9">KpokPatagon.Messaging.IMessageService</dd>
+<dd class="col-sm-9">KpokPatagon.Messaging.IMessageService, KpokPatagon.Messaging.IEmailTransport</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Messaging.SmtpMessageService.#ctor(KpokPatagon.Messaging.SmtpServerConfiguration)" class="mb-5">
+<div id="M:KpokPatagon.Messaging.SmtpMessageService.#ctor(KpokPatagon.Messaging.ISmtpServerConfiguration)" class="mb-5">
     <h3 class="lead text-info">SmtpMessageService</h3>
     <p>Initializes a new instance of <strong>SmtpMessageService</strong>.</p>
 <dl class="row">
@@ -61,7 +61,7 @@
 <tbody>
     <tr>
         <td>configuration</td>
-        <td><a href="../../kpokpatagon/kpokpatagon-messaging/kpokpatagon-messaging-smtpserverconfiguration.html">SmtpServerConfiguration</a></td>
+        <td><a href="../../kpokpatagon/kpokpatagon-messaging/kpokpatagon-messaging-ismtpserverconfiguration.html">ISmtpServerConfiguration</a></td>
         <td>Smpt server configuratión.</td>
     </tr>
 </tbody></table>
@@ -109,12 +109,8 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">message</strong> is <strong class="text-info">null</strong>.</td>
-    </tr>
-    <tr>
         <td><span class="text-info" title="KpokPatagon.Messaging.SendException"><a href="../../kpokpatagon/kpokpatagon-messaging/kpokpatagon-messaging-sendexception.html">SendException</a></span></td>
-        <td>Thrown when an error occurs while sending the message.</td>
+        <td>Thrown when the message could not be send.</td>
     </tr>
 </tbody></table>
 </div>
