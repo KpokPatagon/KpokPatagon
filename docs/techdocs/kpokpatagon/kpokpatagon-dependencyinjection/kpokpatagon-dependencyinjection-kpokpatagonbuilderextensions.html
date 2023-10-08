@@ -42,7 +42,8 @@
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.DependencyInjection.KpokPatagonBuilderExtensions.AddCryptographer(KpokPatagon.DependencyInjection.IKpokPatagonBuilder)" class="mb-5">
     <h3 class="lead text-info">AddCryptographer</h3>
-    <p>Add a <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographer.html">Cryptographer</a> as a singleton instance.</p>
+    <p>Add a <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-icryptographer.html">ICryptographer</a> implemented by <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographer.html">Cryptographer</a>. This
+            method also configures the options required by the cryptography service.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddCryptographer(builder)</code></dd>

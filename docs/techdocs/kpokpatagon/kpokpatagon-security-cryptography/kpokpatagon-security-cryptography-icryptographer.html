@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>Cryptographer - Kpok Patagon Framework</title>
+    <title>ICryptographer - Kpok Patagon Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,49 +25,20 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>Cryptographer</h1>
-<p class="lead">Implements a crytography service.</p>
+<h1>ICryptographer</h1>
+<p class="lead">Defines a cryptography service.</p>
 <dl class="row mt-4">
 <dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Security.Cryptography</dd>
-<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Interface</dd>
 </dl>
 <dl class="row mt-4">
     <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
-    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
-<dt class="text-truncate col-sm-3">Implements:</dt>
-<dd class="col-sm-9">KpokPatagon.Security.Cryptography.ICryptographer</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
 </dl>
-<h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.#ctor(Microsoft.Extensions.Options.IOptionsSnapshot{KpokPatagon.Security.Cryptography.Configuration.CryptographyOptions})" class="mb-5">
-    <h3 class="lead text-info">Cryptographer</h3>
-    <p>Initializes a new instance of <b>Cryptographer</b>.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Cryptographer(options)</code></dd>
-</dl>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>options</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Options.IOptionsSnapshot{KpokPatagon.Security.Cryptography.Configuration.CryptographyOptions}">IOptionsSnapshot&lt;<a href="../../kpokpatagon/kpokpatagon-security-cryptography-configuration/kpokpatagon-security-cryptography-configuration-cryptographyoptions.html">CryptographyOptions</a>&gt;</span></td>
-        <td></td>
-    </tr>
-</tbody></table>
-</div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:KpokPatagon.Security.Cryptography.Cryptographer.Options" class="mb-5">
+<div id="P:KpokPatagon.Security.Cryptography.ICryptographer.Options" class="mb-5">
     <h3 class="lead text-info">Options</h3>
     <p>Cryptography configuration options.</p>
 <dl class="row">
@@ -76,7 +47,7 @@
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.CompareHash(System.Byte[],System.Byte[])" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.CompareHash(System.Byte[],System.Byte[])" class="mb-5">
     <h3 class="lead text-info">CompareHash</h3>
     <p>Compares a plain text input with a computed hash.</p>
 <dl class="row">
@@ -107,7 +78,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.CompareHash(KpokPatagon.Security.Cryptography.IHashProvider,System.Byte[],System.Byte[])" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.CompareHash(KpokPatagon.Security.Cryptography.IHashProvider,System.Byte[],System.Byte[])" class="mb-5">
     <h3 class="lead text-info">CompareHash</h3>
     <p>Compares a plain text input with a computed hash.</p>
 <dl class="row">
@@ -143,7 +114,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.CompareHash(KpokPatagon.Security.Cryptography.IHashProvider,System.String,System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.CompareHash(KpokPatagon.Security.Cryptography.IHashProvider,System.String,System.String)" class="mb-5">
     <h3 class="lead text-info">CompareHash</h3>
     <p>Compares a plain text input with a computed hash.</p>
 <dl class="row">
@@ -179,7 +150,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.CompareHash(System.String,System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.CompareHash(System.String,System.String)" class="mb-5">
     <h3 class="lead text-info">CompareHash</h3>
     <p>Compares a plain text input with a computed hash.</p>
 <dl class="row">
@@ -210,7 +181,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(System.Byte[])" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(System.Byte[])" class="mb-5">
     <h3 class="lead text-info">ComputeHash</h3>
     <p>Compute the hash value of plain text.</p>
 <dl class="row">
@@ -236,7 +207,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.Byte[])" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.Byte[])" class="mb-5">
     <h3 class="lead text-info">ComputeHash</h3>
     <p>Compute the hash value of plain text.</p>
 <dl class="row">
@@ -267,7 +238,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.IO.Stream)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.IO.Stream)" class="mb-5">
     <h3 class="lead text-info">ComputeHash</h3>
     <p>Computes the hash for the specified stream.</p>
 <dl class="row">
@@ -298,7 +269,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.String)" class="mb-5">
     <h3 class="lead text-info">ComputeHash</h3>
     <p>Compute the hash value of plain text.</p>
 <dl class="row">
@@ -329,7 +300,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(System.IO.Stream)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(System.IO.Stream)" class="mb-5">
     <h3 class="lead text-info">ComputeHash</h3>
     <p>Computes the hash for the specified <strong class="text-info">stream</strong>.</p>
 <dl class="row">
@@ -355,7 +326,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(System.String)" class="mb-5">
     <h3 class="lead text-info">ComputeHash</h3>
     <p>Computes the hash value of plain text.</p>
 <dl class="row">
@@ -381,7 +352,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(System.Byte[])" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(System.Byte[])" class="mb-5">
     <h3 class="lead text-info">Decrypt</h3>
     <p>Decrypts a secret.</p>
 <dl class="row">
@@ -419,7 +390,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.Byte[])" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.Byte[])" class="mb-5">
     <h3 class="lead text-info">Decrypt</h3>
     <p>Decrypts a secret using a specified <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-isymmetricprovider.html">ISymmetricProvider</a>.</p>
 <dl class="row">
@@ -462,7 +433,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.IO.Stream,System.IO.Stream)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.IO.Stream,System.IO.Stream)" class="mb-5">
     <h3 class="lead text-info">Decrypt</h3>
     <p>Decrypts a ciphered stream using the specified <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-isymmetricprovider.html">ISymmetricProvider</a>.</p>
 <dl class="row">
@@ -510,7 +481,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.String)" class="mb-5">
     <h3 class="lead text-info">Decrypt</h3>
     <p>Decrypts a ciphered text using a specified <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-isymmetricprovider.html">ISymmetricProvider</a>.</p>
 <dl class="row">
@@ -553,7 +524,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(System.IO.Stream,System.IO.Stream)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(System.IO.Stream,System.IO.Stream)" class="mb-5">
     <h3 class="lead text-info">Decrypt</h3>
     <p>Decrypts a ciphered stream.</p>
 <dl class="row">
@@ -596,7 +567,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(System.String)" class="mb-5">
     <h3 class="lead text-info">Decrypt</h3>
     <p>Decrypts a ciphered text.</p>
 <dl class="row">
@@ -634,7 +605,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.DecryptFromBase64String(System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.DecryptFromBase64String(System.String)" class="mb-5">
     <h3 class="lead text-info">DecryptFromBase64String</h3>
     <p>Decrypts a base 64 encoded ciphered text.</p>
 <dl class="row">
@@ -674,7 +645,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(System.Byte[])" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(System.Byte[])" class="mb-5">
     <h3 class="lead text-info">Encrypt</h3>
     <p>Encrypts a secret.</p>
 <dl class="row">
@@ -712,7 +683,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.Byte[])" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.Byte[])" class="mb-5">
     <h3 class="lead text-info">Encrypt</h3>
     <p>Encrypts a secret using a specified <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-isymmetricprovider.html">ISymmetricProvider</a>.</p>
 <dl class="row">
@@ -755,7 +726,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.IO.Stream,System.IO.Stream)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.IO.Stream,System.IO.Stream)" class="mb-5">
     <h3 class="lead text-info">Encrypt</h3>
     <p>Encrypts the secret in <strong class="text-info">source</strong> into <strong class="text-info">destination</strong> 
             using the specified <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-isymmetricprovider.html">ISymmetricProvider</a>.</p>
@@ -804,7 +775,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.String)" class="mb-5">
     <h3 class="lead text-info">Encrypt</h3>
     <p>Encrypts a secret using a specified <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-isymmetricprovider.html">ISymmetricProvider</a>.</p>
 <dl class="row">
@@ -847,7 +818,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(System.IO.Stream,System.IO.Stream)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(System.IO.Stream,System.IO.Stream)" class="mb-5">
     <h3 class="lead text-info">Encrypt</h3>
     <p>Encrypts the secret in <strong class="text-info">source</strong> into <strong class="text-info">destination</strong>.</p>
 <dl class="row">
@@ -890,7 +861,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(System.String)" class="mb-5">
     <h3 class="lead text-info">Encrypt</h3>
     <p>Encrypts a secret.</p>
 <dl class="row">
@@ -928,7 +899,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Security.Cryptography.Cryptographer.EncryptToBase64String(System.String)" class="mb-5">
+<div id="M:KpokPatagon.Security.Cryptography.ICryptographer.EncryptToBase64String(System.String)" class="mb-5">
     <h3 class="lead text-info">EncryptToBase64String</h3>
     <p>Encrypts a secret and returns the encryption as a Base 64 string.</p>
 <dl class="row">
@@ -972,40 +943,39 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:KpokPatagon.Security.Cryptography.Cryptographer.Options">Options</a></li>
+        <li><a href="#P:KpokPatagon.Security.Cryptography.ICryptographer.Options">Options</a></li>
     </ul>
 </li>
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.CompareHash(System.Byte[],System.Byte[])">CompareHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.CompareHash(KpokPatagon.Security.Cryptography.IHashProvider,System.Byte[],System.Byte[])">CompareHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.CompareHash(KpokPatagon.Security.Cryptography.IHashProvider,System.String,System.String)">CompareHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.CompareHash(System.String,System.String)">CompareHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(System.Byte[])">ComputeHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.Byte[])">ComputeHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.IO.Stream)">ComputeHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.String)">ComputeHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(System.IO.Stream)">ComputeHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.ComputeHash(System.String)">ComputeHash</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(System.Byte[])">Decrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.Byte[])">Decrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.IO.Stream,System.IO.Stream)">Decrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.String)">Decrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(System.IO.Stream,System.IO.Stream)">Decrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Decrypt(System.String)">Decrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.DecryptFromBase64String(System.String)">DecryptFromBase64String</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(System.Byte[])">Encrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.Byte[])">Encrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.IO.Stream,System.IO.Stream)">Encrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.String)">Encrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(System.IO.Stream,System.IO.Stream)">Encrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.Encrypt(System.String)">Encrypt</a></li>
-        <li><a href="#M:KpokPatagon.Security.Cryptography.Cryptographer.EncryptToBase64String(System.String)">EncryptToBase64String</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.CompareHash(System.Byte[],System.Byte[])">CompareHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.CompareHash(KpokPatagon.Security.Cryptography.IHashProvider,System.Byte[],System.Byte[])">CompareHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.CompareHash(KpokPatagon.Security.Cryptography.IHashProvider,System.String,System.String)">CompareHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.CompareHash(System.String,System.String)">CompareHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(System.Byte[])">ComputeHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.Byte[])">ComputeHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.IO.Stream)">ComputeHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(KpokPatagon.Security.Cryptography.IHashProvider,System.String)">ComputeHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(System.IO.Stream)">ComputeHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.ComputeHash(System.String)">ComputeHash</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(System.Byte[])">Decrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.Byte[])">Decrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.IO.Stream,System.IO.Stream)">Decrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.String)">Decrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(System.IO.Stream,System.IO.Stream)">Decrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Decrypt(System.String)">Decrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.DecryptFromBase64String(System.String)">DecryptFromBase64String</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(System.Byte[])">Encrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.Byte[])">Encrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.IO.Stream,System.IO.Stream)">Encrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(KpokPatagon.Security.Cryptography.ISymmetricProvider,System.String)">Encrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(System.IO.Stream,System.IO.Stream)">Encrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.Encrypt(System.String)">Encrypt</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.ICryptographer.EncryptToBase64String(System.String)">EncryptToBase64String</a></li>
     </ul>
 </li>
 </ul>
