@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>Term - Kpok Patagon Framework</title>
+    <title>Order - Kpok Patagon Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,8 +25,8 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>Term</h1>
-<p class="lead">Filter term.</p>
+<h1>Order</h1>
+<p class="lead">Models the information for ordering.</p>
 <dl class="row mt-4">
 <dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.Filtering</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
@@ -40,70 +40,77 @@
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
-    <h3 class="lead text-info">Term</h3>
+<div id="M:KpokPatagon.Data.Filtering.Order.#ctor" class="mb-5">
+    <h3 class="lead text-info">Order</h3>
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Term()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Order()</code></dd>
 </dl>
+</div>
+<div id="M:KpokPatagon.Data.Filtering.Order.#ctor(System.String)" class="mb-5">
+    <h3 class="lead text-info">Order</h3>
+    <p>Initializes a new instance of <strong>Order</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Order(raw)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>raw</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:KpokPatagon.Data.Filtering.Term.Column" class="mb-5">
-    <h3 class="lead text-info">Column</h3>
-    <p>Column name.</p>
+<div id="P:KpokPatagon.Data.Filtering.Order.ColumnName" class="mb-5">
+    <h3 class="lead text-info">ColumnName</h3>
+    <p>Name of the column to apply the order on.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Column { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ColumnName { get; set; }</code></dd>
 </dl>
 </div>
-<div id="P:KpokPatagon.Data.Filtering.Term.DataType" class="mb-5">
-    <h3 class="lead text-info">DataType</h3>
-    <p>Column data type.</p>
+<div id="P:KpokPatagon.Data.Filtering.Order.Direction" class="mb-5">
+    <h3 class="lead text-info">Direction</h3>
+    <p>Direction of ordering.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a> DataType { get; set; }</code></dd>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-sortdirection.html">SortDirection</a> Direction { get; }</code></dd>
 </dl>
 </div>
-<div id="P:KpokPatagon.Data.Filtering.Term.HasValue" class="mb-5">
-    <h3 class="lead text-info">HasValue</h3>
-    <p>Whether the term has value.</p>
+<div id="P:KpokPatagon.Data.Filtering.Order.IsDefault" class="mb-5">
+    <h3 class="lead text-info">IsDefault</h3>
+    <p>Indicates whether to use the default order.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> HasValue { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsDefault { get; }</code></dd>
 </dl>
 </div>
-<div id="P:KpokPatagon.Data.Filtering.Term.Operator" class="mb-5">
-    <h3 class="lead text-info">Operator</h3>
-    <p>Comparison operator.</p>
+<div id="P:KpokPatagon.Data.Filtering.Order.Raw" class="mb-5">
+    <h3 class="lead text-info">Raw</h3>
+    <p>Raw serialized data for this object.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-filtering/kpokpatagon-data-filtering-termoperator.html">TermOperator</a> Operator { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Raw { get; set; }</code></dd>
 </dl>
 </div>
-<div id="P:KpokPatagon.Data.Filtering.Term.Value1" class="mb-5">
-    <h3 class="lead text-info">Value1</h3>
-    <p>First value.</p>
+<div id="P:KpokPatagon.Data.Filtering.Order.SortDirection" class="mb-5">
+    <h3 class="lead text-info">SortDirection</h3>
+    <p>Direction of ordering (A= Ascending | D= Descending).</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Value1 { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:KpokPatagon.Data.Filtering.Term.Value2" class="mb-5">
-    <h3 class="lead text-info">Value2</h3>
-    <p>Second value (optional).</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Value2 { get; set; }</code></dd>
-</dl>
-</div>
-<h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:KpokPatagon.Data.Filtering.Term.ToString" class="mb-5">
-    <h3 class="lead text-info">ToString</h3>
-    <p>Returns a textual representation of this <strong>Term</strong>.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SortDirection { get; set; }</code></dd>
 </dl>
 </div>
             </div>
@@ -114,18 +121,11 @@
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:KpokPatagon.Data.Filtering.Term.Column">Column</a></li>
-        <li><a href="#P:KpokPatagon.Data.Filtering.Term.DataType">DataType</a></li>
-        <li><a href="#P:KpokPatagon.Data.Filtering.Term.HasValue">HasValue</a></li>
-        <li><a href="#P:KpokPatagon.Data.Filtering.Term.Operator">Operator</a></li>
-        <li><a href="#P:KpokPatagon.Data.Filtering.Term.Value1">Value1</a></li>
-        <li><a href="#P:KpokPatagon.Data.Filtering.Term.Value2">Value2</a></li>
-    </ul>
-</li>
-<li><a href="#methods">Methods</a></li>
-<li>
-    <ul style="font-size:0.8em;">
-        <li><a href="#M:KpokPatagon.Data.Filtering.Term.ToString">ToString</a></li>
+        <li><a href="#P:KpokPatagon.Data.Filtering.Order.ColumnName">ColumnName</a></li>
+        <li><a href="#P:KpokPatagon.Data.Filtering.Order.Direction">Direction</a></li>
+        <li><a href="#P:KpokPatagon.Data.Filtering.Order.IsDefault">IsDefault</a></li>
+        <li><a href="#P:KpokPatagon.Data.Filtering.Order.Raw">Raw</a></li>
+        <li><a href="#P:KpokPatagon.Data.Filtering.Order.SortDirection">SortDirection</a></li>
     </ul>
 </li>
 </ul>
