@@ -1,0 +1,91 @@
+﻿{
+  "Schema": "Commons",
+  "Name": "Parameter",
+  "IsView": false,
+  "Release": "1",
+  "Caption": null,
+  "Description": null,
+  "Kindom": "Application",
+  "FileGroup": null,
+  "Columns": [
+    {
+      "Name": "Id",
+      "DataType": "Text",
+      "Caption": null,
+      "Description": null,
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "TenantId",
+      "DataType": "Integer",
+      "Caption": null,
+      "Description": null,
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "Value",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "4000",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "PrimaryKey": {
+    "Name": "PK_Parameter",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": null,
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "Id",
+        "Direction": "Ascending",
+        "Position": 1,
+        "IsIncludedColumn": false
+      },
+      {
+        "Name": "TenantId",
+        "Direction": "Ascending",
+        "Position": 2,
+        "IsIncludedColumn": false
+      }
+    ]
+  },
+  "Indexes": [],
+  "ForeignKeys": [],
+  "DesignerTemplate": "",
+  "SkipExtensionTemplateGeneration": false,
+  "ResourceFileName": null,
+  "SequenceName": null,
+  "Order": null,
+  "ConnectionName": null,
+  "ExtendedProperties": [],
+  "Templates": []
+}

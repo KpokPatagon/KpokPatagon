@@ -1,0 +1,181 @@
+﻿{
+  "Schema": "Commons",
+  "Name": "MailServer",
+  "IsView": false,
+  "Release": "1",
+  "Caption": null,
+  "Description": null,
+  "Kindom": "Application",
+  "FileGroup": null,
+  "Columns": [
+    {
+      "Name": "Id",
+      "DataType": "Text",
+      "Caption": null,
+      "Description": null,
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "64",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "Name",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "From",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "256",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "FromName",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 4,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "256",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "Port",
+      "DataType": "Integer",
+      "Caption": null,
+      "Description": null,
+      "Position": 5,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "RequiresSsl",
+      "DataType": "Boolean",
+      "Caption": null,
+      "Description": null,
+      "Position": 6,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "UserName",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 7,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "2048",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "Password",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 8,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "2048",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "PrimaryKey": {
+    "Name": "PK_MailServer",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": null,
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "Id",
+        "Direction": "Ascending",
+        "Position": 1,
+        "IsIncludedColumn": false
+      }
+    ]
+  },
+  "Indexes": [
+    {
+      "Name": "IX_MailServer_1",
+      "Type": "NonClustered",
+      "IsUnique": true,
+      "Description": null,
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "Name",
+          "Direction": "Ascending",
+          "Position": 1,
+          "IsIncludedColumn": false
+        }
+      ]
+    }
+  ],
+  "ForeignKeys": [],
+  "DesignerTemplate": "",
+  "SkipExtensionTemplateGeneration": false,
+  "ResourceFileName": null,
+  "SequenceName": null,
+  "Order": null,
+  "ConnectionName": null,
+  "ExtendedProperties": [],
+  "Templates": []
+}
