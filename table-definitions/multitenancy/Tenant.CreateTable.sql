@@ -33,6 +33,7 @@ CREATE TABLE [Host].[Tenant]
     , [TrialDurationInDays] INT NULL
     , [TenantTrialStarted] DATETIME2 NULL
     , [TenantTrialEnd] DATETIME2 NULL
+    , [DeletionTime] DATETIME2 NULL
     , CONSTRAINT [PK_Tenant] PRIMARY KEY CLUSTERED ([Id])
 )
 GO
