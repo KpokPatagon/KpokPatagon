@@ -29,9 +29,9 @@
 <p class="lead">Assembly</p>
 <dl class="mt-4 row">
     <dt class="text-truncate col-3">Version:</dt>
-    <dd class="col-9">7.0.23282.1</dd>
+    <dd class="col-9">7.0.23293.1</dd>
     <dt class="text-truncate col-3">Product version:</dt>
-    <dd class="col-9">KpokPatagon-CI_main_20231009.1</dd>
+    <dd class="col-9">KpokPatagon-CI_main_20231020.1</dd>
     <dt class="text-truncate col-3">Product:</dt>
     <dd class="col-9">Kpok Patagon Framework</dd>
     <dt class="text-truncate col-3">Culture:</dt>
@@ -39,7 +39,7 @@
     <dt class="text-truncate col-3">Public key token:</dt>
     <dd class="col-9">856a2402e38a9992</dd>
 </dl>
-<h2 class="mt-5">Namespaces (4)</h2>
+<h2 class="mt-5">Namespaces (5)</h2>
 <h3 id="kpokpatagon-aspnet" class="mt-5">KpokPatagon.AspNet</h3>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
@@ -53,8 +53,20 @@
 <td>Models the information for reporting a forbidden response.</td>
 </tr>
 <tr>
+<td><a href="./kpokpatagon-aspnet/kpokpatagon-aspnet-httpcontextextensions.html">HttpContextExtensions</a></td>
+<td>Extensions for the <b>HttpContext</b>.</td>
+</tr>
+<tr>
 <td><a href="./kpokpatagon-aspnet/kpokpatagon-aspnet-httpextensions.html">HttpExtensions</a></td>
 <td>Extensions methods for Http related objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-aspnet/kpokpatagon-aspnet-setinstanceapplicationbuilderextensions.html">SetInstanceApplicationBuilderExtensions</a></td>
+<td>Extension methods to register the <a href="../../kpokpatagon-aspnet/kpokpatagon-aspnet/kpokpatagon-aspnet-setinstancemiddleware.html">SetInstanceMiddleware</a>.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-aspnet/kpokpatagon-aspnet-setinstancemiddleware.html">SetInstanceMiddleware</a></td>
+<td>A middleware that store Instance data within the HttpContext so it can be use when producing Problem result.</td>
 </tr>
 </tbody></table>
 <h3 id="kpokpatagon-aspnet-binders" class="mt-5">KpokPatagon.AspNet.Binders</h3>
@@ -68,6 +80,15 @@
 <tr>
 <td><a href="./kpokpatagon-aspnet-binders/kpokpatagon-aspnet-binders-protectiondatamodelmodelbinderprovider.html">ProtectionDataModelModelBinderProvider</a></td>
 <td>Implements a model binder provider for <a href="../../kpokpatagon-aspnet/kpokpatagon-aspnet-binders/kpokpatagon-aspnet-binders-protectiondatamodelmodelbinder.html">ProtectionDataModelModelBinder</a>.</td>
+</tr>
+</tbody></table>
+<h3 id="kpokpatagon-aspnet-settings" class="mt-5">KpokPatagon.AspNet.Settings</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./kpokpatagon-aspnet-settings/kpokpatagon-aspnet-settings-websettings.html">WebSettings</a></td>
+<td>Generic settings used to configure web applications.</td>
 </tr>
 </tbody></table>
 <h3 id="microsoft-codeanalysis" class="mt-5">Microsoft.CodeAnalysis</h3>
@@ -86,6 +107,7 @@
 <ul class="list-unstyled">
 <li><a href="#kpokpatagon-aspnet">KpokPatagon.AspNet</a></li>
 <li><a href="#kpokpatagon-aspnet-binders">KpokPatagon.AspNet.Binders</a></li>
+<li><a href="#kpokpatagon-aspnet-settings">KpokPatagon.AspNet.Settings</a></li>
 <li><a href="#microsoft-codeanalysis">Microsoft.CodeAnalysis</a></li>
 <li><a href="#system-runtime-compilerservices">System.Runtime.CompilerServices</a></li>
 </ul>

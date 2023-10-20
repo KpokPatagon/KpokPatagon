@@ -29,9 +29,9 @@
 <p class="lead">Assembly</p>
 <dl class="mt-4 row">
     <dt class="text-truncate col-3">Version:</dt>
-    <dd class="col-9">7.0.23282.1</dd>
+    <dd class="col-9">7.0.23293.1</dd>
     <dt class="text-truncate col-3">Product version:</dt>
-    <dd class="col-9">KpokPatagon-CI_main_20231009.1</dd>
+    <dd class="col-9">KpokPatagon-CI_main_20231020.1</dd>
     <dt class="text-truncate col-3">Product:</dt>
     <dd class="col-9">Kpok Patagon Framework</dd>
     <dt class="text-truncate col-3">Culture:</dt>
@@ -44,6 +44,10 @@
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
+<tr>
+<td><a href="./kpokpatagon-multitenancy/kpokpatagon-multitenancy-disabledmultitenancytenantprovider.html">DisabledMultitenancyTenantProvider</a></td>
+<td>Implements a tenant provider used when multitenancy is disabled.</td>
+</tr>
 <tr>
 <td><a href="./kpokpatagon-multitenancy/kpokpatagon-multitenancy-imultitenantdbaccessscope.html">IMultitenantDbAccessScope</a></td>
 <td>Allows the implementation of a scope for multi-tenant database access for <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-tenant.html">Tenant</a>s.</td>
@@ -75,6 +79,10 @@
 <tr>
 <td><a href="./kpokpatagon-multitenancy/kpokpatagon-multitenancy-multitenancyconsts.html">MultitenancyConsts</a></td>
 <td>Provides constants for configuring multi-tenancy applications.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-multitenancy/kpokpatagon-multitenancy-multitenancyextensions.html">MultitenancyExtensions</a></td>
+<td>Provides helper methods for multitenancy operations.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-multitenancy/kpokpatagon-multitenancy-multitenantdbaccessscope.html">MultitenantDbAccessScope</a></td>
@@ -127,7 +135,7 @@
 </tr>
 <tr>
 <td><a href="./kpokpatagon-multitenancy-commons/kpokpatagon-multitenancy-commons-mailserverdataservice.html">MailServerDataService</a></td>
-<td><p><strong>MailServerDataService</strong> implements the data services for the Commons.MailServer table.</p><p>This service requires a CommandBuilder and a DataModelCommandBuilder both named "Default".</p></td>
+<td><strong>MailServerDataService</strong> implements the data services for the Commons.MailServer table.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-multitenancy-commons/kpokpatagon-multitenancy-commons-tablenumerator.html">TableNumerator</a></td>
@@ -136,7 +144,7 @@
 </tr>
 <tr>
 <td><a href="./kpokpatagon-multitenancy-commons/kpokpatagon-multitenancy-commons-tablenumeratordataservice.html">TableNumeratorDataService</a></td>
-<td><p>Provides data services for the a multi-tenant numerator table.</p><p>This service requires a CommandBuilder and a DataModelCommandBuilder both named "Default".</p></td>
+<td>Provides data services for the a multi-tenant numerator table.</td>
 </tr>
 </tbody></table>
 <h3 id="kpokpatagon-multitenancy-commons-parameters" class="mt-5">KpokPatagon.Multitenancy.Commons.Parameters</h3>
@@ -157,7 +165,7 @@
 </tr>
 <tr>
 <td><a href="./kpokpatagon-multitenancy-commons-parameters/kpokpatagon-multitenancy-commons-parameters-parameterdataservice.html">ParameterDataService</a></td>
-<td><p>Provides data services for the a multi-tenant parameter table.</p><p>This service requires a CommandBuilder and a DataModelCommandBuilder both named "Default".</p></td>
+<td>Provides data services for the a multi-tenant parameter table.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-multitenancy-commons-parameters/kpokpatagon-multitenancy-commons-parameters-parameterservice.html">ParameterService</a></td>

@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>ParameterDataService - Kpok Patagon Framework</title>
+    <title>WebSettings - Kpok Patagon Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -18,17 +18,17 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-multitenancy/toc.html">Table of Contents</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-aspnet/toc.html">Table of Contents</a></li>
             </ul>
         </div>
     </div>
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>ParameterDataService</h1>
-<p class="lead">Provides data services for the a multi-tenant parameter table.</p>
+<h1>WebSettings</h1>
+<p class="lead">Generic settings used to configure web applications.</p>
 <dl class="row mt-4">
-<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Multitenancy.Commons.Parameters</dd>
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.AspNet.Settings</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
 </dl>
 <dl class="row mt-4">
@@ -37,62 +37,62 @@
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.Data.DataService</dd>
+<dd class="col-sm-9">KpokPatagon.Models.Settings.SettingsBase</dd>
 </dl>
-<h2 id="remarks" class="mt-5">Remarks</h2>
-<p><p>
-                    This service does not have any configuration for the required services for it to work.
-                </p><p>
-                    All required services like the <b>CommandBuilder</b> and <b>DataModelCommandBuilder</b>
-                    must be configured by a <b>DataServiceOptions&lt;ParameterDataService&gt;</b> 
-                    configuration within the dependency injection service collection.
-                </p></p>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterDataService.#ctor" class="mb-5">
-    <h3 class="lead text-info">ParameterDataService</h3>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">WebSettings</h3>
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ParameterDataService()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> WebSettings()</code></dd>
 </dl>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:KpokPatagon.Multitenancy.Commons.Parameters.ParameterDataService.Alias" class="mb-5">
-    <h3 class="lead text-info">Alias</h3>
-    <p>The alias for the underlaying table.</p>
+<div id="P:KpokPatagon.AspNet.Settings.WebSettings.ApplicationRootAddress" class="mb-5">
+    <h3 class="lead text-info">ApplicationRootAddress</h3>
+    <p>Application root Uri.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Alias { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ApplicationRootAddress { get; set; }</code></dd>
 </dl>
 </div>
-<div id="P:KpokPatagon.Multitenancy.Commons.Parameters.ParameterDataService.Fields" class="mb-5">
-    <h3 class="lead text-info">Fields</h3>
-    <p>A collection of <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>s that defines the table columns.</p>
+<div id="P:KpokPatagon.AspNet.Settings.WebSettings.AuthenticationCookieLifetime" class="mb-5">
+    <h3 class="lead text-info">AuthenticationCookieLifetime</h3>
+    <p>Time in minutes that the authentication cookie (or session) lasts.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>&gt;</span> Fields { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> AuthenticationCookieLifetime { get; set; }</code></dd>
 </dl>
 </div>
-<div id="P:KpokPatagon.Multitenancy.Commons.Parameters.ParameterDataService.Table" class="mb-5">
-    <h3 class="lead text-info">Table</h3>
-    <p>The name of the underlaying table.</p>
+<div id="P:KpokPatagon.AspNet.Settings.WebSettings.ClientApplicationRootAddress" class="mb-5">
+    <h3 class="lead text-info">ClientApplicationRootAddress</h3>
+    <p>Client application root Uri.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Table { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ClientApplicationRootAddress { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.AspNet.Settings.WebSettings.UseIIS" class="mb-5">
+    <h3 class="lead text-info">UseIIS</h3>
+    <p>Whether the application must be configured to use IIS AspNetCoreModule.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> UseIIS { get; set; }</code></dd>
 </dl>
 </div>
             </div>
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#remarks">Remarks</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:KpokPatagon.Multitenancy.Commons.Parameters.ParameterDataService.Alias">Alias</a></li>
-        <li><a href="#P:KpokPatagon.Multitenancy.Commons.Parameters.ParameterDataService.Fields">Fields</a></li>
-        <li><a href="#P:KpokPatagon.Multitenancy.Commons.Parameters.ParameterDataService.Table">Table</a></li>
+        <li><a href="#P:KpokPatagon.AspNet.Settings.WebSettings.ApplicationRootAddress">ApplicationRootAddress</a></li>
+        <li><a href="#P:KpokPatagon.AspNet.Settings.WebSettings.AuthenticationCookieLifetime">AuthenticationCookieLifetime</a></li>
+        <li><a href="#P:KpokPatagon.AspNet.Settings.WebSettings.ClientApplicationRootAddress">ClientApplicationRootAddress</a></li>
+        <li><a href="#P:KpokPatagon.AspNet.Settings.WebSettings.UseIIS">UseIIS</a></li>
     </ul>
 </li>
 </ul>

@@ -91,6 +91,14 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Culture { get; set; }</code></dd>
 </dl>
 </div>
+<div id="P:KpokPatagon.Multitenancy.Tenant.DeletionTime" class="mb-5">
+    <h3 class="lead text-info">DeletionTime</h3>
+    <p>Date and time when the tenant was deleted (soft delete).</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.DateTime}">Nullable&lt;DateTime&gt;</span> DeletionTime { get; set; }</code></dd>
+</dl>
+</div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.DisplayName" class="mb-5">
     <h3 class="lead text-info">DisplayName</h3>
     <p>Display name of this tenant.</p>
@@ -121,6 +129,14 @@
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Id { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Tenant.IsDeleted" class="mb-5">
+    <h3 class="lead text-info">IsDeleted</h3>
+    <p>Whether the tenant is deleted.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsDeleted { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.MailFromAddress" class="mb-5">
@@ -287,10 +303,12 @@
     <ul style="font-size:0.8em;">
         <li><a href="#P:KpokPatagon.Multitenancy.Tenant.ConnectionString">ConnectionString</a></li>
         <li><a href="#P:KpokPatagon.Multitenancy.Tenant.Culture">Culture</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Tenant.DeletionTime">DeletionTime</a></li>
         <li><a href="#P:KpokPatagon.Multitenancy.Tenant.DisplayName">DisplayName</a></li>
         <li><a href="#P:KpokPatagon.Multitenancy.Tenant.Email">Email</a></li>
         <li><a href="#P:KpokPatagon.Multitenancy.Tenant.EnforceModelValidation">EnforceModelValidation</a></li>
         <li><a href="#P:KpokPatagon.Multitenancy.Tenant.Id">Id</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Tenant.IsDeleted">IsDeleted</a></li>
         <li><a href="#P:KpokPatagon.Multitenancy.Tenant.MailFromAddress">MailFromAddress</a></li>
         <li><a href="#P:KpokPatagon.Multitenancy.Tenant.MailFromName">MailFromName</a></li>
         <li><a href="#P:KpokPatagon.Multitenancy.Tenant.MailServerId">MailServerId</a></li>

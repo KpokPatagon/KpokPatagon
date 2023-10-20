@@ -237,6 +237,108 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:KpokPatagon.Data.DataService.BuildModel(System.Type,System.Collections.Generic.IList{KpokPatagon.Data.ReaderMetadata},System.Data.IDataReader,KpokPatagon.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">BuildModel</h3>
+    <p>Builds an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a> of <strong class="text-info">dataModelType</strong> from the 
+            current position of the <strong class="text-info">reader</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a> BuildModel(dataModelType, metadata, reader, parent)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>dataModelType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The type of the <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a> object to build.</td>
+    </tr>
+    <tr>
+        <td>metadata</td>
+        <td><span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.ReaderMetadata}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-readermetadata.html">ReaderMetadata</a>&gt;</span></td>
+        <td>Metadata to read the <strong class="text-info">reader</strong>.</td>
+    </tr>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span>.</td>
+    </tr>
+    <tr>
+        <td>parent</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td>Parent object of the model being constructed</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">metadata</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.DataService.BuildModel``1(System.Collections.Generic.IList{KpokPatagon.Data.ReaderMetadata},System.Data.IDataReader,KpokPatagon.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">BuildModel</h3>
+    <p>Builds an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a> of <typeparamref name="T" /> from the current position of the <strong class="text-info">reader</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title=""></span> BuildModel&lt;T&gt;(metadata, reader, parent)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>metadata</td>
+        <td><span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.ReaderMetadata}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-readermetadata.html">ReaderMetadata</a>&gt;</span></td>
+        <td>Metadata to read the <strong class="text-info">reader</strong>.</td>
+    </tr>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span>.</td>
+    </tr>
+    <tr>
+        <td>parent</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td>Parent object of the model being constructed</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">metadata</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:KpokPatagon.Data.DataService.BuildModelList``1(KpokPatagon.Data.Query.SelectStatement,KpokPatagon.Data.IDataModel)" class="mb-5">
     <h3 class="lead text-info">BuildModelList</h3>
     <p>Builds a list of domain model objects from the statement.</p>
@@ -368,6 +470,87 @@
         <td>expected</td>
         <td><span class="text-info" title="System.DateTime@">DateTime@</span></td>
         <td>Expected timestamp.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.DataService.ComputeReaderMetadata(System.Type,System.Data.IDataReader)" class="mb-5">
+    <h3 class="lead text-info">ComputeReaderMetadata</h3>
+    <p>Computes the metadata to bind an model of <strong class="text-info">dataModelType</strong> from the <span class="text-info" title="System.Data.IDataReader">IDataReader</span>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.ReaderMetadata}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-readermetadata.html">ReaderMetadata</a>&gt;</span> ComputeReaderMetadata(dataModelType, reader)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>dataModelType</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.DataService.ComputeReaderMetadata``1(System.Data.IDataReader)" class="mb-5">
+    <h3 class="lead text-info">ComputeReaderMetadata</h3>
+    <p>Computes the metadata to bind an model of <typeparamref name="T" /> from the <span class="text-info" title="System.Data.IDataReader">IDataReader</span>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.ReaderMetadata}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-readermetadata.html">ReaderMetadata</a>&gt;</span> ComputeReaderMetadata&lt;T&gt;(reader)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>reader</td>
+        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
 </tbody></table>
 </div>
@@ -512,101 +695,6 @@
     <tr>
         <td><span class="text-info" title="KpokPatagon.MissingRequiredPropertyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
         <td>Thrown when a required property is not initialized.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:KpokPatagon.Data.DataService.EnumerateModel(System.Type,System.Data.IDataReader,KpokPatagon.Data.IDataModel)" class="mb-5">
-    <h3 class="lead text-info">EnumerateModel</h3>
-    <p>Enumerates domain objects from the <strong class="text-info">reader</strong></p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{KpokPatagon.Data.IDataModel}">IEnumerable&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>&gt;</span> EnumerateModel(dataModelType, reader, parent)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>An enumeration of <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a> of <strong class="text-info">dataModelType</strong>s.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>dataModelType</td>
-        <td><span class="text-info" title="System.Type">Type</span></td>
-        <td>The <span class="text-info" title="System.Type">Type</span> of the data model to produce.</td>
-    </tr>
-    <tr>
-        <td>reader</td>
-        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
-        <td>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the database data.</td>
-    </tr>
-    <tr>
-        <td>parent</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
-        <td>Parent object of the model beeing constructed.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</p></td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:KpokPatagon.Data.DataService.EnumerateModel``1(System.Data.IDataReader,KpokPatagon.Data.IDataModel)" class="mb-5">
-    <h3 class="lead text-info">EnumerateModel</h3>
-    <p>Enumerates domain objects from the <strong class="text-info">reader</strong></p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Collections.Generic.IEnumerable{}">IEnumerable</span> EnumerateModel&lt;T&gt;(reader, parent)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>An enumeration of <typeparamref name="T" />.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>reader</td>
-        <td><span class="text-info" title="System.Data.IDataReader">IDataReader</span></td>
-        <td>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the database data.</td>
-    </tr>
-    <tr>
-        <td>parent</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
-        <td>Parent object of the model beeing constructed.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td><p>Thrown when <strong class="text-info">reader</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
 </tbody></table>
 </div>
@@ -1412,14 +1500,16 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Data.DataService.AppendFilterTerms(KpokPatagon.Data.Query.Statement,System.Collections.Generic.List{KpokPatagon.Data.Filtering.Term},KpokPatagon.Data.Filtering.MatchKind)">AppendFilterTerms</a></li>
+        <li><a href="#M:KpokPatagon.Data.DataService.BuildModel(System.Type,System.Collections.Generic.IList{KpokPatagon.Data.ReaderMetadata},System.Data.IDataReader,KpokPatagon.Data.IDataModel)">BuildModel</a></li>
+        <li><a href="#M:KpokPatagon.Data.DataService.BuildModel``1(System.Collections.Generic.IList{KpokPatagon.Data.ReaderMetadata},System.Data.IDataReader,KpokPatagon.Data.IDataModel)">BuildModel</a></li>
         <li><a href="#M:KpokPatagon.Data.DataService.BuildModelList``1(KpokPatagon.Data.Query.SelectStatement,KpokPatagon.Data.IDataModel)">BuildModelList</a></li>
         <li><a href="#M:KpokPatagon.Data.DataService.BuildModelListAsync``1(KpokPatagon.Data.Query.SelectStatement,KpokPatagon.Data.IDataModel)">BuildModelListAsync</a></li>
         <li><a href="#M:KpokPatagon.Data.DataService.ComputeConcurrencyConfiguration(KpokPatagon.Data.ConcurrencyMode,KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel,KpokPatagon.Data.TimestampKind@,System.DateTime@)">ComputeConcurrencyConfiguration</a></li>
+        <li><a href="#M:KpokPatagon.Data.DataService.ComputeReaderMetadata(System.Type,System.Data.IDataReader)">ComputeReaderMetadata</a></li>
+        <li><a href="#M:KpokPatagon.Data.DataService.ComputeReaderMetadata``1(System.Data.IDataReader)">ComputeReaderMetadata</a></li>
         <li><a href="#M:KpokPatagon.Data.DataService.Delete(KpokPatagon.Data.IDataModel,KpokPatagon.Data.ConcurrencyMode)">Delete</a></li>
         <li><a href="#M:KpokPatagon.Data.DataService.DeleteAsync(KpokPatagon.Data.IDataModel,KpokPatagon.Data.ConcurrencyMode)">DeleteAsync</a></li>
         <li><a href="#M:KpokPatagon.Data.DataService.EnsureState">EnsureState</a></li>
-        <li><a href="#M:KpokPatagon.Data.DataService.EnumerateModel(System.Type,System.Data.IDataReader,KpokPatagon.Data.IDataModel)">EnumerateModel</a></li>
-        <li><a href="#M:KpokPatagon.Data.DataService.EnumerateModel``1(System.Data.IDataReader,KpokPatagon.Data.IDataModel)">EnumerateModel</a></li>
         <li><a href="#M:KpokPatagon.Data.DataService.GetModel(System.Type,KpokPatagon.Data.IDataModel)">GetModel</a></li>
         <li><a href="#M:KpokPatagon.Data.DataService.GetModel``1(``0)">GetModel</a></li>
         <li><a href="#M:KpokPatagon.Data.DataService.GetModelAsync``1(``0)">GetModelAsync</a></li>
