@@ -31,8 +31,8 @@ CREATE TABLE [Host].[Tenant]
     , [SubscriptionState] VARCHAR(16) NOT NULL
     , [SubscriptionStateComment] NTEXT NULL
     , [TrialDurationInDays] INT NULL
-    , [TenantTrialStarted] DATETIME2 NULL
-    , [TenantTrialEnd] DATETIME2 NULL
+    , [TrialStarted] DATETIME2 NULL
+    , [TrialEnd] DATETIME2 NULL
     , [DeletionTime] DATETIME2 NULL
     , CONSTRAINT [PK_Tenant] PRIMARY KEY CLUSTERED ([Id])
 )

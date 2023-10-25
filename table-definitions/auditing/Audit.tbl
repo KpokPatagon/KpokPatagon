@@ -1,0 +1,384 @@
+﻿{
+  "Schema": "Auditing",
+  "Name": "Audit",
+  "IsView": false,
+  "Release": "1",
+  "Caption": null,
+  "Description": null,
+  "Kindom": "Application",
+  "FileGroup": null,
+  "Columns": [
+    {
+      "Name": "Id",
+      "DataType": "Text",
+      "Caption": null,
+      "Description": null,
+      "Position": 1,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "64",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "PrevId",
+      "DataType": "Text",
+      "Caption": null,
+      "Description": null,
+      "Position": 2,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "64",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "NextId",
+      "DataType": "Text",
+      "Caption": null,
+      "Description": null,
+      "Position": 3,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "64",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "TenantId",
+      "DataType": "Integer",
+      "Caption": null,
+      "Description": null,
+      "Position": 4,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "Kind",
+      "DataType": "Text",
+      "Caption": null,
+      "Description": null,
+      "Position": 5,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "8",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "CreationTime",
+      "DataType": "DateTime",
+      "Caption": null,
+      "Description": null,
+      "Position": 6,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "UserId",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 7,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "UserName",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 8,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "300",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "UserAuthority",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 9,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "UserDisplayName",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 10,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "300",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "SourceId",
+      "DataType": "Text",
+      "Caption": null,
+      "Description": null,
+      "Position": 11,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "128",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "SourceCaption",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 12,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "200",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "SourceDisplay",
+      "DataType": "NText",
+      "Caption": null,
+      "Description": null,
+      "Position": 13,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "768",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "SourceTypeName",
+      "DataType": "Text",
+      "Caption": null,
+      "Description": null,
+      "Position": 14,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": "1024",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "SecurityIncidentId",
+      "DataType": "Text",
+      "Caption": null,
+      "Description": null,
+      "Position": 15,
+      "IsAutonumeric": false,
+      "IsNullable": true,
+      "CharacterLength": "64",
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    },
+    {
+      "Name": "Data",
+      "DataType": "Blob",
+      "Caption": null,
+      "Description": null,
+      "Position": 16,
+      "IsAutonumeric": false,
+      "IsNullable": false,
+      "CharacterLength": null,
+      "Precision": null,
+      "Scale": null,
+      "DefaultConstraintName": null,
+      "DefaultConstraintExpression": null,
+      "CheckConstraintName": null,
+      "CheckConstraintExpression": null
+    }
+  ],
+  "PrimaryKey": {
+    "Name": "PK_Audit",
+    "Type": "NonClustered",
+    "IsUnique": true,
+    "Description": null,
+    "FileGroup": null,
+    "Columns": [
+      {
+        "Name": "Id",
+        "Direction": "Ascending",
+        "Position": 1,
+        "IsIncludedColumn": false
+      }
+    ]
+  },
+  "Indexes": [
+    {
+      "Name": "IX_Audit_1",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": null,
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "UserId",
+          "Direction": "Ascending",
+          "Position": 1,
+          "IsIncludedColumn": false
+        },
+        {
+          "Name": "TenantId",
+          "Direction": "Ascending",
+          "Position": 2,
+          "IsIncludedColumn": false
+        }
+      ]
+    },
+    {
+      "Name": "IX_Audit_2",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": null,
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "SourceId",
+          "Direction": "Ascending",
+          "Position": 1,
+          "IsIncludedColumn": false
+        },
+        {
+          "Name": "SourceTypeName",
+          "Direction": "Ascending",
+          "Position": 2,
+          "IsIncludedColumn": false
+        },
+        {
+          "Name": "TenantId",
+          "Direction": "Ascending",
+          "Position": 3,
+          "IsIncludedColumn": false
+        }
+      ]
+    },
+    {
+      "Name": "IX_Audit_3",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": null,
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "SourceTypeName",
+          "Direction": "Ascending",
+          "Position": 1,
+          "IsIncludedColumn": false
+        },
+        {
+          "Name": "TenantId",
+          "Direction": "Ascending",
+          "Position": 2,
+          "IsIncludedColumn": false
+        }
+      ]
+    },
+    {
+      "Name": "IX_Audit_4",
+      "Type": "NonClustered",
+      "IsUnique": false,
+      "Description": null,
+      "FileGroup": null,
+      "Columns": [
+        {
+          "Name": "SourceDisplay",
+          "Direction": "Ascending",
+          "Position": 1,
+          "IsIncludedColumn": false
+        },
+        {
+          "Name": "TenantId",
+          "Direction": "Ascending",
+          "Position": 2,
+          "IsIncludedColumn": false
+        }
+      ]
+    }
+  ],
+  "ForeignKeys": [],
+  "DesignerTemplate": null,
+  "SkipExtensionTemplateGeneration": false,
+  "ResourceFileName": null,
+  "SequenceName": null,
+  "Order": null,
+  "ConnectionName": null,
+  "ExtendedProperties": [],
+  "Templates": []
+}
