@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>AuditInfoDeserializationException - Kpok Patagon Framework</title>
+    <title>AuditIncidentNotFoundException - Kpok Patagon Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,8 +25,8 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>AuditInfoDeserializationException</h1>
-<p class="lead">Thrown when an <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditdata.html">AuditData</a> internal data couldn't be de-serialized.</p>
+<h1>AuditIncidentNotFoundException</h1>
+<p class="lead">Thrown when a <a href="../../kpokpatagon-auditing/kpokpatagon-auditing-store/kpokpatagon-auditing-store-auditincident.html">AuditIncident</a> could not be found.</p>
 <dl class="row mt-4">
 <dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Auditing</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
@@ -40,12 +40,12 @@
 <dd class="col-sm-9">KpokPatagon.Security.SecurityException</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Auditing.AuditInfoDeserializationException.#ctor(System.String,System.String,System.Exception)" class="mb-5">
-    <h3 class="lead text-info">AuditInfoDeserializationException</h3>
-    <p>Initializes a new instance of <strong>AuditInfoDeserializationException</strong>.</p>
+<div id="M:KpokPatagon.Auditing.AuditIncidentNotFoundException.#ctor(System.String)" class="mb-5">
+    <h3 class="lead text-info">AuditIncidentNotFoundException</h3>
+    <p>Initializes a new instance of <strong>AuditIncidentNotFoundException</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AuditInfoDeserializationException(auditId, src, inner)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AuditIncidentNotFoundException(id)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -58,42 +58,17 @@
 </thead>
 <tbody>
     <tr>
-        <td>auditId</td>
+        <td>id</td>
         <td><span class="text-info" title="System.String">String</span></td>
-        <td>Id of the audit record.</td>
-    </tr>
-    <tr>
-        <td>src</td>
-        <td><span class="text-info" title="System.String">String</span></td>
-        <td>Source code reference.</td>
-    </tr>
-    <tr>
-        <td>inner</td>
-        <td><span class="text-info" title="System.Exception">Exception</span></td>
-        <td>Original exception.</td>
+        <td>Id of the incident.</td>
     </tr>
 </tbody></table>
-</div>
-<h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:KpokPatagon.Auditing.AuditInfoDeserializationException.AuditId" class="mb-5">
-    <h3 class="lead text-info">AuditId</h3>
-    <p>Id of the audit record.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> AuditId { get; }</code></dd>
-</dl>
 </div>
             </div>
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
 <li><a href="#constructors">Constructors</a></li>
-<li><a href="#properties">Properties</a></li>
-<li>
-    <ul style="font-size:0.8em;">
-        <li><a href="#P:KpokPatagon.Auditing.AuditInfoDeserializationException.AuditId">AuditId</a></li>
-    </ul>
-</li>
 </ul>
             </div>
         </div>

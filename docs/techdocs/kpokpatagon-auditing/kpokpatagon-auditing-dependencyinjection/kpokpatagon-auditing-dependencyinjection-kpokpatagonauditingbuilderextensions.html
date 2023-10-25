@@ -40,12 +40,12 @@
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:KpokPatagon.Auditing.DependencyInjection.KpokPatagonAuditingBuilderExtensions.AddAuditingServices(KpokPatagon.DependencyInjection.IKpokPatagonBuilder)" class="mb-5">
+<div id="M:KpokPatagon.Auditing.DependencyInjection.KpokPatagonAuditingBuilderExtensions.AddAuditingServices(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.DataServiceOptions{KpokPatagon.Auditing.Store.AuditDataService}},System.Action{KpokPatagon.Data.DependencyInjection.DataServiceOptions{KpokPatagon.Auditing.Store.AuditIncidentDataService}})" class="mb-5">
     <h3 class="lead text-info">AddAuditingServices</h3>
     <p>Adds the services of the auditing module.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddAuditingServices(builder)</code></dd>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddAuditingServices(builder, configureAuditDataService, configureAuditIncidentDataService)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -62,6 +62,16 @@
         <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
         <td></td>
     </tr>
+    <tr>
+        <td>configureAuditDataService</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.DataServiceOptions{KpokPatagon.Auditing.Store.AuditDataService}}">Action</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>configureAuditIncidentDataService</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.DataServiceOptions{KpokPatagon.Auditing.Store.AuditIncidentDataService}}">Action</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
 </div>
             </div>
@@ -71,7 +81,7 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:KpokPatagon.Auditing.DependencyInjection.KpokPatagonAuditingBuilderExtensions.AddAuditingServices(KpokPatagon.DependencyInjection.IKpokPatagonBuilder)">AddAuditingServices</a></li>
+        <li><a href="#M:KpokPatagon.Auditing.DependencyInjection.KpokPatagonAuditingBuilderExtensions.AddAuditingServices(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.DataServiceOptions{KpokPatagon.Auditing.Store.AuditDataService}},System.Action{KpokPatagon.Data.DependencyInjection.DataServiceOptions{KpokPatagon.Auditing.Store.AuditIncidentDataService}})">AddAuditingServices</a></li>
     </ul>
 </li>
 </ul>
