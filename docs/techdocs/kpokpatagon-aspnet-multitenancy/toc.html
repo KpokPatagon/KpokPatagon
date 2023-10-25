@@ -29,9 +29,9 @@
 <p class="lead">Assembly</p>
 <dl class="mt-4 row">
     <dt class="text-truncate col-3">Version:</dt>
-    <dd class="col-9">7.0.23282.1</dd>
+    <dd class="col-9">7.0.23298.1</dd>
     <dt class="text-truncate col-3">Product version:</dt>
-    <dd class="col-9">KpokPatagon-CI_main_20231009.1</dd>
+    <dd class="col-9">KpokPatagon-CI_main_20231025.1</dd>
     <dt class="text-truncate col-3">Product:</dt>
     <dd class="col-9">Kpok Patagon Framework</dd>
     <dt class="text-truncate col-3">Culture:</dt>
@@ -45,12 +45,20 @@
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
-<td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-multitenantapplicationbuilderextensions.html">MultitenantApplicationBuilderExtensions</a></td>
-<td>Extensions methods for multi-tenant application buliding.</td>
+<td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-multitenancyextensions.html">MultitenancyExtensions</a></td>
+<td>Provides helper methods for multi-tenancy operations.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-multitenanthttpcontextextensions.html">MultitenantHttpContextExtensions</a></td>
+<td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-multitenancyhttpcontextextensions.html">MultitenancyHttpContextExtensions</a></td>
 <td>Extensions for <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span> class.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantawareredirectmiddleware.html">TenantAwareRedirectMiddleware</a></td>
+<td>A middleware that on redirects ensures that the tenant name is present in the Location header.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantawareredirectmiddlewareapplicationbuilderextensions.html">TenantAwareRedirectMiddlewareApplicationBuilderExtensions</a></td>
+<td>Extensions methods for tenant aware redirect configuration.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantnamelocation.html">TenantNameLocation</a></td>
@@ -61,8 +69,16 @@
 <td>Rewrites the Url by removing the tenant name from the beginning of the path.</td>
 </tr>
 <tr>
+<td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantnameurlrewriterruleapplicationbuilderextensions.html">TenantNameUrlRewriterRuleApplicationBuilderExtensions</a></td>
+<td>Provides registration for the <a href="../../kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantnameurlrewriterrule1.html">TenantNameUrlRewriterRule</a>.</td>
+</tr>
+<tr>
 <td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantresolvermiddleware1.html">TenantResolverMiddleware</a></td>
 <td>A middleaware that resolves current tenant for the request.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantresolvermiddlewareapplicationbuilderextensions.html">TenantResolverMiddlewareApplicationBuilderExtensions</a></td>
+<td>Provides registration for <a href="../../kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantresolvermiddleware1.html">TenantResolverMiddleware</a>.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantresolvernotifications.html">TenantResolverNotifications</a></td>

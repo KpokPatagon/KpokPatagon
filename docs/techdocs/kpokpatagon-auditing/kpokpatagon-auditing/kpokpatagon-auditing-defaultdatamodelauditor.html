@@ -28,7 +28,7 @@
 <h1>DefaultDataModelAuditor</h1>
 <p class="lead"><p>Implements a data model auditor.</p><p>
                     Is the object implements ISecuredDataModel this implementation verifies audit records
-                    and generated security incidents if data tampering is detected.
+                    and generated audit incidents if data tampering is detected.
                 </p></p>
 <dl class="row mt-4">
 <dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Auditing</dd>
@@ -45,12 +45,12 @@
 <dd class="col-sm-9">KpokPatagon.Data.IDataModelAuditor</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Auditing.DefaultDataModelAuditor.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Auditing.DefaultDataModelAuditor},System.IServiceProvider,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Auditing.SecurityUtility,KpokPatagon.Auditing.Store.AuditDataService,KpokPatagon.Auditing.Store.SecurityIncidentDataService)" class="mb-5">
+<div id="M:KpokPatagon.Auditing.DefaultDataModelAuditor.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Auditing.DefaultDataModelAuditor},System.IServiceProvider,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Auditing.Store.AuditDataService,KpokPatagon.Auditing.Store.AuditIncidentDataService)" class="mb-5">
     <h3 class="lead text-info">DefaultDataModelAuditor</h3>
     <p>Initializes a new instance of <strong>DefaultDataModelAuditor</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DefaultDataModelAuditor(logger, serviceProvider, currentPrincipal, securityUtility, auditDataService, securityIncidentDataService)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DefaultDataModelAuditor(logger, serviceProvider, currentPrincipal, auditDataService, incidentDataService)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -78,18 +78,13 @@
         <td></td>
     </tr>
     <tr>
-        <td>securityUtility</td>
-        <td><a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityutility.html">SecurityUtility</a></td>
-        <td></td>
-    </tr>
-    <tr>
         <td>auditDataService</td>
         <td><a href="../../kpokpatagon-auditing/kpokpatagon-auditing-store/kpokpatagon-auditing-store-auditdataservice.html">AuditDataService</a></td>
         <td></td>
     </tr>
     <tr>
-        <td>securityIncidentDataService</td>
-        <td><a href="../../kpokpatagon-auditing/kpokpatagon-auditing-store/kpokpatagon-auditing-store-securityincidentdataservice.html">SecurityIncidentDataService</a></td>
+        <td>incidentDataService</td>
+        <td><a href="../../kpokpatagon-auditing/kpokpatagon-auditing-store/kpokpatagon-auditing-store-auditincidentdataservice.html">AuditIncidentDataService</a></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -197,7 +192,7 @@
         <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Auditing.SecurityIncidentException"><a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityincidentexception.html">SecurityIncidentException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Auditing.AudityIncidentException"><a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-audityincidentexception.html">AudityIncidentException</a></span></td>
         <td>Thrown when a security incident is created.</td>
     </tr>
 </tbody></table>

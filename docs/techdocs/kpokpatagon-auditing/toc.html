@@ -29,9 +29,9 @@
 <p class="lead">Assembly</p>
 <dl class="mt-4 row">
     <dt class="text-truncate col-3">Version:</dt>
-    <dd class="col-9">7.0.23282.1</dd>
+    <dd class="col-9">7.0.23298.1</dd>
     <dt class="text-truncate col-3">Product version:</dt>
-    <dd class="col-9">KpokPatagon-CI_main_20231009.1</dd>
+    <dd class="col-9">KpokPatagon-CI_main_20231025.1</dd>
     <dt class="text-truncate col-3">Product:</dt>
     <dd class="col-9">Kpok Patagon Framework</dd>
     <dt class="text-truncate col-3">Culture:</dt>
@@ -45,20 +45,36 @@
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditinfo.html">AuditInfo</a></td>
-<td>Audit information.</td>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditdata.html">AuditData</a></td>
+<td>Audit data.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditincidentdatadeserializationexception.html">AuditIncidentDataDeserializationException</a></td>
+<td>Thrown when an <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-incidentdata.html">IncidentData</a> internal data couldn't be de-serialized.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditincidentkind.html">AuditIncidentKind</a></td>
+<td>Define the different kinds of security incidents.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditincidentnotfoundexception.html">AuditIncidentNotFoundException</a></td>
+<td>Thrown when a <a href="../../kpokpatagon-auditing/kpokpatagon-auditing-store/kpokpatagon-auditing-store-auditincident.html">AuditIncident</a> could not be found.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditincidentresolution.html">AuditIncidentResolution</a></td>
+<td>Information to resolve an incident.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditincidentservice.html">AuditIncidentService</a></td>
+<td>Manages security incidents.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditinfodeserializationexception.html">AuditInfoDeserializationException</a></td>
-<td>Thrown when an <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditinfo.html">AuditInfo</a> internal data couldn't be de-serialized.</td>
+<td>Thrown when an <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditdata.html">AuditData</a> internal data couldn't be de-serialized.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditkind.html">AuditKind</a></td>
 <td>Define the kinds of audit records.</td>
-</tr>
-<tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditkindhelper.html">AuditKindHelper</a></td>
-<td>Helper methods for <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditkind.html">AuditKind</a>.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditnotfoundexception.html">AuditNotFoundException</a></td>
@@ -69,10 +85,14 @@
 <td>Models a property auditing record.</td>
 </tr>
 <tr>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-audityincidentexception.html">AudityIncidentException</a></td>
+<td>Thrown when an incident is created and data operations are aborted.</td>
+</tr>
+<tr>
 <td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-defaultdatamodelauditor.html">DefaultDataModelAuditor</a></td>
 <td><p>Implements a data model auditor.</p><p>
                     Is the object implements ISecuredDataModel this implementation verifies audit records
-                    and generated security incidents if data tampering is detected.
+                    and generated audit incidents if data tampering is detected.
                 </p></td>
 </tr>
 <tr>
@@ -80,39 +100,15 @@
 <td>Represents a caption - value extra info.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-securityincidentexception.html">SecurityIncidentException</a></td>
-<td>Thrown when a security incident is created and data operations are aborted.</td>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-incidentdata.html">IncidentData</a></td>
+<td>Incident data.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-securityincidentinfo.html">SecurityIncidentInfo</a></td>
-<td>Models the internal information of a security incident.</td>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-incidentkindhelper.html">IncidentKindHelper</a></td>
+<td>Helper methods for <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditincidentkind.html">AuditIncidentKind</a>.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-securityincidentinfodeserializationexception.html">SecurityIncidentInfoDeserializationException</a></td>
-<td>Thrown when an <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityincidentinfo.html">SecurityIncidentInfo</a> internal data couldn't be de-serialized.</td>
-</tr>
-<tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-securityincidentkind.html">SecurityIncidentKind</a></td>
-<td>Define the different kinds of security incidents.</td>
-</tr>
-<tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-securityincidentkindhelper.html">SecurityIncidentKindHelper</a></td>
-<td>Helper methods for <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-securityincidentkind.html">SecurityIncidentKind</a>.</td>
-</tr>
-<tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-securityincidentmanager.html">SecurityIncidentManager</a></td>
-<td>Manages security incidents.</td>
-</tr>
-<tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-securityincidentnotfoundexception.html">SecurityIncidentNotFoundException</a></td>
-<td>Thrown when a <a href="../../kpokpatagon-auditing/kpokpatagon-auditing-store/kpokpatagon-auditing-store-securityincident.html">SecurityIncident</a> could not be found.</td>
-</tr>
-<tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-securityincidentresolution.html">SecurityIncidentResolution</a></td>
-<td>Information that the security officer must provide to resolve a Security Incident.</td>
-</tr>
-<tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-securityutility.html">SecurityUtility</a></td>
+<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-protectionutility.html">ProtectionUtility</a></td>
 <td>Provides cryptography services for the auditing process.</td>
 </tr>
 </tbody></table>
@@ -138,11 +134,11 @@
 <td>Data service for audit records</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-securityincident.html">SecurityIncident</a></td>
-<td>Information of a detected security incident.</td>
+<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-auditincident.html">AuditIncident</a></td>
+<td>Audit related security incident.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-securityincidentdataservice.html">SecurityIncidentDataService</a></td>
+<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-auditincidentdataservice.html">AuditIncidentDataService</a></td>
 <td>Data services for security incidents.</td>
 </tr>
 </tbody></table>

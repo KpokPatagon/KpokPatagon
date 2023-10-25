@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-9">
 <h1>MailServerDataService</h1>
-<p class="lead"><p><strong>MailServerDataService</strong> implements the data services for the Commons.MailServer table.</p><p>This service requires a CommandBuilder and a DataModelCommandBuilder both named "Default".</p></p>
+<p class="lead"><strong>MailServerDataService</strong> implements the data services for the Commons.MailServer table.</p>
 <dl class="row mt-4">
 <dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Multitenancy.Commons</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
@@ -39,6 +39,14 @@
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">KpokPatagon.Data.DataService</dd>
 </dl>
+<h2 id="remarks" class="mt-5">Remarks</h2>
+<p><p>
+                    This service does not have any configuration for the required services for it to work.
+                </p><p>
+                    All required services like the <b>CommandBuilder</b> and <b>DataModelCommandBuilder</b>
+                    must be configured by a <b>DataServiceOptions&lt;MailServerDataService&gt;</b> 
+                    configuration within the dependency injection service collection.
+                </p></p>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Multitenancy.Commons.MailServerDataService.#ctor" class="mb-5">
     <h3 class="lead text-info">MailServerDataService</h3>
@@ -77,6 +85,7 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
+<li><a href="#remarks">Remarks</a></li>
 <li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
 <li>
