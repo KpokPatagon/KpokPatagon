@@ -23,15 +23,15 @@ CREATE TABLE [Auditing].[Audit]
     , [TenantId] INT NOT NULL
     , [Kind] VARCHAR(8) NOT NULL
     , [CreationTime] DATETIME2 NOT NULL
+    , [IncidentId] VARCHAR(64) NULL
     , [UserId] NVARCHAR(128) NOT NULL
     , [UserName] NVARCHAR(300) NOT NULL
     , [UserAuthority] NVARCHAR(128) NULL
     , [UserDisplayName] NVARCHAR(300) NULL
-    , [SourceId] VARCHAR(128) NOT NULL
+    , [SourceId] VARCHAR(512) NOT NULL
     , [SourceCaption] NVARCHAR(200) NOT NULL
     , [SourceDisplay] NVARCHAR(768) NULL
     , [SourceTypeName] VARCHAR(1024) NOT NULL
-    , [SecurityIncidentId] VARCHAR(64) NULL
     , [Data] VARBINARY(MAX) NOT NULL
     , CONSTRAINT [PK_Audit] PRIMARY KEY NONCLUSTERED ([Id])
 )
