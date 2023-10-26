@@ -107,6 +107,14 @@
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Id { get; set; }</code></dd>
 </dl>
 </div>
+<div id="P:KpokPatagon.Auditing.Store.Audit.IncidentId" class="mb-5">
+    <h3 class="lead text-info">IncidentId</h3>
+    <p>Audit incident Id</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> IncidentId { get; set; }</code></dd>
+</dl>
+</div>
 <div id="P:KpokPatagon.Auditing.Store.Audit.Kind" class="mb-5">
     <h3 class="lead text-info">Kind</h3>
     <p>Audit record kind</p>
@@ -129,14 +137,6 @@
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> PrevId { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:KpokPatagon.Auditing.Store.Audit.SecurityIncidentId" class="mb-5">
-    <h3 class="lead text-info">SecurityIncidentId</h3>
-    <p>Security incident Id</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SecurityIncidentId { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Auditing.Store.Audit.SourceCaption" class="mb-5">
@@ -260,45 +260,15 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Auditing.Store.Audit.GetAuditInfo(KpokPatagon.Auditing.ProtectionUtility)" class="mb-5">
+<div id="M:KpokPatagon.Auditing.Store.Audit.GetAuditInfo" class="mb-5">
     <h3 class="lead text-info">GetAuditInfo</h3>
     <p>Gets audit internal data.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditdata.html">AuditData</a> GetAuditInfo(securityUtility)</code></dd>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditdata.html">AuditData</a> GetAuditInfo()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>An <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditdata.html">AuditData</a> or <strong class="text-info">null</strong> if thre is no data.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>securityUtility</td>
-        <td><a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-protectionutility.html">ProtectionUtility</a></td>
-        <td></td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><span class="text-info" title="KpokPatagon.Auditing.AuditInfoDeserializationException"><a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditinfodeserializationexception.html">AuditInfoDeserializationException</a></span></td>
-        <td>Thrown when problems decrypting or de-serializing the internal data.</td>
-    </tr>
-</tbody></table>
+<p>An <a href="../../kpokpatagon-auditing/kpokpatagon-auditing/kpokpatagon-auditing-auditdata.html">AuditData</a> or <strong class="text-info">null</strong> if there is no data.</p>
 </div>
 <div id="M:KpokPatagon.Auditing.Store.Audit.GetHashCode" class="mb-5">
     <h3 class="lead text-info">GetHashCode</h3>
@@ -328,10 +298,10 @@
         <li><a href="#P:KpokPatagon.Auditing.Store.Audit.Data">Data</a></li>
         <li><a href="#P:KpokPatagon.Auditing.Store.Audit.EnforceModelValidation">EnforceModelValidation</a></li>
         <li><a href="#P:KpokPatagon.Auditing.Store.Audit.Id">Id</a></li>
+        <li><a href="#P:KpokPatagon.Auditing.Store.Audit.IncidentId">IncidentId</a></li>
         <li><a href="#P:KpokPatagon.Auditing.Store.Audit.Kind">Kind</a></li>
         <li><a href="#P:KpokPatagon.Auditing.Store.Audit.NextId">NextId</a></li>
         <li><a href="#P:KpokPatagon.Auditing.Store.Audit.PrevId">PrevId</a></li>
-        <li><a href="#P:KpokPatagon.Auditing.Store.Audit.SecurityIncidentId">SecurityIncidentId</a></li>
         <li><a href="#P:KpokPatagon.Auditing.Store.Audit.SourceCaption">SourceCaption</a></li>
         <li><a href="#P:KpokPatagon.Auditing.Store.Audit.SourceDisplay">SourceDisplay</a></li>
         <li><a href="#P:KpokPatagon.Auditing.Store.Audit.SourceId">SourceId</a></li>
@@ -348,7 +318,7 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Auditing.Store.Audit.Equals(KpokPatagon.Auditing.Store.Audit)">Equals</a></li>
         <li><a href="#M:KpokPatagon.Auditing.Store.Audit.Equals(System.Object)">Equals</a></li>
-        <li><a href="#M:KpokPatagon.Auditing.Store.Audit.GetAuditInfo(KpokPatagon.Auditing.ProtectionUtility)">GetAuditInfo</a></li>
+        <li><a href="#M:KpokPatagon.Auditing.Store.Audit.GetAuditInfo">GetAuditInfo</a></li>
         <li><a href="#M:KpokPatagon.Auditing.Store.Audit.GetHashCode">GetHashCode</a></li>
         <li><a href="#M:KpokPatagon.Auditing.Store.Audit.ToString">ToString</a></li>
     </ul>
