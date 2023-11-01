@@ -48,7 +48,7 @@
     <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a> GetDataServiceForDataModel(provider, dataModelType)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>The configured <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a> for the <strong class="text-info">dataModelType</strong>.</p>
+<p>The <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a> for the <strong class="text-info">dataModelType</strong> or <strong class="text-info">null</strong> if it cannot be found.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -85,7 +85,7 @@
     </tr>
     <tr>
         <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
-        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is not an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</p><p>-or-</p><p>When there is not a data service registered for the requested <strong class="text-info">dataModelType</strong>.</p></td>
+        <td><p>Thrown when <strong class="text-info">dataModelType</strong> is not an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</p><p>-or-</p><p>When a configured type is not registered within the dependency injection container.</p></td>
     </tr>
 </tbody></table>
 </div>
