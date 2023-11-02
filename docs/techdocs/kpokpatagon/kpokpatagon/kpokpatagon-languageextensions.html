@@ -1,0 +1,717 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>LanguageExtensions - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>LanguageExtensions</h1>
+<p class="lead">Provides for commons language types.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.LanguageExtensions.Ellipse(System.String)" class="mb-5">
+    <h3 class="lead text-info">Ellipse</h3>
+    <p>Cut the string if it is larger than 20 characters adding an ellipse at the end.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Ellipse(text)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>text</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Text to ellipse.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.Ellipse(System.String,System.Int32)" class="mb-5">
+    <h3 class="lead text-info">Ellipse</h3>
+    <p>Cut the string if it is larger than the <strong class="text-info">maxLength</strong> adding an ellipse at the end.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Ellipse(text, maxLength)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>text</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Text to ellipse.</td>
+    </tr>
+    <tr>
+        <td>maxLength</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>Maximum length of the returned string.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.EnsureTrailingSlash(System.String)" class="mb-5">
+    <h3 class="lead text-info">EnsureTrailingSlash</h3>
+    <p>Ensures that the text ends with a slash.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> EnsureTrailingSlash(text)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>text</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A text to process.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.EnsureValue(System.String,System.String)" class="mb-5">
+    <h3 class="lead text-info">EnsureValue</h3>
+    <p>Returns <strong class="text-info">value</strong> of is is not <strong class="text-info">null</strong> empty, otherwise <strong class="text-info">defaultValue</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> EnsureValue(value, defaultValue)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>defaultValue</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.GetPropertiesWithAttribute``1(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetPropertiesWithAttribute</h3>
+    <p>Returns a collection of properties that have the specified attribute.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo}">IEnumerable&lt;PropertyInfo&gt;</span> GetPropertiesWithAttribute&lt;T&gt;(type)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>An enumeration of <span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span> objects.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The type to be scanned.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.GetPropertyWithAttribute``1(System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetPropertyWithAttribute</h3>
+    <p>Returns the first property that has the specified attribute.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span> GetPropertyWithAttribute&lt;T&gt;(type)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The type to be scanned.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.GetPropertyWithAttributeAssignableFrom``1(System.Type,System.Type)" class="mb-5">
+    <h3 class="lead text-info">GetPropertyWithAttributeAssignableFrom</h3>
+    <p>Returns the first property that has the specified attribute if it is assignable from the specified type.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Reflection.PropertyInfo">PropertyInfo</span> GetPropertyWithAttributeAssignableFrom&lt;T&gt;(type, assignableFrom)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>The type to be scanned.</td>
+    </tr>
+    <tr>
+        <td>assignableFrom</td>
+        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td>Type from which teh attribute must be assignable from.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.GetSchemeHostAndPath(System.Uri)" class="mb-5">
+    <h3 class="lead text-info">GetSchemeHostAndPath</h3>
+    <p>Gets the scheme host and path of the Uri.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetSchemeHostAndPath(uri)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The scheme and host from the Uri.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>uri</td>
+        <td><span class="text-info" title="System.Uri">Uri</span></td>
+        <td>An <span class="text-info" title="System.Uri">Uri</span>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.HexStringToByteArray(System.String)" class="mb-5">
+    <h3 class="lead text-info">HexStringToByteArray</h3>
+    <p>Converts a string in hexadecimal format into a byte array.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> HexStringToByteArray(input)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A byte array for the specified input.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>input</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A hexadeciamal text to process.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown then the length of the <strong class="text-info">input</strong> is not multiple of 2.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.Initials(System.String)" class="mb-5">
+    <h3 class="lead text-info">Initials</h3>
+    <p>Returns the first letter of the first and last word in <strong class="text-info">value</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Initials(value)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The upper case of the first letter from the first and last word of <strong class="text-info">value</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A space separated value.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.IsPresent(System.String)" class="mb-5">
+    <h3 class="lead text-info">IsPresent</h3>
+    <p>Checks whether <strong class="text-info">value</strong> contains data.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsPresent(value)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.RemoveAccent(System.String)" class="mb-5">
+    <h3 class="lead text-info">RemoveAccent</h3>
+    <p>Remove accents from the <strong class="text-info">phrase</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> RemoveAccent(phrase)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>phrase</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A phrase to remove the accent characters.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">phrase</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.RemoveTrailingSlash(System.String)" class="mb-5">
+    <h3 class="lead text-info">RemoveTrailingSlash</h3>
+    <p>Remove all trailing slashes from the text.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> RemoveTrailingSlash(text)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>text</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A text to process.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.Replace(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" class="mb-5">
+    <h3 class="lead text-info">Replace</h3>
+    <p><p>Replaces curly braces placeholder within the string, with the ToString() result from the values of the specified dictionary.</p><p>Placeholder must by in the format: {Key}.</p></p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Replace(value, values)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A curly braces tagged text.</td>
+    </tr>
+    <tr>
+        <td>values</td>
+        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,System.Object}">IDictionary&lt;String, Object&gt;</span></td>
+        <td>A dictionary with replacement values.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.Replace(System.String,System.Object)" class="mb-5">
+    <h3 class="lead text-info">Replace</h3>
+    <p><p>Replaces curly braces placeholder within the string with the ToString() result from the values of the specified object.</p><p>Placeholder must by in the format: {PropertyName}.</p></p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Replace(value, values)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A curly braces tagged text.</td>
+    </tr>
+    <tr>
+        <td>values</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>A dictionary with replacement values.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.SplitAndTrim(System.String)" class="mb-5">
+    <h3 class="lead text-info">SplitAndTrim</h3>
+    <p>Split a comma separated string and trim each individual value,
+            empty strings won't be added to the array.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String[]">String[]</span> SplitAndTrim(value)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A text value to be splitted.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.SplitAndTrim(System.String,System.Char[])" class="mb-5">
+    <h3 class="lead text-info">SplitAndTrim</h3>
+    <p>Split a comma separated string and trim each individual value,
+            empty strings won't be added to the array.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String[]">String[]</span> SplitAndTrim(value, separator)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A text value to be splitted.</td>
+    </tr>
+    <tr>
+        <td>separator</td>
+        <td><span class="text-info" title="System.Char[]">Char[]</span></td>
+        <td>The separator to split the text with.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.ToDictionary(System.Object)" class="mb-5">
+    <h3 class="lead text-info">ToDictionary</h3>
+    <p>Maps a generic object to a key/value dictionary.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,System.Object}">IDictionary&lt;String, Object&gt;</span> ToDictionary(values)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A string/object dictionary with an element for each object property.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>values</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>An object to be converted.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.ToSlug(System.String)" class="mb-5">
+    <h3 class="lead text-info">ToSlug</h3>
+    <p>Generate a slug from the <strong class="text-info">phrase</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToSlug(phrase)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><p>A lower case phrase with:</p><p>- underscores and dots replaced with dashes.</p><p>- slashes replaced with dashes.</p><p>- non alpha-numeric characters removed.</p><p>- spaces trimmed and replaced with dashes.</p></p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>phrase</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A <b>phrase</b> to be slugged.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.ToSpaceSeparatedString(System.Collections.Generic.IEnumerable{System.String})" class="mb-5">
+    <h3 class="lead text-info">ToSpaceSeparatedString</h3>
+    <p>Converts the list to a space separated string.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToSpaceSeparatedString(list)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>list</td>
+        <td><span class="text-info" title="System.Collections.Generic.IEnumerable{System.String}">IEnumerable&lt;String&gt;</span></td>
+        <td>A list to join into a string.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.ToStream(System.String)" class="mb-5">
+    <h3 class="lead text-info">ToStream</h3>
+    <p>Turns the string into a stream.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.IO.Stream">Stream</span> ToStream(value)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>value</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>A string to be converted into a stream.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.Truncate(System.DateTime)" class="mb-5">
+    <h3 class="lead text-info">Truncate</h3>
+    <p>Truncates the milliseconds of a <span class="text-info" title="System.DateTime">DateTime</span>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> Truncate(dateTime)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A truncated <span class="text-info" title="System.DateTime">DateTime</span>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>dateTime</td>
+        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td>A <span class="text-info" title="System.DateTime">DateTime</span> to be truncated.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.LanguageExtensions.Truncate(System.DateTime,System.Int64)" class="mb-5">
+    <h3 class="lead text-info">Truncate</h3>
+    <p>Trunctates a <span class="text-info" title="System.DateTime">DateTime</span> to a specified resolution.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.DateTime">DateTime</span> Truncate(dateTime, resolution)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A truncated <span class="text-info" title="System.DateTime">DateTime</span>.</p>
+<h6 class="mt-1">Example</h6>
+<div class="mb-4">myDate.Truncate(TimeSpan.TicksPerSecond); // truncates the milliseconds
+            myDate.Truncate(TimeSpan.TicksPerMinute); // truncates the seconds</div>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>dateTime</td>
+        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td>A <span class="text-info" title="System.DateTime">DateTime</span> to be truncated.</td>
+    </tr>
+    <tr>
+        <td>resolution</td>
+        <td><span class="text-info" title="System.Int64">Int64</span></td>
+        <td>The required truncation resolution.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.LanguageExtensions.Ellipse(System.String)">Ellipse</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.Ellipse(System.String,System.Int32)">Ellipse</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.EnsureTrailingSlash(System.String)">EnsureTrailingSlash</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.EnsureValue(System.String,System.String)">EnsureValue</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.GetPropertiesWithAttribute``1(System.Type)">GetPropertiesWithAttribute</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.GetPropertyWithAttribute``1(System.Type)">GetPropertyWithAttribute</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.GetPropertyWithAttributeAssignableFrom``1(System.Type,System.Type)">GetPropertyWithAttributeAssignableFrom</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.GetSchemeHostAndPath(System.Uri)">GetSchemeHostAndPath</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.HexStringToByteArray(System.String)">HexStringToByteArray</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.Initials(System.String)">Initials</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.IsPresent(System.String)">IsPresent</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.RemoveAccent(System.String)">RemoveAccent</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.RemoveTrailingSlash(System.String)">RemoveTrailingSlash</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.Replace(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">Replace</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.Replace(System.String,System.Object)">Replace</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.SplitAndTrim(System.String)">SplitAndTrim</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.SplitAndTrim(System.String,System.Char[])">SplitAndTrim</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.ToDictionary(System.Object)">ToDictionary</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.ToSlug(System.String)">ToSlug</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.ToSpaceSeparatedString(System.Collections.Generic.IEnumerable{System.String})">ToSpaceSeparatedString</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.ToStream(System.String)">ToStream</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.Truncate(System.DateTime)">Truncate</a></li>
+        <li><a href="#M:KpokPatagon.LanguageExtensions.Truncate(System.DateTime,System.Int64)">Truncate</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

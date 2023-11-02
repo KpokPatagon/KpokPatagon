@@ -1,0 +1,429 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>MySqlDbaServices - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data-mysql/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>MySqlDbaServices</h1>
+<p class="lead">Provides DBA services for MySql.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.MySql.Dba</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.#ctor(KpokPatagon.Data.IDbAccess,KpokPatagon.Data.IDbFormatter)" class="mb-5">
+    <h3 class="lead text-info">MySqlDbaServices</h3>
+    <p>Initializes a new instance of <strong>MySqlDbaServices</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MySqlDbaServices(databaseApi, formatter)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>databaseApi</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>formatter</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbformatter.html">IDbFormatter</a></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.DatabaseApi" class="mb-5">
+    <h3 class="lead text-info">DatabaseApi</h3>
+    <p>Database communication API.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a> DatabaseApi { get; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.Formatter" class="mb-5">
+    <h3 class="lead text-info">Formatter</h3>
+    <p>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbformatter.html">IDbFormatter</a> for Sql Server.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbformatter.html">IDbFormatter</a> Formatter { get; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.ChangeUserPassword(KpokPatagon.Data.MySql.Dba.User)" class="mb-5">
+    <h3 class="lead text-info">ChangeUserPassword</h3>
+    <p>Changes a user password.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ChangeUserPassword(user)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>user</td>
+        <td><a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql-dba/kpokpatagon-data-mysql-dba-user.html">User</a></td>
+        <td>A <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql-dba/kpokpatagon-data-mysql-dba-user.html">User</a> to change it's password.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">user</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the provided input is not valid to run this operation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td>Thrown when an error occurs while manipulating the schema.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.CreateSchema(System.String)" class="mb-5">
+    <h3 class="lead text-info">CreateSchema</h3>
+    <p>Creates a schema named <strong class="text-info">name</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateSchema(name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name of the schema to create.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td>Thrown when an error occurs while manipulating the schema.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.CreateUser(KpokPatagon.Data.MySql.Dba.User)" class="mb-5">
+    <h3 class="lead text-info">CreateUser</h3>
+    <p>Creates a user to connect to the database.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateUser(user)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>user</td>
+        <td><a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql-dba/kpokpatagon-data-mysql-dba-user.html">User</a></td>
+        <td>A <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql-dba/kpokpatagon-data-mysql-dba-user.html">User</a> to be created.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">user</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the provided input is not valid to run this operation.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td>Thrown when an error occurs while manipulating the schema.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.DropSchema(System.String)" class="mb-5">
+    <h3 class="lead text-info">DropSchema</h3>
+    <p>Creates a schema named <strong class="text-info">name</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropSchema(name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name of the schema to create.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td>Thrown when an error occurs while manipulating the schema.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.DropUser(System.String)" class="mb-5">
+    <h3 class="lead text-info">DropUser</h3>
+    <p>Drops a user.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropUser(name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the user to drop.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td>Thrown when an error occurs while manipulating the schema.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.ExistsUserc(System.String)" class="mb-5">
+    <h3 class="lead text-info">ExistsUserc</h3>
+    <p>Checks if a user named <strong class="text-info">name</strong> exists.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ExistsUserc(name)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> is the user exists, otherwise <strong class="text-info">false</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Name of the user to check.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td>Thrown when an error occurs while manipulating the schema.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.GrantUserAccessToSchema(System.String,System.String)" class="mb-5">
+    <h3 class="lead text-info">GrantUserAccessToSchema</h3>
+    <p>Grants the <strong class="text-info">user</strong> all access to the specified <strong class="text-info">schema</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> GrantUserAccessToSchema(user, schema)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>user</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>User name to grant access to.</td>
+    </tr>
+    <tr>
+        <td>schema</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Schema to grant to the user.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><p>Thrown when <strong class="text-info">user</strong> is <strong class="text-info">null</strong> or empty.</p><p>-or- <strong class="text-info">schema</strong> is <strong class="text-info">null</strong> or empty.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td>Thrown when an error occurs while manipulating the schema.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.DatabaseApi">DatabaseApi</a></li>
+        <li><a href="#P:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.Formatter">Formatter</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.ChangeUserPassword(KpokPatagon.Data.MySql.Dba.User)">ChangeUserPassword</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.CreateSchema(System.String)">CreateSchema</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.CreateUser(KpokPatagon.Data.MySql.Dba.User)">CreateUser</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.DropSchema(System.String)">DropSchema</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.DropUser(System.String)">DropUser</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.ExistsUserc(System.String)">ExistsUserc</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.GrantUserAccessToSchema(System.String,System.String)">GrantUserAccessToSchema</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

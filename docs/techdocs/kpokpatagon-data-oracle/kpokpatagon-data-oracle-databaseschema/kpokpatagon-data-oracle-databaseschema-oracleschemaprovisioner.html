@@ -1,0 +1,921 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>OracleSchemaProvisioner - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data-oracle/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>OracleSchemaProvisioner</h1>
+<p class="lead">Implements an <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-ischemaprovisioner.html">ISchemaProvisioner</a> for Oracle databases.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.Oracle.DatabaseSchema</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">KpokPatagon.Data.DatabaseSchema.SchemaProvisioner</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">OracleSchemaProvisioner</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> OracleSchemaProvisioner()</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddColumn(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn)" class="mb-5">
+    <h3 class="lead text-info">AddColumn</h3>
+    <p>Adds a column to a table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddColumn(table, column)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to be altered.</td>
+    </tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>Column to be added.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddColumnConstraint(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn,KpokPatagon.Data.DatabaseSchema.ColumnConstraint)" class="mb-5">
+    <h3 class="lead text-info">AddColumnConstraint</h3>
+    <p>Adds a column constraint.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddColumnConstraint(table, column, constraint)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to be alter.</td>
+    </tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>Column to be alter.</td>
+    </tr>
+    <tr>
+        <td>constraint</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+        <td>Contraint to be added.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddForeignKey(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.ForeignKey)" class="mb-5">
+    <h3 class="lead text-info">AddForeignKey</h3>
+    <p>Adds a foreign key to table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddForeignKey(table, foreignKey)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to be alter.</td>
+    </tr>
+    <tr>
+        <td>foreignKey</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+        <td>Foreign key to be added.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AlterColumn(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn,KpokPatagon.Data.DatabaseSchema.TableColumn)" class="mb-5">
+    <h3 class="lead text-info">AlterColumn</h3>
+    <p>Modifies a table column.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AlterColumn(table, from, to)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to be alter.</td>
+    </tr>
+    <tr>
+        <td>from</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>The actual configuration of the column.</td>
+    </tr>
+    <tr>
+        <td>to</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>The desired configuration of the column.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">from</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">to</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreateIndex(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">CreateIndex</h3>
+    <p>Creates an index.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateIndex(table, index)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to be alter.</td>
+    </tr>
+    <tr>
+        <td>index</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a></td>
+        <td>Index to be created.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreatePrimaryKey(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">CreatePrimaryKey</h3>
+    <p>Creates a primary key for the table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreatePrimaryKey(table, primaryKey)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to be alter.</td>
+    </tr>
+    <tr>
+        <td>primaryKey</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a></td>
+        <td>Primary key to be created.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">primaryKey</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreateSequenceIfNotExists(KpokPatagon.Data.DatabaseSchema.Sequence)" class="mb-5">
+    <h3 class="lead text-info">CreateSequenceIfNotExists</h3>
+    <p>Creates a sequence if it does not exists.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateSequenceIfNotExists(sequence)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>sequence</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-sequence.html">Sequence</a></td>
+        <td>A sequence to be created.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">sequence</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreateTable(KpokPatagon.Data.DatabaseSchema.Table)" class="mb-5">
+    <h3 class="lead text-info">CreateTable</h3>
+    <p>Creates a table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateTable(table)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to be created.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreateView(KpokPatagon.Data.DatabaseSchema.View)" class="mb-5">
+    <h3 class="lead text-info">CreateView</h3>
+    <p>Creates a view.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateView(view)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>view</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-view.html">View</a></td>
+        <td>View to be created.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropColumn(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn)" class="mb-5">
+    <h3 class="lead text-info">DropColumn</h3>
+    <p>Drops a column from the table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropColumn(table, column)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to alter.</td>
+    </tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>Column to be dropped.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropColumnConstraint(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn,KpokPatagon.Data.DatabaseSchema.ColumnConstraint)" class="mb-5">
+    <h3 class="lead text-info">DropColumnConstraint</h3>
+    <p>Drops a column constraint.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropColumnConstraint(table, column, constraint)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to alter.</td>
+    </tr>
+    <tr>
+        <td>column</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td>Column to alter.</td>
+    </tr>
+    <tr>
+        <td>constraint</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+        <td>Contraint to be dropped.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropForeignKey(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.ForeignKey)" class="mb-5">
+    <h3 class="lead text-info">DropForeignKey</h3>
+    <p>Drops a foreign key.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropForeignKey(table, foreignKey)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to alter.</td>
+    </tr>
+    <tr>
+        <td>foreignKey</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+        <td>Foreign key to drop.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropIndex(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">DropIndex</h3>
+    <p>Drops an index.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropIndex(table, index)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to alter.</td>
+    </tr>
+    <tr>
+        <td>index</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a></td>
+        <td>Index to drop.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropPrimaryKey(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.Index)" class="mb-5">
+    <h3 class="lead text-info">DropPrimaryKey</h3>
+    <p>Drops a primary key index.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropPrimaryKey(table, primaryKey)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to alter.</td>
+    </tr>
+    <tr>
+        <td>primaryKey</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a></td>
+        <td>Index to drop.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">primaryKey</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropTable(KpokPatagon.Data.DatabaseSchema.Table)" class="mb-5">
+    <h3 class="lead text-info">DropTable</h3>
+    <p>Drops a table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropTable(table)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td>Table to drop.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropView(KpokPatagon.Data.DatabaseSchema.View)" class="mb-5">
+    <h3 class="lead text-info">DropView</h3>
+    <p>Drops a view.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropView(view)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>view</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-view.html">View</a></td>
+        <td>View to drop.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.GrantPermissions(KpokPatagon.Data.DatabaseSchema.Grant)" class="mb-5">
+    <h3 class="lead text-info">GrantPermissions</h3>
+    <p>Grants permission to a grantee to access a database object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> GrantPermissions(grant)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>grant</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-grant.html">Grant</a></td>
+        <td>Grant configuration.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">grant</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.RenameTable(KpokPatagon.Data.DatabaseSchema.TableName,System.String)" class="mb-5">
+    <h3 class="lead text-info">RenameTable</h3>
+    <p>Renames a table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> RenameTable(tableName, newTableName)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>tableName</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablename.html">TableName</a></td>
+        <td>Name of the table to be renamed.</td>
+    </tr>
+    <tr>
+        <td>newTableName</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>New table name.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">tableName</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td>Thrown when <strong class="text-info">newTableName</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td>Thrown when the configuration is not valid.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddColumn(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn)">AddColumn</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddColumnConstraint(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn,KpokPatagon.Data.DatabaseSchema.ColumnConstraint)">AddColumnConstraint</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddForeignKey(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.ForeignKey)">AddForeignKey</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AlterColumn(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn,KpokPatagon.Data.DatabaseSchema.TableColumn)">AlterColumn</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreateIndex(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.Index)">CreateIndex</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreatePrimaryKey(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.Index)">CreatePrimaryKey</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreateSequenceIfNotExists(KpokPatagon.Data.DatabaseSchema.Sequence)">CreateSequenceIfNotExists</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreateTable(KpokPatagon.Data.DatabaseSchema.Table)">CreateTable</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.CreateView(KpokPatagon.Data.DatabaseSchema.View)">CreateView</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropColumn(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn)">DropColumn</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropColumnConstraint(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn,KpokPatagon.Data.DatabaseSchema.ColumnConstraint)">DropColumnConstraint</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropForeignKey(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.ForeignKey)">DropForeignKey</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropIndex(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.Index)">DropIndex</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropPrimaryKey(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.Index)">DropPrimaryKey</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropTable(KpokPatagon.Data.DatabaseSchema.Table)">DropTable</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.DropView(KpokPatagon.Data.DatabaseSchema.View)">DropView</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.GrantPermissions(KpokPatagon.Data.DatabaseSchema.Grant)">GrantPermissions</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.RenameTable(KpokPatagon.Data.DatabaseSchema.TableName,System.String)">RenameTable</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

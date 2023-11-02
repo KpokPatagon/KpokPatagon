@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>MySqlDataModelCmdBuilder - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data-mysql/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>MySqlDataModelCmdBuilder</h1>
+<p class="lead">Implements an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodelcmdbuilder.html">IDataModelCmdBuilder</a> that builds database commands 
+            for <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a> objects for MySql.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.MySql</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">KpokPatagon.Data.DataModelCmdBuilder</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="" class="mb-5">
+    <h3 class="lead text-info">MySqlDataModelCmdBuilder</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MySqlDataModelCmdBuilder()</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.MySql.MySqlDataModelCmdBuilder.BuildInsert(KpokPatagon.Data.IDataService,KpokPatagon.Data.IDataModel,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">BuildInsert</h3>
+    <p>Builds a SQL insert command.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> BuildInsert(dataService, model, includeIdOutputParameter)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>An insert command to be executed.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>dataService</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+        <td>The data service for the model.</td>
+    </tr>
+    <tr>
+        <td>model</td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
+    </tr>
+    <tr>
+        <td>includeIdOutputParameter</td>
+        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td>Whether the command must extract the generated Id as an output parameter.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">dataService</strong> is <strong class="text-info">null</strong>.</p><p>-o-</p><p>When <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.MySql.MySqlDataModelCmdBuilder.BuildInsert(KpokPatagon.Data.IDataService,KpokPatagon.Data.IDataModel,System.Boolean)">BuildInsert</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
