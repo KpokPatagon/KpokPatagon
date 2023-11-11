@@ -40,13 +40,13 @@
 <dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:KpokPatagon.AspNet.Multitenancy.MultitenancyExtensions.EnsureTenantNameInPath(System.String,KpokPatagon.Multitenancy.Tenant)" class="mb-5">
+<div id="M:KpokPatagon.AspNet.Multitenancy.MultitenancyExtensions.EnsureTenantNameInPath(System.String,KpokPatagon.Multitenancy.Tenant,KpokPatagon.AspNet.Multitenancy.TenantNameLocation)" class="mb-5">
     <h3 class="lead text-info">EnsureTenantNameInPath</h3>
     <p>Ensures that the absolute Uri in <strong class="text-info">value</strong> does
-            contains the <strong class="text-info">tenant</strong>.Name as the first path segment.</p>
+            contains the <strong class="text-info">tenant</strong> name in the write position.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> EnsureTenantNameInPath(value, tenant)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> EnsureTenantNameInPath(value, tenant, location)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -68,6 +68,11 @@
         <td><a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-tenant.html">Tenant</a></td>
         <td></td>
     </tr>
+    <tr>
+        <td>location</td>
+        <td><a href="../../kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantnamelocation.html">TenantNameLocation</a></td>
+        <td></td>
+    </tr>
 </tbody></table>
 </div>
             </div>
@@ -77,7 +82,7 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:KpokPatagon.AspNet.Multitenancy.MultitenancyExtensions.EnsureTenantNameInPath(System.String,KpokPatagon.Multitenancy.Tenant)">EnsureTenantNameInPath</a></li>
+        <li><a href="#M:KpokPatagon.AspNet.Multitenancy.MultitenancyExtensions.EnsureTenantNameInPath(System.String,KpokPatagon.Multitenancy.Tenant,KpokPatagon.AspNet.Multitenancy.TenantNameLocation)">EnsureTenantNameInPath</a></li>
     </ul>
 </li>
 </ul>
