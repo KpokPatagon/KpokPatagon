@@ -1,0 +1,265 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>MailServer - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-multitenancy/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>MailServer</h1>
+<p class="lead"><strong>MailServer</strong> implements a data model for mail servers configuration.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Multitenancy.Commons</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">KpokPatagon.Data.DataModel</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
+<dd class="col-sm-9">System.IEquatable{KpokPatagon.Multitenancy.Commons.MailServer}, KpokPatagon.Messaging.ISmtpServerConfiguration</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Multitenancy.Commons.MailServer.#ctor" class="mb-5">
+    <h3 class="lead text-info">MailServer</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MailServer()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Commons.MailServer.#ctor(System.String,System.Int32)" class="mb-5">
+    <h3 class="lead text-info">MailServer</h3>
+    <p>Initializes a new instance of <strong>MailServer</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MailServer(id, tenantId)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>id</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>Object Id.</td>
+    </tr>
+    <tr>
+        <td>tenantId</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>Tenant Id.</td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.EnforceModelValidation" class="mb-5">
+    <h3 class="lead text-info">EnforceModelValidation</h3>
+    <p>Gets whether the model validation must be enforced.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.From" class="mb-5">
+    <h3 class="lead text-info">From</h3>
+    <p>Address from which mails are sent.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> From { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.FromName" class="mb-5">
+    <h3 class="lead text-info">FromName</h3>
+    <p>Display name for the sending address.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> FromName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.Id" class="mb-5">
+    <h3 class="lead text-info">Id</h3>
+    <p>The identification of this <strong>MailServer</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Id { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.Name" class="mb-5">
+    <h3 class="lead text-info">Name</h3>
+    <p>Server name or IP address.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.Password" class="mb-5">
+    <h3 class="lead text-info">Password</h3>
+    <p>Password of the user for use with authentication.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Password { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.Port" class="mb-5">
+    <h3 class="lead text-info">Port</h3>
+    <p>Mail sending port.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Port { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.RequiresSsl" class="mb-5">
+    <h3 class="lead text-info">RequiresSsl</h3>
+    <p>Whether the server requires SSL.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> RequiresSsl { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.TenantId" class="mb-5">
+    <h3 class="lead text-info">TenantId</h3>
+    <p>Tenant Id.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> TenantId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Commons.MailServer.UserName" class="mb-5">
+    <h3 class="lead text-info">UserName</h3>
+    <p>User name for use with authentication.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UserName { get; set; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Multitenancy.Commons.MailServer.Equals(KpokPatagon.Multitenancy.Commons.MailServer)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks whether <strong class="text-info">other</strong> is equal to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>other</td>
+        <td><strong>MailServer</strong></td>
+        <td>The object to check equality to.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Commons.MailServer.Equals(System.Object)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks whether <strong class="text-info">obj</strong> is equal to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>obj</td>
+        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td>The object to compare this object to.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Commons.MailServer.GetHashCode" class="mb-5">
+    <h3 class="lead text-info">GetHashCode</h3>
+    <p>Serves as the default hash function.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
+</dl>
+<h6 class="mt-1">Remarks</h6>
+<p>Not required, implemented to avoid compiler warning.</p>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Commons.MailServer.ToString" class="mb-5">
+    <h3 class="lead text-info">ToString</h3>
+    <p>Returns a textual representation of a <strong>MailServer</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+</dl>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.EnforceModelValidation">EnforceModelValidation</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.From">From</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.FromName">FromName</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.Id">Id</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.Name">Name</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.Password">Password</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.Port">Port</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.RequiresSsl">RequiresSsl</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.TenantId">TenantId</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Commons.MailServer.UserName">UserName</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.MailServer.Equals(KpokPatagon.Multitenancy.Commons.MailServer)">Equals</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.MailServer.Equals(System.Object)">Equals</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.MailServer.GetHashCode">GetHashCode</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.MailServer.ToString">ToString</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

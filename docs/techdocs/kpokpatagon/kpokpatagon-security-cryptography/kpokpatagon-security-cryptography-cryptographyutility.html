@@ -1,0 +1,396 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>CryptographyUtility - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>CryptographyUtility</h1>
+<p class="lead">Common cryptography methods.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Security.Cryptography</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.CombineBytes(System.Byte[],System.Byte[])" class="mb-5">
+    <h3 class="lead text-info">CombineBytes</h3>
+    <p>Combines two byte arrays into one.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> CombineBytes(buffer1, buffer2)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The combined byte array.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>buffer1</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>The prefixed bytes.</td>
+    </tr>
+    <tr>
+        <td>buffer2</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>The suffixed bytes.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when any of the input parameters are <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.CompareBytes(System.Byte[],System.Byte[])" class="mb-5">
+    <h3 class="lead text-info">CompareBytes</h3>
+    <p>Determine if two byte arrays are equal.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> CompareBytes(byte1, byte2)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the two byte array are equal; otherwise <strong class="text-info">false</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>byte1</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>The first byte array to compare.</td>
+    </tr>
+    <tr>
+        <td>byte2</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>The byte array to compare to the first.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.CreateUniqueId(System.Int32)" class="mb-5">
+    <h3 class="lead text-info">CreateUniqueId</h3>
+    <p>Creates a unique ID from random bytes and converter it to an hexadecimal string.
+            The resulting string is twice the size of the asked id size.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> CreateUniqueId(length)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A randomly generated unique id.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>length</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>Length of the key to generate.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.GetRandomAlphanumericBytes(System.Byte[])" class="mb-5">
+    <h3 class="lead text-info">GetRandomAlphanumericBytes</h3>
+    <p>Fills a byte array with a random set of aplhanumeric bytes.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> GetRandomAlphanumericBytes(bytes)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>bytes</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>The byte array to fill.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.GetRandomAlphanumericBytes(System.Int32)" class="mb-5">
+    <h3 class="lead text-info">GetRandomAlphanumericBytes</h3>
+    <p>Creates a random set of alphanumeric bytes.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> GetRandomAlphanumericBytes(size)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The computes bytes.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>size</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>The size of the byte array to generate.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.GetRandomBytes(System.Byte[])" class="mb-5">
+    <h3 class="lead text-info">GetRandomBytes</h3>
+    <p>Fills a byte array with a cryptographically strong random set of bytes.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> GetRandomBytes(bytes)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>bytes</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>The byte array to fill.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.GetRandomBytes(System.Int32)" class="mb-5">
+    <h3 class="lead text-info">GetRandomBytes</h3>
+    <p>Creates a cryptographically strong random set of bytes.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> GetRandomBytes(size)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>The computed bytes.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>size</td>
+        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td>The size of the byte array to generate.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.Transform(System.Security.Cryptography.ICryptoTransform,System.Byte[])" class="mb-5">
+    <h3 class="lead text-info">Transform</h3>
+    <p>Transform an array of bytes according to the given cryptographic transform.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> Transform(transform, buffer)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>Transformed array of bytes. It is the responsability of the caller to clear this byte array if necessary.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>transform</td>
+        <td><span class="text-info" title="System.Security.Cryptography.ICryptoTransform">ICryptoTransform</span></td>
+        <td><span class="text-info" title="System.Security.Cryptography.ICryptoTransform">ICryptoTransform</span> used to transform the given <strong class="text-info">buffer</strong>.</td>
+    </tr>
+    <tr>
+        <td>buffer</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>Buffer to transform. It is the responsability of the caller to clear this array when finished.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><p>Thrown when the <strong class="text-info">buffer</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">buffer</strong>.Length is zero.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td>Thrown when an error occurs while transforming the data.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.TransformStream(System.Security.Cryptography.ICryptoTransform,System.IO.Stream,System.IO.Stream)" class="mb-5">
+    <h3 class="lead text-info">TransformStream</h3>
+    <p>Transforms the source stream into the destination stream using the given cryptographic transform.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TransformStream(transform, source, destination)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>transform</td>
+        <td><span class="text-info" title="System.Security.Cryptography.ICryptoTransform">ICryptoTransform</span></td>
+        <td><span class="text-info" title="System.Security.Cryptography.ICryptoTransform">ICryptoTransform</span> used to transform the stream.</td>
+    </tr>
+    <tr>
+        <td>source</td>
+        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td>The <span class="text-info" title="System.IO.Stream">Stream</span> to transform.</td>
+    </tr>
+    <tr>
+        <td>destination</td>
+        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td>The destination stream to put the results in.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td><p>Thrown when <strong class="text-info">transform</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">source</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">destination</strong> is <strong class="text-info">null</strong>.</p></td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td>Thrown when an error occurs while transforming the data.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Security.Cryptography.CryptographyUtility.ZeroOutBytes(System.Byte[])" class="mb-5">
+    <h3 class="lead text-info">ZeroOutBytes</h3>
+    <p>Fills <strong class="text-info">bytes</strong> zeros.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ZeroOutBytes(bytes)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>bytes</td>
+        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td>The byte array to fill.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.CombineBytes(System.Byte[],System.Byte[])">CombineBytes</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.CompareBytes(System.Byte[],System.Byte[])">CompareBytes</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.CreateUniqueId(System.Int32)">CreateUniqueId</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.GetRandomAlphanumericBytes(System.Byte[])">GetRandomAlphanumericBytes</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.GetRandomAlphanumericBytes(System.Int32)">GetRandomAlphanumericBytes</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.GetRandomBytes(System.Byte[])">GetRandomBytes</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.GetRandomBytes(System.Int32)">GetRandomBytes</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.Transform(System.Security.Cryptography.ICryptoTransform,System.Byte[])">Transform</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.TransformStream(System.Security.Cryptography.ICryptoTransform,System.IO.Stream,System.IO.Stream)">TransformStream</a></li>
+        <li><a href="#M:KpokPatagon.Security.Cryptography.CryptographyUtility.ZeroOutBytes(System.Byte[])">ZeroOutBytes</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
