@@ -49,6 +49,16 @@
 </dl>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Data.SqlServer.SqlServerDbAccess.CheckEngineVersionForPagination" class="mb-5">
+    <h3 class="lead text-info">CheckEngineVersionForPagination</h3>
+    <p>If <strong class="text-info">true</strong> the version of the database engine will be checked before building
+            paginated SELECT statements, otherwise paginated SELECT statements will be build for engines
+            greather that SQL Server 2008. Default value is <strong class="text-info">false</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> CheckEngineVersionForPagination { get; set; }</code></dd>
+</dl>
+</div>
 <div id="P:KpokPatagon.Data.SqlServer.SqlServerDbAccess.IsConnectionOpen" class="mb-5">
     <h3 class="lead text-info">IsConnectionOpen</h3>
     <p>Get whether the database connection is opened.</p>
@@ -648,6 +658,7 @@
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Data.SqlServer.SqlServerDbAccess.CheckEngineVersionForPagination">CheckEngineVersionForPagination</a></li>
         <li><a href="#P:KpokPatagon.Data.SqlServer.SqlServerDbAccess.IsConnectionOpen">IsConnectionOpen</a></li>
         <li><a href="#P:KpokPatagon.Data.SqlServer.SqlServerDbAccess.IsInTransaction">IsInTransaction</a></li>
     </ul>
