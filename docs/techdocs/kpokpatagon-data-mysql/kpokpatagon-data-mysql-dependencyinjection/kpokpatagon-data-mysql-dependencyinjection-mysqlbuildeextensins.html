@@ -1,0 +1,461 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>MySqlBuildeExtensins - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data-mysql/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>MySqlBuildeExtensins</h1>
+<p class="lead">Builder extensions methods to register services for MySql.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.MySql.DependencyInjection</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlCommandBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.CommandBuilderOptions})" class="mb-5">
+    <h3 class="lead text-info">AddMySqlCommandBuilder</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql/kpokpatagon-data-mysql-mysqldbcmdbuilder.html">MySqlDbCmdBuilder</a> service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddMySqlCommandBuilder(builder, name, options)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the command builder service.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.CommandBuilderOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-commandbuilderoptions.html">CommandBuilderOptions</a>&gt;</span></td>
+        <td>Command builder configuration options.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlDatabaseApi(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.DatabaseApiOptions})" class="mb-5">
+    <h3 class="lead text-info">AddMySqlDatabaseApi</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql/kpokpatagon-data-mysql-mysqldbaccess.html">MySqlDbAccess</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddMySqlDatabaseApi(builder, name, options)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the database api service.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.DatabaseApiOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-databaseapioptions.html">DatabaseApiOptions</a>&gt;</span></td>
+        <td>Database api configuration options.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlDataModelCommandBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.DataModelCommandBuilderOptions})" class="mb-5">
+    <h3 class="lead text-info">AddMySqlDataModelCommandBuilder</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql/kpokpatagon-data-mysql-mysqldatamodelcmdbuilder.html">MySqlDataModelCmdBuilder</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddMySqlDataModelCommandBuilder(builder, name, options)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the data model command builder service.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.DataModelCommandBuilderOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-datamodelcommandbuilderoptions.html">DataModelCommandBuilderOptions</a>&gt;</span></td>
+        <td>Data model command builder configuration options.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlFormatter(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String)" class="mb-5">
+    <h3 class="lead text-info">AddMySqlFormatter</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql/kpokpatagon-data-mysql-mysqldbformatter.html">MySqlDbFormatter</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddMySqlFormatter(builder, name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the formatter service.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlNameQualifier(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.NameQualifierOptions})" class="mb-5">
+    <h3 class="lead text-info">AddMySqlNameQualifier</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql/kpokpatagon-data-mysql-mysqldbnamequalifier.html">MySqlDbNameQualifier</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddMySqlNameQualifier(builder, name, options)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the name qualifier service.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.NameQualifierOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-namequalifieroptions.html">NameQualifierOptions</a>&gt;</span></td>
+        <td>Name qualifier configuration options.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlSchemaDiscoverer(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.SchemaDiscovererOptions},System.String)" class="mb-5">
+    <h3 class="lead text-info">AddMySqlSchemaDiscoverer</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql-databaseschema/kpokpatagon-data-mysql-databaseschema-mysqlschemadiscoverer.html">MySqlSchemaDiscoverer</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddMySqlSchemaDiscoverer(builder, options, name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.SchemaDiscovererOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-schemadiscovereroptions.html">SchemaDiscovererOptions</a>&gt;</span></td>
+        <td>Schema discoverer configuration options.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the schema discoverer service.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlSchemaProvisioner(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.SchemaProvisionerOptions},System.String)" class="mb-5">
+    <h3 class="lead text-info">AddMySqlSchemaProvisioner</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql-databaseschema/kpokpatagon-data-mysql-databaseschema-mysqlschemaprovisioner.html">MySqlSchemaProvisioner</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddMySqlSchemaProvisioner(builder, options, name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.SchemaProvisionerOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-schemaprovisioneroptions.html">SchemaProvisionerOptions</a>&gt;</span></td>
+        <td>Schema provisioner configuration options.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the schema provisioner service.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlViewBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.ViewBuilderOptions},System.String)" class="mb-5">
+    <h3 class="lead text-info">AddMySqlViewBuilder</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-mysql/kpokpatagon-data-mysql-databaseschema/kpokpatagon-data-mysql-databaseschema-mysqlviewbuilder.html">MySqlViewBuilder</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddMySqlViewBuilder(builder, options, name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.ViewBuilderOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-viewbuilderoptions.html">ViewBuilderOptions</a>&gt;</span></td>
+        <td>View builder configuration options.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the view builder service.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlCommandBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.CommandBuilderOptions})">AddMySqlCommandBuilder</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlDatabaseApi(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.DatabaseApiOptions})">AddMySqlDatabaseApi</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlDataModelCommandBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.DataModelCommandBuilderOptions})">AddMySqlDataModelCommandBuilder</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlFormatter(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String)">AddMySqlFormatter</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlNameQualifier(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.NameQualifierOptions})">AddMySqlNameQualifier</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlSchemaDiscoverer(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.SchemaDiscovererOptions},System.String)">AddMySqlSchemaDiscoverer</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlSchemaProvisioner(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.SchemaProvisionerOptions},System.String)">AddMySqlSchemaProvisioner</a></li>
+        <li><a href="#M:KpokPatagon.Data.MySql.DependencyInjection.MySqlBuildeExtensins.AddMySqlViewBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.ViewBuilderOptions},System.String)">AddMySqlViewBuilder</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

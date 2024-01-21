@@ -1,0 +1,461 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>OracleBuilderExtensions - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data-oracle/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>OracleBuilderExtensions</h1>
+<p class="lead">Builder extensions methods to register services for Oracle.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.Oracle.DependencyInjection</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">System.Object</dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleCommandBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.CommandBuilderOptions})" class="mb-5">
+    <h3 class="lead text-info">AddOracleCommandBuilder</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-oracle/kpokpatagon-data-oracle/kpokpatagon-data-oracle-oracledbcmdbuilder.html">OracleDbCmdBuilder</a> service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddOracleCommandBuilder(builder, name, options)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the command builder service.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.CommandBuilderOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-commandbuilderoptions.html">CommandBuilderOptions</a>&gt;</span></td>
+        <td>Command builder configuration options.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleDatabaseApi(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.DatabaseApiOptions})" class="mb-5">
+    <h3 class="lead text-info">AddOracleDatabaseApi</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-oracle/kpokpatagon-data-oracle/kpokpatagon-data-oracle-oracledbaccess.html">OracleDbAccess</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddOracleDatabaseApi(builder, name, options)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the database api service.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.DatabaseApiOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-databaseapioptions.html">DatabaseApiOptions</a>&gt;</span></td>
+        <td>Database api configuration options.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleDataModelCommandBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.DataModelCommandBuilderOptions})" class="mb-5">
+    <h3 class="lead text-info">AddOracleDataModelCommandBuilder</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-oracle/kpokpatagon-data-oracle/kpokpatagon-data-oracle-oracledatamodelcmdbuilder.html">OracleDataModelCmdBuilder</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddOracleDataModelCommandBuilder(builder, name, options)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the data model command builder service.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.DataModelCommandBuilderOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-datamodelcommandbuilderoptions.html">DataModelCommandBuilderOptions</a>&gt;</span></td>
+        <td>Data model command builder configuration options.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleFormatter(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String)" class="mb-5">
+    <h3 class="lead text-info">AddOracleFormatter</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-oracle/kpokpatagon-data-oracle/kpokpatagon-data-oracle-oracledbformatter.html">OracleDbFormatter</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddOracleFormatter(builder, name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the formatter service.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleNameQualifier(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.NameQualifierOptions})" class="mb-5">
+    <h3 class="lead text-info">AddOracleNameQualifier</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-oracle/kpokpatagon-data-oracle/kpokpatagon-data-oracle-oracledbnamequalifier.html">OracleDbNameQualifier</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddOracleNameQualifier(builder, name, options)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the name qualifier service.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.NameQualifierOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-namequalifieroptions.html">NameQualifierOptions</a>&gt;</span></td>
+        <td>Name qualifier configuration options.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
+        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or whitespace.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleSchemaDiscoverer(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.SchemaDiscovererOptions},System.String)" class="mb-5">
+    <h3 class="lead text-info">AddOracleSchemaDiscoverer</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-oracle/kpokpatagon-data-oracle-databaseschema/kpokpatagon-data-oracle-databaseschema-oracleschemadiscoverer.html">OracleSchemaDiscoverer</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddOracleSchemaDiscoverer(builder, options, name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.SchemaDiscovererOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-schemadiscovereroptions.html">SchemaDiscovererOptions</a>&gt;</span></td>
+        <td>Schema discoverer configuration options.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the schema discoverer service.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleSchemaProvisioner(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.SchemaProvisionerOptions},System.String)" class="mb-5">
+    <h3 class="lead text-info">AddOracleSchemaProvisioner</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-oracle/kpokpatagon-data-oracle-databaseschema/kpokpatagon-data-oracle-databaseschema-oracleschemaprovisioner.html">OracleSchemaProvisioner</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddOracleSchemaProvisioner(builder, options, name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.SchemaProvisionerOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-schemaprovisioneroptions.html">SchemaProvisionerOptions</a>&gt;</span></td>
+        <td>Schema provisioner configuration options.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the schema provisioner service.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleViewBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.ViewBuilderOptions},System.String)" class="mb-5">
+    <h3 class="lead text-info">AddOracleViewBuilder</h3>
+    <p>Adds a <a href="../../kpokpatagon-data-oracle/kpokpatagon-data-oracle-databaseschema/kpokpatagon-data-oracle-databaseschema-oracleviewbuilder.html">OracleViewBuilder</a> named service to DI.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a> AddOracleViewBuilder(builder, options, name)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>builder</td>
+        <td><a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a></td>
+        <td>An <a href="../../kpokpatagon/kpokpatagon-dependencyinjection/kpokpatagon-dependencyinjection-ikpokpatagonbuilder.html">IKpokPatagonBuilder</a>.</td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="System.Action{KpokPatagon.Data.DependencyInjection.ViewBuilderOptions}">Action&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-viewbuilderoptions.html">ViewBuilderOptions</a>&gt;</span></td>
+        <td>View builder configuration options.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td><span class="text-info" title="System.String">String</span></td>
+        <td>The name of the view builder service.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleCommandBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.CommandBuilderOptions})">AddOracleCommandBuilder</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleDatabaseApi(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.DatabaseApiOptions})">AddOracleDatabaseApi</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleDataModelCommandBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.DataModelCommandBuilderOptions})">AddOracleDataModelCommandBuilder</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleFormatter(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String)">AddOracleFormatter</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleNameQualifier(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.String,System.Action{KpokPatagon.Data.DependencyInjection.NameQualifierOptions})">AddOracleNameQualifier</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleSchemaDiscoverer(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.SchemaDiscovererOptions},System.String)">AddOracleSchemaDiscoverer</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleSchemaProvisioner(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.SchemaProvisionerOptions},System.String)">AddOracleSchemaProvisioner</a></li>
+        <li><a href="#M:KpokPatagon.Data.Oracle.DependencyInjection.OracleBuilderExtensions.AddOracleViewBuilder(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Data.DependencyInjection.ViewBuilderOptions},System.String)">AddOracleViewBuilder</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
