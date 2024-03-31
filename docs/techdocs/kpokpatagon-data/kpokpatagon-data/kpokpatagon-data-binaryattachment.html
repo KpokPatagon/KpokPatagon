@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 <dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">KpokPatagon.Data.IAttachment</dd>
 </dl>
@@ -47,7 +45,7 @@
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BinaryAttachment()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BinaryAttachment()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.BinaryAttachment.#ctor(System.Byte[])" class="mb-5">
@@ -55,7 +53,7 @@
     <p>Initializes a new instance of <strong>BinaryAttachment</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BinaryAttachment(serialized)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BinaryAttachment(serialized)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -69,7 +67,7 @@
 <tbody>
     <tr>
         <td>serialized</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The serialized data.</td>
     </tr>
 </tbody></table>
@@ -79,7 +77,7 @@
     <p>Initializes a new instance of <strong>BinaryAttachment</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BinaryAttachment(serialized, throwIfError)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BinaryAttachment(serialized, throwIfError)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -93,12 +91,12 @@
 <tbody>
     <tr>
         <td>serialized</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The serialized data.</td>
     </tr>
     <tr>
         <td>throwIfError</td>
-        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
         <td><strong class="text-info">true</strong> is an exception must be thrown if deserialization fails, otherwise <strong class="text-info">false</strong>.</td>
     </tr>
 </tbody></table>
@@ -112,7 +110,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.BinaryAttachmentFormatException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-binaryattachmentformatexception.html">BinaryAttachmentFormatException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.BinaryAttachmentFormatException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-binaryattachmentformatexception.html"&gt;BinaryAttachmentFormatException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">throwIfError</strong> is <strong class="text-info">true</strong> and <strong class="text-info">serialized</strong> could not be deserialized.</td>
     </tr>
 </tbody></table>
@@ -122,7 +120,7 @@
     <p>Initializes a new instance of <strong>BinaryAttachment</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BinaryAttachment(data, fileName, contentType)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BinaryAttachment(data, fileName, contentType)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -136,17 +134,17 @@
 <tbody>
     <tr>
         <td>data</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The attachment file content.</td>
     </tr>
     <tr>
         <td>fileName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The attachment file name.</td>
     </tr>
     <tr>
         <td>contentType</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The attachment content type.</td>
     </tr>
 </tbody></table>
@@ -157,7 +155,7 @@
     <p>The binary data to be stored into the database field.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> BinaryData { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> BinaryData { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.BinaryAttachment.ContentLength" class="mb-5">
@@ -165,7 +163,7 @@
     <p>The content length of the attached file.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int64">Int64</span> ContentLength { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int64">Int64</span> ContentLength { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.BinaryAttachment.ContentType" class="mb-5">
@@ -173,7 +171,7 @@
     <p>Content type of the file contained into this object</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ContentType { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ContentType { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.BinaryAttachment.FileContent" class="mb-5">
@@ -181,7 +179,7 @@
     <p>File content of this attachment</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> FileContent { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> FileContent { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.BinaryAttachment.FileName" class="mb-5">
@@ -189,7 +187,7 @@
     <p>File name of this attachment</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> FileName { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> FileName { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -198,7 +196,7 @@
     <p>Returns a textual repredentation of this <strong>BinaryAttachment</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToString()</code></dd>
 </dl>
 </div>
             </div>

@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-9">
 <h1>TenantResolvedNotification</h1>
-<p class="lead">Notification raised when a <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-tenant.html">Tenant</a> was resolved.</p>
+<p class="lead">Notification raised when a tenant was resolved.</p>
 <dl class="row mt-4">
 <dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.AspNet.Multitenancy.Notifications</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
@@ -36,16 +36,14 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.AspNet.Multitenancy.Notifications.TenantResolvedNotification{KpokPatagon.Multitenancy.Tenant,}</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.AspNet.Multitenancy.Notifications.TenantResolvedNotification.#ctor(Microsoft.AspNetCore.Http.HttpContext,KpokPatagon.AspNet.Multitenancy.TenantResolverOptions)" class="mb-5">
+<div id="M:KpokPatagon.AspNet.Multitenancy.Notifications.TenantResolvedNotification`2.#ctor(Microsoft.AspNetCore.Http.HttpContext,KpokPatagon.AspNet.Multitenancy.TenantResolverOptions{`0,`1})" class="mb-5">
     <h3 class="lead text-info">TenantResolvedNotification</h3>
     <p>Initializes a new instance of the tenant resolved notification.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TenantResolvedNotification(context, options)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TenantResolvedNotification(context, options)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -59,21 +57,45 @@
 <tbody>
     <tr>
         <td>context</td>
-        <td><span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span></td>
+        <td><span class="text-info" title="HttpContext">HttpContext</span></td>
         <td>The <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span>.</td>
     </tr>
     <tr>
         <td>options</td>
-        <td><a href="../../kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy/kpokpatagon-aspnet-multitenancy-tenantresolveroptions.html">TenantResolverOptions</a></td>
+        <td><span class="text-info" title="TenantResolverOptions&lt;TTenant, TTenantId&gt;">TenantResolverOptions&lt;TTenant, TTenantId&gt;</span></td>
         <td>Tenant resolver configuration.</td>
     </tr>
 </tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.AspNet.Multitenancy.Notifications.TenantResolvedNotification`2.IsRequestHandled" class="mb-5">
+    <h3 class="lead text-info">IsRequestHandled</h3>
+    <p>Whether the request is handled and the middleware pipeline must be short cutted.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> IsRequestHandled { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.AspNet.Multitenancy.Notifications.TenantResolvedNotification`2.Tenant" class="mb-5">
+    <h3 class="lead text-info">Tenant</h3>
+    <p>Resolved tenant.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="TTenant">TTenant</span> Tenant { get; set; }</code></dd>
+</dl>
 </div>
             </div>
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
 <li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.AspNet.Multitenancy.Notifications.TenantResolvedNotification`2.IsRequestHandled">IsRequestHandled</a></li>
+        <li><a href="#P:KpokPatagon.AspNet.Multitenancy.Notifications.TenantResolvedNotification`2.Tenant">Tenant</a></li>
+    </ul>
+</li>
 </ul>
             </div>
         </div>

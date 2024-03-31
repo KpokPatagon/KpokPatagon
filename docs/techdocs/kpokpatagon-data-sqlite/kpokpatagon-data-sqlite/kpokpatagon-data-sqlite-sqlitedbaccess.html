@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.Data.DbAccess</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Data.SQLite.SQLiteDbAccess.#ctor" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SQLiteDbAccess()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> SQLiteDbAccess()</code></dd>
 </dl>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
@@ -54,7 +52,7 @@
     <p>Whether the database connection is opened.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsConnectionOpen { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> IsConnectionOpen { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.SQLite.SQLiteDbAccess.IsInTransaction" class="mb-5">
@@ -62,7 +60,7 @@
     <p>Whether an opened connection is runing a transaction.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsInTransaction { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> IsInTransaction { get; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -71,7 +69,7 @@
     <p>Adds a parameter to <strong class="text-info">command</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddParameter(command, name, type, direction, size, value)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AddParameter(command, name, type, direction, size, value)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -85,32 +83,32 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>An <span class="text-info" title="System.Data.SQLite.SQLiteCommand">SQLiteCommand</span>.</td>
     </tr>
     <tr>
         <td>name</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Quoted parameter name.</td>
     </tr>
     <tr>
         <td>type</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td><span class="text-info" title="DbType">DbType</span></td>
         <td>Parameter data type.</td>
     </tr>
     <tr>
         <td>direction</td>
-        <td><span class="text-info" title="System.Data.ParameterDirection">ParameterDirection</span></td>
+        <td><span class="text-info" title="ParameterDirection">ParameterDirection</span></td>
         <td>Direction.</td>
     </tr>
     <tr>
         <td>size</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td>Size of the data.</td>
     </tr>
     <tr>
         <td>value</td>
-        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td><span class="text-info" title="Object">Object</span></td>
         <td>Parameter value.</td>
     </tr>
 </tbody></table>
@@ -124,7 +122,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when there are an error casting the parameter value.</td>
     </tr>
 </tbody></table>
@@ -134,7 +132,7 @@
     <p>Initiates a database transaction.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BeginTransaction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BeginTransaction()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An object representing the new transaction.</p>
@@ -144,7 +142,7 @@
     <p>Initiates a database transaction with the specified isolation level.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BeginTransaction(iso)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BeginTransaction(iso)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An object representing the new transaction.</p>
@@ -160,7 +158,7 @@
 <tbody>
     <tr>
         <td>iso</td>
-        <td><span class="text-info" title="System.Data.IsolationLevel">IsolationLevel</span></td>
+        <td><span class="text-info" title="IsolationLevel">IsolationLevel</span></td>
         <td>Isolation level for the transaction.</td>
     </tr>
 </tbody></table>
@@ -170,7 +168,7 @@
     <p>Closes the database connection if it is opened.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CloseConnection()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CloseConnection()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.SQLite.SQLiteDbAccess.CommitTransaction" class="mb-5">
@@ -178,7 +176,7 @@
     <p>Commits the running database transaction.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CommitTransaction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CommitTransaction()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.SQLite.SQLiteDbAccess.CreateCommand(System.Data.CommandType)" class="mb-5">
@@ -186,7 +184,7 @@
     <p>Creates a new database command.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> CreateCommand(commandType)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> CreateCommand(commandType)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A new <span class="text-info" title="System.Data.SQLite.SQLiteCommand">SQLiteCommand</span>.</p>
@@ -202,7 +200,7 @@
 <tbody>
     <tr>
         <td>commandType</td>
-        <td><span class="text-info" title="System.Data.CommandType">CommandType</span></td>
+        <td><span class="text-info" title="CommandType">CommandType</span></td>
         <td>Type of the command to create.</td>
     </tr>
 </tbody></table>
@@ -226,7 +224,7 @@
     <p>Performs application-defined tasks associated with freeing, releasing, or reseting unmaneged resources</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Dispose()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Dispose()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.SQLite.SQLiteDbAccess.ExecuteNonQuery(System.Data.IDbCommand)" class="mb-5">
@@ -234,7 +232,7 @@
     <p>Executes the <strong class="text-info">command</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> ExecuteNonQuery(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> ExecuteNonQuery(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Quantity of records affected by the command.</p>
@@ -250,7 +248,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="System.Data.SQLite.SQLiteCommand">SQLiteCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -264,19 +262,19 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an unindentify error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when a connection could not be openned.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DuplicatedPrimaryKeyException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-duplicatedprimarykeyexception.html">DuplicatedPrimaryKeyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DuplicatedPrimaryKeyException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-duplicatedprimarykeyexception.html"&gt;DuplicatedPrimaryKeyException&lt;/a&gt;</span></td>
         <td>Thrown when a primary key or unique index constraint fails.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ConstraintViolationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-constraintviolationexception.html">ConstraintViolationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ConstraintViolationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-constraintviolationexception.html"&gt;ConstraintViolationException&lt;/a&gt;</span></td>
         <td>Thrown if a constraint is violated.</td>
     </tr>
 </tbody></table>
@@ -286,7 +284,7 @@
     <p>Asyncronously executes the <strong class="text-info">command</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> ExecuteNonQueryAsync(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ExecuteNonQueryAsync(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Quantity of records affected by the command.</p>
@@ -302,7 +300,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="System.Data.SQLite.SQLiteCommand">SQLiteCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -316,19 +314,19 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an unindentify error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when a connection could not be openned.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DuplicatedPrimaryKeyException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-duplicatedprimarykeyexception.html">DuplicatedPrimaryKeyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DuplicatedPrimaryKeyException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-duplicatedprimarykeyexception.html"&gt;DuplicatedPrimaryKeyException&lt;/a&gt;</span></td>
         <td>Thrown when a primary key or unique index constraint fails.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ConstraintViolationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-constraintviolationexception.html">ConstraintViolationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ConstraintViolationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-constraintviolationexception.html"&gt;ConstraintViolationException&lt;/a&gt;</span></td>
         <td>Thrown if a constraint is violated.</td>
     </tr>
 </tbody></table>
@@ -338,7 +336,7 @@
     <p>Executes the <strong class="text-info">command</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDataReader">IDataReader</span> ExecuteReader(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDataReader">IDataReader</span> ExecuteReader(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with command result.</p>
@@ -354,7 +352,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="System.Data.SQLite.SQLiteCommand">SQLiteCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -368,7 +366,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an unindentify error occurs.</td>
     </tr>
     <tr>
@@ -382,7 +380,7 @@
     <p>Asyncronously executes the <strong class="text-info">command</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Data.IDataReader}">Task&lt;IDataReader&gt;</span> ExecuteReaderAsync(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ExecuteReaderAsync(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with command result.</p>
@@ -398,7 +396,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="System.Data.SQLite.SQLiteCommand">SQLiteCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -412,7 +410,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an unindentify error occurs.</td>
     </tr>
     <tr>
@@ -426,7 +424,7 @@
     <p>Executes the <strong class="text-info">command</strong> and returns the first field of the first record.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> ExecuteScalar(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Object">Object</span> ExecuteScalar(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The value of the first field of the first record.</p>
@@ -442,7 +440,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>An <span class="text-info" title="System.Data.SQLite.SQLiteCommand">SQLiteCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -456,11 +454,11 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an unindentify error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when a connection could not be openned.</td>
     </tr>
 </tbody></table>
@@ -470,7 +468,7 @@
     <p>Asyncronously executes the <strong class="text-info">command</strong> and returns the first field of the first record.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Object}">Task&lt;Object&gt;</span> ExecuteScalarAsync(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ExecuteScalarAsync(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The value of the first field of the first record.</p>
@@ -486,7 +484,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>An <span class="text-info" title="System.Data.SQLite.SQLiteCommand">SQLiteCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -500,11 +498,11 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an unindentify error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when a connection could not be openned.</td>
     </tr>
 </tbody></table>
@@ -514,7 +512,7 @@
     <p>Gets the server version.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetServerVersion()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetServerVersion()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The version of the SQLite NuGet package.</p>
@@ -524,7 +522,7 @@
     <p>Opens a connection.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> OpenConnection()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> OpenConnection()</code></dd>
 </dl>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
@@ -536,7 +534,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when the connection could'nt be openned.</td>
     </tr>
 </tbody></table>
@@ -546,7 +544,7 @@
     <p>Opens a connection asyncronously.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> OpenConnectionAsync()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> OpenConnectionAsync()</code></dd>
 </dl>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
@@ -558,7 +556,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when the connection could'nt be openned.</td>
     </tr>
 </tbody></table>
@@ -568,7 +566,7 @@
     <p>Aborts the current transaction.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> RollbackTransaction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> RollbackTransaction()</code></dd>
 </dl>
 </div>
             </div>

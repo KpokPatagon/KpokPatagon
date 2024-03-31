@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.Data.DbAccess</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Data.MySql.MySqlDbAccess.#ctor" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MySqlDbAccess()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> MySqlDbAccess()</code></dd>
 </dl>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
@@ -54,7 +52,7 @@
     <p>Get whether the database connection is opened.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsConnectionOpen { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> IsConnectionOpen { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.MySql.MySqlDbAccess.IsInTransaction" class="mb-5">
@@ -62,7 +60,7 @@
     <p>Get whether an opened connection is running a transaction.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsInTransaction { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> IsInTransaction { get; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -71,7 +69,7 @@
     <p>Adds a parameter to the <strong class="text-info">command</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddParameter(command, name, type, direction, size, value)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AddParameter(command, name, type, direction, size, value)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -85,32 +83,32 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>An <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> to which add the parameter.</td>
     </tr>
     <tr>
         <td>name</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Quoted parameter name.</td>
     </tr>
     <tr>
         <td>type</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td><span class="text-info" title="DbType">DbType</span></td>
         <td>Parameter data type.</td>
     </tr>
     <tr>
         <td>direction</td>
-        <td><span class="text-info" title="System.Data.ParameterDirection">ParameterDirection</span></td>
+        <td><span class="text-info" title="ParameterDirection">ParameterDirection</span></td>
         <td>Parameter direction.</td>
     </tr>
     <tr>
         <td>size</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td>Size of the data.</td>
     </tr>
     <tr>
         <td>value</td>
-        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td><span class="text-info" title="Object">Object</span></td>
         <td>Parameter value.</td>
     </tr>
 </tbody></table>
@@ -124,7 +122,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when the data does not match the parameter type.</td>
     </tr>
 </tbody></table>
@@ -134,7 +132,7 @@
     <p>Initiates a database transaction.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BeginTransaction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BeginTransaction()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An object representing the new transaction.</p>
@@ -148,7 +146,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenedConnectionRequiredException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openedconnectionrequiredexception.html">OpenedConnectionRequiredException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenedConnectionRequiredException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openedconnectionrequiredexception.html"&gt;OpenedConnectionRequiredException&lt;/a&gt;</span></td>
         <td>Thrown when the connection is closed.</td>
     </tr>
 </tbody></table>
@@ -158,7 +156,7 @@
     <p>Initiates a database transaction with the specified isolation level.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BeginTransaction(iso)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BeginTransaction(iso)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An object representing the new transaction.</p>
@@ -174,7 +172,7 @@
 <tbody>
     <tr>
         <td>iso</td>
-        <td><span class="text-info" title="System.Data.IsolationLevel">IsolationLevel</span></td>
+        <td><span class="text-info" title="IsolationLevel">IsolationLevel</span></td>
         <td>Isolation level for the transaction.</td>
     </tr>
 </tbody></table>
@@ -188,7 +186,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenedConnectionRequiredException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openedconnectionrequiredexception.html">OpenedConnectionRequiredException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenedConnectionRequiredException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openedconnectionrequiredexception.html"&gt;OpenedConnectionRequiredException&lt;/a&gt;</span></td>
         <td>Thrown when the connection is closed.</td>
     </tr>
 </tbody></table>
@@ -198,7 +196,7 @@
     <p>Closes the database connection if it is openned.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CloseConnection()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CloseConnection()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.MySql.MySqlDbAccess.CommitTransaction" class="mb-5">
@@ -206,7 +204,7 @@
     <p>Commits the current transaction.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CommitTransaction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CommitTransaction()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.MySql.MySqlDbAccess.CreateCommand(System.Data.CommandType)" class="mb-5">
@@ -214,7 +212,7 @@
     <p>Creates an <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> for MySql for the specified <strong class="text-info">commandType</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> CreateCommand(commandType)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> CreateCommand(commandType)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span>.</p>
@@ -230,7 +228,7 @@
 <tbody>
     <tr>
         <td>commandType</td>
-        <td><span class="text-info" title="System.Data.CommandType">CommandType</span></td>
+        <td><span class="text-info" title="CommandType">CommandType</span></td>
         <td>Type of the command to create.</td>
     </tr>
 </tbody></table>
@@ -240,7 +238,7 @@
     <p>Performs tasks associated with freeing, releasing, or reseting unmaneged resources.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Dispose()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Dispose()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.MySql.MySqlDbAccess.ExecuteNonQuery(System.Data.IDbCommand)" class="mb-5">
@@ -248,7 +246,7 @@
     <p>Execute the <strong class="text-info">command</strong> against the database.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> ExecuteNonQuery(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> ExecuteNonQuery(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Amount of records affected by the command.</p>
@@ -264,7 +262,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -278,23 +276,23 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an un-identified error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when a connection could not be openned.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ConstraintViolationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-constraintviolationexception.html">ConstraintViolationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ConstraintViolationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-constraintviolationexception.html"&gt;ConstraintViolationException&lt;/a&gt;</span></td>
         <td>Thrown when a constaint is violated.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DuplicatedPrimaryKeyException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-duplicatedprimarykeyexception.html">DuplicatedPrimaryKeyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DuplicatedPrimaryKeyException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-duplicatedprimarykeyexception.html"&gt;DuplicatedPrimaryKeyException&lt;/a&gt;</span></td>
         <td>Thrown when a primery key or unique index is violated.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html">DatabaseObjectNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html"&gt;DatabaseObjectNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when a database object, table, view, field, etc. does not exists.</td>
     </tr>
 </tbody></table>
@@ -304,7 +302,7 @@
     <p>Asyncronously execute the <strong class="text-info">command</strong> against the database.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> ExecuteNonQueryAsync(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ExecuteNonQueryAsync(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Amount of records affected by the command.</p>
@@ -320,7 +318,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -334,23 +332,23 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an un-identified error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when a connection could not be openned.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ConstraintViolationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-constraintviolationexception.html">ConstraintViolationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ConstraintViolationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-constraintviolationexception.html"&gt;ConstraintViolationException&lt;/a&gt;</span></td>
         <td>Thrown when a constaint is violated.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DuplicatedPrimaryKeyException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-duplicatedprimarykeyexception.html">DuplicatedPrimaryKeyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DuplicatedPrimaryKeyException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-duplicatedprimarykeyexception.html"&gt;DuplicatedPrimaryKeyException&lt;/a&gt;</span></td>
         <td>Thrown when a primery key or unique index is violated.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html">DatabaseObjectNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html"&gt;DatabaseObjectNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when a database object, table, view, field, etc. does not exists.</td>
     </tr>
 </tbody></table>
@@ -360,7 +358,7 @@
     <p>Executes the <strong class="text-info">command</strong> against the database and returns an <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the result.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDataReader">IDataReader</span> ExecuteReader(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDataReader">IDataReader</span> ExecuteReader(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the results of the command.</p>
@@ -376,7 +374,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -390,7 +388,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an un-identified error occurs.</td>
     </tr>
     <tr>
@@ -398,7 +396,7 @@
         <td>Thrown when the connection is not openned.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html">DatabaseObjectNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html"&gt;DatabaseObjectNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when a database object, table, view, field, etc. does not exists.</td>
     </tr>
 </tbody></table>
@@ -409,7 +407,7 @@
             and returns an <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the result.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Data.IDataReader}">Task&lt;IDataReader&gt;</span> ExecuteReaderAsync(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ExecuteReaderAsync(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the results of the command.</p>
@@ -425,7 +423,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -439,7 +437,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an un-identified error occurs.</td>
     </tr>
     <tr>
@@ -447,7 +445,7 @@
         <td>Thrown when the connection is not openned.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html">DatabaseObjectNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html"&gt;DatabaseObjectNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when a database object, table, view, field, etc. does not exists.</td>
     </tr>
 </tbody></table>
@@ -458,7 +456,7 @@
             the first field of the first record returned.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> ExecuteScalar(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Object">Object</span> ExecuteScalar(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Value of the first field of the first record. If the CommandType is
@@ -476,7 +474,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -490,15 +488,15 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an un-indentify error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when a connection could not be openned.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html">DatabaseObjectNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html"&gt;DatabaseObjectNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when a database object, as a table, view, field, etc., does not exist.</td>
     </tr>
 </tbody></table>
@@ -509,7 +507,7 @@
             the first field of the first record returned.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Object}">Task&lt;Object&gt;</span> ExecuteScalarAsync(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ExecuteScalarAsync(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Value of the first field of the first record. If the CommandType is
@@ -527,7 +525,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>A <span class="text-info" title="MySql.Data.MySqlClient.MySqlCommand">MySqlCommand</span> to execute.</td>
     </tr>
 </tbody></table>
@@ -541,15 +539,15 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html">DataAccessException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DataAccessException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaccessexception.html"&gt;DataAccessException&lt;/a&gt;</span></td>
         <td>Thrown when an un-indentify error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when a connection could not be openned.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html">DatabaseObjectNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseObjectNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-databaseobjectnotfoundexception.html"&gt;DatabaseObjectNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when a database object, as a table, view, field, etc., does not exist.</td>
     </tr>
 </tbody></table>
@@ -559,7 +557,7 @@
     <p>Gets the server version.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetServerVersion()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetServerVersion()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The server version.</p>
@@ -573,7 +571,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
 </tbody></table>
@@ -583,7 +581,7 @@
     <p>Opens a connection to the database server.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> OpenConnection()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> OpenConnection()</code></dd>
 </dl>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
@@ -595,15 +593,15 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when an unindentify error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ServerUnavailableException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-serverunavailableexception.html">ServerUnavailableException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ServerUnavailableException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-serverunavailableexception.html"&gt;ServerUnavailableException&lt;/a&gt;</span></td>
         <td>Thrown when the database server is not available.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.InvalidCredentialsException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-invalidcredentialsexception.html">InvalidCredentialsException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.InvalidCredentialsException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-invalidcredentialsexception.html"&gt;InvalidCredentialsException&lt;/a&gt;</span></td>
         <td>Thrown when credentials are invalid.</td>
     </tr>
 </tbody></table>
@@ -613,7 +611,7 @@
     <p>Asyncronously opens a connection to the database server.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> OpenConnectionAsync()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> OpenConnectionAsync()</code></dd>
 </dl>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
@@ -625,15 +623,15 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html">OpenConnectionException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.OpenConnectionException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-openconnectionexception.html"&gt;OpenConnectionException&lt;/a&gt;</span></td>
         <td>Thrown when an unindentify error occurs.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ServerUnavailableException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-serverunavailableexception.html">ServerUnavailableException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ServerUnavailableException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-serverunavailableexception.html"&gt;ServerUnavailableException&lt;/a&gt;</span></td>
         <td>Thrown when the database server is not available.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.InvalidCredentialsException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-invalidcredentialsexception.html">InvalidCredentialsException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.InvalidCredentialsException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-invalidcredentialsexception.html"&gt;InvalidCredentialsException&lt;/a&gt;</span></td>
         <td>Thrown when credentials are invalid.</td>
     </tr>
 </tbody></table>
@@ -643,7 +641,7 @@
     <p>Rollbacks the current transaction.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> RollbackTransaction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> RollbackTransaction()</code></dd>
 </dl>
 </div>
             </div>

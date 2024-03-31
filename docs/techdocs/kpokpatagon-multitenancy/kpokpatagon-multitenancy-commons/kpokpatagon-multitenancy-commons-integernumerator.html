@@ -36,10 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
-<dt class="text-truncate col-sm-3">Implements:</dt>
-<dd class="col-sm-9">KpokPatagon.Data.INumerator</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Multitenancy.Commons.IntegerNumerator.#ctor(System.IServiceProvider,KpokPatagon.Multitenancy.Commons.TableNumeratorDataService,KpokPatagon.Multitenancy.Commons.IntegerNumeratorOptions)" class="mb-5">
@@ -47,7 +43,7 @@
     <p>Initializes a new instance of <strong>IntegerNumerator</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> IntegerNumerator(serviceProvider, dataService, options)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> IntegerNumerator(serviceProvider, dataService, options)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -61,17 +57,17 @@
 <tbody>
     <tr>
         <td>serviceProvider</td>
-        <td><span class="text-info" title="System.IServiceProvider">IServiceProvider</span></td>
+        <td><span class="text-info" title="IServiceProvider">IServiceProvider</span></td>
         <td></td>
     </tr>
     <tr>
         <td>dataService</td>
-        <td><a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy-commons/kpokpatagon-multitenancy-commons-tablenumeratordataservice.html">TableNumeratorDataService</a></td>
+        <td><span class="text-info" title="TableNumeratorDataService">TableNumeratorDataService</span></td>
         <td></td>
     </tr>
     <tr>
         <td>options</td>
-        <td><a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy-commons/kpokpatagon-multitenancy-commons-integernumeratoroptions.html">IntegerNumeratorOptions</a></td>
+        <td><span class="text-info" title="IntegerNumeratorOptions">IntegerNumeratorOptions</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -82,7 +78,7 @@
     <p>A database transaction is required for this numerator.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> RequiresTransaction { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> RequiresTransaction { get; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -91,7 +87,7 @@
     <p>Computes the next value for the given object.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> NextVal(model)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Object">Object</span> NextVal(model)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -105,7 +101,7 @@
 <tbody>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -123,7 +119,7 @@
         <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.TransactionRequiredException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-transactionrequiredexception.html">TransactionRequiredException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.TransactionRequiredException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-transactionrequiredexception.html"&gt;TransactionRequiredException&lt;/a&gt;</span></td>
         <td>Thrown when the current connection is not in a transaction.</td>
     </tr>
 </tbody></table>

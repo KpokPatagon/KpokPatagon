@@ -29,9 +29,9 @@
 <p class="lead">Assembly</p>
 <dl class="mt-4 row">
     <dt class="text-truncate col-3">Version:</dt>
-    <dd class="col-9">7.0.24084.1</dd>
+    <dd class="col-9">7.0.24091.1</dd>
     <dt class="text-truncate col-3">Product version:</dt>
-    <dd class="col-9">KpokPatagon-CI_main_20240324.1+3c914d9418fec7c05aba5941d38d96cbd0139be8</dd>
+    <dd class="col-9">KpokPatagon-CI_main_20240331.1+f1db75c87398cd9b303a8b402735ebf424030215</dd>
     <dt class="text-truncate col-3">Product:</dt>
     <dd class="col-9">Kpok Patagon Framework</dd>
     <dt class="text-truncate col-3">Culture:</dt>
@@ -39,7 +39,7 @@
     <dt class="text-truncate col-3">Public key token:</dt>
     <dd class="col-9">856a2402e38a9992</dd>
 </dl>
-<h2 class="mt-5">Namespaces (8)</h2>
+<h2 class="mt-5">Namespaces (6)</h2>
 <h3 id="kpokpatagon-data" class="mt-5">KpokPatagon.Data</h3>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
@@ -63,6 +63,10 @@
 <tr>
 <td><a href="./kpokpatagon-data/kpokpatagon-data-automatictype.html">AutomaticType</a></td>
 <td>Application supported automatic field types</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-bdata.html">BData</a></td>
+<td>BinaryAttachment internal data.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-data/kpokpatagon-data-beforedeleteeventhandler.html">BeforeDeleteEventHandler</a></td>
@@ -605,7 +609,7 @@
 <td>Models the options required to configure an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodelcmdbuilder.html">IDataModelCmdBuilder</a>.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-dataserviceoptions1.html">DataServiceOptions</a></td>
+<td><a href="./kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-dataserviceoptions.html">DataServiceOptions</a></td>
 <td>Options to configure <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a>s through dependency injection.</td>
 </tr>
 <tr>
@@ -654,7 +658,7 @@
 <td>Thrown when a <a href="../../kpokpatagon-data/kpokpatagon-data-filtering/kpokpatagon-data-filtering-term.html">Term</a> column does not exists within the <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>s collection.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-listingresult1.html">ListingResult</a></td>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-listingresult.html">ListingResult</a></td>
 <td>Models the result of a listing operation.</td>
 </tr>
 <tr>
@@ -670,7 +674,7 @@
 <td>Models the input required to filtering, sorting and paging data.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-pagedlistingresult1.html">PagedListingResult</a></td>
+<td><a href="./kpokpatagon-data-filtering/kpokpatagon-data-filtering-pagedlistingresult.html">PagedListingResult</a></td>
 <td>Models the result of paged a listing operation.</td>
 </tr>
 <tr>
@@ -708,7 +712,7 @@
 <td><strong>AutonumericColumn</strong> represents a column for an autonumeric field.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-basecmdbuilder1.html">BaseCmdBuilder</a></td>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-basecmdbuilder.html">BaseCmdBuilder</a></td>
 <td><strong>BaseCmdBuilder</strong> implements basic functionality for
             command building based on <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a> objects.</td>
 </tr>
@@ -753,8 +757,8 @@
 <td><strong>ICmdBuilder</strong> allows the implementation of command builders.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-icmdbuilder1.html">ICmdBuilder</a></td>
-<td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-icmdbuilder.html">ICmdBuilder</a> allows the implementation of command builders based on <typeparamref name="TStatement" />s.</td>
+<td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-icmdbuilder.html">ICmdBuilder</a></td>
+<td><strong>ICmdBuilder</strong> allows the implementation of command builders based on <typeparamref name="TStatement" />s.</td>
 </tr>
 <tr>
 <td><a href="./kpokpatagon-data-query/kpokpatagon-data-query-icolumn.html">IColumn</a></td>
@@ -861,16 +865,6 @@
 <td><strong>UpdateStatement</strong> allows the construction of SQL UPDATE statements.</td>
 </tr>
 </tbody></table>
-<h3 id="microsoft-codeanalysis" class="mt-5">Microsoft.CodeAnalysis</h3>
-<table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
-<tbody>
-</tbody></table>
-<h3 id="system-runtime-compilerservices" class="mt-5">System.Runtime.CompilerServices</h3>
-<table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
-<tbody>
-</tbody></table>
             </div>
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
@@ -881,8 +875,6 @@
 <li><a href="#kpokpatagon-data-dependencyinjection">KpokPatagon.Data.DependencyInjection</a></li>
 <li><a href="#kpokpatagon-data-filtering">KpokPatagon.Data.Filtering</a></li>
 <li><a href="#kpokpatagon-data-query">KpokPatagon.Data.Query</a></li>
-<li><a href="#microsoft-codeanalysis">Microsoft.CodeAnalysis</a></li>
-<li><a href="#system-runtime-compilerservices">System.Runtime.CompilerServices</a></li>
 </ul>
             </div>
         </div>

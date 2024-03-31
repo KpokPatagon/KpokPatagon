@@ -43,7 +43,7 @@
     <p>Gets the catalog separator string.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> CatalogSeparator { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> CatalogSeparator { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbFormatter.QuoteIdentifierPrefix" class="mb-5">
@@ -51,7 +51,7 @@
     <p>Gets the prefix string used to quote identifiers.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> QuoteIdentifierPrefix { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> QuoteIdentifierPrefix { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbFormatter.QuoteIdentifierSuffix" class="mb-5">
@@ -59,7 +59,7 @@
     <p>Gets the suffix string used to quote identifiers.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> QuoteIdentifierSuffix { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> QuoteIdentifierSuffix { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbFormatter.QuoteParamPrefix" class="mb-5">
@@ -67,7 +67,7 @@
     <p>Gets the prefix string used to quote parameters.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> QuoteParamPrefix { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> QuoteParamPrefix { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbFormatter.QuoteParamSuffix" class="mb-5">
@@ -75,7 +75,7 @@
     <p>Gets the suffix string used to quote parameters.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> QuoteParamSuffix { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> QuoteParamSuffix { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbFormatter.SchemaSeparator" class="mb-5">
@@ -83,7 +83,7 @@
     <p>Gets the schema separator string.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SchemaSeparator { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> SchemaSeparator { get; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -92,7 +92,7 @@
     <p>Formats a value to be included within a statement.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> FormatValue(dataType, value)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> FormatValue(dataType, value)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A textual representation of <strong class="text-info">value</strong>.</p>
@@ -108,12 +108,12 @@
 <tbody>
     <tr>
         <td>dataType</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td><span class="text-info" title="DbType">DbType</span></td>
         <td>The data type of the value.</td>
     </tr>
     <tr>
         <td>value</td>
-        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td><span class="text-info" title="Object">Object</span></td>
         <td>Value to be formatted.</td>
     </tr>
 </tbody></table>
@@ -123,7 +123,7 @@
     <p>Get the string for the specified operator.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetComparisonOperator(op)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetComparisonOperator(op)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A string representation of the operator.</p>
@@ -139,7 +139,7 @@
 <tbody>
     <tr>
         <td>op</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-comparisonoperator.html">ComparisonOperator</a></td>
+        <td><span class="text-info" title="ComparisonOperator">ComparisonOperator</span></td>
         <td>The operator to retrieve.</td>
     </tr>
 </tbody></table>
@@ -150,7 +150,7 @@
             to retrieve the current database server date time.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetDbDateTimeString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetDbDateTimeString()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>System date-time command string.</p>
@@ -162,7 +162,7 @@
     <p>Get the string for the specified data type.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetDbType(type)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetDbType(type)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A string representation of the data type.</p>
@@ -178,7 +178,7 @@
 <tbody>
     <tr>
         <td>type</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td><span class="text-info" title="DbType">DbType</span></td>
         <td>The data type to get the string of.</td>
     </tr>
 </tbody></table>
@@ -188,7 +188,7 @@
     <p>Get the string for the specified operator.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetRelationalOperator(op)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetRelationalOperator(op)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A string representation of the operator.</p>
@@ -204,7 +204,7 @@
 <tbody>
     <tr>
         <td>op</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-relationaloperator.html">RelationalOperator</a></td>
+        <td><span class="text-info" title="RelationalOperator">RelationalOperator</span></td>
         <td>The operator to retrieve.</td>
     </tr>
 </tbody></table>
@@ -214,7 +214,7 @@
     <p>Quote the specified identifier.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> QuoteIdentifier(identifier)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> QuoteIdentifier(identifier)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The quoted identifier.</p>
@@ -230,7 +230,7 @@
 <tbody>
     <tr>
         <td>identifier</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The identifier to quote.</td>
     </tr>
 </tbody></table>
@@ -240,7 +240,7 @@
     <p>Quote the specified parameter name.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> QuoteParameter(paramName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> QuoteParameter(paramName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The quoted parameter.</p>
@@ -256,7 +256,7 @@
 <tbody>
     <tr>
         <td>paramName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The name of the parameter to quote.</td>
     </tr>
 </tbody></table>
@@ -266,7 +266,7 @@
     <p>Unquote the specified quoted identifier.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UnquoteIdentifier(quotedIdentifier)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> UnquoteIdentifier(quotedIdentifier)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The unquoted identifier.</p>
@@ -282,7 +282,7 @@
 <tbody>
     <tr>
         <td>quotedIdentifier</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The quoted identifier to unquote.</td>
     </tr>
 </tbody></table>
@@ -292,7 +292,7 @@
     <p>Unquote the specified quoted parameter.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> UnquoteParameter(quotedParameter)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> UnquoteParameter(quotedParameter)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The unquoted parameter.</p>
@@ -308,7 +308,7 @@
 <tbody>
     <tr>
         <td>quotedParameter</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The quoted parameter to unquote.</td>
     </tr>
 </tbody></table>

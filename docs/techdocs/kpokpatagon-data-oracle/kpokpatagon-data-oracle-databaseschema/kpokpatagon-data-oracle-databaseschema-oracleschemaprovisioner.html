@@ -39,22 +39,13 @@
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">KpokPatagon.Data.DatabaseSchema.SchemaProvisioner</dd>
 </dl>
-<h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
-    <h3 class="lead text-info">OracleSchemaProvisioner</h3>
-    <p>Default constructor</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> OracleSchemaProvisioner()</code></dd>
-</dl>
-</div>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Data.Oracle.DatabaseSchema.OracleSchemaProvisioner.AddColumn(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableColumn)" class="mb-5">
     <h3 class="lead text-info">AddColumn</h3>
     <p>Adds a column to a table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddColumn(table, column)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AddColumn(table, column)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -68,12 +59,12 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to be altered.</td>
     </tr>
     <tr>
         <td>column</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td><span class="text-info" title="TableColumn">TableColumn</span></td>
         <td>Column to be added.</td>
     </tr>
 </tbody></table>
@@ -91,7 +82,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -101,7 +92,7 @@
     <p>Adds a column constraint.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddColumnConstraint(table, column, constraint)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AddColumnConstraint(table, column, constraint)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -115,17 +106,17 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to be alter.</td>
     </tr>
     <tr>
         <td>column</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td><span class="text-info" title="TableColumn">TableColumn</span></td>
         <td>Column to be alter.</td>
     </tr>
     <tr>
         <td>constraint</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+        <td><span class="text-info" title="ColumnConstraint">ColumnConstraint</span></td>
         <td>Contraint to be added.</td>
     </tr>
 </tbody></table>
@@ -143,7 +134,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -153,7 +144,7 @@
     <p>Adds a foreign key to table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddForeignKey(table, foreignKey)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AddForeignKey(table, foreignKey)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -167,12 +158,12 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to be alter.</td>
     </tr>
     <tr>
         <td>foreignKey</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+        <td><span class="text-info" title="ForeignKey">ForeignKey</span></td>
         <td>Foreign key to be added.</td>
     </tr>
 </tbody></table>
@@ -190,7 +181,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -200,7 +191,7 @@
     <p>Modifies a table column.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AlterColumn(table, from, to)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AlterColumn(table, from, to)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -214,17 +205,17 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to be alter.</td>
     </tr>
     <tr>
         <td>from</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td><span class="text-info" title="TableColumn">TableColumn</span></td>
         <td>The actual configuration of the column.</td>
     </tr>
     <tr>
         <td>to</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td><span class="text-info" title="TableColumn">TableColumn</span></td>
         <td>The desired configuration of the column.</td>
     </tr>
 </tbody></table>
@@ -242,7 +233,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">from</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">to</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -252,7 +243,7 @@
     <p>Creates an index.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateIndex(table, index)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CreateIndex(table, index)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -266,12 +257,12 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to be alter.</td>
     </tr>
     <tr>
         <td>index</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a></td>
+        <td><span class="text-info" title="Index">Index</span></td>
         <td>Index to be created.</td>
     </tr>
 </tbody></table>
@@ -289,7 +280,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -299,7 +290,7 @@
     <p>Creates a primary key for the table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreatePrimaryKey(table, primaryKey)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CreatePrimaryKey(table, primaryKey)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -313,12 +304,12 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to be alter.</td>
     </tr>
     <tr>
         <td>primaryKey</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a></td>
+        <td><span class="text-info" title="Index">Index</span></td>
         <td>Primary key to be created.</td>
     </tr>
 </tbody></table>
@@ -336,7 +327,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">primaryKey</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -346,7 +337,7 @@
     <p>Creates a sequence if it does not exists.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateSequenceIfNotExists(sequence)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CreateSequenceIfNotExists(sequence)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -360,7 +351,7 @@
 <tbody>
     <tr>
         <td>sequence</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-sequence.html">Sequence</a></td>
+        <td><span class="text-info" title="Sequence">Sequence</span></td>
         <td>A sequence to be created.</td>
     </tr>
 </tbody></table>
@@ -378,7 +369,7 @@
         <td>Thrown when <strong class="text-info">sequence</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -388,7 +379,7 @@
     <p>Creates a table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateTable(table)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CreateTable(table)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -402,7 +393,7 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to be created.</td>
     </tr>
 </tbody></table>
@@ -420,7 +411,7 @@
         <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -430,7 +421,7 @@
     <p>Creates a view.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CreateView(view)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CreateView(view)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -444,7 +435,7 @@
 <tbody>
     <tr>
         <td>view</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-view.html">View</a></td>
+        <td><span class="text-info" title="View">View</span></td>
         <td>View to be created.</td>
     </tr>
 </tbody></table>
@@ -462,7 +453,7 @@
         <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -472,7 +463,7 @@
     <p>Drops a column from the table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropColumn(table, column)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DropColumn(table, column)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -486,12 +477,12 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to alter.</td>
     </tr>
     <tr>
         <td>column</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td><span class="text-info" title="TableColumn">TableColumn</span></td>
         <td>Column to be dropped.</td>
     </tr>
 </tbody></table>
@@ -509,7 +500,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -519,7 +510,7 @@
     <p>Drops a column constraint.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropColumnConstraint(table, column, constraint)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DropColumnConstraint(table, column, constraint)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -533,17 +524,17 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to alter.</td>
     </tr>
     <tr>
         <td>column</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecolumn.html">TableColumn</a></td>
+        <td><span class="text-info" title="TableColumn">TableColumn</span></td>
         <td>Column to alter.</td>
     </tr>
     <tr>
         <td>constraint</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-columnconstraint.html">ColumnConstraint</a></td>
+        <td><span class="text-info" title="ColumnConstraint">ColumnConstraint</span></td>
         <td>Contraint to be dropped.</td>
     </tr>
 </tbody></table>
@@ -561,7 +552,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">column</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">constraint</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -571,7 +562,7 @@
     <p>Drops a foreign key.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropForeignKey(table, foreignKey)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DropForeignKey(table, foreignKey)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -585,12 +576,12 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to alter.</td>
     </tr>
     <tr>
         <td>foreignKey</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-foreignkey.html">ForeignKey</a></td>
+        <td><span class="text-info" title="ForeignKey">ForeignKey</span></td>
         <td>Foreign key to drop.</td>
     </tr>
 </tbody></table>
@@ -608,7 +599,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">foreignKey</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -618,7 +609,7 @@
     <p>Drops an index.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropIndex(table, index)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DropIndex(table, index)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -632,12 +623,12 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to alter.</td>
     </tr>
     <tr>
         <td>index</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a></td>
+        <td><span class="text-info" title="Index">Index</span></td>
         <td>Index to drop.</td>
     </tr>
 </tbody></table>
@@ -655,7 +646,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">index</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -665,7 +656,7 @@
     <p>Drops a primary key index.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropPrimaryKey(table, primaryKey)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DropPrimaryKey(table, primaryKey)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -679,12 +670,12 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to alter.</td>
     </tr>
     <tr>
         <td>primaryKey</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-index.html">Index</a></td>
+        <td><span class="text-info" title="Index">Index</span></td>
         <td>Index to drop.</td>
     </tr>
 </tbody></table>
@@ -702,7 +693,7 @@
         <td><p>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">primaryKey</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -712,7 +703,7 @@
     <p>Drops a table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropTable(table)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DropTable(table)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -726,7 +717,7 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to drop.</td>
     </tr>
 </tbody></table>
@@ -744,7 +735,7 @@
         <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -754,7 +745,7 @@
     <p>Drops a view.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DropView(view)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DropView(view)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -768,7 +759,7 @@
 <tbody>
     <tr>
         <td>view</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-view.html">View</a></td>
+        <td><span class="text-info" title="View">View</span></td>
         <td>View to drop.</td>
     </tr>
 </tbody></table>
@@ -786,7 +777,7 @@
         <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -796,7 +787,7 @@
     <p>Grants permission to a grantee to access a database object.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> GrantPermissions(grant)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> GrantPermissions(grant)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -810,7 +801,7 @@
 <tbody>
     <tr>
         <td>grant</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-grant.html">Grant</a></td>
+        <td><span class="text-info" title="Grant">Grant</span></td>
         <td>Grant configuration.</td>
     </tr>
 </tbody></table>
@@ -828,7 +819,7 @@
         <td>Thrown when <strong class="text-info">grant</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -838,7 +829,7 @@
     <p>Renames a table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> RenameTable(tableName, newTableName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> RenameTable(tableName, newTableName)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -852,12 +843,12 @@
 <tbody>
     <tr>
         <td>tableName</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablename.html">TableName</a></td>
+        <td><span class="text-info" title="TableName">TableName</span></td>
         <td>Name of the table to be renamed.</td>
     </tr>
     <tr>
         <td>newTableName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>New table name.</td>
     </tr>
 </tbody></table>
@@ -875,11 +866,11 @@
         <td>Thrown when <strong class="text-info">tableName</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">newTableName</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the configuration is not valid.</td>
     </tr>
 </tbody></table>
@@ -888,7 +879,6 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#constructors">Constructors</a></li>
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">

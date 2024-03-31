@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 <dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">KpokPatagon.Security.Cryptography.ISymmetricProvider, System.IDisposable</dd>
 </dl>
@@ -47,7 +45,7 @@
     <p>Initializes a new instance of <strong>SymmetricCryptographer</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SymmetricCryptographer(symmetricAlgorithm, symmetricKey, previousSymmetricKey)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> SymmetricCryptographer(symmetricAlgorithm, symmetricKey, previousSymmetricKey)</code></dd>
 </dl>
 <h6 class="mt-1">Remarks</h6>
 <p><p>
@@ -74,17 +72,17 @@
 <tbody>
     <tr>
         <td>symmetricAlgorithm</td>
-        <td><span class="text-info" title="System.Security.Cryptography.SymmetricAlgorithm">SymmetricAlgorithm</span></td>
+        <td><span class="text-info" title="SymmetricAlgorithm">SymmetricAlgorithm</span></td>
         <td>The <span class="text-info" title="System.Security.Cryptography.SymmetricAlgorithm">SymmetricAlgorithm</span>.</td>
     </tr>
     <tr>
         <td>symmetricKey</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The secret key for this symmetric cryptographer.</td>
     </tr>
     <tr>
         <td>previousSymmetricKey</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>Previous secret key for the symmetric algorithm (optional).</td>
     </tr>
 </tbody></table>
@@ -113,7 +111,7 @@
     <p>Decrypts a cypher text using a specified symmetric cryptography provider.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> Decrypt(ciphertext)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Decrypt(ciphertext)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The resulting plain text.</p>
@@ -129,7 +127,7 @@
 <tbody>
     <tr>
         <td>ciphertext</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The cipher text to decrypt.</td>
     </tr>
 </tbody></table>
@@ -147,7 +145,7 @@
         <td>Thrown the <strong class="text-info">ciphertext</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException">&lt;a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html"&gt;CryptographyException&lt;/a&gt;</span></td>
         <td>Thrown when an error occurs while transforming the data.</td>
     </tr>
 </tbody></table>
@@ -157,7 +155,7 @@
     <p>Decrypts a cypher stream using the specified symmetric cryptograpy provider.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Decrypt(source, destination)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Decrypt(source, destination)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -171,12 +169,12 @@
 <tbody>
     <tr>
         <td>source</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>The source stream to decript.</td>
     </tr>
     <tr>
         <td>destination</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>The destination stream where the plain text result should be written.</td>
     </tr>
 </tbody></table>
@@ -194,7 +192,7 @@
         <td><p>Thrown the <strong class="text-info">source</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">destination</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException">&lt;a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html"&gt;CryptographyException&lt;/a&gt;</span></td>
         <td>Thrown when an error occurs while transforming the data.</td>
     </tr>
 </tbody></table>
@@ -204,7 +202,7 @@
     <p>Executes application specific clean up code.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Dispose()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Dispose()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Security.Cryptography.SymmetricCryptographer.Encrypt(System.Byte[])" class="mb-5">
@@ -212,7 +210,7 @@
     <p>Encrypts a secret using a specified symmetric cryptography provider.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> Encrypt(plaintext)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Encrypt(plaintext)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The resulting cipher text.</p>
@@ -228,7 +226,7 @@
 <tbody>
     <tr>
         <td>plaintext</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The input to encrypt.</td>
     </tr>
 </tbody></table>
@@ -246,7 +244,7 @@
         <td>Thrown the <strong class="text-info">plaintext</strong> is <strong class="text-info">null</strong> or it is empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException">&lt;a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html"&gt;CryptographyException&lt;/a&gt;</span></td>
         <td>Thrown when an error occurs while transforming the data.</td>
     </tr>
 </tbody></table>
@@ -256,7 +254,7 @@
     <p>Encrypts a secret into the source stream using the specified cryptography provider.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Encrypt(source, destination)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Encrypt(source, destination)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -270,12 +268,12 @@
 <tbody>
     <tr>
         <td>source</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>The source stream to encrypt.</td>
     </tr>
     <tr>
         <td>destination</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>The destination stream where the cipher text should be written.</td>
     </tr>
 </tbody></table>
@@ -293,7 +291,7 @@
         <td><p>Thrown the <strong class="text-info">source</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">destination</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException">&lt;a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html"&gt;CryptographyException&lt;/a&gt;</span></td>
         <td>Thrown when an error occurs while transforming the data.</td>
     </tr>
 </tbody></table>

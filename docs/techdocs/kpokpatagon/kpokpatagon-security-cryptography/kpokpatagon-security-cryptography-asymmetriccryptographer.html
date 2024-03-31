@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Security.Cryptography.AsymmetricCryptographer.#ctor" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AsymmetricCryptographer()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AsymmetricCryptographer()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Security.Cryptography.AsymmetricCryptographer.#ctor(KpokPatagon.Security.Cryptography.IAsymmetricKeyStore)" class="mb-5">
@@ -53,7 +51,7 @@
     <p>Initializes a new instance of <strong>AsymmetricCryptographer</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AsymmetricCryptographer(keyStore)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AsymmetricCryptographer(keyStore)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -67,7 +65,7 @@
 <tbody>
     <tr>
         <td>keyStore</td>
-        <td><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a></td>
+        <td><span class="text-info" title="IAsymmetricKeyStore">IAsymmetricKeyStore</span></td>
         <td>An <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a>.</td>
     </tr>
 </tbody></table>
@@ -92,7 +90,7 @@
     <p>An <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a> to get the keys</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-iasymmetrickeystore.html">IAsymmetricKeyStore</a> KeyStore { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IAsymmetricKeyStore">IAsymmetricKeyStore</span> KeyStore { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -101,7 +99,7 @@
     <p>Decrypts the information contained within the <strong class="text-info">ciphered</strong> package.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DecryptPackage(ciphered, plaintext)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DecryptPackage(ciphered, plaintext)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -115,12 +113,12 @@
 <tbody>
     <tr>
         <td>ciphered</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>Ciphered package to decrypt.</td>
     </tr>
     <tr>
         <td>plaintext</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>Decrypted data from the ciphered package.</td>
     </tr>
 </tbody></table>
@@ -138,15 +136,15 @@
         <td><p>Thrown when <strong class="text-info">ciphered</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">plaintext</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException">&lt;a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html"&gt;CryptographyException&lt;/a&gt;</span></td>
         <td>Thrown when an error occurs while decrypting the data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.AsymmetricKeyNotFoundException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-asymmetrickeynotfoundexception.html">AsymmetricKeyNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.AsymmetricKeyNotFoundException">&lt;a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-asymmetrickeynotfoundexception.html"&gt;AsymmetricKeyNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when the key could not be found.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.MissingRequiredPropertyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.MissingRequiredPropertyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html"&gt;MissingRequiredPropertyException&lt;/a&gt;</span></td>
         <td>Thrown when the object was not correctly initialized.</td>
     </tr>
 </tbody></table>
@@ -156,7 +154,7 @@
     <p>Encrypts <strong class="text-info">plaintext</strong> into a <strong class="text-info">ciphered</strong> package.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> EncryptPackage(plaintext, ciphered)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> EncryptPackage(plaintext, ciphered)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -170,12 +168,12 @@
 <tbody>
     <tr>
         <td>plaintext</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>Information to be ciphered.</td>
     </tr>
     <tr>
         <td>ciphered</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>Ciphered information</td>
     </tr>
 </tbody></table>
@@ -193,15 +191,15 @@
         <td><p>Thrown when <strong class="text-info">ciphered</strong> is <strong class="text-info">null</strong>.</p><p>-or- <strong class="text-info">plaintext</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html">CryptographyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.CryptographyException">&lt;a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-cryptographyexception.html"&gt;CryptographyException&lt;/a&gt;</span></td>
         <td>Thrown when an error occurs while encrypting the data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.AsymmetricKeyNotFoundException"><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-asymmetrickeynotfoundexception.html">AsymmetricKeyNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Security.Cryptography.AsymmetricKeyNotFoundException">&lt;a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-asymmetrickeynotfoundexception.html"&gt;AsymmetricKeyNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when the key could not be found.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.MissingRequiredPropertyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.MissingRequiredPropertyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html"&gt;MissingRequiredPropertyException&lt;/a&gt;</span></td>
         <td>Thrown when the object was not correctly initialized.</td>
     </tr>
 </tbody></table>

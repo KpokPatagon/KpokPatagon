@@ -45,7 +45,7 @@
     <p>Description metadata for this type.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-dataannotations/kpokpatagon-data-dataannotations-descriptivedatamodeldescriptor.html">DescriptiveDataModelDescriptor</a> TypeDescriptor { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="DescriptiveDataModelDescriptor">DescriptiveDataModelDescriptor</span> TypeDescriptor { get; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -54,7 +54,7 @@
     <p>Create a new item.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{KpokPatagon.Data.IDescriptiveDataModel}">Task&lt;<strong>IDescriptiveDataModel</strong>&gt;</span> AddAsync(code, description)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> AddAsync(code, description)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Returns the newly created item.</p>
@@ -70,12 +70,12 @@
 <tbody>
     <tr>
         <td>code</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Item code.</td>
     </tr>
     <tr>
         <td>description</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Item description.</td>
     </tr>
 </tbody></table>
@@ -85,7 +85,7 @@
     <p>Create or modify the descriptive object.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{KpokPatagon.Data.IDescriptiveDataModel}">Task&lt;<strong>IDescriptiveDataModel</strong>&gt;</span> EditAsync(code, description)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> EditAsync(code, description)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Returns the edited item.</p>
@@ -101,12 +101,12 @@
 <tbody>
     <tr>
         <td>code</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Item code.</td>
     </tr>
     <tr>
         <td>description</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Item description.</td>
     </tr>
 </tbody></table>
@@ -116,7 +116,7 @@
     <p>Returns a filtered list of items.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{KpokPatagon.Data.IDescriptiveDataModel}}">Task</span> FilterAsync(query, take)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> FilterAsync(query, take)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -130,12 +130,12 @@
 <tbody>
     <tr>
         <td>query</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Filter criteria.</td>
     </tr>
     <tr>
         <td>take</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td>Maximum amount of objects to retrieve.</td>
     </tr>
 </tbody></table>
@@ -145,7 +145,7 @@
     <p>Gets the item code.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetCode()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetCode()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.IDescriptiveDataModel.GetDescription" class="mb-5">
@@ -153,7 +153,7 @@
     <p>Gets the item description.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetDescription()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetDescription()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.IDescriptiveDataModel.RemoveAsync(System.String)" class="mb-5">
@@ -161,7 +161,7 @@
     <p>Removes an item from the underlaying repository.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{KpokPatagon.Data.IDescriptiveDataModel}">Task&lt;<strong>IDescriptiveDataModel</strong>&gt;</span> RemoveAsync(code)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> RemoveAsync(code)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Returns the removed item.</p>
@@ -177,7 +177,7 @@
 <tbody>
     <tr>
         <td>code</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Item code.</td>
     </tr>
 </tbody></table>

@@ -36,10 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
-<dt class="text-truncate col-sm-3">Implements:</dt>
-<dd class="col-sm-9">System.IEquatable{KpokPatagon.Security.Role}</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Security.Role.#ctor(System.String,System.String)" class="mb-5">
@@ -47,7 +43,7 @@
     <p>Initializes a new instance of <strong>Role</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Role(name, description)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Role(name, description)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -61,12 +57,12 @@
 <tbody>
     <tr>
         <td>name</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Role name.</td>
     </tr>
     <tr>
         <td>description</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Role description.</td>
     </tr>
 </tbody></table>
@@ -80,27 +76,10 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
-</div>
-<h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:KpokPatagon.Security.Role.Description" class="mb-5">
-    <h3 class="lead text-info">Description</h3>
-    <p>Role description.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Description { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:KpokPatagon.Security.Role.Name" class="mb-5">
-    <h3 class="lead text-info">Name</h3>
-    <p>Role name.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
-</dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Security.Role.Equals(KpokPatagon.Security.Role)" class="mb-5">
@@ -108,7 +87,7 @@
     <p>Checks whether this <strong>Role</strong> is equal to <strong class="text-info">other</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Equals(other)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -122,7 +101,7 @@
 <tbody>
     <tr>
         <td>other</td>
-        <td><strong>Role</strong></td>
+        <td><span class="text-info" title="Role">Role</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -132,7 +111,7 @@
     <p>Checks whether this <strong>Role</strong> is equal to <strong class="text-info">obj</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Equals(obj)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -146,7 +125,7 @@
 <tbody>
     <tr>
         <td>obj</td>
-        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td><span class="text-info" title="Object">Object</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -157,7 +136,7 @@
             <remarks>Not required, implemented to avoid compiler warning.</remarks></p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> GetHashCode()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Security.Role.ToString" class="mb-5">
@@ -165,7 +144,7 @@
     <p>Returns a textual representation of the <b>Role</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToString()</code></dd>
 </dl>
 </div>
             </div>
@@ -173,13 +152,6 @@
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
 <li><a href="#constructors">Constructors</a></li>
-<li><a href="#properties">Properties</a></li>
-<li>
-    <ul style="font-size:0.8em;">
-        <li><a href="#P:KpokPatagon.Security.Role.Description">Description</a></li>
-        <li><a href="#P:KpokPatagon.Security.Role.Name">Name</a></li>
-    </ul>
-</li>
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">

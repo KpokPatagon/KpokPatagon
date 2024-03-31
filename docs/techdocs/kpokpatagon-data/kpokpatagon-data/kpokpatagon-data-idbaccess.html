@@ -61,7 +61,7 @@
     <p>Gets or sets the connection string used to connect to the database.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ConnectionString { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ConnectionString { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbAccess.DefaultSchema" class="mb-5">
@@ -69,7 +69,7 @@
     <p>Default schema for database objects.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> DefaultSchema { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> DefaultSchema { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbAccess.IsConnectionOpen" class="mb-5">
@@ -77,7 +77,7 @@
     <p>Indicates whether the connection is opened.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsConnectionOpen { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> IsConnectionOpen { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbAccess.IsInTransaction" class="mb-5">
@@ -85,7 +85,7 @@
     <p>Indicates whether an opened connection is in a transaction.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsInTransaction { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> IsInTransaction { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbAccess.Logger" class="mb-5">
@@ -93,7 +93,7 @@
     <p>A logger categorized for the database API interface.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<strong>IDbAccess</strong>&gt;</span> Logger { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span> Logger { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbAccess.Name" class="mb-5">
@@ -101,7 +101,7 @@
     <p>Gets or sets the name of the connection.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Name { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.IDbAccess.Retries" class="mb-5">
@@ -109,7 +109,7 @@
     <p>Specify how many times a failed operation will be retried.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Retries { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> Retries { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -118,7 +118,7 @@
     <p>Adds a new parameter to the command passed as parameter</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddParameter(command, name, type, direction, value)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AddParameter(command, name, type, direction, value)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -132,27 +132,27 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>The command where the parameter will be added</td>
     </tr>
     <tr>
         <td>name</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The quoted parameter name</td>
     </tr>
     <tr>
         <td>type</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td><span class="text-info" title="DbType">DbType</span></td>
         <td>The parameter data type</td>
     </tr>
     <tr>
         <td>direction</td>
-        <td><span class="text-info" title="System.Data.ParameterDirection">ParameterDirection</span></td>
+        <td><span class="text-info" title="ParameterDirection">ParameterDirection</span></td>
         <td>The parameter direction</td>
     </tr>
     <tr>
         <td>value</td>
-        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td><span class="text-info" title="Object">Object</span></td>
         <td>The value of the parameter</td>
     </tr>
 </tbody></table>
@@ -162,7 +162,7 @@
     <p>Adds a new parameter to the command passed as parameter</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> AddParameter(command, name, type, direction, size, value)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AddParameter(command, name, type, direction, size, value)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -176,32 +176,32 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>The command where the parameter will be added</td>
     </tr>
     <tr>
         <td>name</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The quoted parameter name</td>
     </tr>
     <tr>
         <td>type</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dbtype.html">DbType</a></td>
+        <td><span class="text-info" title="DbType">DbType</span></td>
         <td>The parameter data type</td>
     </tr>
     <tr>
         <td>direction</td>
-        <td><span class="text-info" title="System.Data.ParameterDirection">ParameterDirection</span></td>
+        <td><span class="text-info" title="ParameterDirection">ParameterDirection</span></td>
         <td>The parameter direction</td>
     </tr>
     <tr>
         <td>size</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td>The size of the data in the <strong class="text-info">value</strong>parameter</td>
     </tr>
     <tr>
         <td>value</td>
-        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td><span class="text-info" title="Object">Object</span></td>
         <td>The value of the parameter</td>
     </tr>
 </tbody></table>
@@ -211,7 +211,7 @@
     <p>Initiates a database transaction</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BeginTransaction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BeginTransaction()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An object representing the new transaction</p>
@@ -221,7 +221,7 @@
     <p>Initiates a database transaction with the specified isolation level</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> BeginTransaction(iso)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BeginTransaction(iso)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Ann object representing the new transaction</p>
@@ -237,7 +237,7 @@
 <tbody>
     <tr>
         <td>iso</td>
-        <td><span class="text-info" title="System.Data.IsolationLevel">IsolationLevel</span></td>
+        <td><span class="text-info" title="IsolationLevel">IsolationLevel</span></td>
         <td>Isolation level for the transaction</td>
     </tr>
 </tbody></table>
@@ -247,7 +247,7 @@
     <p>Closes the database connection if it is opened</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CloseConnection()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CloseConnection()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.IDbAccess.CommitTransaction" class="mb-5">
@@ -255,7 +255,7 @@
     <p>Commits the running database transaction</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CommitTransaction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CommitTransaction()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.IDbAccess.CreateCommand(System.Data.CommandType)" class="mb-5">
@@ -263,7 +263,7 @@
     <p>Creates a new database command</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> CreateCommand(commandType)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> CreateCommand(commandType)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An object representing the newly created command</p>
@@ -279,7 +279,7 @@
 <tbody>
     <tr>
         <td>commandType</td>
-        <td><span class="text-info" title="System.Data.CommandType">CommandType</span></td>
+        <td><span class="text-info" title="CommandType">CommandType</span></td>
         <td>Type of the command to create</td>
     </tr>
 </tbody></table>
@@ -289,7 +289,7 @@
     <p>Executes the specified command against the database.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> ExecuteNonQuery(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> ExecuteNonQuery(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Quantity of records affected by the command.</p>
@@ -305,7 +305,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>Command to execute</td>
     </tr>
 </tbody></table>
@@ -315,7 +315,7 @@
     <p>Executes the specified command asyncronously against the database.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Int32}">Task&lt;Int32&gt;</span> ExecuteNonQueryAsync(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ExecuteNonQueryAsync(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Quantity of records affected by the command.</p>
@@ -331,7 +331,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>Command to execute</td>
     </tr>
 </tbody></table>
@@ -341,7 +341,7 @@
     <p>Executes the specified command against the database and returns an IDataReader.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDataReader">IDataReader</span> ExecuteReader(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDataReader">IDataReader</span> ExecuteReader(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A read only forward only <span class="text-info" title="System.Data.IDataReader">IDataReader</span> with the database data.</p>
@@ -357,7 +357,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>Command to execute.</td>
     </tr>
 </tbody></table>
@@ -367,7 +367,7 @@
     <p>Executes the specified command against the database asyncronously and returns an IDataReader.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Data.IDataReader}">Task&lt;IDataReader&gt;</span> ExecuteReaderAsync(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ExecuteReaderAsync(command)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -381,7 +381,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>Command to execute.</td>
     </tr>
 </tbody></table>
@@ -392,7 +392,7 @@
             first field of the first record retrieved</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Object">Object</span> ExecuteScalar(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Object">Object</span> ExecuteScalar(command)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>Value of the first field of the first record</p>
@@ -408,7 +408,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>Command to excecute</td>
     </tr>
 </tbody></table>
@@ -419,7 +419,7 @@
             returns the first field of the first record retrieved.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Object}">Task&lt;Object&gt;</span> ExecuteScalarAsync(command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ExecuteScalarAsync(command)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -433,7 +433,7 @@
 <tbody>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td>Command to execute.</td>
     </tr>
 </tbody></table>
@@ -443,7 +443,7 @@
     <p>Gets the server version.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> GetServerVersion()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetServerVersion()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The server version.</p>
@@ -453,7 +453,7 @@
     <p>Opens a connection with the database server</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> OpenConnection()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> OpenConnection()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.IDbAccess.OpenConnectionAsync" class="mb-5">
@@ -461,7 +461,7 @@
     <p>Opens a connection with the database server asyncronously.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> OpenConnectionAsync()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> OpenConnectionAsync()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.IDbAccess.RollbackTransaction" class="mb-5">
@@ -469,7 +469,7 @@
     <p>Aborts the current transaction</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> RollbackTransaction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> RollbackTransaction()</code></dd>
 </dl>
 </div>
             </div>

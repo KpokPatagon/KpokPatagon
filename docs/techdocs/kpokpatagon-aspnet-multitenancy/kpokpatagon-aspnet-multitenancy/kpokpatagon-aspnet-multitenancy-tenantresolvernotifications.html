@@ -36,16 +36,31 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.AspNet.Multitenancy.TenantResolverNotifications{KpokPatagon.Multitenancy.Tenant,}</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
+<div id="M:KpokPatagon.AspNet.Multitenancy.TenantResolverNotifications`2.#ctor" class="mb-5">
     <h3 class="lead text-info">TenantResolverNotifications</h3>
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TenantResolverNotifications()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TenantResolverNotifications()</code></dd>
+</dl>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.AspNet.Multitenancy.TenantResolverNotifications`2.TenantNotFound" class="mb-5">
+    <h3 class="lead text-info">TenantNotFound</h3>
+    <p>Notification raised when the tenant was not found.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Func&lt;TenantNotFoundNotification, Task&gt;">Func&lt;TenantNotFoundNotification, Task&gt;</span> TenantNotFound { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.AspNet.Multitenancy.TenantResolverNotifications`2.TenantResolved" class="mb-5">
+    <h3 class="lead text-info">TenantResolved</h3>
+    <p>Notification raised when a tenant was found.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Func&lt;TenantResolvedNotification, Task&gt;">Func&lt;TenantResolvedNotification, Task&gt;</span> TenantResolved { get; set; }</code></dd>
 </dl>
 </div>
             </div>
@@ -53,6 +68,13 @@
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
 <li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.AspNet.Multitenancy.TenantResolverNotifications`2.TenantNotFound">TenantNotFound</a></li>
+        <li><a href="#P:KpokPatagon.AspNet.Multitenancy.TenantResolverNotifications`2.TenantResolved">TenantResolved</a></li>
+    </ul>
+</li>
 </ul>
             </div>
         </div>

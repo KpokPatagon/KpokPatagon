@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.Data.DataService</dd>
 </dl>
 <h2 id="remarks" class="mt-5">Remarks</h2>
 <p><p>
@@ -54,7 +52,7 @@
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TenantDataService()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TenantDataService()</code></dd>
 </dl>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
@@ -63,7 +61,7 @@
     <p>The alias for the underlaying table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Alias { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Alias { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.TenantDataService.Fields" class="mb-5">
@@ -71,7 +69,7 @@
     <p>A dictionary of field configuration for the underlaying table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>&gt;</span> Fields { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDictionary&lt;String, Field&gt;">IDictionary&lt;String, Field&gt;</span> Fields { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.TenantDataService.Table" class="mb-5">
@@ -79,7 +77,7 @@
     <p>The name of the underlaying table.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Table { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Table { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -88,7 +86,7 @@
     <p>Gets the tenant looking by it's name without considering the case.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-tenant.html">Tenant</a> GetTenantByNameCaseInsensitive(name)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Tenant">Tenant</span> GetTenantByNameCaseInsensitive(name)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -102,7 +100,7 @@
 <tbody>
     <tr>
         <td>name</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
 </tbody></table>

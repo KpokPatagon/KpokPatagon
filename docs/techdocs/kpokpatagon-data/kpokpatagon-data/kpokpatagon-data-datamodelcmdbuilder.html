@@ -37,27 +37,16 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 <dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">KpokPatagon.Data.IDataModelCmdBuilder</dd>
 </dl>
-<h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
-    <h3 class="lead text-info">DataModelCmdBuilder</h3>
-    <p>Default constructor</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DataModelCmdBuilder()</code></dd>
-</dl>
-</div>
 <h2 id="properties" class="mt-5">Properties</h2>
 <div id="P:KpokPatagon.Data.DataModelCmdBuilder.CommandBuilder" class="mb-5">
     <h3 class="lead text-info">CommandBuilder</h3>
     <p>Gets or sets the command builder object.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbcmdbuilder.html">IDbCmdBuilder</a> CommandBuilder { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCmdBuilder">IDbCmdBuilder</span> CommandBuilder { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -66,7 +55,7 @@
     <p>Adds a predicate that applies the concurrency check.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> AddConcurrencyPredicateIfNecessary(statement, model, timestampKind, expectedTimestamp, fields)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="Void">Void</span> AddConcurrencyPredicateIfNecessary(statement, model, timestampKind, expectedTimestamp, fields)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the predicates where added, otherwise <strong class="text-info">false</strong>.</p>
@@ -82,27 +71,27 @@
 <tbody>
     <tr>
         <td>statement</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a></td>
+        <td><span class="text-info" title="Statement">Statement</span></td>
         <td>A <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a> to add the predicate to.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
     </tr>
     <tr>
         <td>timestampKind</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-timestampkind.html">TimestampKind</a></td>
+        <td><span class="text-info" title="TimestampKind">TimestampKind</span></td>
         <td>Kind of timestamp to apply.</td>
     </tr>
     <tr>
         <td>expectedTimestamp</td>
-        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td><span class="text-info" title="DateTime">DateTime</span></td>
         <td>Expected timestamp.</td>
     </tr>
     <tr>
         <td>fields</td>
-        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>&gt;</span></td>
+        <td><span class="text-info" title="IDictionary&lt;String, Field&gt;">IDictionary&lt;String, Field&gt;</span></td>
         <td>A dictionay of fields.</td>
     </tr>
 </tbody></table>
@@ -126,7 +115,7 @@
     <p>Adds a predicate that filters by the identity or autonumeric field.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Boolean">Boolean</span> AddIdentityOrAutonumericPredicate(statement, model, fields)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="Boolean">Boolean</span> AddIdentityOrAutonumericPredicate(statement, model, fields)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the predicates where added, otherwise <strong class="text-info">false</strong>.</p>
@@ -142,17 +131,17 @@
 <tbody>
     <tr>
         <td>statement</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a></td>
+        <td><span class="text-info" title="Statement">Statement</span></td>
         <td>A <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a> to add the predicate to.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
     </tr>
     <tr>
         <td>fields</td>
-        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>&gt;</span></td>
+        <td><span class="text-info" title="IDictionary&lt;String, Field&gt;">IDictionary&lt;String, Field&gt;</span></td>
         <td>A dictionay of fields.</td>
     </tr>
 </tbody></table>
@@ -176,7 +165,7 @@
     <p>Adds predicates that filters by the primary key fields.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Boolean">Boolean</span> AddPrimaryKeyPredicates(statement, model, fields)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="Boolean">Boolean</span> AddPrimaryKeyPredicates(statement, model, fields)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the predicates where added, otherwise <strong class="text-info">false</strong>.</p>
@@ -192,17 +181,17 @@
 <tbody>
     <tr>
         <td>statement</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a></td>
+        <td><span class="text-info" title="Statement">Statement</span></td>
         <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a> to add the predicate to.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>The target <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
     </tr>
     <tr>
         <td>fields</td>
-        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,KpokPatagon.Data.Field}">IDictionary&lt;String, <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-field.html">Field</a>&gt;</span></td>
+        <td><span class="text-info" title="IDictionary&lt;String, Field&gt;">IDictionary&lt;String, Field&gt;</span></td>
         <td>A dictionay of fields.</td>
     </tr>
 </tbody></table>
@@ -226,7 +215,7 @@
     <p>Builds a SQL delete command.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> BuildDelete(dataService, model, timestampKind, expectedTimestamp)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> BuildDelete(dataService, model, timestampKind, expectedTimestamp)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A delete command to be executed.</p>
@@ -242,22 +231,22 @@
 <tbody>
     <tr>
         <td>dataService</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+        <td><span class="text-info" title="IDataService">IDataService</span></td>
         <td>The data service for the model.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
     </tr>
     <tr>
         <td>timestampKind</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-timestampkind.html">TimestampKind</a></td>
+        <td><span class="text-info" title="TimestampKind">TimestampKind</span></td>
         <td>Timestamp configuration.</td>
     </tr>
     <tr>
         <td>expectedTimestamp</td>
-        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td><span class="text-info" title="DateTime">DateTime</span></td>
         <td>The expected timestamp value.</td>
     </tr>
 </tbody></table>
@@ -275,7 +264,7 @@
         <td><p>Thrown when <strong class="text-info">dataService</strong> is <strong class="text-info">null</strong>.</p><p>-o-</p><p>When <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.MissingWhereClauseException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-missingwhereclauseexception.html">MissingWhereClauseException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.MissingWhereClauseException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-missingwhereclauseexception.html"&gt;MissingWhereClauseException&lt;/a&gt;</span></td>
         <td>Thrown when the WHERE clause could not be built.</td>
     </tr>
 </tbody></table>
@@ -285,7 +274,7 @@
     <p>Builds a SQL insert command.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> BuildInsert(dataService, model, includeIdOutputParameter)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> BuildInsert(dataService, model, includeIdOutputParameter)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An insert command to be executed.</p>
@@ -301,17 +290,17 @@
 <tbody>
     <tr>
         <td>dataService</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+        <td><span class="text-info" title="IDataService">IDataService</span></td>
         <td>The data service for the model.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
     </tr>
     <tr>
         <td>includeIdOutputParameter</td>
-        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
         <td>Whether the command must extract the generated Id as an output parameter.</td>
     </tr>
 </tbody></table>
@@ -335,7 +324,7 @@
     <p>Builds a SQL update command.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> BuildUpdate(dataService, model, timestampKind, expectedTimestamp)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> BuildUpdate(dataService, model, timestampKind, expectedTimestamp)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An update command to be executed.</p>
@@ -351,22 +340,22 @@
 <tbody>
     <tr>
         <td>dataService</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+        <td><span class="text-info" title="IDataService">IDataService</span></td>
         <td>The data service for the model.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
     </tr>
     <tr>
         <td>timestampKind</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-timestampkind.html">TimestampKind</a></td>
+        <td><span class="text-info" title="TimestampKind">TimestampKind</span></td>
         <td>Timestamp configuration.</td>
     </tr>
     <tr>
         <td>expectedTimestamp</td>
-        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td><span class="text-info" title="DateTime">DateTime</span></td>
         <td>The expected timestamp value.</td>
     </tr>
 </tbody></table>
@@ -384,7 +373,7 @@
         <td><p>Thrown when <strong class="text-info">dataService</strong> is <strong class="text-info">null</strong>.</p><p>-o-</p><p>When <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.MissingWhereClauseException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-missingwhereclauseexception.html">MissingWhereClauseException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.MissingWhereClauseException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-missingwhereclauseexception.html"&gt;MissingWhereClauseException&lt;/a&gt;</span></td>
         <td>Thrown when the WHERE clause could not be built.</td>
     </tr>
 </tbody></table>
@@ -394,7 +383,7 @@
     <p>Check if the object state is valid.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Void">Void</span> EnsureState()</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="Void">Void</span> EnsureState()</code></dd>
 </dl>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
@@ -406,7 +395,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.MissingRequiredPropertyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.MissingRequiredPropertyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html"&gt;MissingRequiredPropertyException&lt;/a&gt;</span></td>
         <td>Thrown when a required property is not initialized.</td>
     </tr>
 </tbody></table>
@@ -415,7 +404,6 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#constructors">Constructors</a></li>
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">

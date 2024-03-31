@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Reflection.ReflectionHelpers.GetAssemblies" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Gets all assemblies availables.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Reflection.Assembly[]">Assembly[]</span> GetAssemblies()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Assembly[]">Assembly[]</span> GetAssemblies()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Reflection.ReflectionHelpers.GetType(System.String)" class="mb-5">
@@ -53,7 +51,7 @@
     <p>Gets the <span class="text-info" title="System.Type">Type</span> from the specied <strong class="text-info">fullQualifiedTypeName</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> GetType(fullQualifiedTypeName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Type">Type</span> GetType(fullQualifiedTypeName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The <span class="text-info" title="System.Type">Type</span>.</p>
@@ -69,7 +67,7 @@
 <tbody>
     <tr>
         <td>fullQualifiedTypeName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>A full qualified type name.</td>
     </tr>
 </tbody></table>
@@ -83,7 +81,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.FrameworkException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-frameworkexception.html">FrameworkException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.FrameworkException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-frameworkexception.html"&gt;FrameworkException&lt;/a&gt;</span></td>
         <td><p>Thown when <strong class="text-info">fullQualifiedTypeName</strong> could not ne parsed.</p><p>-or-</p><p>When the type could not be loaded.</p></td>
     </tr>
 </tbody></table>
@@ -93,7 +91,7 @@
     <p>Tries to get the specified <strong class="text-info">fullQualifiedTypeName</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> TryGetType(fullQualifiedTypeName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Type">Type</span> TryGetType(fullQualifiedTypeName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A <b>Type</b> corresponding to the received argument or <strong class="text-info">null</strong> if the type could not be loaded.</p>
@@ -111,7 +109,7 @@
 <tbody>
     <tr>
         <td>fullQualifiedTypeName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Full qualified type name string.</td>
     </tr>
 </tbody></table>
@@ -122,7 +120,7 @@
             only if it is assignable from type <typeparamref name="T" />.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Type">Type</span> TryGetType&lt;T&gt;(fullQualifiedTypeName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Type">Type</span> TryGetType&lt;T&gt;(fullQualifiedTypeName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A <b>Type</b> for the specified <strong class="text-info">fullQualifiedTypeName</strong>.</p>
@@ -138,7 +136,7 @@
 <tbody>
     <tr>
         <td>fullQualifiedTypeName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Full qualified type name.</td>
     </tr>
 </tbody></table>
@@ -148,7 +146,7 @@
     <p>Parses a full qualified type name and assign the values of the type and assembly names to the specified variables.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> TryGetTypeAndAssemblyNames(fullQualifiedTypeName, typeName, assemblyName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> TryGetTypeAndAssemblyNames(fullQualifiedTypeName, <span class="text-info">ref </span>typeName, <span class="text-info">ref </span>assemblyName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the name could be parsed correctly, otherwise <strong class="text-info">false</strong>.</p>
@@ -164,17 +162,17 @@
 <tbody>
     <tr>
         <td>fullQualifiedTypeName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Full qualified type name.</td>
     </tr>
     <tr>
         <td>typeName</td>
-        <td><span class="text-info" title="System.String@">String@</span></td>
+        <td><span class="text-info" title="String&">String&</span></td>
         <td>Type name extracted from <strong class="text-info">fullQualifiedTypeName</strong>.</td>
     </tr>
     <tr>
         <td>assemblyName</td>
-        <td><span class="text-info" title="System.String@">String@</span></td>
+        <td><span class="text-info" title="String&">String&</span></td>
         <td>Assembly name extracted from <strong class="text-info">fullQualifiedTypeName</strong>.</td>
     </tr>
 </tbody></table>

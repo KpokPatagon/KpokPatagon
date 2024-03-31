@@ -37,10 +37,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
-<dt class="text-truncate col-sm-3">Implements:</dt>
-<dd class="col-sm-9">Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.AspNet.Multitenancy.Binders.MultitenantDataModelModelBinder.#ctor(KpokPatagon.Security.Cryptography.ICryptographer,Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder)" class="mb-5">
@@ -48,7 +44,7 @@
     <p>Initializes a new instance of <strong>MultitenantDataModelModelBinder</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MultitenantDataModelModelBinder(cryptographer, defaultBinder)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> MultitenantDataModelModelBinder(cryptographer, defaultBinder)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -62,12 +58,12 @@
 <tbody>
     <tr>
         <td>cryptographer</td>
-        <td><a href="../../kpokpatagon/kpokpatagon-security-cryptography/kpokpatagon-security-cryptography-icryptographer.html">ICryptographer</a></td>
+        <td><span class="text-info" title="ICryptographer">ICryptographer</span></td>
         <td></td>
     </tr>
     <tr>
         <td>defaultBinder</td>
-        <td><span class="text-info" title="Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinder">IModelBinder</span></td>
+        <td><span class="text-info" title="IModelBinder">IModelBinder</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -78,7 +74,7 @@
     <p>Binds the model.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task">Task</span> BindModelAsync(bindingContext)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> BindModelAsync(bindingContext)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -92,7 +88,7 @@
 <tbody>
     <tr>
         <td>bindingContext</td>
-        <td><span class="text-info" title="Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext">ModelBindingContext</span></td>
+        <td><span class="text-info" title="ModelBindingContext">ModelBindingContext</span></td>
         <td></td>
     </tr>
 </tbody></table>

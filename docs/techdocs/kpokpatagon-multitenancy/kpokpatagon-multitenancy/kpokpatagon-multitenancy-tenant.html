@@ -36,10 +36,8 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.Data.DataModel</dd>
 <dt class="text-truncate col-sm-3">Implements:</dt>
-<dd class="col-sm-9">System.IEquatable{KpokPatagon.Multitenancy.Tenant}, KpokPatagon.Multitenancy.ITenant, KpokPatagon.Multitenancy.ITenant{}</dd>
+<dd class="col-sm-9">KpokPatagon.Multitenancy.ITenant, KpokPatagon.Multitenancy.ITenant</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Multitenancy.Tenant.#ctor" class="mb-5">
@@ -47,7 +45,7 @@
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Tenant()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Tenant()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Multitenancy.Tenant.#ctor(System.Int32)" class="mb-5">
@@ -55,7 +53,7 @@
     <p>Initializes a new instance of <strong>Tenant</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Tenant(id)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Tenant(id)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -69,7 +67,7 @@
 <tbody>
     <tr>
         <td>id</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td>Tenant Id.</td>
     </tr>
 </tbody></table>
@@ -80,7 +78,7 @@
     <p>Connection string to connect the tenant database (optional).</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ConnectionString { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ConnectionString { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.Culture" class="mb-5">
@@ -88,7 +86,7 @@
     <p>Culture name.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Culture { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Culture { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.DeletionTime" class="mb-5">
@@ -96,7 +94,7 @@
     <p>Date and time when the tenant was deleted (soft delete).</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.DateTime}">Nullable&lt;DateTime&gt;</span> DeletionTime { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Nullable&lt;DateTime&gt;">Nullable&lt;DateTime&gt;</span> DeletionTime { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.DisplayName" class="mb-5">
@@ -104,7 +102,7 @@
     <p>Display name of this tenant.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> DisplayName { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> DisplayName { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.Email" class="mb-5">
@@ -112,7 +110,7 @@
     <p>Primary tenant's e-mail.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Email { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Email { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.EnforceModelValidation" class="mb-5">
@@ -120,7 +118,7 @@
     <p>Gets whether the model validation must be enforced.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.Id" class="mb-5">
@@ -128,7 +126,7 @@
     <p>Tenant Id.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Id { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> Id { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.IsDeleted" class="mb-5">
@@ -136,7 +134,7 @@
     <p>Whether the tenant is deleted.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> IsDeleted { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> IsDeleted { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.MailFromAddress" class="mb-5">
@@ -144,7 +142,7 @@
     <p>Address from which mails are sent.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> MailFromAddress { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> MailFromAddress { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.MailFromName" class="mb-5">
@@ -152,7 +150,7 @@
     <p>Display name for sending address.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> MailFromName { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> MailFromName { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.MailServerId" class="mb-5">
@@ -160,7 +158,7 @@
     <p>Mail server ID.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> MailServerId { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> MailServerId { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.Name" class="mb-5">
@@ -168,7 +166,7 @@
     <p>The name or code of the tenant.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Name { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.ProvisionState" class="mb-5">
@@ -176,7 +174,7 @@
     <p>State of tenant provisioning.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-provisionstate.html">ProvisionState</a> ProvisionState { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="ProvisionState">ProvisionState</span> ProvisionState { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.Ring" class="mb-5">
@@ -184,7 +182,7 @@
     <p>Ring number.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> Ring { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> Ring { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.SubscriptionState" class="mb-5">
@@ -192,7 +190,7 @@
     <p>State of tenant subscription</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-subscriptionstate.html">SubscriptionState</a> SubscriptionState { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="SubscriptionState">SubscriptionState</span> SubscriptionState { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.SubscriptionStateComment" class="mb-5">
@@ -200,7 +198,7 @@
     <p>A comment about the subscription state.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SubscriptionStateComment { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> SubscriptionStateComment { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.TrialDurationInDays" class="mb-5">
@@ -208,7 +206,7 @@
     <p>Trial duration in days.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.Int32}">Nullable&lt;Int32&gt;</span> TrialDurationInDays { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Nullable&lt;Int32&gt;">Nullable&lt;Int32&gt;</span> TrialDurationInDays { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.TrialEnd" class="mb-5">
@@ -216,7 +214,7 @@
     <p>Date and time that the trial period ends or ended.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.DateTime}">Nullable&lt;DateTime&gt;</span> TrialEnd { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Nullable&lt;DateTime&gt;">Nullable&lt;DateTime&gt;</span> TrialEnd { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Multitenancy.Tenant.TrialStarted" class="mb-5">
@@ -224,7 +222,7 @@
     <p>Date and time that the trial period has started.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Nullable{System.DateTime}">Nullable&lt;DateTime&gt;</span> TrialStarted { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Nullable&lt;DateTime&gt;">Nullable&lt;DateTime&gt;</span> TrialStarted { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -233,7 +231,7 @@
     <p>Indicates whether the current object is equal to another object of the same type.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Equals(other)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -247,7 +245,7 @@
 <tbody>
     <tr>
         <td>other</td>
-        <td><strong>Tenant</strong></td>
+        <td><span class="text-info" title="Tenant">Tenant</span></td>
         <td>The object to compare this object to.</td>
     </tr>
 </tbody></table>
@@ -257,7 +255,7 @@
     <p>Indicates whether the current object is equal to the <strong class="text-info">obj</strong> object.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Equals(obj)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -271,7 +269,7 @@
 <tbody>
     <tr>
         <td>obj</td>
-        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td><span class="text-info" title="Object">Object</span></td>
         <td>The object to compare this object to.</td>
     </tr>
 </tbody></table>
@@ -282,7 +280,7 @@
             <remarks>Not required, implemented to avoid compiler warning.</remarks></p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> GetHashCode()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Multitenancy.Tenant.ToString" class="mb-5">
@@ -290,7 +288,7 @@
     <p>Returns a textual representation.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToString()</code></dd>
 </dl>
 </div>
             </div>

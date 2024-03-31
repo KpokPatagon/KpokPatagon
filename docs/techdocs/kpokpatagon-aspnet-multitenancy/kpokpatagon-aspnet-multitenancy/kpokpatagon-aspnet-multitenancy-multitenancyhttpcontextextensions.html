@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.AspNet.Multitenancy.MultitenancyHttpContextExtensions.GetCurrentTenant``1(Microsoft.AspNetCore.Http.HttpContext)" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Gets the current tenant from the <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span> or <strong class="text-info">null</strong> if there is no one.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title=""></span> GetCurrentTenant&lt;TTenant&gt;(context)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="TTenant">TTenant</span> GetCurrentTenant&lt;TTenant&gt;(context)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The tenant from the <strong class="text-info">context</strong> or <strong class="text-info">null</strong>.</p>
@@ -61,7 +59,7 @@
 <tbody>
     <tr>
         <td>context</td>
-        <td><span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span></td>
+        <td><span class="text-info" title="HttpContext">HttpContext</span></td>
         <td>The <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span>.</td>
     </tr>
 </tbody></table>
@@ -71,7 +69,7 @@
     <p>Gets the current tenant from the <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span> or <strong class="text-info">null</strong> if there is no one.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title=""></span> GetCurrentTenant&lt;TTenant, TTenantId&gt;(context)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="TTenant">TTenant</span> GetCurrentTenant&lt;TTenant, TTenantId&gt;(context)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The tenant from the <strong class="text-info">context</strong> or <strong class="text-info">null</strong>.</p>
@@ -87,7 +85,7 @@
 <tbody>
     <tr>
         <td>context</td>
-        <td><span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span></td>
+        <td><span class="text-info" title="HttpContext">HttpContext</span></td>
         <td>The <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span>.</td>
     </tr>
 </tbody></table>
@@ -98,7 +96,7 @@
             is <strong class="text-info">null</strong> a stored tenant is removed from the context.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SetCurrentTenant&lt;TTenant&gt;(context, tenant)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> SetCurrentTenant&lt;TTenant&gt;(context, tenant)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -112,7 +110,7 @@
 <tbody>
     <tr>
         <td>context</td>
-        <td><span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span></td>
+        <td><span class="text-info" title="HttpContext">HttpContext</span></td>
         <td>The <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span>.</td>
     </tr>
     <tr>
@@ -128,7 +126,7 @@
             is <strong class="text-info">null</strong> a stored tenant is removed from the context.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> SetCurrentTenant&lt;TTenant, TTenantId&gt;(context, tenant)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> SetCurrentTenant&lt;TTenant, TTenantId&gt;(context, tenant)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -142,7 +140,7 @@
 <tbody>
     <tr>
         <td>context</td>
-        <td><span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span></td>
+        <td><span class="text-info" title="HttpContext">HttpContext</span></td>
         <td>The <span class="text-info" title="Microsoft.AspNetCore.Http.HttpContext">HttpContext</span>.</td>
     </tr>
     <tr>

@@ -43,7 +43,7 @@
     <p>Returns a list of options for the parameter this provider belong to.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{KpokPatagon.IListItem}}">Task</span> GetOptionsAsync()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> GetOptionsAsync()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A collection of valid options for the specified parameter.</p>
@@ -53,7 +53,7 @@
     <p>Process configuration node for this <strong>IParameterOptionsProvider</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ParseConfig(config, configNode)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ParseConfig(config, configNode)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -67,12 +67,12 @@
 <tbody>
     <tr>
         <td>config</td>
-        <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterconfiguration.html">ParameterConfiguration</a></td>
+        <td><span class="text-info" title="ParameterConfiguration">ParameterConfiguration</span></td>
         <td>Parameter configuration.</td>
     </tr>
     <tr>
         <td>configNode</td>
-        <td><span class="text-info" title="System.Xml.XmlNode">XmlNode</span></td>
+        <td><span class="text-info" title="XmlNode">XmlNode</span></td>
         <td>XML configuration node.</td>
     </tr>
 </tbody></table>

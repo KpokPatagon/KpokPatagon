@@ -43,7 +43,7 @@
     <p>Get or set the command builder service.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbcmdbuilder.html">IDbCmdBuilder</a> CommandBuilder { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCmdBuilder">IDbCmdBuilder</span> CommandBuilder { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -52,7 +52,7 @@
     <p>Builds a SQL delete command.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> BuildDelete(dataService, model, timestampKind, expectedTimestamp)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> BuildDelete(dataService, model, timestampKind, expectedTimestamp)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>SQL delete command.</p>
@@ -68,22 +68,22 @@
 <tbody>
     <tr>
         <td>dataService</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+        <td><span class="text-info" title="IDataService">IDataService</span></td>
         <td>The data service for the model.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>Data model object.</td>
     </tr>
     <tr>
         <td>timestampKind</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-timestampkind.html">TimestampKind</a></td>
+        <td><span class="text-info" title="TimestampKind">TimestampKind</span></td>
         <td>Specifies the kind of timestamp field that should be included.</td>
     </tr>
     <tr>
         <td>expectedTimestamp</td>
-        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td><span class="text-info" title="DateTime">DateTime</span></td>
         <td>The timestamp value that is expected to be on the database.</td>
     </tr>
 </tbody></table>
@@ -93,7 +93,7 @@
     <p>Builds a SQL insert command.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> BuildInsert(dataService, model, includeIdOutputParameter)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> BuildInsert(dataService, model, includeIdOutputParameter)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>SQL insert Command.</p>
@@ -109,17 +109,17 @@
 <tbody>
     <tr>
         <td>dataService</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+        <td><span class="text-info" title="IDataService">IDataService</span></td>
         <td>The data service for the model.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>Data model object.</td>
     </tr>
     <tr>
         <td>includeIdOutputParameter</td>
-        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
         <td>Whether the command must extract the generated Id as an output parameter.</td>
     </tr>
 </tbody></table>
@@ -129,7 +129,7 @@
     <p>Builds a SQL update command.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> BuildUpdate(dataService, model, timestampKind, expectedTimestamp)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> BuildUpdate(dataService, model, timestampKind, expectedTimestamp)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>SQL update command.</p>
@@ -145,22 +145,22 @@
 <tbody>
     <tr>
         <td>dataService</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+        <td><span class="text-info" title="IDataService">IDataService</span></td>
         <td>The data service for the model.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>Data model object.</td>
     </tr>
     <tr>
         <td>timestampKind</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-timestampkind.html">TimestampKind</a></td>
+        <td><span class="text-info" title="TimestampKind">TimestampKind</span></td>
         <td>Specifies the kind of timestamp field that should be included.</td>
     </tr>
     <tr>
         <td>expectedTimestamp</td>
-        <td><span class="text-info" title="System.DateTime">DateTime</span></td>
+        <td><span class="text-info" title="DateTime">DateTime</span></td>
         <td>The timestamp value that is expected to be on the database.</td>
     </tr>
 </tbody></table>

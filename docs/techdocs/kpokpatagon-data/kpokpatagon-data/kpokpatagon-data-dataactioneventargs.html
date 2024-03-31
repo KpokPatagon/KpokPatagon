@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.EventArgs</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Data.DataActionEventArgs.#ctor(KpokPatagon.Data.DataAction,System.Exception)" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Initializes a new instance of <strong>DataActionEventArgs</strong> for a failed operation.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DataActionEventArgs(action, exception)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DataActionEventArgs(action, exception)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -59,12 +57,12 @@
 <tbody>
     <tr>
         <td>action</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaction.html">DataAction</a></td>
+        <td><span class="text-info" title="DataAction">DataAction</span></td>
         <td></td>
     </tr>
     <tr>
         <td>exception</td>
-        <td><span class="text-info" title="System.Exception">Exception</span></td>
+        <td><span class="text-info" title="Exception">Exception</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -74,7 +72,7 @@
     <p>Initializes a new instance of <strong>DataActionEventArgs</strong> for a successfull operation.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> DataActionEventArgs(action, recordsAffected)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> DataActionEventArgs(action, recordsAffected)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -88,12 +86,12 @@
 <tbody>
     <tr>
         <td>action</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaction.html">DataAction</a></td>
+        <td><span class="text-info" title="DataAction">DataAction</span></td>
         <td></td>
     </tr>
     <tr>
         <td>recordsAffected</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -104,7 +102,7 @@
     <p>Gets the data action to be excecuted or executed.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-dataaction.html">DataAction</a> Action { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="DataAction">DataAction</span> Action { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DataActionEventArgs.CancelThrowingException" class="mb-5">
@@ -112,7 +110,7 @@
     <p>Gets or sets whether the exception should be thrown or not.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> CancelThrowingException { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> CancelThrowingException { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DataActionEventArgs.Exception" class="mb-5">
@@ -120,7 +118,7 @@
     <p>Gets the exception occured while executing the operation.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Exception">Exception</span> Exception { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Exception">Exception</span> Exception { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DataActionEventArgs.RecordsAffected" class="mb-5">
@@ -128,7 +126,7 @@
     <p>Gets he quantity of records affected for successfull operations.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> RecordsAffected { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> RecordsAffected { get; }</code></dd>
 </dl>
 </div>
             </div>

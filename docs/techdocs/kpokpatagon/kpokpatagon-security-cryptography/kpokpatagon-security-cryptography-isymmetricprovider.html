@@ -45,7 +45,7 @@
     <p>Decrypts a cypher text using a specified symmetric cryptography provider.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> Decrypt(ciphertext)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Decrypt(ciphertext)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The resulting plain text.</p>
@@ -61,7 +61,7 @@
 <tbody>
     <tr>
         <td>ciphertext</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The cipher text to decrypt.</td>
     </tr>
 </tbody></table>
@@ -71,7 +71,7 @@
     <p>Decrypts a cypher stream using the specified symmetric cryptograpy provider.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Decrypt(source, destination)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Decrypt(source, destination)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -85,12 +85,12 @@
 <tbody>
     <tr>
         <td>source</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>The source stream to decript.</td>
     </tr>
     <tr>
         <td>destination</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>The destination stream where the plain text result should be written.</td>
     </tr>
 </tbody></table>
@@ -100,7 +100,7 @@
     <p>Encrypts a secret using a specified symmetric cryptography provider.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> Encrypt(plaintext)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Encrypt(plaintext)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The resulting cipher text.</p>
@@ -116,7 +116,7 @@
 <tbody>
     <tr>
         <td>plaintext</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The input to encrypt.</td>
     </tr>
 </tbody></table>
@@ -126,7 +126,7 @@
     <p>Encrypts a secret into the source stream using the specified cryptography provider.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Encrypt(source, destination)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Encrypt(source, destination)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -140,12 +140,12 @@
 <tbody>
     <tr>
         <td>source</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>The source stream to encrypt.</td>
     </tr>
     <tr>
         <td>destination</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>The destination stream where the cipher text should be written.</td>
     </tr>
 </tbody></table>

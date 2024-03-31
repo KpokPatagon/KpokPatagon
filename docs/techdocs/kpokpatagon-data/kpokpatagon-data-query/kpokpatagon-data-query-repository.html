@@ -36,10 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
-<dt class="text-truncate col-sm-3">Implements:</dt>
-<dd class="col-sm-9">System.IEquatable{KpokPatagon.Data.Query.Repository}</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Data.Query.Repository.#ctor" class="mb-5">
@@ -47,7 +43,7 @@
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Repository()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Repository()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.Query.Repository.#ctor(KpokPatagon.Data.IDataService)" class="mb-5">
@@ -55,7 +51,7 @@
     <p>Initializes a new instance of <strong>Repository</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Repository(dataService)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Repository(dataService)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -69,7 +65,7 @@
 <tbody>
     <tr>
         <td>dataService</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+        <td><span class="text-info" title="IDataService">IDataService</span></td>
         <td>A IDataService object from which the repository is created.</td>
     </tr>
 </tbody></table>
@@ -93,7 +89,7 @@
     <p>Creates a new instance of <strong>Repository</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Repository(schema, name, alias, catalog, sequencename)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Repository(schema, name, alias, catalog, sequencename)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -107,27 +103,27 @@
 <tbody>
     <tr>
         <td>schema</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The schema of the table or view.</td>
     </tr>
     <tr>
         <td>name</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The name of the table or view.</td>
     </tr>
     <tr>
         <td>alias</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The alias for to the table or view.</td>
     </tr>
     <tr>
         <td>catalog</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The name of de catalog or database.</td>
     </tr>
     <tr>
         <td>sequencename</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>A sequence name.</td>
     </tr>
 </tbody></table>
@@ -138,7 +134,7 @@
     <p>Gets or sets the alias for the table or view.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Alias { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Alias { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.Query.Repository.Catalog" class="mb-5">
@@ -146,7 +142,7 @@
     <p>Gets or sets the name of de catalog or database.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Catalog { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Catalog { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.Query.Repository.Name" class="mb-5">
@@ -154,7 +150,7 @@
     <p>Gets or sets the name of the table or view.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Name { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.Query.Repository.Schema" class="mb-5">
@@ -162,7 +158,7 @@
     <p>Gets or sets the schema of the table or view.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Schema { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Schema { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.Query.Repository.SequenceName" class="mb-5">
@@ -170,7 +166,7 @@
     <p>Gets or sets the name of a sequence.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> SequenceName { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> SequenceName { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -179,7 +175,7 @@
     <p>Checks whether <strong class="text-info">other</strong> is equals to this <strong>Repository</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(other)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Equals(other)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the objects are equals, otherwise <strong class="text-info">false</strong>.</p>
@@ -195,7 +191,7 @@
 <tbody>
     <tr>
         <td>other</td>
-        <td><strong>Repository</strong></td>
+        <td><span class="text-info" title="Repository">Repository</span></td>
         <td>An object to compare.</td>
     </tr>
 </tbody></table>
@@ -205,7 +201,7 @@
     <p>Checks whether <strong class="text-info">obj</strong> is equals to this <strong>Repository</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Equals(obj)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Equals(obj)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the objects are equals, otherwise <strong class="text-info">false</strong>.</p>
@@ -221,7 +217,7 @@
 <tbody>
     <tr>
         <td>obj</td>
-        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td><span class="text-info" title="Object">Object</span></td>
         <td>An object to compare.</td>
     </tr>
 </tbody></table>
@@ -231,7 +227,7 @@
     <p>Not required implemented to avoid warnings.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Int32">Int32</span> GetHashCode()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> GetHashCode()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Data.Query.Repository.ToString" class="mb-5">
@@ -239,7 +235,7 @@
     <p>Returns a textual representation of this <strong>Repository</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToString()</code></dd>
 </dl>
 </div>
             </div>

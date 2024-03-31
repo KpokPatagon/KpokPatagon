@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 <dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">KpokPatagon.Parameters.IParameterTreeNode</dd>
 </dl>
@@ -47,7 +45,7 @@
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ParameterTreeNode()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ParameterTreeNode()</code></dd>
 </dl>
 </div>
 <h2 id="properties" class="mt-5">Properties</h2>
@@ -56,7 +54,7 @@
     <p>Localized caption.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Caption { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Caption { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Parameters.ParameterTreeNode.ChildNodes" class="mb-5">
@@ -64,7 +62,7 @@
     <p>List of child nodes.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Parameters.IParameterTreeNode}">IList&lt;<a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-iparametertreenode.html">IParameterTreeNode</a>&gt;</span> ChildNodes { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IList&lt;IParameterTreeNode&gt;">IList&lt;IParameterTreeNode&gt;</span> ChildNodes { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Parameters.ParameterTreeNode.Description" class="mb-5">
@@ -72,7 +70,7 @@
     <p>Localized description.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Description { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Description { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Parameters.ParameterTreeNode.Name" class="mb-5">
@@ -80,7 +78,7 @@
     <p>Name of the tree node.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> Name { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Name { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Parameters.ParameterTreeNode.Parameters" class="mb-5">
@@ -88,7 +86,7 @@
     <p>A collection of parameter configuration for this node.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Parameters.ParameterConfiguration}">IList&lt;<a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterconfiguration.html">ParameterConfiguration</a>&gt;</span> Parameters { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IList&lt;ParameterConfiguration&gt;">IList&lt;ParameterConfiguration&gt;</span> Parameters { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Parameters.ParameterTreeNode.Parent" class="mb-5">
@@ -96,7 +94,7 @@
     <p>A reference to the parent node.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-iparametertreenode.html">IParameterTreeNode</a> Parent { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IParameterTreeNode">IParameterTreeNode</span> Parent { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -105,7 +103,7 @@
     <p>Finds a parameter group with the specified <strong class="text-info">name</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-iparametertreenode.html">IParameterTreeNode</a> FindGroup(name)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IParameterTreeNode">IParameterTreeNode</span> FindGroup(name)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An <a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-iparametertreenode.html">IParameterTreeNode</a>for the specified name or <strong class="text-info">null</strong> is there is no group for the specified name.</p>
@@ -121,7 +119,7 @@
 <tbody>
     <tr>
         <td>name</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Name of the parameter group to look for.</td>
     </tr>
 </tbody></table>
@@ -135,7 +133,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -145,7 +143,7 @@
     <p>Finds a parameter with the specified <strong class="text-info">name</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterconfiguration.html">ParameterConfiguration</a> FindParameter(name)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="ParameterConfiguration">ParameterConfiguration</span> FindParameter(name)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A <a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterconfiguration.html">ParameterConfiguration</a> for the specified name or <strong class="text-info">null</strong> if there is no parameter with the specified name.</p>
@@ -161,7 +159,7 @@
 <tbody>
     <tr>
         <td>name</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Name of the parameter to find.</td>
     </tr>
 </tbody></table>
@@ -175,7 +173,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -185,7 +183,7 @@
     <p>Returns a textual representation of this tree node.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToString()</code></dd>
 </dl>
 </div>
             </div>

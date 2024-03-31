@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Text.TokenFunction.#ctor" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TokenFunction()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TokenFunction()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Text.TokenFunction.#ctor(System.String,System.String)" class="mb-5">
@@ -53,7 +51,7 @@
     <p>Initializes a new instance of <strong>TokenFunction</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TokenFunction(start, end)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TokenFunction(start, end)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -67,12 +65,12 @@
 <tbody>
     <tr>
         <td>start</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>end</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -86,7 +84,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when any of the arguments are <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -98,7 +96,7 @@
             with the formatted values from source the dictionary.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Format(builder, source)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Format(builder, source)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -112,12 +110,12 @@
 <tbody>
     <tr>
         <td>builder</td>
-        <td><span class="text-info" title="System.Text.StringBuilder">StringBuilder</span></td>
+        <td><span class="text-info" title="StringBuilder">StringBuilder</span></td>
         <td></td>
     </tr>
     <tr>
         <td>source</td>
-        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,System.Object}">IDictionary&lt;String, Object&gt;</span></td>
+        <td><span class="text-info" title="IDictionary&lt;String, Object&gt;">IDictionary&lt;String, Object&gt;</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -127,7 +125,7 @@
     <p>Replaces the token template with the corresponding value from the object.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.String">String</span> FormatToken(tokenTemplate, source)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="String">String</span> FormatToken(tokenTemplate, source)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -141,12 +139,12 @@
 <tbody>
     <tr>
         <td>tokenTemplate</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>source</td>
-        <td><span class="text-info" title="System.Collections.Generic.IDictionary{System.String,System.Object}">IDictionary&lt;String, Object&gt;</span></td>
+        <td><span class="text-info" title="IDictionary&lt;String, Object&gt;">IDictionary&lt;String, Object&gt;</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -157,7 +155,7 @@
             The message expected is supposed to contains the start and end delimiter.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.String">String</span> GetInnerTemplate(startPos, message)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="String">String</span> GetInnerTemplate(startPos, message)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -171,12 +169,12 @@
 <tbody>
     <tr>
         <td>startPos</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td></td>
     </tr>
     <tr>
         <td>message</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
 </tbody></table>

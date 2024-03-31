@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Data.Query.Relation.#ctor(KpokPatagon.Data.Query.RelationType,KpokPatagon.Data.Query.Repository)" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Creates a new instance of <strong>Relation</strong> and initializes it.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Relation(type, repository)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Relation(type, repository)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -59,12 +57,12 @@
 <tbody>
     <tr>
         <td>type</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-relationtype.html">RelationType</a></td>
+        <td><span class="text-info" title="RelationType">RelationType</span></td>
         <td>The type of the relation.</td>
     </tr>
     <tr>
         <td>repository</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a></td>
+        <td><span class="text-info" title="Repository">Repository</span></td>
         <td>The repository to relate with.</td>
     </tr>
 </tbody></table>
@@ -74,7 +72,7 @@
     <p>Creates a new instance of <strong>Relation</strong> and initializes it.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Relation(type, repository, predicates)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Relation(type, repository, <span class="text-info">params </span>predicates)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -88,17 +86,17 @@
 <tbody>
     <tr>
         <td>type</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-relationtype.html">RelationType</a></td>
+        <td><span class="text-info" title="RelationType">RelationType</span></td>
         <td>The type of the relation.</td>
     </tr>
     <tr>
         <td>repository</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a></td>
+        <td><span class="text-info" title="Repository">Repository</span></td>
         <td>The repository to relate with.</td>
     </tr>
     <tr>
         <td>predicates</td>
-        <td><span class="text-info" title="KpokPatagon.Data.Query.Predicate[]">Predicate[]</span></td>
+        <td><span class="text-info" title="Predicate[]">Predicate[]</span></td>
         <td>An array of relation predicates.</td>
     </tr>
 </tbody></table>
@@ -109,7 +107,7 @@
     <p><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-predicate.html">Predicate</a>s for this relation.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.Query.Predicate}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-predicate.html">Predicate</a>&gt;</span> Predicates { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IList&lt;Predicate&gt;">IList&lt;Predicate&gt;</span> Predicates { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.Query.Relation.Repository" class="mb-5">
@@ -117,7 +115,7 @@
     <p>Relationed repository.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-repository.html">Repository</a> Repository { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Repository">Repository</span> Repository { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.Query.Relation.SelectStatement" class="mb-5">
@@ -125,7 +123,7 @@
     <p>A <span class="text-info" title="KpokPatagon.Data.Query.Relation.SelectStatement">SelectStatement</span> to be used as a relationed repository.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-selectstatement.html">SelectStatement</a> SelectStatement { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="SelectStatement">SelectStatement</span> SelectStatement { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.Query.Relation.Type" class="mb-5">
@@ -133,7 +131,7 @@
     <p>Type of relation.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-relationtype.html">RelationType</a> Type { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="RelationType">RelationType</span> Type { get; set; }</code></dd>
 </dl>
 </div>
             </div>

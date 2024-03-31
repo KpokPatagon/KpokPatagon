@@ -37,25 +37,14 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.Data.DataModelCmdBuilder</dd>
 </dl>
-<h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
-    <h3 class="lead text-info">MySqlDataModelCmdBuilder</h3>
-    <p>Default constructor</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MySqlDataModelCmdBuilder()</code></dd>
-</dl>
-</div>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Data.MySql.MySqlDataModelCmdBuilder.BuildInsert(KpokPatagon.Data.IDataService,KpokPatagon.Data.IDataModel,System.Boolean)" class="mb-5">
     <h3 class="lead text-info">BuildInsert</h3>
     <p>Builds a SQL insert command.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> BuildInsert(dataService, model, includeIdOutputParameter)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> BuildInsert(dataService, model, includeIdOutputParameter)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An insert command to be executed.</p>
@@ -71,17 +60,17 @@
 <tbody>
     <tr>
         <td>dataService</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idataservice.html">IDataService</a></td>
+        <td><span class="text-info" title="IDataService">IDataService</span></td>
         <td>The data service for the model.</td>
     </tr>
     <tr>
         <td>model</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a></td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
         <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a>.</td>
     </tr>
     <tr>
         <td>includeIdOutputParameter</td>
-        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
         <td>Whether the command must extract the generated Id as an output parameter.</td>
     </tr>
 </tbody></table>
@@ -104,7 +93,6 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#constructors">Constructors</a></li>
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">

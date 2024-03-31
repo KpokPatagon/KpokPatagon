@@ -41,22 +41,13 @@
 <dt class="text-truncate col-sm-3">Inherits from:</dt>
 <dd class="col-sm-9">KpokPatagon.Data.DbCmdBuilder</dd>
 </dl>
-<h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
-    <h3 class="lead text-info">OracleDbCmdBuilder</h3>
-    <p>Default constructor</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> OracleDbCmdBuilder()</code></dd>
-</dl>
-</div>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Data.Oracle.OracleDbCmdBuilder.BuildCommand(KpokPatagon.Data.Query.Statement)" class="mb-5">
     <h3 class="lead text-info">BuildCommand</h3>
     <p>Creates a new <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> based on the <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Data.IDbCommand">IDbCommand</span> BuildCommand(statement)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbCommand">IDbCommand</span> BuildCommand(statement)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A new <b>IDbCommand</b> ready to execute.</p>
@@ -72,7 +63,7 @@
 <tbody>
     <tr>
         <td>statement</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statement.html">Statement</a></td>
+        <td><span class="text-info" title="Statement">Statement</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -90,7 +81,7 @@
         <td>Thrown when <strong class="text-info">statement</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.Query.StatementNotSupportedException"><a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statementnotsupportedexception.html">StatementNotSupportedException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.Query.StatementNotSupportedException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-statementnotsupportedexception.html"&gt;StatementNotSupportedException&lt;/a&gt;</span></td>
         <td>Thrwn when the <b>SqlBuilder</b> is of a not supported type.</td>
     </tr>
 </tbody></table>
@@ -99,7 +90,6 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#constructors">Constructors</a></li>
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">

@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Data.LoggerExtensions.CommandExecuted(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess},System.String,System.Diagnostics.Stopwatch)" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Logs a command executed message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> CommandExecuted(logger, connectionName, stopwatch)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CommandExecuted(logger, connectionName, stopwatch)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -59,17 +57,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>stopwatch</td>
-        <td><span class="text-info" title="System.Diagnostics.Stopwatch">Stopwatch</span></td>
+        <td><span class="text-info" title="Stopwatch">Stopwatch</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -79,7 +77,7 @@
     <p>Logs a connection closed message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ConnectionClosed(logger, connectionName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ConnectionClosed(logger, connectionName)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -93,12 +91,12 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -108,7 +106,7 @@
     <p>Logs a opened connection message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ConnectionOpened(logger, connectionName, stopwatch)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ConnectionOpened(logger, connectionName, stopwatch)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -122,17 +120,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>stopwatch</td>
-        <td><span class="text-info" title="System.Diagnostics.Stopwatch">Stopwatch</span></td>
+        <td><span class="text-info" title="Stopwatch">Stopwatch</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -142,7 +140,7 @@
     <p>Logs a connection opening message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ConnectionOpening(logger, connectionName, try)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ConnectionOpening(logger, connectionName, try)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -156,17 +154,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>try</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -176,7 +174,7 @@
     <p>Logs a non-query command executing message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ExecutingNonQueryCommand(logger, connectionName, try)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExecutingNonQueryCommand(logger, connectionName, try)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -190,17 +188,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>try</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -210,7 +208,7 @@
     <p>Logs a reader command executing message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ExecutingReaderCommand(logger, connectionName, try)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExecutingReaderCommand(logger, connectionName, try)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -224,17 +222,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>try</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -244,7 +242,7 @@
     <p>Logs a scalar command executing message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ExecutingScalarCommand(logger, connectionName, try)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExecutingScalarCommand(logger, connectionName, try)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -258,17 +256,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>try</td>
-        <td><span class="text-info" title="System.Int32">Int32</span></td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -278,7 +276,7 @@
     <p>Logs the command.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> LogCommand(logger, command)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> LogCommand(logger, command)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -292,12 +290,12 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -307,7 +305,7 @@
     <p>Logs the command and the exception.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> LogError(logger, command, src, exception)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> LogError(logger, command, src, exception)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -321,22 +319,22 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td></td>
     </tr>
     <tr>
         <td>src</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>exception</td>
-        <td><span class="text-info" title="System.Exception">Exception</span></td>
+        <td><span class="text-info" title="Exception">Exception</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -346,7 +344,7 @@
     <p>Logs an error with in <strong class="text-info">source</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> LogError(logger, source, exception)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> LogError(logger, source, exception)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -360,17 +358,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>source</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>exception</td>
-        <td><span class="text-info" title="System.Exception">Exception</span></td>
+        <td><span class="text-info" title="Exception">Exception</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -380,7 +378,7 @@
     <p>Logs the validation exception.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> LogValidationException(logger, valex)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> LogValidationException(logger, valex)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -394,12 +392,12 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger">ILogger</span></td>
+        <td><span class="text-info" title="ILogger">ILogger</span></td>
         <td></td>
     </tr>
     <tr>
         <td>valex</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></td>
+        <td><span class="text-info" title="ValidationException">ValidationException</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -409,7 +407,7 @@
     <p>Logs the command and the exception as a warning.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> LogWarning(logger, command, src, exception)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> LogWarning(logger, command, src, exception)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -423,22 +421,22 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>command</td>
-        <td><span class="text-info" title="System.Data.IDbCommand">IDbCommand</span></td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
         <td></td>
     </tr>
     <tr>
         <td>src</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>exception</td>
-        <td><span class="text-info" title="System.Exception">Exception</span></td>
+        <td><span class="text-info" title="Exception">Exception</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -448,7 +446,7 @@
     <p>Logs a service disposed message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> ServiceDisposed(logger, connectionName, type)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ServiceDisposed(logger, connectionName, type)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -462,17 +460,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>type</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -482,7 +480,7 @@
     <p>Logs a begin transaction message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TransactionBegin(logger, connectionNama)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TransactionBegin(logger, connectionNama)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -496,12 +494,12 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionNama</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -511,7 +509,7 @@
     <p>Logs a begin transaction message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TransactionBegin(logger, connectionName, isolationLevel)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TransactionBegin(logger, connectionName, isolationLevel)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -525,17 +523,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>isolationLevel</td>
-        <td><span class="text-info" title="System.Data.IsolationLevel">IsolationLevel</span></td>
+        <td><span class="text-info" title="IsolationLevel">IsolationLevel</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -545,7 +543,7 @@
     <p>Logs a transaction committed message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TransactionCommitted(logger, connectionNama, stopwatch)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TransactionCommitted(logger, connectionNama, stopwatch)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -559,17 +557,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionNama</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>stopwatch</td>
-        <td><span class="text-info" title="System.Diagnostics.Stopwatch">Stopwatch</span></td>
+        <td><span class="text-info" title="Stopwatch">Stopwatch</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -579,7 +577,7 @@
     <p>Logs a committing transaction message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TransactionCommitting(logger, connectionName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TransactionCommitting(logger, connectionName)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -593,12 +591,12 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -608,7 +606,7 @@
     <p>Logs a transaction rollbacked message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TransactionRollbacked(logger, connectionName, stopwatch)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TransactionRollbacked(logger, connectionName, stopwatch)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -622,17 +620,17 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
     <tr>
         <td>stopwatch</td>
-        <td><span class="text-info" title="System.Diagnostics.Stopwatch">Stopwatch</span></td>
+        <td><span class="text-info" title="Stopwatch">Stopwatch</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -642,7 +640,7 @@
     <p>Logs a rollbacking transaction message.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TransactionRollbacking(logger, connectionName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TransactionRollbacking(logger, connectionName)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -656,12 +654,12 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDbAccess}">ILogger&lt;<a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a>&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDbAccess&gt;">ILogger&lt;IDbAccess&gt;</span></td>
         <td></td>
     </tr>
     <tr>
         <td>connectionName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td></td>
     </tr>
 </tbody></table>

@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-9">
 <h1>TenantResolverOptions</h1>
-<p class="lead">Configuration options for a tenant resolver middleware that resolves to <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-tenant.html">Tenant</a>.</p>
+<p class="lead">Configuration options for a tenant resolver middleware.</p>
 <dl class="row mt-4">
 <dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.AspNet.Multitenancy</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
@@ -36,16 +36,39 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.AspNet.Multitenancy.TenantResolverOptions{KpokPatagon.Multitenancy.Tenant,}</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
+<div id="M:KpokPatagon.AspNet.Multitenancy.TenantResolverOptions`2.#ctor" class="mb-5">
     <h3 class="lead text-info">TenantResolverOptions</h3>
     <p>Default constructor</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TenantResolverOptions()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TenantResolverOptions()</code></dd>
+</dl>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.AspNet.Multitenancy.TenantResolverOptions`2.NameLocation" class="mb-5">
+    <h3 class="lead text-info">NameLocation</h3>
+    <p>Specifies where the tename name is located.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="TenantNameLocation">TenantNameLocation</span> NameLocation { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.AspNet.Multitenancy.TenantResolverOptions`2.Notifications" class="mb-5">
+    <h3 class="lead text-info">Notifications</h3>
+    <p>Notifications.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="TenantResolverNotifications&lt;TTenant, TTenantId&gt;">TenantResolverNotifications&lt;TTenant, TTenantId&gt;</span> Notifications { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.AspNet.Multitenancy.TenantResolverOptions`2.Provider" class="mb-5">
+    <h3 class="lead text-info">Provider</h3>
+    <p>Provider used to get a tenant object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="ITenantProvider&lt;TTenant&gt;">ITenantProvider&lt;TTenant&gt;</span> Provider { get; set; }</code></dd>
 </dl>
 </div>
             </div>
@@ -53,6 +76,14 @@
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
 <li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.AspNet.Multitenancy.TenantResolverOptions`2.NameLocation">NameLocation</a></li>
+        <li><a href="#P:KpokPatagon.AspNet.Multitenancy.TenantResolverOptions`2.Notifications">Notifications</a></li>
+        <li><a href="#P:KpokPatagon.AspNet.Multitenancy.TenantResolverOptions`2.Provider">Provider</a></li>
+    </ul>
+</li>
 </ul>
             </div>
         </div>

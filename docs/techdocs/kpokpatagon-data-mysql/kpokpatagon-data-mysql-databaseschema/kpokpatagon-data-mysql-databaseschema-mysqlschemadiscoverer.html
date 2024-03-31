@@ -36,25 +36,14 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">KpokPatagon.Data.DatabaseSchema.SchemaDiscoverer</dd>
 </dl>
-<h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="" class="mb-5">
-    <h3 class="lead text-info">MySqlSchemaDiscoverer</h3>
-    <p>Default constructor</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> MySqlSchemaDiscoverer()</code></dd>
-</dl>
-</div>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Data.MySql.DatabaseSchema.MySqlSchemaDiscoverer.ExistsSchema(KpokPatagon.Data.DatabaseSchema.Schema)" class="mb-5">
     <h3 class="lead text-info">ExistsSchema</h3>
     <p>Checks whether a schema exists within the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ExistsSchema(schema)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsSchema(schema)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the schema exists.</p>
@@ -70,7 +59,7 @@
 <tbody>
     <tr>
         <td>schema</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-schema.html">Schema</a></td>
+        <td><span class="text-info" title="Schema">Schema</span></td>
         <td>Schema to check.</td>
     </tr>
 </tbody></table>
@@ -84,7 +73,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.ValidationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.ValidationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html"&gt;ValidationException&lt;/a&gt;</span></td>
         <td>Thrown when the schema configuration is not valid for checking existence.</td>
     </tr>
     <tr>
@@ -92,7 +81,7 @@
         <td>Thrown when <strong class="text-info">schema</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
 </tbody></table>
@@ -102,7 +91,7 @@
     <p>Checks whether a table exists within the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ExistsTable(schema, tableName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsTable(schema, tableName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> is the table exists.</p>
@@ -118,12 +107,12 @@
 <tbody>
     <tr>
         <td>schema</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The schema to which the table belongs to.</td>
     </tr>
     <tr>
         <td>tableName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The name of the table to check.</td>
     </tr>
 </tbody></table>
@@ -137,15 +126,15 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">schema</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">tableName</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -155,7 +144,7 @@
     <p>Checks whether a table exists within the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ExistsTable(table)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsTable(table)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the table exists.</p>
@@ -171,7 +160,7 @@
 <tbody>
     <tr>
         <td>table</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Table to check.</td>
     </tr>
 </tbody></table>
@@ -189,15 +178,15 @@
         <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">table.Schema.Schema</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">table.Name.Name</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -207,7 +196,7 @@
     <p>Checks whether a view exists within the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ExistsView(schema, viewName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsView(schema, viewName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the view exists.</p>
@@ -223,12 +212,12 @@
 <tbody>
     <tr>
         <td>schema</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The schema to which the view belongs to.</td>
     </tr>
     <tr>
         <td>viewName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The name of the view to check.</td>
     </tr>
 </tbody></table>
@@ -242,15 +231,15 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">schema</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">viewName</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -260,7 +249,7 @@
     <p>Checks whether a view exists within the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> ExistsView(view)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsView(view)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if the view exists.</p>
@@ -276,7 +265,7 @@
 <tbody>
     <tr>
         <td>view</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>View to check.</td>
     </tr>
 </tbody></table>
@@ -294,15 +283,15 @@
         <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">view.Schema.Schema</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">view.Name.Name</strong> is <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -312,7 +301,7 @@
     <p>This method just returns the DefaultSchema from the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.DatabaseSchema.Catalog}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-catalog.html">Catalog</a>&gt;</span> GetCatalogs()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetCatalogs()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A list of user catalogs.</p>
@@ -322,7 +311,7 @@
     <p>Gets a list of user created schemas from the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.DatabaseSchema.Schema}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-schema.html">Schema</a>&gt;</span> GetSchemas()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetSchemas()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A list of user schemas.</p>
@@ -336,7 +325,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
 </tbody></table>
@@ -346,7 +335,7 @@
     <p>Gets the schema of a table from the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> GetTable(schema, tableName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Table">Table</span> GetTable(schema, tableName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A table definition.</p>
@@ -362,12 +351,12 @@
 <tbody>
     <tr>
         <td>schema</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Schema that the table belongs to.</td>
     </tr>
     <tr>
         <td>tableName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The name of the table.</td>
     </tr>
 </tbody></table>
@@ -381,15 +370,15 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableOrViewNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableOrViewNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html"&gt;TableOrViewNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when the specified table does not exists.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">schema</strong> or <strong class="text-info">tableName</strong> are <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -399,7 +388,7 @@
     <p>Gets the schema of a table from the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> GetTable(tableName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Table">Table</span> GetTable(tableName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A table definition.</p>
@@ -415,7 +404,7 @@
 <tbody>
     <tr>
         <td>tableName</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablename.html">TableName</a></td>
+        <td><span class="text-info" title="TableName">TableName</span></td>
         <td>Name of the table.</td>
     </tr>
 </tbody></table>
@@ -433,15 +422,15 @@
         <td>Thrown when <strong class="text-info">tableName</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableOrViewNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableOrViewNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html"&gt;TableOrViewNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when the specified table does not exists.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">tableName.Schema.Schema</strong> or <strong class="text-info">tableName.Name.Name</strong> are <strong class="text-info">null</strong> or empty.</td>
     </tr>
 </tbody></table>
@@ -451,7 +440,7 @@
     <p>Gets a list of table names.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.DatabaseSchema.TableName}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablename.html">TableName</a>&gt;</span> GetTableNames()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetTableNames()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A list of table names.</p>
@@ -465,11 +454,11 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.MissingRequiredPropertyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.MissingRequiredPropertyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html"&gt;MissingRequiredPropertyException&lt;/a&gt;</span></td>
         <td>Thrown when a required property was not properly initialized.</td>
     </tr>
 </tbody></table>
@@ -479,7 +468,7 @@
     <p>Gets a list of tables.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.DatabaseSchema.Table}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a>&gt;</span> GetTables()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetTables()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A collection of tables.</p>
@@ -493,7 +482,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
 </tbody></table>
@@ -503,7 +492,7 @@
     <p>Gets the schema of a view from the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> GetView(schema, viewName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Table">Table</span> GetView(schema, viewName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A definition for the specified view.</p>
@@ -519,12 +508,12 @@
 <tbody>
     <tr>
         <td>schema</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Schema to which the view belongs to.</td>
     </tr>
     <tr>
         <td>viewName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>Name of the view.</td>
     </tr>
 </tbody></table>
@@ -538,15 +527,15 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">schema</strong> or <strong class="text-info">viewName</strong> are <strong class="text-info">null</strong> or empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableOrViewNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableOrViewNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html"&gt;TableOrViewNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when the spacified view does not exists.</td>
     </tr>
 </tbody></table>
@@ -556,7 +545,7 @@
     <p>Gets the schema of a view from the catalog configured on the <b>DatabaseApi</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> GetView(viewName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Table">Table</span> GetView(viewName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A definition for the specified view.</p>
@@ -572,7 +561,7 @@
 <tbody>
     <tr>
         <td>viewName</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablename.html">TableName</a></td>
+        <td><span class="text-info" title="TableName">TableName</span></td>
         <td>Name of the view.</td>
     </tr>
 </tbody></table>
@@ -590,15 +579,15 @@
         <td>Thrown when <strong class="text-info">viewName</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException"><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.ArgumentNullOrEmptyException">&lt;a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html"&gt;ArgumentNullOrEmptyException&lt;/a&gt;</span></td>
         <td>Thrown when <strong class="text-info">viewName.Schema.Schema</strong> or <strong class="text-info">viewName.Name.Name</strong> are <strong class="text-info">null</strong> or empty.</td>
     </tr>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableOrViewNotFoundException"><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableOrViewNotFoundException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html"&gt;TableOrViewNotFoundException&lt;/a&gt;</span></td>
         <td>Thrown when the spacified view does not exists.</td>
     </tr>
 </tbody></table>
@@ -608,7 +597,7 @@
     <p>Gets a list of view names.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.DatabaseSchema.TableName}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablename.html">TableName</a>&gt;</span> GetViewNames()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetViewNames()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A list of view names.</p>
@@ -622,7 +611,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
 </tbody></table>
@@ -632,7 +621,7 @@
     <p>Gets a list of views.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.IList{KpokPatagon.Data.DatabaseSchema.Table}">IList&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a>&gt;</span> GetViews()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetViews()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A collection of views.</p>
@@ -646,7 +635,7 @@
 </thead>
 <tbody>
     <tr>
-        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException"><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></span></td>
+        <td><span class="text-info" title="KpokPatagon.Data.SchemaManipulationException">&lt;a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html"&gt;SchemaManipulationException&lt;/a&gt;</span></td>
         <td>Thrown when there is an error accesing schema data.</td>
     </tr>
 </tbody></table>
@@ -655,7 +644,6 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#constructors">Constructors</a></li>
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">

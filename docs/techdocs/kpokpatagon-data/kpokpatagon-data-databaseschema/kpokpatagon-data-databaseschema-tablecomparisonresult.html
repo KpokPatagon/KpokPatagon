@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.#ctor(KpokPatagon.Data.DatabaseSchema.Table,System.Boolean)" class="mb-5">
@@ -45,7 +43,7 @@
     <p>Creates a new instance of a <b>Miss</b> result.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TableComparisonResult(desired, miss)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TableComparisonResult(desired, miss)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -59,12 +57,12 @@
 <tbody>
     <tr>
         <td>desired</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Desired <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> configuration.</td>
     </tr>
     <tr>
         <td>miss</td>
-        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
         <td>Whether the result is a miss (<strong class="text-info">true</strong>) or a hit (<strong class="text-info">false</strong>).</td>
     </tr>
 </tbody></table>
@@ -89,7 +87,7 @@
     <p>Actions to correct column constraint(s) miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.MissActionForColumnConstraint}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactionforcolumnconstraint.html">MissActionForColumnConstraint</a>&gt;</span> ColumnConstraints { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="List&lt;MissActionForColumnConstraint&gt;">List&lt;MissActionForColumnConstraint&gt;</span> ColumnConstraints { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Columns" class="mb-5">
@@ -97,7 +95,7 @@
     <p>Actions to correct column(s) miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.MissActionForTableColumn}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactionfortablecolumn.html">MissActionForTableColumn</a>&gt;</span> Columns { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="List&lt;MissActionForTableColumn&gt;">List&lt;MissActionForTableColumn&gt;</span> Columns { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.ForeignKeys" class="mb-5">
@@ -105,7 +103,7 @@
     <p>Actions to correct foreign key(s) miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.MissActionForForeignKey}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactionforforeignkey.html">MissActionForForeignKey</a>&gt;</span> ForeignKeys { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="List&lt;MissActionForForeignKey&gt;">List&lt;MissActionForForeignKey&gt;</span> ForeignKeys { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Indexes" class="mb-5">
@@ -113,7 +111,7 @@
     <p>Actions to correct index(es) miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.MissActionForIndex}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactionforindex.html">MissActionForIndex</a>&gt;</span> Indexes { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="List&lt;MissActionForIndex&gt;">List&lt;MissActionForIndex&gt;</span> Indexes { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Miss" class="mb-5">
@@ -121,7 +119,7 @@
     <p>Whether the result is a miss.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> Miss { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Miss { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.PrimaryKey" class="mb-5">
@@ -129,7 +127,7 @@
     <p>Actions to correct primary key miss-configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Collections.Generic.List{KpokPatagon.Data.DatabaseSchema.MissActionForIndex}">List&lt;<a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-missactionforindex.html">MissActionForIndex</a>&gt;</span> PrimaryKey { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="List&lt;MissActionForIndex&gt;">List&lt;MissActionForIndex&gt;</span> PrimaryKey { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Table" class="mb-5">
@@ -137,7 +135,7 @@
     <p>Desired <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> Table { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Table">Table</span> Table { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Type" class="mb-5">
@@ -145,7 +143,7 @@
     <p>Result type of table comparison.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tablecomparisonmissresulttype.html">TableComparisonMissResultType</a> Type { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="TableComparisonMissResultType">TableComparisonMissResultType</span> Type { get; set; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -154,7 +152,7 @@
     <p>Creates a new instance of a hit result.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <strong>TableComparisonResult</strong> Hit(desired)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="TableComparisonResult">TableComparisonResult</span> Hit(desired)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A new instance of a hit result for <strong class="text-info">desired</strong>.</p>
@@ -170,7 +168,7 @@
 <tbody>
     <tr>
         <td>desired</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Desired <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> configuration.</td>
     </tr>
 </tbody></table>
@@ -180,7 +178,7 @@
     <p>Creates a new instance of a missed result.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <strong>TableComparisonResult</strong> Missed(desired)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="TableComparisonResult">TableComparisonResult</span> Missed(desired)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A new instance of a missed result for <strong class="text-info">desired</strong>.</p>
@@ -196,7 +194,7 @@
 <tbody>
     <tr>
         <td>desired</td>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a></td>
+        <td><span class="text-info" title="Table">Table</span></td>
         <td>Desired <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> configuration.</td>
     </tr>
 </tbody></table>
@@ -206,7 +204,7 @@
     <p>Returns a detailed string good for logging.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToDetailedString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToDetailedString()</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>A textual representation of the result good for logging.</p>
@@ -216,7 +214,7 @@
     <p>Returns a textual representation of this object.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.String">String</span> ToString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToString()</code></dd>
 </dl>
 </div>
             </div>

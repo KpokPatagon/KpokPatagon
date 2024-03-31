@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 <dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">KpokPatagon.Security.Cryptography.IHashProvider, System.IDisposable</dd>
 </dl>
@@ -48,7 +46,7 @@
             and initialize it as a salt disabled algorithm.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> HashCryptographer(algorithm)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> HashCryptographer(algorithm)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -62,7 +60,7 @@
 <tbody>
     <tr>
         <td>algorithm</td>
-        <td><span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span></td>
+        <td><span class="text-info" title="HashAlgorithm">HashAlgorithm</span></td>
         <td>The <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span> to use.</td>
     </tr>
 </tbody></table>
@@ -73,7 +71,7 @@
             and initializes it.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> HashCryptographer(algorithm, saltEnabled)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> HashCryptographer(algorithm, saltEnabled)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -87,12 +85,12 @@
 <tbody>
     <tr>
         <td>algorithm</td>
-        <td><span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span></td>
+        <td><span class="text-info" title="HashAlgorithm">HashAlgorithm</span></td>
         <td>The <span class="text-info" title="System.Security.Cryptography.HashAlgorithm">HashAlgorithm</span> to use.</td>
     </tr>
     <tr>
         <td>saltEnabled</td>
-        <td><span class="text-info" title="System.Boolean">Boolean</span></td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
         <td><strong class="text-info">true</strong> if salt sould be applied; otherwise <strong class="text-info">false</strong>.</td>
     </tr>
 </tbody></table>
@@ -117,7 +115,7 @@
     <p>Compares a plain text input with a computed hash.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Boolean">Boolean</span> CompareHash(plaintext, hashedtext)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> CompareHash(plaintext, hashedtext)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p><strong class="text-info">true</strong> if <b>plaintext</b> hashed is equal to <b>hashedtext</b>, <strong class="text-info">false</strong> otherwise.</p>
@@ -133,12 +131,12 @@
 <tbody>
     <tr>
         <td>plaintext</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The input to compare with the hash.</td>
     </tr>
     <tr>
         <td>hashedtext</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The hash value to compare with the input value.</td>
     </tr>
 </tbody></table>
@@ -166,7 +164,7 @@
     <p>Compute the hash value of plain text.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> ComputeHash(plaintext)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> ComputeHash(plaintext)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The computed hash code.</p>
@@ -182,7 +180,7 @@
 <tbody>
     <tr>
         <td>plaintext</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The input to compute the hash for.</td>
     </tr>
 </tbody></table>
@@ -193,7 +191,7 @@
             If <strong class="text-info">stream</strong> is empty <strong class="text-info">null</strong> is returned.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Byte[]">Byte[]</span> ComputeHash(stream)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> ComputeHash(stream)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The computed hash code.</p>
@@ -211,7 +209,7 @@
 <tbody>
     <tr>
         <td>stream</td>
-        <td><span class="text-info" title="System.IO.Stream">Stream</span></td>
+        <td><span class="text-info" title="Stream">Stream</span></td>
         <td>The input <span class="text-info" title="System.IO.Stream">Stream</span> for wich to compute the hash.</td>
     </tr>
 </tbody></table>
@@ -235,7 +233,7 @@
     <p>Computes a hash with the specified salt.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Byte[]">Byte[]</span> ComputeHashWithSalt(plaintext, salt)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="Byte[]">Byte[]</span> ComputeHashWithSalt(plaintext, salt)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The computed hash.</p>
@@ -251,12 +249,12 @@
 <tbody>
     <tr>
         <td>plaintext</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The plain text to hash.</td>
     </tr>
     <tr>
         <td>salt</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The hash salt.</td>
     </tr>
 </tbody></table>
@@ -266,7 +264,7 @@
     <p>Clean up.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> Dispose()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Dispose()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.Security.Cryptography.HashCryptographer.ExtractSalt(System.Byte[])" class="mb-5">
@@ -274,7 +272,7 @@
     <p>Extracts the salt value from the hashed text.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>protected <span class="text-info" title="System.Byte[]">Byte[]</span> ExtractSalt(hashedtext)</code></dd>
+    <dd class="col-10"><code>protected <span class="text-info" title="Byte[]">Byte[]</span> ExtractSalt(hashedtext)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>The extracted salt.</p>
@@ -290,7 +288,7 @@
 <tbody>
     <tr>
         <td>hashedtext</td>
-        <td><span class="text-info" title="System.Byte[]">Byte[]</span></td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>The hash from which to extract the salt.</td>
     </tr>
 </tbody></table>

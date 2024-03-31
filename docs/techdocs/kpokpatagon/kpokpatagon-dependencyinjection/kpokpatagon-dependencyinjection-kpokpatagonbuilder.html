@@ -36,8 +36,6 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
-<dt class="text-truncate col-sm-3">Inherits from:</dt>
-<dd class="col-sm-9">System.Object</dd>
 <dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">KpokPatagon.DependencyInjection.IKpokPatagonBuilder</dd>
 </dl>
@@ -47,7 +45,7 @@
     <p>Initializes a new instance of <strong>KpokPatagonBuilder</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> KpokPatagonBuilder(services, configuration)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> KpokPatagonBuilder(services, configuration)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -61,12 +59,12 @@
 <tbody>
     <tr>
         <td>services</td>
-        <td><span class="text-info" title="Microsoft.Extensions.DependencyInjection.IServiceCollection">IServiceCollection</span></td>
+        <td><span class="text-info" title="IServiceCollection">IServiceCollection</span></td>
         <td>The collection of service descriptors</td>
     </tr>
     <tr>
         <td>configuration</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Configuration.IConfiguration">IConfiguration</span></td>
+        <td><span class="text-info" title="IConfiguration">IConfiguration</span></td>
         <td>Application configuration.</td>
     </tr>
 </tbody></table>
@@ -91,7 +89,7 @@
     <p>A collection of framework assemblies.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Reflection.Assembly[]">Assembly[]</span> Assemblies { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Assembly[]">Assembly[]</span> Assemblies { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.DependencyInjection.KpokPatagonBuilder.Configuration" class="mb-5">
@@ -99,7 +97,7 @@
     <p>Application configuration.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Microsoft.Extensions.Configuration.IConfiguration">IConfiguration</span> Configuration { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IConfiguration">IConfiguration</span> Configuration { get; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.DependencyInjection.KpokPatagonBuilder.Services" class="mb-5">
@@ -107,7 +105,7 @@
     <p>The collection of service descriptors.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Microsoft.Extensions.DependencyInjection.IServiceCollection">IServiceCollection</span> Services { get; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IServiceCollection">IServiceCollection</span> Services { get; }</code></dd>
 </dl>
 </div>
 <h2 id="methods" class="mt-5">Methods</h2>
@@ -116,7 +114,7 @@
     <p>Creates an instance of <typeparamref name="T" /> from a class named <strong class="text-info">typeName</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title=""></span> CreateServiceInstance&lt;T&gt;(provider, typeName)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="T">T</span> CreateServiceInstance&lt;T&gt;(provider, typeName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>An instace of <typeparamref name="T" /> or <strong class="text-info">null</strong> if a class with the 
@@ -133,12 +131,12 @@
 <tbody>
     <tr>
         <td>provider</td>
-        <td><span class="text-info" title="System.IServiceProvider">IServiceProvider</span></td>
+        <td><span class="text-info" title="IServiceProvider">IServiceProvider</span></td>
         <td>The service provider used to resolve dependencies.</td>
     </tr>
     <tr>
         <td>typeName</td>
-        <td><span class="text-info" title="System.String">String</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The Fullname of Name of the object to create.</td>
     </tr>
 </tbody></table>
@@ -166,7 +164,7 @@
     <p>Gets an array of <span class="text-info" title="System.Type">Type</span>s that are assinable to <strong class="text-info">desiredType</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Type[]">Type[]</span> GetTypesAssignableFrom(desiredType)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Type[]">Type[]</span> GetTypesAssignableFrom(desiredType)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -180,7 +178,7 @@
 <tbody>
     <tr>
         <td>desiredType</td>
-        <td><span class="text-info" title="System.Type">Type</span></td>
+        <td><span class="text-info" title="Type">Type</span></td>
         <td></td>
     </tr>
 </tbody></table>
@@ -190,7 +188,7 @@
     <p>Gets an array of <span class="text-info" title="System.Type">Type</span>s that are assinable to <typeparamref name="T" />.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Type[]">Type[]</span> GetTypesAssignableFrom&lt;T&gt;()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Type[]">Type[]</span> GetTypesAssignableFrom&lt;T&gt;()</code></dd>
 </dl>
 </div>
 <div id="M:KpokPatagon.DependencyInjection.KpokPatagonBuilder.TrySetInstancePropertiesFromConfigurationSection(System.Object,Microsoft.Extensions.Configuration.IConfigurationSection,System.String[])" class="mb-5">
@@ -199,7 +197,7 @@
             configuration <strong class="text-info">section</strong> with the same name of the propertes.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="System.Void">Void</span> TrySetInstancePropertiesFromConfigurationSection(instance, section, expludeProperties)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TrySetInstancePropertiesFromConfigurationSection(instance, section, <span class="text-info">params </span>expludeProperties)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -213,17 +211,17 @@
 <tbody>
     <tr>
         <td>instance</td>
-        <td><span class="text-info" title="System.Object">Object</span></td>
+        <td><span class="text-info" title="Object">Object</span></td>
         <td>The instance to set it's properties.</td>
     </tr>
     <tr>
         <td>section</td>
-        <td><span class="text-info" title="Microsoft.Extensions.Configuration.IConfigurationSection">IConfigurationSection</span></td>
+        <td><span class="text-info" title="IConfigurationSection">IConfigurationSection</span></td>
         <td>The configuration section.</td>
     </tr>
     <tr>
         <td>expludeProperties</td>
-        <td><span class="text-info" title="System.String[]">String[]</span></td>
+        <td><span class="text-info" title="String[]">String[]</span></td>
         <td>A collection of properties that must be excluded.</td>
     </tr>
 </tbody></table>
