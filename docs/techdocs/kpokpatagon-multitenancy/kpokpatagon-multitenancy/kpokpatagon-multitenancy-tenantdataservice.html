@@ -39,12 +39,11 @@
 </dl>
 <h2 id="remarks" class="mt-5">Remarks</h2>
 <p><p>
-                    By default, this service is configured to use a <b>CommandBuilder</b> and a
-                    <b>DataModelCommandBuilder</b> both named <code>Host</code>.
+                    This service does not have any configuration for the required services for it to work.
                 </p><p>
-                    This configuration can be overriden by configuring a 
-                    <code>DataServiceOptions&lt;TenantDataService&gt;</code> 
-                    within the service collection.
+                    All required services like the <b>CommandBuilder</b> and <b>DataModelCommandBuilder</b>
+                    must be configured by a <b>DataServiceOptions&lt;TenantDataService&gt;</b> 
+                    configuration within the dependency injection service collection.
                 </p></p>
 <h2 id="constructors" class="mt-5">Constructors</h2>
 <div id="M:KpokPatagon.Multitenancy.TenantDataService.#ctor" class="mb-5">
