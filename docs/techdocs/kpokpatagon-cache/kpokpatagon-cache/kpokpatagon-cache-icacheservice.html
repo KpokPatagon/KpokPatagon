@@ -39,6 +39,24 @@
 <dt class="text-truncate col-sm-3">Implements:</dt>
 <dd class="col-sm-9">System.IDisposable</dd>
 </dl>
+<h2 id="example" class="mt-5">Example</h2>
+<div class="mb-4"><p><b>Service configuration:</b></p><p>Cache must be configured within a "Caching" section in <b>appsettings.json</b>.</p><pre class="bg-light"><code>
+             "KpokPatagon": {
+               "Caching": {
+                 "DefaultSlidingExpireTime": "00.01:00:00",
+                 "Redis": {
+                   "Enabled": false,
+                   "DatabaseId": -1,
+                   "ConnectionString": "localhost"
+                 }
+               }
+             }
+             </code></pre><p><b>Service registration:</b></p><p>This cache service must be registered with DI within the "configure service" method:</p><pre class="bg-light"><code>
+             services.AddKpokPatagon(&lt;configuration&gt;)
+                     .AddCacheService();
+             </code></pre><p><b>Service usage:</b></p><p>Once registeres just inject the service where required:</p><pre class="bg-light"><code>
+             public MyClass(ICacheService cacheService) { ... }
+             </code></pre></div>
 <h2 id="properties" class="mt-5">Properties</h2>
 <div id="P:KpokPatagon.Cache.ICacheService.Instance" class="mb-5">
     <h3 class="lead text-info">Instance</h3>
@@ -52,6 +70,7 @@
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
+<li><a href="#example">Example</a></li>
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
