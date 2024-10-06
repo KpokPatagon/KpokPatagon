@@ -194,7 +194,113 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Commons.Parameters.IParameterService.SetValue(System.String,System.Object)" class="mb-5">
+<div id="M:KpokPatagon.Commons.Parameters.IParameterService.LoadParametersTree(System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">LoadParametersTree</h3>
+    <p>Returns a parameter tree as a DTO including the parameter values from the store is required.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="ParameterTreeNodeDto">ParameterTreeNodeDto</span> LoadParametersTree(includeStoredValues)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>includeStoredValues</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether the values from the store must be included.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Commons.Parameters.IParameterService.LoadParametersTree(System.String,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">LoadParametersTree</h3>
+    <p>Returns a parameter tree as a DTO including the parameter values from the store is required.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="ParameterTreeNodeDto">ParameterTreeNodeDto</span> LoadParametersTree(groupName, includeStoredValues)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>groupName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>Name of the group from where to start loading parameters.</td>
+    </tr>
+    <tr>
+        <td>includeStoredValues</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether the values from the store must be included.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Commons.Parameters.IParameterService.LoadParametersTreeAsync(System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">LoadParametersTreeAsync</h3>
+    <p>Returns a parameter tree as a DTO including the parameter values from the store is required.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> LoadParametersTreeAsync(includeStoredValues)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>includeStoredValues</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether the values from the store must be included.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Commons.Parameters.IParameterService.LoadParametersTreeAsync(System.String,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">LoadParametersTreeAsync</h3>
+    <p>Returns a parameter tree as a DTO including the parameter values from the store is required.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> LoadParametersTreeAsync(groupName, includeStoredValues)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>groupName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>Name of the group from where to start loading parameters.</td>
+    </tr>
+    <tr>
+        <td>includeStoredValues</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether the values from the store must be included.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Commons.Parameters.IParameterService.SetValue(System.String,System.String)" class="mb-5">
     <h3 class="lead text-info">SetValue</h3>
     <p>Sets the value of the parameter.</p>
 <dl class="row">
@@ -218,12 +324,12 @@
     </tr>
     <tr>
         <td>value</td>
-        <td><span class="text-info" title="Object">Object</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The value to be set.</td>
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Commons.Parameters.IParameterService.SetValueAsync(System.String,System.Object)" class="mb-5">
+<div id="M:KpokPatagon.Commons.Parameters.IParameterService.SetValueAsync(System.String,System.String)" class="mb-5">
     <h3 class="lead text-info">SetValueAsync</h3>
     <p>Sets the value of the parameter.</p>
 <dl class="row">
@@ -247,7 +353,7 @@
     </tr>
     <tr>
         <td>value</td>
-        <td><span class="text-info" title="Object">Object</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The value to be set.</td>
     </tr>
 </tbody></table>
@@ -265,8 +371,12 @@
         <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.GetIntegerAsync(System.String)">GetIntegerAsync</a></li>
         <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.GetString(System.String)">GetString</a></li>
         <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.GetStringAsync(System.String)">GetStringAsync</a></li>
-        <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.SetValue(System.String,System.Object)">SetValue</a></li>
-        <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.SetValueAsync(System.String,System.Object)">SetValueAsync</a></li>
+        <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.LoadParametersTree(System.Boolean)">LoadParametersTree</a></li>
+        <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.LoadParametersTree(System.String,System.Boolean)">LoadParametersTree</a></li>
+        <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.LoadParametersTreeAsync(System.Boolean)">LoadParametersTreeAsync</a></li>
+        <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.LoadParametersTreeAsync(System.String,System.Boolean)">LoadParametersTreeAsync</a></li>
+        <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.SetValue(System.String,System.String)">SetValue</a></li>
+        <li><a href="#M:KpokPatagon.Commons.Parameters.IParameterService.SetValueAsync(System.String,System.String)">SetValueAsync</a></li>
     </ul>
 </li>
 </ul>

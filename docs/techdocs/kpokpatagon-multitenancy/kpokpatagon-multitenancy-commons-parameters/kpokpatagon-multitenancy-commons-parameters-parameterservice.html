@@ -115,7 +115,7 @@
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></td>
-        <td>Thrown where required parameter does not exists.</td>
+        <td>Thrown when the specified parameter does not exists.</td>
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-wrongparametertypeexception.html">WrongParameterTypeException</a></td>
@@ -168,7 +168,7 @@
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></td>
-        <td>Thrown where required parameter does not exists.</td>
+        <td>Thrown when the specified parameter does not exists.</td>
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-wrongparametertypeexception.html">WrongParameterTypeException</a></td>
@@ -221,7 +221,7 @@
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></td>
-        <td>Thrown where required parameter does not exists.</td>
+        <td>Thrown when the specified parameter does not exists.</td>
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-wrongparametertypeexception.html">WrongParameterTypeException</a></td>
@@ -274,7 +274,7 @@
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></td>
-        <td>Thrown where required parameter does not exists.</td>
+        <td>Thrown when the specified parameter does not exists.</td>
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-wrongparametertypeexception.html">WrongParameterTypeException</a></td>
@@ -327,7 +327,7 @@
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></td>
-        <td>Thrown where required parameter does not exists.</td>
+        <td>Thrown when the specified parameter does not exists.</td>
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-wrongparametertypeexception.html">WrongParameterTypeException</a></td>
@@ -380,7 +380,7 @@
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></td>
-        <td>Thrown where required parameter does not exists.</td>
+        <td>Thrown when the specified parameter does not exists.</td>
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-wrongparametertypeexception.html">WrongParameterTypeException</a></td>
@@ -388,7 +388,137 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.SetValue(System.String,System.Object,KpokPatagon.Multitenancy.Tenant)" class="mb-5">
+<div id="M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.LoadParametersTree(KpokPatagon.Multitenancy.Tenant,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">LoadParametersTree</h3>
+    <p>Returns a parameter tree as a DTO including the parameter values from the store is required.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="ParameterTreeNodeDto">ParameterTreeNodeDto</span> LoadParametersTree(tenant, includeStoredValues)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>tenant</td>
+        <td><span class="text-info" title="Tenant">Tenant</span></td>
+        <td>The tenant to which the parameter belongs to.</td>
+    </tr>
+    <tr>
+        <td>includeStoredValues</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether the values from the store must be included.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.LoadParametersTree(System.String,KpokPatagon.Multitenancy.Tenant,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">LoadParametersTree</h3>
+    <p>Returns a parameter tree as a DTO including the parameter values from the store is required.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="ParameterTreeNodeDto">ParameterTreeNodeDto</span> LoadParametersTree(groupName, tenant, includeStoredValues)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A tree of parameters or <strong class="text-info">null</strong> if the specified group does not exists.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>groupName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>Name of the group from where to start loading parameters.</td>
+    </tr>
+    <tr>
+        <td>tenant</td>
+        <td><span class="text-info" title="Tenant">Tenant</span></td>
+        <td>The tenant to which the parameter belongs to.</td>
+    </tr>
+    <tr>
+        <td>includeStoredValues</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether the values from the store must be included.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.LoadParametersTreeAsync(KpokPatagon.Multitenancy.Tenant,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">LoadParametersTreeAsync</h3>
+    <p>Returns a parameter tree as a DTO including the parameter values from the store is required.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> LoadParametersTreeAsync(tenant, includeStoredValues)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>tenant</td>
+        <td><span class="text-info" title="Tenant">Tenant</span></td>
+        <td>The tenant to which the parameter belongs to.</td>
+    </tr>
+    <tr>
+        <td>includeStoredValues</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether the values from the store must be included.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.LoadParametersTreeAsync(System.String,KpokPatagon.Multitenancy.Tenant,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">LoadParametersTreeAsync</h3>
+    <p>Returns a parameter tree as a DTO including the parameter values from the store is required.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> LoadParametersTreeAsync(groupName, tenant, includeStoredValues)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A tree of parameters or <strong class="text-info">null</strong> if the specified group does not exists.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>groupName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>Name of the group from where to start loading parameters.</td>
+    </tr>
+    <tr>
+        <td>tenant</td>
+        <td><span class="text-info" title="Tenant">Tenant</span></td>
+        <td>The tenant to which the parameter belongs to.</td>
+    </tr>
+    <tr>
+        <td>includeStoredValues</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether the values from the store must be included.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.SetValue(System.String,System.String,KpokPatagon.Multitenancy.Tenant)" class="mb-5">
     <h3 class="lead text-info">SetValue</h3>
     <p>Sets the value of the parameter.</p>
 <dl class="row">
@@ -412,7 +542,7 @@
     </tr>
     <tr>
         <td>value</td>
-        <td><span class="text-info" title="Object">Object</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The value to be set.</td>
     </tr>
     <tr>
@@ -436,11 +566,15 @@
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></td>
-        <td>Thrown where required parameter does not exists.</td>
+        <td>Thrown when the specified parameter does not exists.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parametervaluevalidationexception.html">ParameterValueValidationException</a></td>
+        <td>Thrown when the <strong class="text-info">value</strong> is not valid.</td>
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.SetValueAsync(System.String,System.Object,KpokPatagon.Multitenancy.Tenant)" class="mb-5">
+<div id="M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.SetValueAsync(System.String,System.String,KpokPatagon.Multitenancy.Tenant)" class="mb-5">
     <h3 class="lead text-info">SetValueAsync</h3>
     <p>Sets the value of the parameter.</p>
 <dl class="row">
@@ -464,7 +598,7 @@
     </tr>
     <tr>
         <td>value</td>
-        <td><span class="text-info" title="Object">Object</span></td>
+        <td><span class="text-info" title="String">String</span></td>
         <td>The value to be set.</td>
     </tr>
     <tr>
@@ -488,7 +622,11 @@
     </tr>
     <tr>
         <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parameterdoesnotexistexception.html">ParameterDoesNotExistException</a></td>
-        <td>Thrown where required parameter does not exists.</td>
+        <td>Thrown when the specified parameter does not exists.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon-parameters/kpokpatagon-parameters-parametervaluevalidationexception.html">ParameterValueValidationException</a></td>
+        <td>Thrown when the <strong class="text-info">value</strong> is not valid.</td>
     </tr>
 </tbody></table>
 </div>
@@ -506,8 +644,12 @@
         <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.GetIntegerAsync(System.String,KpokPatagon.Multitenancy.Tenant)">GetIntegerAsync</a></li>
         <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.GetString(System.String,KpokPatagon.Multitenancy.Tenant)">GetString</a></li>
         <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.GetStringAsync(System.String,KpokPatagon.Multitenancy.Tenant)">GetStringAsync</a></li>
-        <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.SetValue(System.String,System.Object,KpokPatagon.Multitenancy.Tenant)">SetValue</a></li>
-        <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.SetValueAsync(System.String,System.Object,KpokPatagon.Multitenancy.Tenant)">SetValueAsync</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.LoadParametersTree(KpokPatagon.Multitenancy.Tenant,System.Boolean)">LoadParametersTree</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.LoadParametersTree(System.String,KpokPatagon.Multitenancy.Tenant,System.Boolean)">LoadParametersTree</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.LoadParametersTreeAsync(KpokPatagon.Multitenancy.Tenant,System.Boolean)">LoadParametersTreeAsync</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.LoadParametersTreeAsync(System.String,KpokPatagon.Multitenancy.Tenant,System.Boolean)">LoadParametersTreeAsync</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.SetValue(System.String,System.String,KpokPatagon.Multitenancy.Tenant)">SetValue</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Commons.Parameters.ParameterService.SetValueAsync(System.String,System.String,KpokPatagon.Multitenancy.Tenant)">SetValueAsync</a></li>
     </ul>
 </li>
 </ul>
