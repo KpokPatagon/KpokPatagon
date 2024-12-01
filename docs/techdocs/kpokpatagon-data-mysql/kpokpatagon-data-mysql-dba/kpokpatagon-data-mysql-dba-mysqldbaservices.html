@@ -131,48 +131,6 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.CreateSchema(System.String)" class="mb-5">
-    <h3 class="lead text-info">CreateSchema</h3>
-    <p>Creates a schema named <strong class="text-info">name</strong>.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CreateSchema(name)</code></dd>
-</dl>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>name</td>
-        <td><span class="text-info" title="String">String</span></td>
-        <td>Name of the schema to create.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
-        <td>Thrown when an error occurs while manipulating the schema.</td>
-    </tr>
-    <tr>
-        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
-        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-    </tr>
-</tbody></table>
-</div>
 <div id="M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.CreateUser(KpokPatagon.Data.MySql.Dba.User)" class="mb-5">
     <h3 class="lead text-info">CreateUser</h3>
     <p>Creates a user to connect to the database.</p>
@@ -410,7 +368,6 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.ChangeUserPassword(KpokPatagon.Data.MySql.Dba.User)">ChangeUserPassword</a></li>
-        <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.CreateSchema(System.String)">CreateSchema</a></li>
         <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.CreateUser(KpokPatagon.Data.MySql.Dba.User)">CreateUser</a></li>
         <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.DropSchema(System.String)">DropSchema</a></li>
         <li><a href="#M:KpokPatagon.Data.MySql.Dba.MySqlDbaServices.DropUser(System.String)">DropUser</a></li>

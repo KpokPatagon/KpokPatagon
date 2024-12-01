@@ -46,6 +46,19 @@
     <dd class="col-10"><code>public <span class="text-info" title="List&lt;TableColumn&gt;">List&lt;TableColumn&gt;</span> Columns { get; set; }</code></dd>
 </dl>
 </div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.ConnectionName" class="mb-5">
+    <h3 class="lead text-info">ConnectionName</h3>
+    <p>The name of the connection to access this table.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ConnectionName { get; set; }</code></dd>
+</dl>
+<h6 class="mt-1">Remarks</h6>
+<p><p>
+                    The schema discoverer does not provides this information it is mostly
+                    uses by the DSC process in the migrations library.
+                </p></p>
+</div>
 <div id="P:KpokPatagon.Data.DatabaseSchema.Table.FileGroup" class="mb-5">
     <h3 class="lead text-info">FileGroup</h3>
     <p>The file group or table space where the tabla is stored.</p>
@@ -102,6 +115,22 @@
     <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Schema { get; set; }</code></dd>
 </dl>
 </div>
+<div id="P:KpokPatagon.Data.DatabaseSchema.Table.SequenceName" class="mb-5">
+    <h3 class="lead text-info">SequenceName</h3>
+    <p>The name of the sequence used for autonumeric columns (optional).</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> SequenceName { get; set; }</code></dd>
+</dl>
+<h6 class="mt-1">Remarks</h6>
+<p><p>
+                    The schema discoverer does not provides this information it is mostly
+                    uses by the DSC process in the migrations library.
+                </p><p>
+                    Sequences are mostly used in Oracle for autonumeric columnas, it is 
+                    not used in any other database engine.
+                </p></p>
+</div>
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Data.DatabaseSchema.Table.ToString" class="mb-5">
     <h3 class="lead text-info">ToString</h3>
@@ -119,6 +148,7 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Columns">Columns</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.ConnectionName">ConnectionName</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.FileGroup">FileGroup</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.ForeignKeys">ForeignKeys</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Indexes">Indexes</a></li>
@@ -126,6 +156,7 @@
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Name">Name</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.PrimaryKey">PrimaryKey</a></li>
         <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.Schema">Schema</a></li>
+        <li><a href="#P:KpokPatagon.Data.DatabaseSchema.Table.SequenceName">SequenceName</a></li>
     </ul>
 </li>
 <li><a href="#methods">Methods</a></li>

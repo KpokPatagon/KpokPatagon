@@ -234,57 +234,6 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.CreateSchema(System.String,System.String)" class="mb-5">
-    <h3 class="lead text-info">CreateSchema</h3>
-    <p>Creates a schema in the <strong class="text-info">database</strong>.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> CreateSchema(name, database)</code></dd>
-</dl>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>name</td>
-        <td><span class="text-info" title="String">String</span></td>
-        <td>Name of the schema.</td>
-    </tr>
-    <tr>
-        <td>database</td>
-        <td><span class="text-info" title="String">String</span></td>
-        <td>Name of the database.</td>
-    </tr>
-</tbody></table>
-<h6 class="mt-1">Exceptions</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
-        <td>Thrown when an error occurs while manipulating the database.</td>
-    </tr>
-    <tr>
-        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
-        <td>Thrown when <strong class="text-info">name</strong> is <strong class="text-info">null</strong> or empty.</td>
-    </tr>
-    <tr>
-        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
-        <td>Thrown when <strong class="text-info">database</strong> is <strong class="text-info">null</strong> or empty.</td>
-    </tr>
-</tbody></table>
-</div>
 <div id="M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.CreateUser(System.String,System.String,System.String,KpokPatagon.Data.SqlServer.Dba.UserRoles)" class="mb-5">
     <h3 class="lead text-info">CreateUser</h3>
     <p>Creates a user for <strong class="text-info">login</strong> in the database <strong class="text-info">database</strong>
@@ -740,7 +689,6 @@
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.ChangeLoginPassword(KpokPatagon.Data.SqlServer.Dba.Login)">ChangeLoginPassword</a></li>
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.CreateDatabase(System.String,System.String,System.Boolean,System.Boolean)">CreateDatabase</a></li>
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.CreateLogin(KpokPatagon.Data.SqlServer.Dba.Login)">CreateLogin</a></li>
-        <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.CreateSchema(System.String,System.String)">CreateSchema</a></li>
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.CreateUser(System.String,System.String,System.String,KpokPatagon.Data.SqlServer.Dba.UserRoles)">CreateUser</a></li>
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.DropDatabase(System.String)">DropDatabase</a></li>
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.DropLogin(System.String)">DropLogin</a></li>

@@ -58,7 +58,7 @@
     <tr>
         <td>desired</td>
         <td><span class="text-info" title="Table">Table</span></td>
-        <td>Desired <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> configuration.</td>
+        <td>Desired <span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Table">Table</span> configuration.</td>
     </tr>
     <tr>
         <td>miss</td>
@@ -169,7 +169,7 @@
     <tr>
         <td>desired</td>
         <td><span class="text-info" title="Table">Table</span></td>
-        <td>Desired <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> configuration.</td>
+        <td>Desired <span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Table">Table</span> configuration.</td>
     </tr>
 </tbody></table>
 </div>
@@ -195,19 +195,40 @@
     <tr>
         <td>desired</td>
         <td><span class="text-info" title="Table">Table</span></td>
-        <td>Desired <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-table.html">Table</a> configuration.</td>
+        <td>Desired <span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Table">Table</span>&gt; configuration.</td>
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.ToDetailedString" class="mb-5">
-    <h3 class="lead text-info">ToDetailedString</h3>
-    <p>Returns a detailed string good for logging.</p>
+<div id="M:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Missed(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableComparisonMissResultType)" class="mb-5">
+    <h3 class="lead text-info">Missed</h3>
+    <p>Creates a new instance of a missed result.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToDetailedString()</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="TableComparisonResult">TableComparisonResult</span> Missed(desired, type)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>A textual representation of the result good for logging.</p>
+<p>A new instance of a missed result for <strong class="text-info">desired</strong>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>desired</td>
+        <td><span class="text-info" title="Table">Table</span></td>
+        <td>Desired <span class="text-info" title="KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Table">Table</span>&gt; configuration.</td>
+    </tr>
+    <tr>
+        <td>type</td>
+        <td><span class="text-info" title="TableComparisonMissResultType">TableComparisonMissResultType</span></td>
+        <td>Miss result type.</td>
+    </tr>
+</tbody></table>
 </div>
 <div id="M:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.ToString" class="mb-5">
     <h3 class="lead text-info">ToString</h3>
@@ -240,7 +261,7 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Hit(KpokPatagon.Data.DatabaseSchema.Table)">Hit</a></li>
         <li><a href="#M:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Missed(KpokPatagon.Data.DatabaseSchema.Table)">Missed</a></li>
-        <li><a href="#M:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.ToDetailedString">ToDetailedString</a></li>
+        <li><a href="#M:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.Missed(KpokPatagon.Data.DatabaseSchema.Table,KpokPatagon.Data.DatabaseSchema.TableComparisonMissResultType)">Missed</a></li>
         <li><a href="#M:KpokPatagon.Data.DatabaseSchema.TableComparisonResult.ToString">ToString</a></li>
     </ul>
 </li>
