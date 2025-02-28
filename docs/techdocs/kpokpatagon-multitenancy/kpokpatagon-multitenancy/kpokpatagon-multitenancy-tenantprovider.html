@@ -40,12 +40,12 @@
 <dd class="col-sm-9">KpokPatagon.Multitenancy.ITenantProvider, KpokPatagon.Multitenancy.ITenantProvider</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Multitenancy.TenantProvider.#ctor(System.IServiceProvider,KpokPatagon.Multitenancy.TenantDataService)" class="mb-5">
+<div id="M:KpokPatagon.Multitenancy.TenantProvider.#ctor(KpokPatagon.Multitenancy.TenantDataService,System.IServiceProvider,Microsoft.Extensions.Options.IOptions{KpokPatagon.Multitenancy.TenantProviderOptions})" class="mb-5">
     <h3 class="lead text-info">TenantProvider</h3>
     <p>Initializes a new instance of <strong>TenantProvider</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TenantProvider(serviceProvider, dataService)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TenantProvider(dataService, serviceProvider, options)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -58,13 +58,18 @@
 </thead>
 <tbody>
     <tr>
+        <td>dataService</td>
+        <td><span class="text-info" title="TenantDataService">TenantDataService</span></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>serviceProvider</td>
         <td><span class="text-info" title="IServiceProvider">IServiceProvider</span></td>
         <td></td>
     </tr>
     <tr>
-        <td>dataService</td>
-        <td><span class="text-info" title="TenantDataService">TenantDataService</span></td>
+        <td>options</td>
+        <td><span class="text-info" title="IOptions&lt;TenantProviderOptions&gt;">IOptions&lt;TenantProviderOptions&gt;</span></td>
         <td></td>
     </tr>
 </tbody></table>

@@ -91,12 +91,12 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Multitenancy.DependencyInjection.KpokPatagonMultitenancyBuilderExtensions.AddTenantProvider(KpokPatagon.DependencyInjection.IKpokPatagonBuilder)" class="mb-5">
+<div id="M:KpokPatagon.Multitenancy.DependencyInjection.KpokPatagonMultitenancyBuilderExtensions.AddTenantProvider(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Multitenancy.TenantProviderOptions})" class="mb-5">
     <h3 class="lead text-info">AddTenantProvider</h3>
     <p>Adds a scoped <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-itenantprovider.html">ITenantProvider</a> implemented by <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-tenantprovider.html">TenantProvider</a>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="IKpokPatagonBuilder">IKpokPatagonBuilder</span> AddTenantProvider(builder)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IKpokPatagonBuilder">IKpokPatagonBuilder</span> AddTenantProvider(builder, options)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -113,6 +113,11 @@
         <td><span class="text-info" title="IKpokPatagonBuilder">IKpokPatagonBuilder</span></td>
         <td></td>
     </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="Action&lt;TenantProviderOptions&gt;">Action&lt;TenantProviderOptions&gt;</span></td>
+        <td></td>
+    </tr>
 </tbody></table>
 </div>
             </div>
@@ -124,7 +129,7 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Multitenancy.DependencyInjection.KpokPatagonMultitenancyBuilderExtensions.AddMultitenantIntegerNumerator(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Multitenancy.Commons.IntegerNumeratorOptions})">AddMultitenantIntegerNumerator</a></li>
         <li><a href="#M:KpokPatagon.Multitenancy.DependencyInjection.KpokPatagonMultitenancyBuilderExtensions.AddMultitenantParameterService(KpokPatagon.DependencyInjection.IKpokPatagonBuilder)">AddMultitenantParameterService</a></li>
-        <li><a href="#M:KpokPatagon.Multitenancy.DependencyInjection.KpokPatagonMultitenancyBuilderExtensions.AddTenantProvider(KpokPatagon.DependencyInjection.IKpokPatagonBuilder)">AddTenantProvider</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.DependencyInjection.KpokPatagonMultitenancyBuilderExtensions.AddTenantProvider(KpokPatagon.DependencyInjection.IKpokPatagonBuilder,System.Action{KpokPatagon.Multitenancy.TenantProviderOptions})">AddTenantProvider</a></li>
     </ul>
 </li>
 </ul>
