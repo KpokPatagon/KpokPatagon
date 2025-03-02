@@ -17,13 +17,12 @@
 
 CREATE TABLE [Auditing].[Audit]
 (
-      [Id] VARCHAR(64) NOT NULL
-    , [PrevId] VARCHAR(64) NULL
-    , [NextId] VARCHAR(64) NULL
-    , [TenantId] INT NOT NULL
+      [Id] INT NOT NULL
+    , [PrevId] INT NULL
+    , [NextId] INT NULL
     , [Kind] VARCHAR(8) NOT NULL
     , [CreationTime] DATETIME2 NOT NULL
-    , [IncidentId] VARCHAR(64) NULL
+    , [IncidentId] INT NULL
     , [UserId] NVARCHAR(128) NOT NULL
     , [UserName] NVARCHAR(300) NOT NULL
     , [UserAuthority] NVARCHAR(128) NULL
@@ -40,7 +39,6 @@ GO
 CREATE NONCLUSTERED INDEX [IX_Audit_1] ON [Auditing].[Audit]
 (
       [UserId]
-    , [TenantId]
 )
 GO
 
@@ -48,20 +46,17 @@ CREATE NONCLUSTERED INDEX [IX_Audit_2] ON [Auditing].[Audit]
 (
       [SourceId]
     , [SourceTypeName]
-    , [TenantId]
 )
 GO
 
 CREATE NONCLUSTERED INDEX [IX_Audit_3] ON [Auditing].[Audit]
 (
       [SourceTypeName]
-    , [TenantId]
 )
 GO
 
 CREATE NONCLUSTERED INDEX [IX_Audit_4] ON [Auditing].[Audit]
 (
       [SourceDisplay]
-    , [TenantId]
 )
 GO

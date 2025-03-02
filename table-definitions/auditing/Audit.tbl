@@ -10,7 +10,7 @@
   "Columns": [
     {
       "Name": "Id",
-      "DataType": "Text",
+      "DataType": "Integer",
       "Caption": null,
       "Description": null,
       "Position": 1,
@@ -26,7 +26,7 @@
     },
     {
       "Name": "PrevId",
-      "DataType": "Text",
+      "DataType": "Integer",
       "Caption": null,
       "Description": null,
       "Position": 2,
@@ -42,29 +42,13 @@
     },
     {
       "Name": "NextId",
-      "DataType": "Text",
+      "DataType": "Integer",
       "Caption": null,
       "Description": null,
       "Position": 3,
       "IsAutonumeric": false,
       "IsNullable": true,
       "CharacterLength": "64",
-      "Precision": null,
-      "Scale": null,
-      "DefaultConstraintName": null,
-      "DefaultConstraintExpression": null,
-      "CheckConstraintName": null,
-      "CheckConstraintExpression": null
-    },
-    {
-      "Name": "TenantId",
-      "DataType": "Integer",
-      "Caption": null,
-      "Description": null,
-      "Position": 4,
-      "IsAutonumeric": false,
-      "IsNullable": false,
-      "CharacterLength": null,
       "Precision": null,
       "Scale": null,
       "DefaultConstraintName": null,
@@ -106,7 +90,7 @@
     },
     {
       "Name": "IncidentId",
-      "DataType": "Text",
+      "DataType": "Integer",
       "Caption": null,
       "Description": null,
       "Position": 7,

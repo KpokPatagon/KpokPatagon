@@ -10,7 +10,7 @@
   "Columns": [
     {
       "Name": "Id",
-      "DataType": "Text",
+      "DataType": "Integer",
       "CharacterLength": "64",
       "Precision": null,
       "Scale": null,
@@ -23,22 +23,6 @@
       "DefaultConstraintName": null,
       "DefaultConstraintExpression": null,
       "Position": 1
-    },
-    {
-      "Name": "TenantId",
-      "DataType": "Integer",
-      "CharacterLength": null,
-      "Precision": null,
-      "Scale": null,
-      "Caption": null,
-      "Description": null,
-      "IsAutonumeric": false,
-      "IsNullable": false,
-      "CheckConstraintName": null,
-      "CheckConstraintExpression": null,
-      "DefaultConstraintName": null,
-      "DefaultConstraintExpression": null,
-      "Position": 2
     },
     {
       "Name": "Kind",
@@ -74,7 +58,7 @@
     },
     {
       "Name": "AuditId",
-      "DataType": "Text",
+      "DataType": "Integer",
       "CharacterLength": "64",
       "Precision": null,
       "Scale": null,
