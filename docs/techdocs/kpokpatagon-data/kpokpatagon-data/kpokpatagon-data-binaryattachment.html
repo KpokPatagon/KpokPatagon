@@ -1,0 +1,229 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>BinaryAttachment - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>BinaryAttachment</h1>
+<p class="lead">Allows the storing of files into a database.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
+<dd class="col-sm-9">KpokPatagon.Data.IAttachment</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Data.BinaryAttachment.#ctor" class="mb-5">
+    <h3 class="lead text-info">BinaryAttachment</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BinaryAttachment()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Data.BinaryAttachment.#ctor(System.Byte[])" class="mb-5">
+    <h3 class="lead text-info">BinaryAttachment</h3>
+    <p>Initializes a new instance of <strong>BinaryAttachment</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BinaryAttachment(serialized)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>serialized</td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
+        <td>The serialized data.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.BinaryAttachment.#ctor(System.Byte[],System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">BinaryAttachment</h3>
+    <p>Initializes a new instance of <strong>BinaryAttachment</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BinaryAttachment(serialized, throwIfError)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>serialized</td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
+        <td>The serialized data.</td>
+    </tr>
+    <tr>
+        <td>throwIfError</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td><strong class="text-info">true</strong> is an exception must be thrown if deserialization fails, otherwise <strong class="text-info">false</strong>.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-binaryattachmentformatexception.html">BinaryAttachmentFormatException</a></td>
+        <td>Thrown when <strong class="text-info">throwIfError</strong> is <strong class="text-info">true</strong> and <strong class="text-info">serialized</strong> could not be deserialized.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.BinaryAttachment.#ctor(System.Byte[],System.String,System.String)" class="mb-5">
+    <h3 class="lead text-info">BinaryAttachment</h3>
+    <p>Initializes a new instance of <strong>BinaryAttachment</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BinaryAttachment(data, fileName, contentType)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>data</td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
+        <td>The attachment file content.</td>
+    </tr>
+    <tr>
+        <td>fileName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The attachment file name.</td>
+    </tr>
+    <tr>
+        <td>contentType</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The attachment content type.</td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Data.BinaryAttachment.BinaryData" class="mb-5">
+    <h3 class="lead text-info">BinaryData</h3>
+    <p>The binary data to be stored into the database field.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> BinaryData { get; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.BinaryAttachment.ContentLength" class="mb-5">
+    <h3 class="lead text-info">ContentLength</h3>
+    <p>The content length of the attached file.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Int64">Int64</span> ContentLength { get; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.BinaryAttachment.ContentType" class="mb-5">
+    <h3 class="lead text-info">ContentType</h3>
+    <p>Content type of the file contained into this object</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ContentType { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.BinaryAttachment.FileContent" class="mb-5">
+    <h3 class="lead text-info">FileContent</h3>
+    <p>File content of this attachment</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> FileContent { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.BinaryAttachment.FileName" class="mb-5">
+    <h3 class="lead text-info">FileName</h3>
+    <p>File name of this attachment</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> FileName { get; set; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.BinaryAttachment.ToString" class="mb-5">
+    <h3 class="lead text-info">ToString</h3>
+    <p>Returns a textual repredentation of this <strong>BinaryAttachment</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToString()</code></dd>
+</dl>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Data.BinaryAttachment.BinaryData">BinaryData</a></li>
+        <li><a href="#P:KpokPatagon.Data.BinaryAttachment.ContentLength">ContentLength</a></li>
+        <li><a href="#P:KpokPatagon.Data.BinaryAttachment.ContentType">ContentType</a></li>
+        <li><a href="#P:KpokPatagon.Data.BinaryAttachment.FileContent">FileContent</a></li>
+        <li><a href="#P:KpokPatagon.Data.BinaryAttachment.FileName">FileName</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.BinaryAttachment.ToString">ToString</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

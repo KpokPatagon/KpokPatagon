@@ -1,0 +1,275 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>ExistsPredicate - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>ExistsPredicate</h1>
+<p class="lead">Represents a condition predicate for the EXISTS keyword.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.Query</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">KpokPatagon.Data.Query.Predicate</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Data.Query.ExistsPredicate.#ctor" class="mb-5">
+    <h3 class="lead text-info">ExistsPredicate</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExistsPredicate()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Data.Query.ExistsPredicate.#ctor(KpokPatagon.Data.RelationalOperator,KpokPatagon.Data.Query.SelectStatement)" class="mb-5">
+    <h3 class="lead text-info">ExistsPredicate</h3>
+    <p>Initializes a new instance of <strong>ExistsPredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExistsPredicate(rel, subquery)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>rel</td>
+        <td><span class="text-info" title="RelationalOperator">RelationalOperator</span></td>
+        <td>The relation between predicates.</td>
+    </tr>
+    <tr>
+        <td>subquery</td>
+        <td><span class="text-info" title="SelectStatement">SelectStatement</span></td>
+        <td>A <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-selectstatement.html">SelectStatement</a>for the sub query.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.ExistsPredicate.#ctor(KpokPatagon.Data.RelationalOperator,KpokPatagon.Data.Query.SelectStatement,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">ExistsPredicate</h3>
+    <p>Initializes a new instance of <strong>ExistsPredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExistsPredicate(rel, subquery, negate)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>rel</td>
+        <td><span class="text-info" title="RelationalOperator">RelationalOperator</span></td>
+        <td>The relation between predicates.</td>
+    </tr>
+    <tr>
+        <td>subquery</td>
+        <td><span class="text-info" title="SelectStatement">SelectStatement</span></td>
+        <td>A <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-selectstatement.html">SelectStatement</a>for the sub query.</td>
+    </tr>
+    <tr>
+        <td>negate</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td><strong class="text-info">true</strong> if the predicate should be negated.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.ExistsPredicate.#ctor(KpokPatagon.Data.RelationalOperator,KpokPatagon.Data.Query.SelectStatement,System.Boolean,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">ExistsPredicate</h3>
+    <p>Initializes a new instance of <strong>ExistsPredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExistsPredicate(rel, subquery, negate, useParenthesis)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>rel</td>
+        <td><span class="text-info" title="RelationalOperator">RelationalOperator</span></td>
+        <td>The relation between predicates.</td>
+    </tr>
+    <tr>
+        <td>subquery</td>
+        <td><span class="text-info" title="SelectStatement">SelectStatement</span></td>
+        <td>A <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-selectstatement.html">SelectStatement</a>for the sub query.</td>
+    </tr>
+    <tr>
+        <td>negate</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td><strong class="text-info">true</strong> if the predicate should be negated.</td>
+    </tr>
+    <tr>
+        <td>useParenthesis</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Indicates if the clause must be enclosed in parenthesis.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.ExistsPredicate.#ctor(KpokPatagon.Data.Query.SelectStatement)" class="mb-5">
+    <h3 class="lead text-info">ExistsPredicate</h3>
+    <p>Initializes a new instance of <strong>ExistsPredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExistsPredicate(subquery)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>subquery</td>
+        <td><span class="text-info" title="SelectStatement">SelectStatement</span></td>
+        <td>A <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-selectstatement.html">SelectStatement</a>for the sub query.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.ExistsPredicate.#ctor(KpokPatagon.Data.Query.SelectStatement,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">ExistsPredicate</h3>
+    <p>Initializes a new instance of <strong>ExistsPredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExistsPredicate(subquery, negate)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>subquery</td>
+        <td><span class="text-info" title="SelectStatement">SelectStatement</span></td>
+        <td>A <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-selectstatement.html">SelectStatement</a>for the sub query.</td>
+    </tr>
+    <tr>
+        <td>negate</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td><strong class="text-info">true</strong> if the predicate should be negated.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.Query.ExistsPredicate.#ctor(KpokPatagon.Data.Query.SelectStatement,System.Boolean,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">ExistsPredicate</h3>
+    <p>Initializes a new instance of <strong>ExistsPredicate</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ExistsPredicate(subquery, negate, useParenthesis)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>subquery</td>
+        <td><span class="text-info" title="SelectStatement">SelectStatement</span></td>
+        <td>A <a href="../../kpokpatagon-data/kpokpatagon-data-query/kpokpatagon-data-query-selectstatement.html">SelectStatement</a>for the sub query.</td>
+    </tr>
+    <tr>
+        <td>negate</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td><strong class="text-info">true</strong> if the predicate should be negated.</td>
+    </tr>
+    <tr>
+        <td>useParenthesis</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Indicates if the clause must be enclosed in parenthesis.</td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Data.Query.ExistsPredicate.Negate" class="mb-5">
+    <h3 class="lead text-info">Negate</h3>
+    <p>Indicates whether the predicate must be negated.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Negate { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Data.Query.ExistsPredicate.SubQuery" class="mb-5">
+    <h3 class="lead text-info">SubQuery</h3>
+    <p>The sub query for the exists clause</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="SelectStatement">SelectStatement</span> SubQuery { get; set; }</code></dd>
+</dl>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Data.Query.ExistsPredicate.Negate">Negate</a></li>
+        <li><a href="#P:KpokPatagon.Data.Query.ExistsPredicate.SubQuery">SubQuery</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,667 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>SqlServerSchemaDiscoverer - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data-sqlserver/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>SqlServerSchemaDiscoverer</h1>
+<p class="lead">Implements a <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-ischemadiscoverer.html">ISchemaDiscoverer</a> for Microsoft SQL Server.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data.SqlServer.DatabaseSchema</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+</dl>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsSchema(KpokPatagon.Data.DatabaseSchema.Schema)" class="mb-5">
+    <h3 class="lead text-info">ExistsSchema</h3>
+    <p>Checks whether a schema exists within the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsSchema(schema)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the schema exists.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>schema</td>
+        <td><span class="text-info" title="Schema">Schema</span></td>
+        <td>Schema to check.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-validationexception.html">ValidationException</a></td>
+        <td>Thrown when the schema configuration is not valid for checking existence.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">schema</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsTable(System.String,System.String)" class="mb-5">
+    <h3 class="lead text-info">ExistsTable</h3>
+    <p>Checks whether a table exists within the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsTable(schema, tableName)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> is the table exists.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>schema</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The schema to which the table belongs to.</td>
+    </tr>
+    <tr>
+        <td>tableName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the table to check.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
+        <td>Thrown when <strong class="text-info">schema</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
+        <td>Thrown when <strong class="text-info">tableName</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsTable(KpokPatagon.Data.DatabaseSchema.Table)" class="mb-5">
+    <h3 class="lead text-info">ExistsTable</h3>
+    <p>Checks whether a table exists within the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsTable(table)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the table exists.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>table</td>
+        <td><span class="text-info" title="Table">Table</span></td>
+        <td>Table to check.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">table</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsView(System.String,System.String)" class="mb-5">
+    <h3 class="lead text-info">ExistsView</h3>
+    <p>Checks whether a view exists within the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsView(schema, viewName)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> is the view exists.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>schema</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The schema to which the view belongs to.</td>
+    </tr>
+    <tr>
+        <td>viewName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the view to check.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
+        <td>Thrown when <strong class="text-info">schema</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
+        <td>Thrown when <strong class="text-info">viewName</strong> is <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsView(KpokPatagon.Data.DatabaseSchema.Table)" class="mb-5">
+    <h3 class="lead text-info">ExistsView</h3>
+    <p>Checks whether a view exists within the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> ExistsView(view)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p><strong class="text-info">true</strong> if the view exists.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>view</td>
+        <td><span class="text-info" title="Table">Table</span></td>
+        <td>View to check.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">view</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetCatalogs" class="mb-5">
+    <h3 class="lead text-info">GetCatalogs</h3>
+    <p>Get a list of user created catalogs.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetCatalogs()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A list of user catalogs.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetSchemas" class="mb-5">
+    <h3 class="lead text-info">GetSchemas</h3>
+    <p>Gets a list of user created schemas from the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetSchemas()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A list of user schemas.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetTable(System.String,System.String)" class="mb-5">
+    <h3 class="lead text-info">GetTable</h3>
+    <p>Gets the schema of a table from the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Table">Table</span> GetTable(schema, tableName)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A table definition.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>schema</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>Schema that the table belongs to.</td>
+    </tr>
+    <tr>
+        <td>tableName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the table.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></td>
+        <td>Thrown when the specified table does not exists.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
+        <td>Thrown when <strong class="text-info">schema</strong> or <strong class="text-info">tableName</strong> are <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetTable(KpokPatagon.Data.DatabaseSchema.TableName)" class="mb-5">
+    <h3 class="lead text-info">GetTable</h3>
+    <p>Gets the schema of a table from the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Table">Table</span> GetTable(tableName)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A table definition.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>tableName</td>
+        <td><span class="text-info" title="TableName">TableName</span></td>
+        <td>Name of the table.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">tableName</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></td>
+        <td>Thrown when the specified table does not exists.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetTableNames" class="mb-5">
+    <h3 class="lead text-info">GetTableNames</h3>
+    <p>Gets a list of table names from the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetTableNames()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A list of table names.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetTables" class="mb-5">
+    <h3 class="lead text-info">GetTables</h3>
+    <p>Gets a list of all tables from the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetTables()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A collection of tables.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetView(System.String,System.String)" class="mb-5">
+    <h3 class="lead text-info">GetView</h3>
+    <p>Gets the schema of a view from the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Table">Table</span> GetView(schema, viewName)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A definition for the specified view.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>schema</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>Schema to which the view belongs to.</td>
+    </tr>
+    <tr>
+        <td>viewName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>Name of the view.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></td>
+        <td>Thrown when the specified view does not exists.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
+        <td>Thrown when <strong class="text-info">schema</strong> or <strong class="text-info">viewName</strong> are <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetView(KpokPatagon.Data.DatabaseSchema.TableName)" class="mb-5">
+    <h3 class="lead text-info">GetView</h3>
+    <p>Gets the schema of a view from the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Table">Table</span> GetView(viewName)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A definition for the specified view.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>viewName</td>
+        <td><span class="text-info" title="TableName">TableName</span></td>
+        <td>Name of the view.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">viewName</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-tableorviewnotfoundexception.html">TableOrViewNotFoundException</a></td>
+        <td>Thrown when the specified view does not exists.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-argumentnulloremptyexception.html">ArgumentNullOrEmptyException</a></td>
+        <td>Thrown when <strong class="text-info">viewName.Schema.Schema</strong> or <strong class="text-info">viewName.Name.Name</strong> are <strong class="text-info">null</strong> or empty.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetViewNames" class="mb-5">
+    <h3 class="lead text-info">GetViewNames</h3>
+    <p>Gets a list of view names from the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetViewNames()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A list of view names.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetViews" class="mb-5">
+    <h3 class="lead text-info">GetViews</h3>
+    <p>Gets a list of all views from the catalog configured on the <b>DatabaseApi</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetViews()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A collection of views.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thown when there is an error accesing schema information.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon/kpokpatagon-missingrequiredpropertyexception.html">MissingRequiredPropertyException</a></td>
+        <td>Thrown when a required property was not properly initialized.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsSchema(KpokPatagon.Data.DatabaseSchema.Schema)">ExistsSchema</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsTable(System.String,System.String)">ExistsTable</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsTable(KpokPatagon.Data.DatabaseSchema.Table)">ExistsTable</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsView(System.String,System.String)">ExistsView</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.ExistsView(KpokPatagon.Data.DatabaseSchema.Table)">ExistsView</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetCatalogs">GetCatalogs</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetSchemas">GetSchemas</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetTable(System.String,System.String)">GetTable</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetTable(KpokPatagon.Data.DatabaseSchema.TableName)">GetTable</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetTableNames">GetTableNames</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetTables">GetTables</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetView(System.String,System.String)">GetView</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetView(KpokPatagon.Data.DatabaseSchema.TableName)">GetView</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetViewNames">GetViewNames</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.DatabaseSchema.SqlServerSchemaDiscoverer.GetViews">GetViews</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
