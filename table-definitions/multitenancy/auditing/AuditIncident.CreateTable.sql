@@ -17,7 +17,7 @@
 
 CREATE TABLE [Auditing].[AuditIncident]
 (
-      [Id] INT IDENTITY(-2147483648,1) NOT NULL
+      [Id] INT IDENTITY(-2147483647,1) NOT NULL
     , [TenantId] INT NOT NULL
     , [Kind] VARCHAR(48) NOT NULL
     , [CreationTime] DATETIME2 NOT NULL

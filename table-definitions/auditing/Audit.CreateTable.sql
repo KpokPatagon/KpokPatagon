@@ -17,7 +17,7 @@
 
 CREATE TABLE [Auditing].[Audit]
 (
-      [Id] INT IDENTITY(-2147483648,1) NOT NULL
+      [Id] INT IDENTITY(-2147483647,1) NOT NULL
     , [PrevId] INT NULL
     , [NextId] INT NULL
     , [Kind] VARCHAR(8) NOT NULL
