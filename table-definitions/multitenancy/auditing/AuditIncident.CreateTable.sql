@@ -17,11 +17,11 @@
 
 CREATE TABLE [Auditing].[AuditIncident]
 (
-      [Id] INT NOT NULL
+      [Id] INT IDENTITY(-2147483648,1) NOT NULL
     , [TenantId] INT NOT NULL
     , [Kind] VARCHAR(48) NOT NULL
     , [CreationTime] DATETIME2 NOT NULL
-    , [AuditId] INT NOT NULL
+    , [AuditId] INT NULL
     , [UserId] NVARCHAR(128) NULL
     , [UserName] NVARCHAR(300) NULL
     , [UserAuthority] NVARCHAR(128) NULL

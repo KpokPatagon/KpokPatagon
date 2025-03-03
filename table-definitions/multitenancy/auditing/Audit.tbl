@@ -14,7 +14,7 @@
       "Caption": null,
       "Description": null,
       "Position": 1,
-      "IsAutonumeric": false,
+      "IsAutonumeric": true,
       "IsNullable": false,
       "CharacterLength": "64",
       "Precision": null,
