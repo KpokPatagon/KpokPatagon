@@ -78,7 +78,7 @@
 </div>
 <div id="M:KpokPatagon.Data.IDataModelAuditor.BeforeDataAction(KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel)" class="mb-5">
     <h3 class="lead text-info">BeforeDataAction</h3>
-    <p>Performs an auditing process befor the data action takes place.</p>
+    <p>Performs an auditing process before the data action takes place.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BeforeDataAction(action, model)</code></dd>
@@ -105,6 +105,38 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:KpokPatagon.Data.IDataModelAuditor.VerifyIntegrity(KpokPatagon.Data.IDataModel,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">VerifyIntegrity</h3>
+    <p>Verify if the secured <strong class="text-info">model</strong> is consistent with the audit
+            information of it and optionally generates an audit incident.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="SecuredDataModelVerificationResult">SecuredDataModelVerificationResult</span> VerifyIntegrity(model, generateAuditIncident)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-secureddatamodelverificationresult.html">SecuredDataModelVerificationResult</a>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>model</td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
+        <td>The data model to verify.</td>
+    </tr>
+    <tr>
+        <td>generateAuditIncident</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether an audit incident must be generated. Defaults to <strong class="text-info">true</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
             </div>
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
@@ -120,6 +152,7 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Data.IDataModelAuditor.AfterDataAction(KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel)">AfterDataAction</a></li>
         <li><a href="#M:KpokPatagon.Data.IDataModelAuditor.BeforeDataAction(KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel)">BeforeDataAction</a></li>
+        <li><a href="#M:KpokPatagon.Data.IDataModelAuditor.VerifyIntegrity(KpokPatagon.Data.IDataModel,System.Boolean)">VerifyIntegrity</a></li>
     </ul>
 </li>
 </ul>

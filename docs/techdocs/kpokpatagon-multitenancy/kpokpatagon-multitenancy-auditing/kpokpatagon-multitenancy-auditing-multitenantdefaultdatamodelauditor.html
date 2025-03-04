@@ -41,7 +41,7 @@
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor},System.IServiceProvider,KpokPatagon.Multitenancy.Tenant,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Multitenancy.Auditing.Store.AuditDataService,KpokPatagon.Multitenancy.Auditing.Store.AuditIncidentDataService)" class="mb-5">
+<div id="M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDataModelAuditor},System.IServiceProvider,KpokPatagon.Multitenancy.Tenant,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Multitenancy.Auditing.Store.AuditDataService,KpokPatagon.Multitenancy.Auditing.Store.AuditIncidentDataService)" class="mb-5">
     <h3 class="lead text-info">MultitenantDefaultDataModelAuditor</h3>
     <p>Initializes a new instance of <strong>MultitenantDefaultDataModelAuditor</strong>.</p>
 <dl class="row">
@@ -60,7 +60,7 @@
 <tbody>
     <tr>
         <td>logger</td>
-        <td><span class="text-info" title="ILogger&lt;MultitenantDefaultDataModelAuditor&gt;">ILogger&lt;MultitenantDefaultDataModelAuditor&gt;</span></td>
+        <td><span class="text-info" title="ILogger&lt;IDataModelAuditor&gt;">ILogger&lt;IDataModelAuditor&gt;</span></td>
         <td></td>
     </tr>
     <tr>
@@ -193,8 +193,40 @@
         <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
     </tr>
     <tr>
-        <td><a href="../../kpokpatagon-models/kpokpatagon-models-auditing/kpokpatagon-models-auditing-auditincidentexception.html">AuditIncidentException</a></td>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditincidentexception.html">AuditIncidentException</a></td>
         <td>Thrown when an audit incident is created.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.VerifyIntegrity(KpokPatagon.Data.IDataModel,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">VerifyIntegrity</h3>
+    <p>Verify if the secured <strong class="text-info">model</strong> is consistent with the audit
+            information of it and optionally generates an audit incident.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="SecuredDataModelVerificationResult">SecuredDataModelVerificationResult</span> VerifyIntegrity(model, generateAuditIncident)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-secureddatamodelverificationresult.html">SecuredDataModelVerificationResult</a>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>model</td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
+        <td>The data model to verify.</td>
+    </tr>
+    <tr>
+        <td>generateAuditIncident</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether an audit incident must be generated. Defaults to <strong class="text-info">true</strong>.</td>
     </tr>
 </tbody></table>
 </div>
@@ -214,6 +246,7 @@
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.AfterDataAction(KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel)">AfterDataAction</a></li>
         <li><a href="#M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.BeforeDataAction(KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel)">BeforeDataAction</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.VerifyIntegrity(KpokPatagon.Data.IDataModel,System.Boolean)">VerifyIntegrity</a></li>
     </ul>
 </li>
 </ul>

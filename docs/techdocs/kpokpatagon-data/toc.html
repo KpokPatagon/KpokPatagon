@@ -29,9 +29,9 @@
 <p class="lead">Assembly</p>
 <dl class="mt-4 row">
     <dt class="text-truncate col-3">Version:</dt>
-    <dd class="col-9">9.1.25063.1</dd>
+    <dd class="col-9">9.1.25063.2</dd>
     <dt class="text-truncate col-3">Product version:</dt>
-    <dd class="col-9">KpokPatagon-CI_main_20250304.1+d20936145c31aec141277fafac3af4cf7a7004a3</dd>
+    <dd class="col-9">KpokPatagon-CI_main_20250304.2+30908bc7897eac4a4cc8228ecac20abbb9954fc6</dd>
     <dt class="text-truncate col-3">Product:</dt>
     <dd class="col-9">Kpok Patagon Framework</dd>
     <dt class="text-truncate col-3">Culture:</dt>
@@ -39,7 +39,7 @@
     <dt class="text-truncate col-3">Public key token:</dt>
     <dd class="col-9">856a2402e38a9992</dd>
 </dl>
-<h2 class="mt-5">Namespaces (7)</h2>
+<h2 class="mt-5">Namespaces (9)</h2>
 <h3 id="kpokpatagon-data" class="mt-5">KpokPatagon.Data</h3>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
@@ -398,6 +398,11 @@
 <td>This is the base class for exceptions that reports error while manipulatind tha database schema.</td>
 </tr>
 <tr>
+<td><a href="./kpokpatagon-data/kpokpatagon-data-secureddatamodelverificationresult.html">SecuredDataModelVerificationResult</a></td>
+<td>Represents the result of an integrity verification of 
+            an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-isecureddatamodel.html">ISecuredDataModel</a> against auditing data.</td>
+</tr>
+<tr>
 <td><a href="./kpokpatagon-data/kpokpatagon-data-serverunavailableexception.html">ServerUnavailableException</a></td>
 <td>Thrown when the database server is not available.</td>
 </tr>
@@ -441,12 +446,81 @@
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditdata.html">AuditData</a></td>
+<td>Audit data.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditdatadeserializationexception.html">AuditDataDeserializationException</a></td>
+<td>Thrown when an audit internal data couldn't be de-serialized.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditincidentdata.html">AuditIncidentData</a></td>
+<td>Incident data.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditincidentdatadeserializationexception.html">AuditIncidentDataDeserializationException</a></td>
+<td>Thrown when an incident internal data couldn't be de-serialized.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditincidentexception.html">AuditIncidentException</a></td>
+<td>Thrown when an incident is created and data operations are aborted.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditincidentkind.html">AuditIncidentKind</a></td>
+<td>Define the different kinds of audit incidents.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditincidentnotfoundexception.html">AuditIncidentNotFoundException</a></td>
+<td>Thrown when an audit incident could not be found.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditincidentresolution.html">AuditIncidentResolution</a></td>
+<td>Information to resolve an incident.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditingconsts.html">AuditingConsts</a></td>
+<td>Contains commons constants for auditing processes.</td>
+</tr>
+<tr>
 <td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditinhibitionstate.html">AuditInhibitionState</a></td>
 <td>Represents the state of audit inhibition for a given key.</td>
 </tr>
 <tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditkind.html">AuditKind</a></td>
+<td>Define the kinds of audit records.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditnotfoundexception.html">AuditNotFoundException</a></td>
+<td>Thrown when an audit record could not be found.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditproperty.html">AuditProperty</a></td>
+<td>Models a property auditing record.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-extrainfo.html">ExtraInfo</a></td>
+<td>Represents a caption - value extra info.</td>
+</tr>
+<tr>
 <td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-iauditinhibitorservice.html">IAuditInhibitorService</a></td>
 <td>Allows the implementation of a service that inhibits auditing processes.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing/kpokpatagon-data-auditing-incidentkindhelper.html">IncidentKindHelper</a></td>
+<td>Helper methods for <a href="../../kpokpatagon-data/kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditincidentkind.html">AuditIncidentKind</a>.</td>
+</tr>
+</tbody></table>
+<h3 id="kpokpatagon-data-auditing-dtos" class="mt-5">KpokPatagon.Data.Auditing.Dtos</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./kpokpatagon-data-auditing-dtos/kpokpatagon-data-auditing-dtos-auditdto.html">AuditDto</a></td>
+<td>DTO for transfer audit information.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-data-auditing-dtos/kpokpatagon-data-auditing-dtos-auditincidentdto.html">AuditIncidentDto</a></td>
+<td>DTO for transfer audit incident information.</td>
 </tr>
 </tbody></table>
 <h3 id="kpokpatagon-data-dataannotations" class="mt-5">KpokPatagon.Data.DataAnnotations</h3>
@@ -664,6 +738,15 @@
 <tr>
 <td><a href="./kpokpatagon-data-dependencyinjection/kpokpatagon-data-dependencyinjection-viewbuilderoptions.html">ViewBuilderOptions</a></td>
 <td>Models the options required to configure an <a href="../../kpokpatagon-data/kpokpatagon-data-databaseschema/kpokpatagon-data-databaseschema-iviewbuilder.html">IViewBuilder</a>.</td>
+</tr>
+</tbody></table>
+<h3 id="kpokpatagon-data-extensions" class="mt-5">KpokPatagon.Data.Extensions</h3>
+<table class="table table-sm table-bordered">
+<thead><tr><th>Type</th><th>Summary</th></tr></thead>
+<tbody>
+<tr>
+<td><a href="./kpokpatagon-data-extensions/kpokpatagon-data-extensions-datamodelauditorloggerextensions.html">DataModelAuditorLoggerExtensions</a></td>
+<td>Provides logging methods for auditing processes.</td>
 </tr>
 </tbody></table>
 <h3 id="kpokpatagon-data-filtering" class="mt-5">KpokPatagon.Data.Filtering</h3>
@@ -892,9 +975,11 @@
 <ul class="list-unstyled">
 <li><a href="#kpokpatagon-data">KpokPatagon.Data</a></li>
 <li><a href="#kpokpatagon-data-auditing">KpokPatagon.Data.Auditing</a></li>
+<li><a href="#kpokpatagon-data-auditing-dtos">KpokPatagon.Data.Auditing.Dtos</a></li>
 <li><a href="#kpokpatagon-data-dataannotations">KpokPatagon.Data.DataAnnotations</a></li>
 <li><a href="#kpokpatagon-data-databaseschema">KpokPatagon.Data.DatabaseSchema</a></li>
 <li><a href="#kpokpatagon-data-dependencyinjection">KpokPatagon.Data.DependencyInjection</a></li>
+<li><a href="#kpokpatagon-data-extensions">KpokPatagon.Data.Extensions</a></li>
 <li><a href="#kpokpatagon-data-filtering">KpokPatagon.Data.Filtering</a></li>
 <li><a href="#kpokpatagon-data-query">KpokPatagon.Data.Query</a></li>
 </ul>
