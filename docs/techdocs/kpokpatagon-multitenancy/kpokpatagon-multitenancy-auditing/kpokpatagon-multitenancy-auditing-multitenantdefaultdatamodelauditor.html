@@ -41,7 +41,7 @@
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDataModelAuditor},System.IServiceProvider,KpokPatagon.Multitenancy.Tenant,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Multitenancy.Auditing.Store.AuditDataService,KpokPatagon.Multitenancy.Auditing.Store.AuditIncidentDataService)" class="mb-5">
+<div id="M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDataModelAuditor},System.IServiceProvider,KpokPatagon.Multitenancy.ITenant,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Multitenancy.Auditing.Store.AuditDataService,KpokPatagon.Multitenancy.Auditing.Store.AuditIncidentDataService)" class="mb-5">
     <h3 class="lead text-info">MultitenantDefaultDataModelAuditor</h3>
     <p>Initializes a new instance of <strong>MultitenantDefaultDataModelAuditor</strong>.</p>
 <dl class="row">
@@ -70,7 +70,7 @@
     </tr>
     <tr>
         <td>currentTenant</td>
-        <td><span class="text-info" title="Tenant">Tenant</span></td>
+        <td><span class="text-info" title="ITenant">ITenant</span></td>
         <td></td>
     </tr>
     <tr>
