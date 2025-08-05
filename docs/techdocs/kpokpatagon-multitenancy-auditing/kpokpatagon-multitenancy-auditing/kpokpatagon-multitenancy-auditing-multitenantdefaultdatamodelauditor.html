@@ -1,0 +1,258 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>MultitenantDefaultDataModelAuditor - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-multitenancy-auditing/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>MultitenantDefaultDataModelAuditor</h1>
+<p class="lead"><p>Implements a data model auditor.</p><p>
+                    Is the object implements ISecuredDataModel this implementation verifies audit records
+                    and generated audit incidents if data tampering is detected.
+                </p></p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Multitenancy.Auditing</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.IDataModelAuditor},System.IServiceProvider,KpokPatagon.Multitenancy.ITenant,System.Security.Claims.ClaimsPrincipal,KpokPatagon.Multitenancy.Auditing.Store.AuditDataService,KpokPatagon.Multitenancy.Auditing.Store.AuditIncidentDataService)" class="mb-5">
+    <h3 class="lead text-info">MultitenantDefaultDataModelAuditor</h3>
+    <p>Initializes a new instance of <strong>MultitenantDefaultDataModelAuditor</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> MultitenantDefaultDataModelAuditor(logger, serviceProvider, currentTenant, currentPrincipal, auditDataService, incidentDataService)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>logger</td>
+        <td><span class="text-info" title="ILogger&lt;IDataModelAuditor&gt;">ILogger&lt;IDataModelAuditor&gt;</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>serviceProvider</td>
+        <td><span class="text-info" title="IServiceProvider">IServiceProvider</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>currentTenant</td>
+        <td><span class="text-info" title="ITenant">ITenant</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>currentPrincipal</td>
+        <td><span class="text-info" title="ClaimsPrincipal">ClaimsPrincipal</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>auditDataService</td>
+        <td><span class="text-info" title="AuditDataService">AuditDataService</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>incidentDataService</td>
+        <td><span class="text-info" title="AuditIncidentDataService">AuditIncidentDataService</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.RequiresTransaction" class="mb-5">
+    <h3 class="lead text-info">RequiresTransaction</h3>
+    <p>Whether this auditor requires a database transaction.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> RequiresTransaction { get; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.AfterDataAction(KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">AfterDataAction</h3>
+    <p>Writes an audit record to the audit repository.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> AfterDataAction(action, model)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>action</td>
+        <td><span class="text-info" title="DataAction">DataAction</span></td>
+        <td>Data action being performed.</td>
+    </tr>
+    <tr>
+        <td>model</td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
+        <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a> to be audited.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon/kpokpatagon-security/kpokpatagon-security-securityexception.html">SecurityException</a></td>
+        <td>Thrown when there are error while generating audit data.</td>
+    </tr>
+    <tr>
+        <td><span class="text-info" title="System.InvalidOperationException">InvalidOperationException</span></td>
+        <td>Thrown when a required fresh data could not be retrieved.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.BeforeDataAction(KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel)" class="mb-5">
+    <h3 class="lead text-info">BeforeDataAction</h3>
+    <p>Prepares the audit process and validates secured models as required.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> BeforeDataAction(action, model)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>action</td>
+        <td><span class="text-info" title="DataAction">DataAction</span></td>
+        <td>Data action being performed.</td>
+    </tr>
+    <tr>
+        <td>model</td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
+        <td>An <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idatamodel.html">IDataModel</a> to be audited.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
+        <td>Thrown when <strong class="text-info">model</strong> is <strong class="text-info">null</strong>.</td>
+    </tr>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditincidentexception.html">AuditIncidentException</a></td>
+        <td>Thrown when an audit incident is created.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.VerifyIntegrity(KpokPatagon.Data.IDataModel,System.Boolean)" class="mb-5">
+    <h3 class="lead text-info">VerifyIntegrity</h3>
+    <p>Verify if the secured <strong class="text-info">model</strong> is consistent with the audit
+            information of it and optionally generates an audit incident.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="SecuredDataModelVerificationResult">SecuredDataModelVerificationResult</span> VerifyIntegrity(model, generateAuditIncident)</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-secureddatamodelverificationresult.html">SecuredDataModelVerificationResult</a>.</p>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>model</td>
+        <td><span class="text-info" title="IDataModel">IDataModel</span></td>
+        <td>The data model to verify.</td>
+    </tr>
+    <tr>
+        <td>generateAuditIncident</td>
+        <td><span class="text-info" title="Boolean">Boolean</span></td>
+        <td>Whether an audit incident must be generated. Defaults to <strong class="text-info">true</strong>.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.RequiresTransaction">RequiresTransaction</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.AfterDataAction(KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel)">AfterDataAction</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.BeforeDataAction(KpokPatagon.Data.DataAction,KpokPatagon.Data.IDataModel)">BeforeDataAction</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Auditing.MultitenantDefaultDataModelAuditor.VerifyIntegrity(KpokPatagon.Data.IDataModel,System.Boolean)">VerifyIntegrity</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

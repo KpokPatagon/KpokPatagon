@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>KpokPatagon.Auditing - Kpok Patagon Framework</title>
+    <title>KpokPatagon.Multitenancy.Commons - Kpok Patagon Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,7 +24,7 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>KpokPatagon.Auditing</h1>
+<h1>KpokPatagon.Multitenancy.Commons</h1>
 <hr />
 <p class="lead">Assembly</p>
 <dl class="mt-4 row">
@@ -40,67 +40,65 @@
     <dd class="col-9">856a2402e38a9992</dd>
 </dl>
 <h2 class="mt-5">Namespaces (3)</h2>
-<h3 id="kpokpatagon-auditing" class="mt-5">KpokPatagon.Auditing</h3>
+<h3 id="kpokpatagon-multitenancy-commons" class="mt-5">KpokPatagon.Multitenancy.Commons</h3>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-auditincidentservice.html">AuditIncidentService</a></td>
-<td>Manages audit incidents.</td>
+<td><a href="./kpokpatagon-multitenancy-commons/kpokpatagon-multitenancy-commons-integernumerator.html">IntegerNumerator</a></td>
+<td>Implements an <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-inumerator.html">INumerator</a> based on a numerator table.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing/kpokpatagon-auditing-defaultdatamodelauditor.html">DefaultDataModelAuditor</a></td>
-<td><p>Implements a data model auditor.</p><p>
-                    Is the object implements ISecuredDataModel this implementation verifies audit records
-                    and generated audit incidents if data tampering is detected.
-                </p></td>
+<td><a href="./kpokpatagon-multitenancy-commons/kpokpatagon-multitenancy-commons-tablenumerator.html">TableNumerator</a></td>
+<td><strong>TableNumerator</strong> implements a data model for a
+            numerator table used to sequentialy numerate objects.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-multitenancy-commons/kpokpatagon-multitenancy-commons-tablenumeratordataservice.html">TableNumeratorDataService</a></td>
+<td>Provides data services for the a multi-tenant numerator table.</td>
 </tr>
 </tbody></table>
-<h3 id="kpokpatagon-auditing-dependencyinjection" class="mt-5">KpokPatagon.Auditing.DependencyInjection</h3>
+<h3 id="kpokpatagon-multitenancy-commons-dependencyinjection" class="mt-5">KpokPatagon.Multitenancy.Commons.DependencyInjection</h3>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
-<td><a href="./kpokpatagon-auditing-dependencyinjection/kpokpatagon-auditing-dependencyinjection-kpokpatagonauditingbuilderextensions.html">KpokPatagonAuditingBuilderExtensions</a></td>
-<td>Extension methods to register services with dependency injection.</td>
+<td><a href="./kpokpatagon-multitenancy-commons-dependencyinjection/kpokpatagon-multitenancy-commons-dependencyinjection-kpokpatagonmultitenancycommosbuilderextensions.html">KpokPatagonMultitenancyCommosBuilderExtensions</a></td>
+<td>Builder extensions methods to register services.</td>
 </tr>
 </tbody></table>
-<h3 id="kpokpatagon-auditing-store" class="mt-5">KpokPatagon.Auditing.Store</h3>
+<h3 id="kpokpatagon-multitenancy-commons-parameters" class="mt-5">KpokPatagon.Multitenancy.Commons.Parameters</h3>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
-<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-audit.html">Audit</a></td>
-<td>Information of a data modification audit.</td>
+<td><a href="./kpokpatagon-multitenancy-commons-parameters/kpokpatagon-multitenancy-commons-parameters-iparameterservice.html">IParameterService</a></td>
+<td>Defines a service to get and set parameter values.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-auditdataservice.html">AuditDataService</a></td>
-<td>Data service for audit records</td>
+<td><a href="./kpokpatagon-multitenancy-commons-parameters/kpokpatagon-multitenancy-commons-parameters-iparameterservice.html">IParameterService</a></td>
+<td>Defines a service to get and set parameter values.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-auditincident.html">AuditIncident</a></td>
-<td>Audit related incident.</td>
+<td><a href="./kpokpatagon-multitenancy-commons-parameters/kpokpatagon-multitenancy-commons-parameters-parameter.html">Parameter</a></td>
+<td>The <strong>Parameter</strong> domain object model.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-auditincidentdataservice.html">AuditIncidentDataService</a></td>
-<td>Data services for audit incidents.</td>
+<td><a href="./kpokpatagon-multitenancy-commons-parameters/kpokpatagon-multitenancy-commons-parameters-parameterdataservice.html">ParameterDataService</a></td>
+<td>Provides data services for the a multi-tenant parameter table.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-fkey.html">FKey</a></td>
-<td>Field definition key constants for AuditDataServices</td>
-</tr>
-<tr>
-<td><a href="./kpokpatagon-auditing-store/kpokpatagon-auditing-store-fkey.html">FKey</a></td>
-<td>Field definition key constants for SecurityIncidentDataServices</td>
+<td><a href="./kpokpatagon-multitenancy-commons-parameters/kpokpatagon-multitenancy-commons-parameters-parameterservice.html">ParameterService</a></td>
+<td>Implements a service to get and set parameter values.</td>
 </tr>
 </tbody></table>
             </div>
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#kpokpatagon-auditing">KpokPatagon.Auditing</a></li>
-<li><a href="#kpokpatagon-auditing-dependencyinjection">KpokPatagon.Auditing.DependencyInjection</a></li>
-<li><a href="#kpokpatagon-auditing-store">KpokPatagon.Auditing.Store</a></li>
+<li><a href="#kpokpatagon-multitenancy-commons">KpokPatagon.Multitenancy.Commons</a></li>
+<li><a href="#kpokpatagon-multitenancy-commons-dependencyinjection">KpokPatagon.Multitenancy.Commons.DependencyInjection</a></li>
+<li><a href="#kpokpatagon-multitenancy-commons-parameters">KpokPatagon.Multitenancy.Commons.Parameters</a></li>
 </ul>
             </div>
         </div>

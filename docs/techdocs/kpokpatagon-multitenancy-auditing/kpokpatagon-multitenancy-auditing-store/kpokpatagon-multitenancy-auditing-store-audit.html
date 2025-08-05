@@ -1,0 +1,328 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Audit - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-multitenancy-auditing/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>Audit</h1>
+<p class="lead">Information of a data modification audit.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Multitenancy.Auditing.Store</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Multitenancy.Auditing.Store.Audit.#ctor" class="mb-5">
+    <h3 class="lead text-info">Audit</h3>
+    <p>Default constructor</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Audit()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Auditing.Store.Audit.#ctor(System.Int32)" class="mb-5">
+    <h3 class="lead text-info">Audit</h3>
+    <p>Initializes a new instance of <strong>Audit</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Audit(id)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>id</td>
+        <td><span class="text-info" title="Int32">Int32</span></td>
+        <td>Audit record Id</td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="properties" class="mt-5">Properties</h2>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.CreationTime" class="mb-5">
+    <h3 class="lead text-info">CreationTime</h3>
+    <p>Creation date and time.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="DateTime">DateTime</span> CreationTime { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.Data" class="mb-5">
+    <h3 class="lead text-info">Data</h3>
+    <p>Audit record data</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Data { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.EnforceModelValidation" class="mb-5">
+    <h3 class="lead text-info">EnforceModelValidation</h3>
+    <p>Whether model validation must be enforced.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> EnforceModelValidation { get; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.Id" class="mb-5">
+    <h3 class="lead text-info">Id</h3>
+    <p>Audit record Id</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> Id { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.IncidentId" class="mb-5">
+    <h3 class="lead text-info">IncidentId</h3>
+    <p>Audit incident Id</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Nullable&lt;Int32&gt;">Nullable&lt;Int32&gt;</span> IncidentId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.Kind" class="mb-5">
+    <h3 class="lead text-info">Kind</h3>
+    <p>Audit record kind</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="AuditKind">AuditKind</span> Kind { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.NextId" class="mb-5">
+    <h3 class="lead text-info">NextId</h3>
+    <p>Id of the next audit record</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Nullable&lt;Int32&gt;">Nullable&lt;Int32&gt;</span> NextId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.PrevId" class="mb-5">
+    <h3 class="lead text-info">PrevId</h3>
+    <p>Id of the previous audit record</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Nullable&lt;Int32&gt;">Nullable&lt;Int32&gt;</span> PrevId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.SourceCaption" class="mb-5">
+    <h3 class="lead text-info">SourceCaption</h3>
+    <p>Caption of the object that sources the audit record.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> SourceCaption { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.SourceDisplay" class="mb-5">
+    <h3 class="lead text-info">SourceDisplay</h3>
+    <p>A human readable text for the object that sources the audit record.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> SourceDisplay { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.SourceId" class="mb-5">
+    <h3 class="lead text-info">SourceId</h3>
+    <p>Id of the object that sources the audit record.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> SourceId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.SourceTypeName" class="mb-5">
+    <h3 class="lead text-info">SourceTypeName</h3>
+    <p>The type name of the object that sources the audit record.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> SourceTypeName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.TenantId" class="mb-5">
+    <h3 class="lead text-info">TenantId</h3>
+    <p>Multi-tenant partition key.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> TenantId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.UserAuthority" class="mb-5">
+    <h3 class="lead text-info">UserAuthority</h3>
+    <p>User authority.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> UserAuthority { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.UserDisplayName" class="mb-5">
+    <h3 class="lead text-info">UserDisplayName</h3>
+    <p>User display name</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> UserDisplayName { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.UserId" class="mb-5">
+    <h3 class="lead text-info">UserId</h3>
+    <p>User Id</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> UserId { get; set; }</code></dd>
+</dl>
+</div>
+<div id="P:KpokPatagon.Multitenancy.Auditing.Store.Audit.UserName" class="mb-5">
+    <h3 class="lead text-info">UserName</h3>
+    <p>User name</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> UserName { get; set; }</code></dd>
+</dl>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Multitenancy.Auditing.Store.Audit.Equals(KpokPatagon.Multitenancy.Auditing.Store.Audit)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks if <strong class="text-info">other</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Equals(other)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>other</td>
+        <td><span class="text-info" title="Audit">Audit</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Auditing.Store.Audit.Equals(System.Object)" class="mb-5">
+    <h3 class="lead text-info">Equals</h3>
+    <p>Checks if <strong class="text-info">obj</strong> is equals to this object.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> Equals(obj)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>obj</td>
+        <td><span class="text-info" title="Object">Object</span></td>
+        <td>An object to compare with this object.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Auditing.Store.Audit.GetAuditData" class="mb-5">
+    <h3 class="lead text-info">GetAuditData</h3>
+    <p>Gets audit internal data.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="AuditData">AuditData</span> GetAuditData()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>An <a href="../../kpokpatagon-data/kpokpatagon-data-auditing/kpokpatagon-data-auditing-auditdata.html">AuditData</a> or <strong class="text-info">null</strong> if there is no data.</p>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Auditing.Store.Audit.GetHashCode" class="mb-5">
+    <h3 class="lead text-info">GetHashCode</h3>
+    <p>Not required, implemented to avoid warnings, returns base.GetHasCode().</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Int32">Int32</span> GetHashCode()</code></dd>
+</dl>
+</div>
+<div id="M:KpokPatagon.Multitenancy.Auditing.Store.Audit.ToString" class="mb-5">
+    <h3 class="lead text-info">ToString</h3>
+    <p>Returns a textual represetation.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToString()</code></dd>
+</dl>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#properties">Properties</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.CreationTime">CreationTime</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.Data">Data</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.EnforceModelValidation">EnforceModelValidation</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.Id">Id</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.IncidentId">IncidentId</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.Kind">Kind</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.NextId">NextId</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.PrevId">PrevId</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.SourceCaption">SourceCaption</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.SourceDisplay">SourceDisplay</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.SourceId">SourceId</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.SourceTypeName">SourceTypeName</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.TenantId">TenantId</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.UserAuthority">UserAuthority</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.UserDisplayName">UserDisplayName</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.UserId">UserId</a></li>
+        <li><a href="#P:KpokPatagon.Multitenancy.Auditing.Store.Audit.UserName">UserName</a></li>
+    </ul>
+</li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Multitenancy.Auditing.Store.Audit.Equals(KpokPatagon.Multitenancy.Auditing.Store.Audit)">Equals</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Auditing.Store.Audit.Equals(System.Object)">Equals</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Auditing.Store.Audit.GetAuditData">GetAuditData</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Auditing.Store.Audit.GetHashCode">GetHashCode</a></li>
+        <li><a href="#M:KpokPatagon.Multitenancy.Auditing.Store.Audit.ToString">ToString</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
