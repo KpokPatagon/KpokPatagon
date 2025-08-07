@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>SettingsBase - Kpok Patagon Framework</title>
+    <title>MultitenancyWebSettings - Kpok Patagon Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -18,17 +18,17 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-models/toc.html">Table of Contents</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-aspnet-multitenancy/toc.html">Table of Contents</a></li>
             </ul>
         </div>
     </div>
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>SettingsBase</h1>
-<p class="lead">Generic settings used to configure applications.</p>
+<h1>MultitenancyWebSettings</h1>
+<p class="lead">Generic settings used to configure multi-tenant web applications.</p>
 <dl class="row mt-4">
-<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Models.Settings</dd>
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.AspNet.Multitenancy.Settings</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
 </dl>
 <dl class="row mt-4">
@@ -36,38 +36,16 @@
     <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">KpokPatagon.AspNet.Settings.WebSettings</dd>
 </dl>
 <h2 id="properties" class="mt-5">Properties</h2>
-<div id="P:KpokPatagon.Models.Settings.SettingsBase.DefaultCulture" class="mb-5">
-    <h3 class="lead text-info">DefaultCulture</h3>
-    <p>Default Ui culture.</p>
+<div id="P:KpokPatagon.AspNet.Multitenancy.Settings.MultitenancyWebSettings.TenantNameLocation" class="mb-5">
+    <h3 class="lead text-info">TenantNameLocation</h3>
+    <p>Specifies where the tenant name is located in the within an Url.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> DefaultCulture { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:KpokPatagon.Models.Settings.SettingsBase.DisableMultitenancy" class="mb-5">
-    <h3 class="lead text-info">DisableMultitenancy</h3>
-    <p>Whether multi-tenancy is disabled.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Boolean">Boolean</span> DisableMultitenancy { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:KpokPatagon.Models.Settings.SettingsBase.Port" class="mb-5">
-    <h3 class="lead text-info">Port</h3>
-    <p>Port where the application listen.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Nullable&lt;Int32&gt;">Nullable&lt;Int32&gt;</span> Port { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:KpokPatagon.Models.Settings.SettingsBase.WorkingDirectory" class="mb-5">
-    <h3 class="lead text-info">WorkingDirectory</h3>
-    <p>Path of the working directory.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> WorkingDirectory { get; set; }</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="TenantNameLocation">TenantNameLocation</span> TenantNameLocation { get; set; }</code></dd>
 </dl>
 </div>
             </div>
@@ -77,10 +55,7 @@
 <li><a href="#properties">Properties</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#P:KpokPatagon.Models.Settings.SettingsBase.DefaultCulture">DefaultCulture</a></li>
-        <li><a href="#P:KpokPatagon.Models.Settings.SettingsBase.DisableMultitenancy">DisableMultitenancy</a></li>
-        <li><a href="#P:KpokPatagon.Models.Settings.SettingsBase.Port">Port</a></li>
-        <li><a href="#P:KpokPatagon.Models.Settings.SettingsBase.WorkingDirectory">WorkingDirectory</a></li>
+        <li><a href="#P:KpokPatagon.AspNet.Multitenancy.Settings.MultitenancyWebSettings.TenantNameLocation">TenantNameLocation</a></li>
     </ul>
 </li>
 </ul>
