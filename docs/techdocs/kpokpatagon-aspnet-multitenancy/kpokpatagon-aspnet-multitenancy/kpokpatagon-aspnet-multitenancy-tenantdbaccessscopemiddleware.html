@@ -38,12 +38,12 @@
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.AspNet.Multitenancy.TenantDbAccessScopeMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,KpokPatagon.AspNet.Multitenancy.TenantDbAccessScopeOptions)" class="mb-5">
+<div id="M:KpokPatagon.AspNet.Multitenancy.TenantDbAccessScopeMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,KpokPatagon.AspNet.Multitenancy.TenantDbAccessScopeOptions,KpokPatagon.Multitenancy.ITenantConnectionStringProvider)" class="mb-5">
     <h3 class="lead text-info">TenantDbAccessScopeMiddleware</h3>
     <p>Initializes a new instance of <b>TenantDbAccessScopeMiddleware</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TenantDbAccessScopeMiddleware(next, options)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TenantDbAccessScopeMiddleware(next, options, connectionStringProvider)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -65,6 +65,11 @@
         <td><span class="text-info" title="TenantDbAccessScopeOptions">TenantDbAccessScopeOptions</span></td>
         <td>Options required for this middleware.</td>
     </tr>
+    <tr>
+        <td>connectionStringProvider</td>
+        <td><span class="text-info" title="ITenantConnectionStringProvider">ITenantConnectionStringProvider</span></td>
+        <td>An <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-itenantconnectionstringprovider.html">ITenantConnectionStringProvider</a>.</td>
+    </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
 <table class="table table-sm table-bordered">
@@ -77,7 +82,7 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</td>
+        <td><p>Thrown when <strong class="text-info">options</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">connectionStringProvider</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
 </tbody></table>
 </div>
