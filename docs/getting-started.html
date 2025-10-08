@@ -40,6 +40,9 @@
                     <li>Cryptography.</li>
                     <li>Domain object modeling</li>
                     <li>Data services</li>
+                    <li>Cache services</li>
+                    <li>Queue services</li>
+                    <li>Auditing</li>
                     <li>Common components and models used by most applications</li>
                 </ul>
                 
@@ -68,6 +71,14 @@
                 
                 <h4 class="mt-5">Data access layer</h4>
                 <ul>
+                    <li>
+                        <span class="text-info">KpokPatagon.Data.Migrations</span>
+                        <p>
+                            This package provides features that allows a developer to implement 
+                            database schema migrations in a consistent manner across database
+                            engines.
+                        </p>
+                    </li>
                     <li>
                         <span class="text-info">KpokPatagon.Data.MySql</span>
                         <p>
@@ -138,6 +149,41 @@
                         <span class="text-info">KpokPatagon.Multitenancy</span>
                         <p>
                             Provides components for multi-tenenat applications.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Multitenancy.Auditing</span>
+                        <p>
+                            This package provides services to generate and process data model
+                            modification auditing information in multi-tenant applications.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Multitenancy.Commons</span>
+                        <p>
+                            This package provides common components, domain object models, their data services,
+                            a numerator and a parameter service for developing multi-tenant applications.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Queue</span>
+                        <p>
+                            This library provides the abstracts and interfaces to access queue services in a 
+                            consistent manner. It can be use to implement support for various queue services.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Queue.Nats</span>
+                        <p>
+                            Services for publishing and consuming messages to and from 
+                            <a target="_blank" href="https://nats.io/">NATS</a> **JetStream** queue services.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="text-info">KpokPatagon.Queue.RabbitMQ</span>
+                        <p>
+                            Services for publishing and consuming messages to and from 
+                            <a target="_blank" href="https://www.rabbitmq.com/">RabbitMQ</a> queue services.
                         </p>
                     </li>
                 </ul>

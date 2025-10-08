@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>KpokPatagon.Models - Kpok Patagon Framework</title>
+    <title>KpokPatagon.Queue - Kpok Patagon Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,7 +24,7 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>KpokPatagon.Models</h1>
+<h1>KpokPatagon.Queue</h1>
 <hr />
 <p class="lead">Assembly</p>
 <dl class="mt-4 row">
@@ -39,47 +39,41 @@
     <dt class="text-truncate col-3">Public key token:</dt>
     <dd class="col-9">856a2402e38a9992</dd>
 </dl>
-<h2 class="mt-5">Namespaces (2)</h2>
-<h3 id="kpokpatagon-models" class="mt-5">KpokPatagon.Models</h3>
+<h2 class="mt-5">Namespaces (1)</h2>
+<h3 id="kpokpatagon-queue" class="mt-5">KpokPatagon.Queue</h3>
 <table class="table table-sm table-bordered">
 <thead><tr><th>Type</th><th>Summary</th></tr></thead>
 <tbody>
 <tr>
-<td><a href="./kpokpatagon-models/kpokpatagon-models-error.html">Error</a></td>
-<td>Generic error model.</td>
+<td><a href="./kpokpatagon-queue/kpokpatagon-queue-defaultmessageserializer.html">DefaultMessageSerializer</a></td>
+<td>Provides default message serialization.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-models/kpokpatagon-models-errorcollection.html">ErrorCollection</a></td>
-<td>A collection of <a href="../../kpokpatagon-models/kpokpatagon-models/kpokpatagon-models-error.html">Error</a>s.</td>
+<td><a href="./kpokpatagon-queue/kpokpatagon-queue-imessageserializer.html">IMessageSerializer</a></td>
+<td>Allows the implementation of serializers for message serialization.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-models/kpokpatagon-models-statusmessage.html">StatusMessage</a></td>
-<td><strong>StatusMessage</strong> is the model for showing messages to the user.</td>
+<td><a href="./kpokpatagon-queue/kpokpatagon-queue-iqueueservice.html">IQueueService</a></td>
+<td>Allows the implementation of services to access queue services.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-models/kpokpatagon-models-statusmessagetype.html">StatusMessageType</a></td>
-<td>Define the type of status messages.</td>
-</tr>
-</tbody></table>
-<h3 id="kpokpatagon-models-settings" class="mt-5">KpokPatagon.Models.Settings</h3>
-<table class="table table-sm table-bordered">
-<thead><tr><th>Type</th><th>Summary</th></tr></thead>
-<tbody>
-<tr>
-<td><a href="./kpokpatagon-models-settings/kpokpatagon-models-settings-openidconnectclientoptions.html">OpenIdConnectClientOptions</a></td>
-<td>Models configuration options for OpenIdConnect clients.</td>
+<td><a href="./kpokpatagon-queue/kpokpatagon-queue-queueconnectionoptions.html">QueueConnectionOptions</a></td>
+<td>Represents configuration options for establishing a connection to a message queue.</td>
 </tr>
 <tr>
-<td><a href="./kpokpatagon-models-settings/kpokpatagon-models-settings-settingsbase.html">SettingsBase</a></td>
-<td>Generic settings used to configure applications.</td>
+<td><a href="./kpokpatagon-queue/kpokpatagon-queue-queueconsts.html">QueueConsts</a></td>
+<td>Provides constants associated with the queue feature.</td>
+</tr>
+<tr>
+<td><a href="./kpokpatagon-queue/kpokpatagon-queue-queueserviceexception.html">QueueServiceException</a></td>
+<td>Thown when an error occurred during queue operation.</td>
 </tr>
 </tbody></table>
             </div>
             <div class="col-3 d-none d-lg-block">
 <p><strong>In this document</strong></p>
 <ul class="list-unstyled">
-<li><a href="#kpokpatagon-models">KpokPatagon.Models</a></li>
-<li><a href="#kpokpatagon-models-settings">KpokPatagon.Models.Settings</a></li>
+<li><a href="#kpokpatagon-queue">KpokPatagon.Queue</a></li>
 </ul>
             </div>
         </div>
