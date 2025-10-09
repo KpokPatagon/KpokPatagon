@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>OpenConnectionException - Kpok Patagon Framework</title>
+    <title>TimeoutException - Kpok Patagon Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,8 +25,8 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>OpenConnectionException</h1>
-<p class="lead">Thrown when an error occurred while opening a database connection.</p>
+<h1>TimeoutException</h1>
+<p class="lead">Thrown when an timeout occurred</p>
 <dl class="row mt-4">
 <dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
@@ -40,12 +40,12 @@
 <dd class="col-sm-9">KpokPatagon.Data.DataAccessException</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Data.OpenConnectionException.#ctor(System.String)" class="mb-5">
-    <h3 class="lead text-info">OpenConnectionException</h3>
-    <p>Creates a new instance of <strong>OpenConnectionException</strong>.</p>
+<div id="M:KpokPatagon.Data.TimeoutException.#ctor(System.String)" class="mb-5">
+    <h3 class="lead text-info">TimeoutException</h3>
+    <p>Initializes a new instance of <b>TimeoutException</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> OpenConnectionException(msg)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TimeoutException(msg)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -64,12 +64,12 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Data.OpenConnectionException.#ctor(System.String,System.String)" class="mb-5">
-    <h3 class="lead text-info">OpenConnectionException</h3>
-    <p>Creates a new instance of <strong>OpenConnectionException</strong>.</p>
+<div id="M:KpokPatagon.Data.TimeoutException.#ctor(System.String,System.String)" class="mb-5">
+    <h3 class="lead text-info">TimeoutException</h3>
+    <p>Initializes a new instance of <b>TimeoutException</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> OpenConnectionException(msg, src)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TimeoutException(msg, src)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -93,12 +93,12 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Data.OpenConnectionException.#ctor(System.String,System.String,System.Exception)" class="mb-5">
-    <h3 class="lead text-info">OpenConnectionException</h3>
-    <p>Creates a new instance of <strong>OpenConnectionException</strong>.</p>
+<div id="M:KpokPatagon.Data.TimeoutException.#ctor(System.String,System.String,System.Exception)" class="mb-5">
+    <h3 class="lead text-info">TimeoutException</h3>
+    <p>Initializes a new instance of <b>TimeoutException</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> OpenConnectionException(msg, src, inner)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TimeoutException(msg, src, inner)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -110,6 +110,45 @@
     </tr>
 </thead>
 <tbody>
+    <tr>
+        <td>msg</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>src</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>inner</td>
+        <td><span class="text-info" title="Exception">Exception</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Data.TimeoutException.#ctor(System.Data.IDbCommand,System.String,System.String,System.Exception)" class="mb-5">
+    <h3 class="lead text-info">TimeoutException</h3>
+    <p>Initializes a new instance of <b>TimeoutException</b>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> TimeoutException(commnad, msg, src, inner)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>commnad</td>
+        <td><span class="text-info" title="IDbCommand">IDbCommand</span></td>
+        <td></td>
+    </tr>
     <tr>
         <td>msg</td>
         <td><span class="text-info" title="String">String</span></td>
