@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>TenantDbAccessScopeFactory - Kpok Patagon Framework</title>
+    <title>DbAccessScopeFactory - Kpok Patagon Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -18,17 +18,17 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-multitenancy/toc.html">Table of Contents</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-data/toc.html">Table of Contents</a></li>
             </ul>
         </div>
     </div>
     <div class="container mb-5">
         <div class="row">
             <div class="col-9">
-<h1>TenantDbAccessScopeFactory</h1>
-<p class="lead">Implements a factory that constructs <a href="../../kpokpatagon-multitenancy/kpokpatagon-multitenancy/kpokpatagon-multitenancy-itenantdbaccessscope.html">ITenantDbAccessScope</a> scopes.</p>
+<h1>DbAccessScopeFactory</h1>
+<p class="lead">Implements a factory that construct <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccessscope.html">IDbAccessScope</a> scopes.</p>
 <dl class="row mt-4">
-<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Multitenancy</dd>
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Data</dd>
 <dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
 </dl>
 <dl class="row mt-4">
@@ -38,12 +38,13 @@
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:KpokPatagon.Multitenancy.TenantDbAccessScopeFactory.CreateScope(Microsoft.Extensions.DependencyInjection.IServiceScope,KpokPatagon.Multitenancy.ITenant,System.String[])" class="mb-5">
+<div id="M:KpokPatagon.Data.DbAccessScopeFactory.CreateScope``1(Microsoft.Extensions.DependencyInjection.IServiceScope,``0,System.String[])" class="mb-5">
     <h3 class="lead text-info">CreateScope</h3>
-    <p>Creates a new scope for operating over the specified <strong class="text-info">tenant</strong>.</p>
+    <p>Creates a new <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccessscope.html">IDbAccessScope</a> for database access using 
+            <strong class="text-info">source</strong> to configured the specified APIs.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="ITenantDbAccessScope">ITenantDbAccessScope</span> CreateScope(scope, tenant, <span class="text-info">params </span>databaseApiNames)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IDbAccessScope">IDbAccessScope</span> CreateScope&lt;TSource&gt;(scope, source, <span class="text-info">params </span>databaseApiNames)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -58,12 +59,12 @@
     <tr>
         <td>scope</td>
         <td><span class="text-info" title="IServiceScope">IServiceScope</span></td>
-        <td>An <span class="text-info" title="Microsoft.Extensions.DependencyInjection.IServiceScope">IServiceScope</span> to get <a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-idbaccess.html">IDbAccess</a> services from.</td>
+        <td>An <span class="text-info" title="Microsoft.Extensions.DependencyInjection.IServiceScope">IServiceScope</span> to get services from.</td>
     </tr>
     <tr>
-        <td>tenant</td>
-        <td><span class="text-info" title="ITenant">ITenant</span></td>
-        <td>The tenant to create the scope for.</td>
+        <td>source</td>
+        <td><span class="text-info" title="TSource">TSource</span></td>
+        <td>The configuration source.</td>
     </tr>
     <tr>
         <td>databaseApiNames</td>
@@ -82,7 +83,7 @@
 <tbody>
     <tr>
         <td><span class="text-info" title="System.ArgumentNullException">ArgumentNullException</span></td>
-        <td><p>Thrown when <strong class="text-info">tenant</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">scope</strong> is <strong class="text-info">null</strong>.</p></td>
+        <td><p>Thrown when <strong class="text-info">scope</strong> is <strong class="text-info">null</strong>.</p><p>-or-</p><p>When <strong class="text-info">source</strong> is <strong class="text-info">null</strong>.</p></td>
     </tr>
     <tr>
         <td><span class="text-info" title="System.ArgumentException">ArgumentException</span></td>
@@ -97,7 +98,7 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:KpokPatagon.Multitenancy.TenantDbAccessScopeFactory.CreateScope(Microsoft.Extensions.DependencyInjection.IServiceScope,KpokPatagon.Multitenancy.ITenant,System.String[])">CreateScope</a></li>
+        <li><a href="#M:KpokPatagon.Data.DbAccessScopeFactory.CreateScope``1(Microsoft.Extensions.DependencyInjection.IServiceScope,``0,System.String[])">CreateScope</a></li>
     </ul>
 </li>
 </ul>
