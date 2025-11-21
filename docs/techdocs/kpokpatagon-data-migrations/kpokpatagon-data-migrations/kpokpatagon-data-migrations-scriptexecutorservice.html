@@ -40,12 +40,12 @@
 <dd class="col-sm-9">KpokPatagon.Data.Migrations.IScriptExecutorService</dd>
 </dl>
 <h2 id="constructors" class="mt-5">Constructors</h2>
-<div id="M:KpokPatagon.Data.Migrations.ScriptExecutorService.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.Migrations.ScriptExecutorService},KpokPatagon.Data.IDbAccess,KpokPatagon.Data.Migrations.ITableDscService,KpokPatagon.Data.DatabaseSchema.ISchemaDiscoverer,KpokPatagon.Data.DatabaseSchema.ISchemaProvisioner,KpokPatagon.Data.Migrations.Tracking.ScriptHistoryDataService)" class="mb-5">
+<div id="M:KpokPatagon.Data.Migrations.ScriptExecutorService.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Data.Migrations.ScriptExecutorService},KpokPatagon.Data.IDbAccess,KpokPatagon.Data.IDbCmdBuilder,KpokPatagon.Data.IDataModelCmdBuilder,KpokPatagon.Data.Migrations.ITableDscService,KpokPatagon.Data.DatabaseSchema.ISchemaDiscoverer,KpokPatagon.Data.DatabaseSchema.ISchemaProvisioner)" class="mb-5">
     <h3 class="lead text-info">ScriptExecutorService</h3>
     <p>Initializes a new instance of <b>ScriptExecutor</b>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ScriptExecutorService(logger, databaseApi, tableDscService, discoverer, provisioner, scriptHistoryDs)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> ScriptExecutorService(logger, databaseApi, cmdBuilder, dataModelCmdBuilder, tableDscService, discoverer, provisioner)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -68,6 +68,16 @@
         <td></td>
     </tr>
     <tr>
+        <td>cmdBuilder</td>
+        <td><span class="text-info" title="IDbCmdBuilder">IDbCmdBuilder</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>dataModelCmdBuilder</td>
+        <td><span class="text-info" title="IDataModelCmdBuilder">IDataModelCmdBuilder</span></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>tableDscService</td>
         <td><span class="text-info" title="ITableDscService">ITableDscService</span></td>
         <td></td>
@@ -80,11 +90,6 @@
     <tr>
         <td>provisioner</td>
         <td><span class="text-info" title="ISchemaProvisioner">ISchemaProvisioner</span></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>scriptHistoryDs</td>
-        <td><span class="text-info" title="ScriptHistoryDataService">ScriptHistoryDataService</span></td>
         <td></td>
     </tr>
 </tbody></table>
