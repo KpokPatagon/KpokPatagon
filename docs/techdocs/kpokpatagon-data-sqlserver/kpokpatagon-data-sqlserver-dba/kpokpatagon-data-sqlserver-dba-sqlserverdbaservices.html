@@ -627,6 +627,30 @@
     </tr>
 </tbody></table>
 </div>
+<div id="M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.GetDatabases" class="mb-5">
+    <h3 class="lead text-info">GetDatabases</h3>
+    <p>Get a collection of databases.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="IList">IList</span> GetDatabases()</code></dd>
+</dl>
+<h6 class="mt-1">Returns</h6>
+<p>A collection of <a href="../../kpokpatagon-data-sqlserver/kpokpatagon-data-sqlserver-dba/kpokpatagon-data-sqlserver-dba-database.html">Database</a>s.</p>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-data/kpokpatagon-data/kpokpatagon-data-schemamanipulationexception.html">SchemaManipulationException</a></td>
+        <td>Thrown when an error occurs while accesing the database.</td>
+    </tr>
+</tbody></table>
+</div>
 <div id="M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.GetServerRoles(System.String)" class="mb-5">
     <h3 class="lead text-info">GetServerRoles</h3>
     <p>Gets the server roles for the spacified <strong class="text-info">userName</strong>.</p>
@@ -697,6 +721,7 @@
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.ExistsDatabase(System.String)">ExistsDatabase</a></li>
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.ExistsLogin(System.String)">ExistsLogin</a></li>
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.ExistsUser(System.String,System.String)">ExistsUser</a></li>
+        <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.GetDatabases">GetDatabases</a></li>
         <li><a href="#M:KpokPatagon.Data.SqlServer.Dba.SqlServerDbaServices.GetServerRoles(System.String)">GetServerRoles</a></li>
     </ul>
 </li>

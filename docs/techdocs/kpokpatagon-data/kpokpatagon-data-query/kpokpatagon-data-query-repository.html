@@ -84,12 +84,12 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Data.Query.Repository.#ctor(System.String,System.String,System.String,System.String,System.String)" class="mb-5">
+<div id="M:KpokPatagon.Data.Query.Repository.#ctor(System.String,System.String,System.String,System.String)" class="mb-5">
     <h3 class="lead text-info">Repository</h3>
     <p>Creates a new instance of <strong>Repository</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Repository(schema, name, alias, catalog, sequencename)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> Repository(schema, name, alias, sequencename)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -117,11 +117,6 @@
         <td>The alias for to the table or view.</td>
     </tr>
     <tr>
-        <td>catalog</td>
-        <td><span class="text-info" title="String">String</span></td>
-        <td>The name of de catalog or database.</td>
-    </tr>
-    <tr>
         <td>sequencename</td>
         <td><span class="text-info" title="String">String</span></td>
         <td>A sequence name.</td>
@@ -135,14 +130,6 @@
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Alias { get; set; }</code></dd>
-</dl>
-</div>
-<div id="P:KpokPatagon.Data.Query.Repository.Catalog" class="mb-5">
-    <h3 class="lead text-info">Catalog</h3>
-    <p>Gets or sets the name of de catalog or database.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Catalog { get; set; }</code></dd>
 </dl>
 </div>
 <div id="P:KpokPatagon.Data.Query.Repository.Name" class="mb-5">
@@ -247,7 +234,6 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#P:KpokPatagon.Data.Query.Repository.Alias">Alias</a></li>
-        <li><a href="#P:KpokPatagon.Data.Query.Repository.Catalog">Catalog</a></li>
         <li><a href="#P:KpokPatagon.Data.Query.Repository.Name">Name</a></li>
         <li><a href="#P:KpokPatagon.Data.Query.Repository.Schema">Schema</a></li>
         <li><a href="#P:KpokPatagon.Data.Query.Repository.SequenceName">SequenceName</a></li>
