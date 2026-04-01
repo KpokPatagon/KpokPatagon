@@ -50,8 +50,7 @@
              </code></pre><p>The configuration for both supported services is the same, the service Url that must include:
              the protocol, the host name of IP address and if required, port, user and password as required by 
              each service.</p><p><b>Service registration:</b></p><p>The queue service must be registered with DI within the "configure service" method:</p><pre class="bg-light"><code>
-             services.AddKpokPatagon(&lt;configuration&gt;)
-                     .AddRabbitQueueService();
+             services.AddKpokRabbitQueueService(&lt;configuration&gt;)
              </code></pre><p><b>Service usage:</b></p><p>Once registered just inject the service where required:</p><pre class="bg-light"><code>
              readonly IQueusService _queueService;
              

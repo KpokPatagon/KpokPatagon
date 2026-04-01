@@ -52,8 +52,7 @@
                }
              }
              </code></pre><p><b>Service registration:</b></p><p>This cache service must be registered with DI within the "configure service" method:</p><pre class="bg-light"><code>
-             services.AddKpokPatagon(&lt;configuration&gt;)
-                     .AddCacheService();
+             services.AddKpokCacheService(&lt;configuration&gt;);
              </code></pre><p><b>Service usage:</b></p><p>Once registered just inject the service where required:</p><pre class="bg-light"><code>
              public MyClass(ICacheService cacheService) { ... }
              </code></pre></div>
