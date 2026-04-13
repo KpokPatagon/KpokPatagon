@@ -40,13 +40,13 @@
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.HashExtensions.Sha256(System.Byte[])" class="mb-5">
     <h3 class="lead text-info">Sha256</h3>
-    <p>Creates a SHA256 hash of the specified input.</p>
+    <p>Creates a SHA256 hash of the specified <strong class="text-info">data</strong>..</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Sha256(input)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Sha256(data)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>The hash as a byte array or <strong class="text-info">null</strong> if <strong class="text-info">input</strong> is <strong class="text-info">null</strong> or empty.</p>
+<p>The hash as a byte array or <strong class="text-info">null</strong> if data empty.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -58,7 +58,7 @@
 </thead>
 <tbody>
     <tr>
-        <td>input</td>
+        <td>data</td>
         <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>Data to be hashed.</td>
     </tr>
@@ -66,13 +66,13 @@
 </div>
 <div id="M:KpokPatagon.HashExtensions.Sha256(System.String)" class="mb-5">
     <h3 class="lead text-info">Sha256</h3>
-    <p>Creates a SHA256 hash of the specified input.</p>
+    <p>Creates a SHA256 hash of the specified <strong class="text-info">data</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Sha256(input)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Sha256(data)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>The hash as a Base64 string or an empty string is <strong class="text-info">input</strong> is <strong class="text-info">null</strong> or empty.</p>
+<p>The hash as a byte array or <strong class="text-info">null</strong> if data empty.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -84,7 +84,7 @@
 </thead>
 <tbody>
     <tr>
-        <td>input</td>
+        <td>data</td>
         <td><span class="text-info" title="String">String</span></td>
         <td>Data to be hashed.</td>
     </tr>
@@ -92,13 +92,13 @@
 </div>
 <div id="M:KpokPatagon.HashExtensions.Sha512(System.Byte[])" class="mb-5">
     <h3 class="lead text-info">Sha512</h3>
-    <p>Creates a SHA512 hash of the specified input.</p>
+    <p>Creates a SHA512 hash of the specified <strong class="text-info">data</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Sha512(input)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Sha512(data)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>The hash as a byte array or <strong class="text-info">null</strong> if <strong class="text-info">input</strong> is <strong class="text-info">null</strong> or empty.</p>
+<p>The hash as a byte array or <strong class="text-info">null</strong> if data empty.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -110,7 +110,7 @@
 </thead>
 <tbody>
     <tr>
-        <td>input</td>
+        <td>data</td>
         <td><span class="text-info" title="Byte[]">Byte[]</span></td>
         <td>Data to be hashed.</td>
     </tr>
@@ -118,13 +118,13 @@
 </div>
 <div id="M:KpokPatagon.HashExtensions.Sha512(System.String)" class="mb-5">
     <h3 class="lead text-info">Sha512</h3>
-    <p>Creates a SHA512 hash of the specified input.</p>
+    <p>Creates a SHA512 hash of the specified <strong class="text-info">data</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> Sha512(input)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Byte[]">Byte[]</span> Sha512(data)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>The hash as a Base64 string or an empty string is <strong class="text-info">input</strong> is <strong class="text-info">null</strong> or empty.</p>
+<p>The hash as a byte array or <strong class="text-info">null</strong> if data empty.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -136,21 +136,21 @@
 </thead>
 <tbody>
     <tr>
-        <td>input</td>
+        <td>data</td>
         <td><span class="text-info" title="String">String</span></td>
         <td>Data to be hashed.</td>
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.HashExtensions.ToSha256(System.String)" class="mb-5">
-    <h3 class="lead text-info">ToSha256</h3>
-    <p>Creates a SHA256 hash of the specified input.</p>
+<div id="M:KpokPatagon.HashExtensions.ToHex(System.Byte[])" class="mb-5">
+    <h3 class="lead text-info">ToHex</h3>
+    <p>Converts the <strong class="text-info">data</strong> into an hexadecimal formatted string.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToSha256(input)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToHex(data)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
-<p>The hash as a hexadecimal string or an empty string is <strong class="text-info">input</strong> is <strong class="text-info">null</strong> or empty.</p>
+<p>An hexadecimal formated string of the data or <strong class="text-info">null</strong> if data is empty.</p>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
 <thead>
@@ -162,35 +162,9 @@
 </thead>
 <tbody>
     <tr>
-        <td>input</td>
-        <td><span class="text-info" title="String">String</span></td>
-        <td>Data to be hashed.</td>
-    </tr>
-</tbody></table>
-</div>
-<div id="M:KpokPatagon.HashExtensions.ToSha512(System.String)" class="mb-5">
-    <h3 class="lead text-info">ToSha512</h3>
-    <p>Creates a SHA512 hash of the specified input.</p>
-<dl class="row">
-    <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> ToSha512(input)</code></dd>
-</dl>
-<h6 class="mt-1">Returns</h6>
-<p>The hash as a hexadecimal string or an empty string is <strong class="text-info">input</strong> is <strong class="text-info">null</strong> or empty.</p>
-<h6 class="mt-1">Parameters</h6>
-<table class="table table-sm table-bordered">
-<thead>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Summary</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>input</td>
-        <td><span class="text-info" title="String">String</span></td>
-        <td>Data to be hashed.</td>
+        <td>data</td>
+        <td><span class="text-info" title="Byte[]">Byte[]</span></td>
+        <td>Data to convert.</td>
     </tr>
 </tbody></table>
 </div>
@@ -205,8 +179,7 @@
         <li><a href="#M:KpokPatagon.HashExtensions.Sha256(System.String)">Sha256</a></li>
         <li><a href="#M:KpokPatagon.HashExtensions.Sha512(System.Byte[])">Sha512</a></li>
         <li><a href="#M:KpokPatagon.HashExtensions.Sha512(System.String)">Sha512</a></li>
-        <li><a href="#M:KpokPatagon.HashExtensions.ToSha256(System.String)">ToSha256</a></li>
-        <li><a href="#M:KpokPatagon.HashExtensions.ToSha512(System.String)">ToSha512</a></li>
+        <li><a href="#M:KpokPatagon.HashExtensions.ToHex(System.Byte[])">ToHex</a></li>
     </ul>
 </li>
 </ul>

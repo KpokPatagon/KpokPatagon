@@ -61,11 +61,13 @@
              
              async Task PublishMessageAsync(MyMessage message)
              {
+                 await _queueService.CreateQueueAsync("my-queue");
                  await _queueService.PublishAsync("my-queue", message);
              }
              
              async Task ConsumeAsync()
              {
+                 await _queueService.CreateQueueAsync("my-queue");
                  await _queueService.ConsumeAsync&lt;MyMessage&gt;("my-queue", 
                      (msg) =&gt; { /* Message procesing... */ },
                      (exception) =&gt; { /* Handle errors */ }
@@ -126,7 +128,7 @@
     <tr>
         <td>queue</td>
         <td><span class="text-info" title="String">String</span></td>
-        <td>The name f the queue.</td>
+        <td>The name of the queue.</td>
     </tr>
     <tr>
         <td>onMessage</td>
@@ -159,7 +161,7 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Queue.Nats.NatsQueueService.ConsumeAsync``1(System.String,System.Action{``0},System.Action{System.Exception},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)" class="mb-5">
+<div id="M:KpokPatagon.Queue.Nats.NatsQueueService.ConsumeAsync``1(System.String,System.Action{``0,System.Collections.Generic.IDictionary{System.String,System.String}},System.Action{System.Exception},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)" class="mb-5">
     <h3 class="lead text-info">ConsumeAsync</h3>
     <p><p>Setup a callback to be invoked when a new message is available on the queue.</p><p>If the message is successfully deserialized the <b>onMessage</b> callback is executed 
                 then the message Ack; If an error occurred the message is Nack, and then the <b>onError</b>
@@ -181,11 +183,11 @@
     <tr>
         <td>queue</td>
         <td><span class="text-info" title="String">String</span></td>
-        <td>The name f the queue.</td>
+        <td>The name of the queue.</td>
     </tr>
     <tr>
         <td>onMessage</td>
-        <td><span class="text-info" title="Action&lt;T&gt;">Action&lt;T&gt;</span></td>
+        <td><span class="text-info" title="Action&lt;T, IDictionary&gt;">Action&lt;T, IDictionary&gt;</span></td>
         <td>The callback action to process the message.</td>
     </tr>
     <tr>
@@ -216,6 +218,150 @@
     <tr>
         <td><a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-queueserviceexception.html">QueueServiceException</a></td>
         <td>Throw when an error occurred while accessing the queue services.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.Nats.NatsQueueService.ConsumeFanoutAsync(System.String,System.Action{System.Byte[],System.Collections.Generic.IDictionary{System.String,System.String}},System.Action{System.Exception},System.Threading.CancellationToken)" class="mb-5">
+    <h3 class="lead text-info">ConsumeFanoutAsync</h3>
+    <p><p>Setup a callback to be invoked when a new message is available on the queue.</p><p>The <b>onMessage</b> callback is executed with the message body as a <code>byte[]</code>
+                and the message headers as a dictionary, then the message is Ack; If an error occurred the
+                message is Nack and then the <b>onError</b> callback, if available, is executed.</p></p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ConsumeFanoutAsync(fanout, onMessage, onError, cancellationToken)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fanout</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the queue.</td>
+    </tr>
+    <tr>
+        <td>onMessage</td>
+        <td><span class="text-info" title="Action&lt;Byte[], IDictionary&gt;">Action&lt;Byte[], IDictionary&gt;</span></td>
+        <td>The callback action to process the message.</td>
+    </tr>
+    <tr>
+        <td>onError</td>
+        <td><span class="text-info" title="Action&lt;Exception&gt;">Action&lt;Exception&gt;</span></td>
+        <td>An error callback action called when an error occurred while processing a message.</td>
+    </tr>
+    <tr>
+        <td>cancellationToken</td>
+        <td><span class="text-info" title="CancellationToken">CancellationToken</span></td>
+        <td>A cancellation token.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-queueserviceexception.html">QueueServiceException</a></td>
+        <td>Throw when an error occurred while accessing the queue services.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.Nats.NatsQueueService.ConsumeFanoutAsync``1(System.String,System.Action{``0,System.Collections.Generic.IDictionary{System.String,System.String}},System.Action{System.Exception},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)" class="mb-5">
+    <h3 class="lead text-info">ConsumeFanoutAsync</h3>
+    <p><p>Setup a callback to be invoked when a new message is available on the queue.</p><p>If the message is successfully deserialized the <b>onMessage</b> callback is executed 
+                then the message Ack; If an error occurred the message is Nack, and then the <b>onError</b>
+                callback, if available, is executed</p></p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ConsumeFanoutAsync&lt;T&gt;(fanout, onMessage, onError, serializer, cancellationToken)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fanout</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the queue.</td>
+    </tr>
+    <tr>
+        <td>onMessage</td>
+        <td><span class="text-info" title="Action&lt;T, IDictionary&gt;">Action&lt;T, IDictionary&gt;</span></td>
+        <td>The callback action to process the message.</td>
+    </tr>
+    <tr>
+        <td>onError</td>
+        <td><span class="text-info" title="Action&lt;Exception&gt;">Action&lt;Exception&gt;</span></td>
+        <td>An error callback action called when an error occurred while processing a message.</td>
+    </tr>
+    <tr>
+        <td>serializer</td>
+        <td><span class="text-info" title="IMessageSerializer">IMessageSerializer</span></td>
+        <td>A service to serialize the message.</td>
+    </tr>
+    <tr>
+        <td>cancellationToken</td>
+        <td><span class="text-info" title="CancellationToken">CancellationToken</span></td>
+        <td>A cancellation token.</td>
+    </tr>
+</tbody></table>
+<h6 class="mt-1">Exceptions</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-queueserviceexception.html">QueueServiceException</a></td>
+        <td>Throw when an error occurred while accessing the queue services.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.Nats.NatsQueueService.CreateFanoutAsync(System.String,System.Threading.CancellationToken)" class="mb-5">
+    <h3 class="lead text-info">CreateFanoutAsync</h3>
+    <p>Creates a fanout target that send messaged to multiple consumers.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> CreateFanoutAsync(fanout, cancellationToken)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fanout</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the queue.</td>
+    </tr>
+    <tr>
+        <td>cancellationToken</td>
+        <td><span class="text-info" title="CancellationToken">CancellationToken</span></td>
+        <td>A cancellation token.</td>
     </tr>
 </tbody></table>
 </div>
@@ -260,6 +406,35 @@
     <tr>
         <td><a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-queueserviceexception.html">QueueServiceException</a></td>
         <td>Throw when an error occurred while accessing the queue services.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.Nats.NatsQueueService.DeleteFanoutAsync(System.String,System.Threading.CancellationToken)" class="mb-5">
+    <h3 class="lead text-info">DeleteFanoutAsync</h3>
+    <p>Deletes a fanout target.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> DeleteFanoutAsync(fanout, cancellationToken)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fanout</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the queue.</td>
+    </tr>
+    <tr>
+        <td>cancellationToken</td>
+        <td><span class="text-info" title="CancellationToken">CancellationToken</span></td>
+        <td>A cancellation token.</td>
     </tr>
 </tbody></table>
 </div>
@@ -314,12 +489,12 @@
     <dd class="col-10"><code>public <span class="text-info" title="ValueTask">ValueTask</span> DisposeAsync()</code></dd>
 </dl>
 </div>
-<div id="M:KpokPatagon.Queue.Nats.NatsQueueService.PublishAsync(System.String,System.Object,KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)" class="mb-5">
+<div id="M:KpokPatagon.Queue.Nats.NatsQueueService.PublishAsync(System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.String},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)" class="mb-5">
     <h3 class="lead text-info">PublishAsync</h3>
     <p>Publishes the <strong class="text-info">message</strong> to the <strong class="text-info">queue</strong>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> PublishAsync(queue, message, serializer, cancellationToken)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> PublishAsync(queue, message, headers, serializer, cancellationToken)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -340,6 +515,55 @@
         <td>message</td>
         <td><span class="text-info" title="Object">Object</span></td>
         <td>The message to be published.</td>
+    </tr>
+    <tr>
+        <td>headers</td>
+        <td><span class="text-info" title="IDictionary&lt;String, String&gt;">IDictionary&lt;String, String&gt;</span></td>
+        <td>A dictionary to be published as headers.</td>
+    </tr>
+    <tr>
+        <td>serializer</td>
+        <td><span class="text-info" title="IMessageSerializer">IMessageSerializer</span></td>
+        <td>A service to serialize the message.</td>
+    </tr>
+    <tr>
+        <td>cancellationToken</td>
+        <td><span class="text-info" title="CancellationToken">CancellationToken</span></td>
+        <td>A cancellation token.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.Nats.NatsQueueService.PublishFanoutAsync(System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.String},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)" class="mb-5">
+    <h3 class="lead text-info">PublishFanoutAsync</h3>
+    <p>Publishes the <strong class="text-info">message</strong> to the <strong class="text-info">fanout</strong>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> PublishFanoutAsync(fanout, message, headers, serializer, cancellationToken)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fanout</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the queue.</td>
+    </tr>
+    <tr>
+        <td>message</td>
+        <td><span class="text-info" title="Object">Object</span></td>
+        <td>The message to be published.</td>
+    </tr>
+    <tr>
+        <td>headers</td>
+        <td><span class="text-info" title="IDictionary&lt;String, String&gt;">IDictionary&lt;String, String&gt;</span></td>
+        <td>A dictionary to be published as headers.</td>
     </tr>
     <tr>
         <td>serializer</td>
@@ -406,11 +630,16 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.ConsumeAsync(System.String,System.Action{System.Byte[],System.Collections.Generic.IDictionary{System.String,System.String}},System.Action{System.Exception},System.Threading.CancellationToken)">ConsumeAsync</a></li>
-        <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.ConsumeAsync``1(System.String,System.Action{``0},System.Action{System.Exception},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)">ConsumeAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.ConsumeAsync``1(System.String,System.Action{``0,System.Collections.Generic.IDictionary{System.String,System.String}},System.Action{System.Exception},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)">ConsumeAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.ConsumeFanoutAsync(System.String,System.Action{System.Byte[],System.Collections.Generic.IDictionary{System.String,System.String}},System.Action{System.Exception},System.Threading.CancellationToken)">ConsumeFanoutAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.ConsumeFanoutAsync``1(System.String,System.Action{``0,System.Collections.Generic.IDictionary{System.String,System.String}},System.Action{System.Exception},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)">ConsumeFanoutAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.CreateFanoutAsync(System.String,System.Threading.CancellationToken)">CreateFanoutAsync</a></li>
         <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.CreateQueueAsync(System.String,System.Threading.CancellationToken)">CreateQueueAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.DeleteFanoutAsync(System.String,System.Threading.CancellationToken)">DeleteFanoutAsync</a></li>
         <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.DeleteQueueAsync(System.String,System.Threading.CancellationToken)">DeleteQueueAsync</a></li>
         <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.DisposeAsync">DisposeAsync</a></li>
-        <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.PublishAsync(System.String,System.Object,KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)">PublishAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.PublishAsync(System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.String},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)">PublishAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.PublishFanoutAsync(System.String,System.Object,System.Collections.Generic.IDictionary{System.String,System.String},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)">PublishFanoutAsync</a></li>
         <li><a href="#M:KpokPatagon.Queue.Nats.NatsQueueService.PurgeQueueAsync(System.String,System.Threading.CancellationToken)">PurgeQueueAsync</a></li>
     </ul>
 </li>
