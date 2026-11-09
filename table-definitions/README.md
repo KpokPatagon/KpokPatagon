@@ -1,3 +1,3 @@
 # Table definitions
 
-This folder contains the efinition of the tables used by functionalities provided by the framework.
+This folder contains the definition of the tables used by functionalities provided by the framework.
