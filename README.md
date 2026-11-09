@@ -12,6 +12,7 @@ To used this framework simply add the NuGet packages as required.
 - KpokPatagon.Data
 - KpokPatagon.Data.MySql
 - KpokPatagon.Data.Oracle
+- KpokPatagon.Data.PostgreSql
 - KpokPatagon.Data.SQLite
 - KpokPatagon.Data.SqlServer
 
