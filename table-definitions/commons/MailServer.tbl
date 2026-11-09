@@ -15,6 +15,8 @@
       "Description": null,
       "Position": 1,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": "64",
       "Precision": null,
@@ -31,6 +33,8 @@
       "Description": null,
       "Position": 2,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": "128",
       "Precision": null,
@@ -47,6 +51,8 @@
       "Description": null,
       "Position": 3,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": "256",
       "Precision": null,
@@ -63,6 +69,8 @@
       "Description": null,
       "Position": 4,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": "256",
       "Precision": null,
@@ -79,6 +87,8 @@
       "Description": null,
       "Position": 5,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": null,
       "Precision": null,
@@ -95,6 +105,8 @@
       "Description": null,
       "Position": 6,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": null,
       "Precision": null,
@@ -111,6 +123,8 @@
       "Description": null,
       "Position": 7,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": "2048",
       "Precision": null,
@@ -127,6 +141,8 @@
       "Description": null,
       "Position": 8,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": "2048",
       "Precision": null,
@@ -137,8 +153,9 @@
       "CheckConstraintExpression": null
     }
   ],
+  "ExcludePrimaryKeyFromDsc": false,
   "PrimaryKey": {
-    "Name": "PK_MailServer",
+    "Name": "PK_Commons_MailServer",
     "Type": "NonClustered",
     "IsUnique": true,
     "Description": null,
@@ -147,14 +164,15 @@
       {
         "Name": "Id",
         "Direction": "Ascending",
-        "Position": 1,
-        "IsIncludedColumn": false
+        "Position": 1
       }
-    ]
+    ],
+    "IncludedColumns": []
   },
+  "ExcludeIndexesFromDsc": false,
   "Indexes": [
     {
-      "Name": "IX_MailServer_1",
+      "Name": "IX_Commons_MailServer_1",
       "Type": "NonClustered",
       "IsUnique": true,
       "Description": null,
@@ -163,12 +181,13 @@
         {
           "Name": "Name",
           "Direction": "Ascending",
-          "Position": 1,
-          "IsIncludedColumn": false
+          "Position": 1
         }
-      ]
+      ],
+      "IncludedColumns": []
     }
   ],
+  "ExcludeForeignKeysFromDsc": false,
   "ForeignKeys": [],
   "DesignerTemplate": "",
   "SkipExtensionTemplateGeneration": false,

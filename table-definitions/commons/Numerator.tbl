@@ -15,6 +15,8 @@
       "Description": null,
       "Position": 1,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": "64",
       "Precision": null,
@@ -31,6 +33,8 @@
       "Description": null,
       "Position": 2,
       "IsAutonumeric": false,
+      "IdentitySeed": null,
+      "IdentityIncrement": null,
       "IsNullable": false,
       "CharacterLength": null,
       "Precision": null,
@@ -41,8 +45,9 @@
       "CheckConstraintExpression": null
     }
   ],
+  "ExcludePrimaryKeyFromDsc": false,
   "PrimaryKey": {
-    "Name": "PK_TableNumerator",
+    "Name": "PK_Commons_Numerator",
     "Type": "NonClustered",
     "IsUnique": true,
     "Description": null,
@@ -51,12 +56,14 @@
       {
         "Name": "Id",
         "Direction": "Ascending",
-        "Position": 1,
-        "IsIncludedColumn": false
+        "Position": 1
       }
-    ]
+    ],
+    "IncludedColumns": []
   },
+  "ExcludeIndexesFromDsc": false,
   "Indexes": [],
+  "ExcludeForeignKeysFromDsc": false,
   "ForeignKeys": [],
   "DesignerTemplate": null,
   "SkipExtensionTemplateGeneration": false,
