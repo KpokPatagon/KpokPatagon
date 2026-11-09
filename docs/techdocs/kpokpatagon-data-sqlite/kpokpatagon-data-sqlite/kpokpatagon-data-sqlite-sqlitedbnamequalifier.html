@@ -40,7 +40,7 @@
 <h2 id="methods" class="mt-5">Methods</h2>
 <div id="M:KpokPatagon.Data.SQLite.SQLiteDbNameQualifier.GetFullSequenceName(KpokPatagon.Data.IDataService)" class="mb-5">
     <h3 class="lead text-info">GetFullSequenceName</h3>
-    <p>Gets the full qualified name of the sequence as it is specified by the data mapper object.</p>
+    <p>Gets the full qualified name of a sequence for the data service object autonumeric field.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
     <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetFullSequenceName(dataService)</code></dd>
@@ -78,13 +78,12 @@
     </tr>
 </tbody></table>
 </div>
-<div id="M:KpokPatagon.Data.SQLite.SQLiteDbNameQualifier.GetFullSequenceName(KpokPatagon.Data.Query.Repository)" class="mb-5">
+<div id="M:KpokPatagon.Data.SQLite.SQLiteDbNameQualifier.GetFullSequenceName(KpokPatagon.Data.Query.Repository,System.String)" class="mb-5">
     <h3 class="lead text-info">GetFullSequenceName</h3>
-    <p>Get the full qualified name of a sequence for the specified repository.
-            This method always returns an empty string.</p>
+    <p>Get the full qualified name of a sequence for the repository autonumeric column.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetFullSequenceName(repository)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="String">String</span> GetFullSequenceName(repository, columnName)</code></dd>
 </dl>
 <h6 class="mt-1">Returns</h6>
 <p>This method returns the value of the repository.SequenceName property.</p>
@@ -102,6 +101,11 @@
         <td>repository</td>
         <td><span class="text-info" title="Repository">Repository</span></td>
         <td>Repository object to qualify its sequence.</td>
+    </tr>
+    <tr>
+        <td>columnName</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>Name of the column in which the sequence value will be stored (optional).</td>
     </tr>
 </tbody></table>
 <h6 class="mt-1">Exceptions</h6>
@@ -207,7 +211,7 @@
 <li>
     <ul style="font-size:0.8em;">
         <li><a href="#M:KpokPatagon.Data.SQLite.SQLiteDbNameQualifier.GetFullSequenceName(KpokPatagon.Data.IDataService)">GetFullSequenceName</a></li>
-        <li><a href="#M:KpokPatagon.Data.SQLite.SQLiteDbNameQualifier.GetFullSequenceName(KpokPatagon.Data.Query.Repository)">GetFullSequenceName</a></li>
+        <li><a href="#M:KpokPatagon.Data.SQLite.SQLiteDbNameQualifier.GetFullSequenceName(KpokPatagon.Data.Query.Repository,System.String)">GetFullSequenceName</a></li>
         <li><a href="#M:KpokPatagon.Data.SQLite.SQLiteDbNameQualifier.GetFullTableName(KpokPatagon.Data.IDataService)">GetFullTableName</a></li>
         <li><a href="#M:KpokPatagon.Data.SQLite.SQLiteDbNameQualifier.GetFullTableName(KpokPatagon.Data.Query.Repository)">GetFullTableName</a></li>
     </ul>
