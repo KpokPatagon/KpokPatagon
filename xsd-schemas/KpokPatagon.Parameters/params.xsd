@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="params">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="group" type="groupElement" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+      <xs:attribute name="caption" type="xs:string" use="required"/>
+      <xs:attribute name="description" type="xs:string" use="required"/>
+      <xs:attribute name="resourceType" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- group of parameters -->
+  <xs:complexType name="groupElement">
+    <xs:choice minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="group" type="groupElement"/>
+      <xs:element name="param" type="paramElement"/>
+    </xs:choice>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="caption" type="xs:string" use="required"/>
+    <xs:attribute name="description" type="xs:string" use="required"/>
+  </xs:complexType>
+  
+  <!-- parameter -->
+  <xs:complexType name="paramElement">
+    <xs:all minOccurs="0">
+      <xs:element name="optionsProvider" type="genericContextObject" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="validator" type="genericContextObject" minOccurs="0" maxOccurs="1"/>
+    </xs:all>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="parameterType" use="required"/>
+    <xs:attribute name="defaultValue" type="xs:string" use="required"/>
+    <xs:attribute name="caption" type="xs:string" use="required"/>
+    <xs:attribute name="description" type="xs:string" use="required"/>
+  </xs:complexType>
+  
+  <!-- generic context object -->
+  <xs:complexType name="genericContextObject" mixed="true">
+    <xs:sequence>
+      <xs:any processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:anyAttribute processContents="lax"/>
+  </xs:complexType>
+ 
+  <!-- enums -->
+  <xs:simpleType name="parameterType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Boolean"/>
+      <xs:enumeration value="Integer"/>
+      <xs:enumeration value="String"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>

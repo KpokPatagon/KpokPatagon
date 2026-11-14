@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="script">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="documentation" type="documentationType" minOccurs="1" maxOccurs="1"/>
+        <xs:element name="dependencies" type="dependenciesType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="mysql" type="statementsContainerType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="oracle" type="statementsContainerType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="postgresql" type="statementsContainerType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="sqlite" type="statementsContainerType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="mssql" type="statementsContainerType" minOccurs="0" maxOccurs="1"/>
+      </xs:all>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="connection" type="xs:string" use="required"/>
+      <xs:attribute name="stage" type="scriptStageEnum" use="optional" default="AfterTableDSC"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="dependenciesType">
+    <xs:sequence>
+      <xs:element name="dependency" type="dependencyType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="dependencyType">
+    <xs:attribute name="scriptId" type="xs:string" use="required"/>
+    <xs:attribute name="optional" type="xs:boolean" use="optional" default="false" />
+  </xs:complexType>
+
+  <xs:complexType name="documentationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:complexType name="statementsContainerType">
+    <xs:sequence>
+      <xs:element name="statement" type="statementType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="statementType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="description" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:simpleType name="scriptStageEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AfterTableDSC"/>
+      <xs:enumeration value="BeforeTableDSC"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>
