@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="navigation">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="url" type="urlNavItem"/>
+        <xs:element name="separator" type="separatorItem"/>
+        <xs:element name="controller" type="controllerNavItem"/>
+      </xs:choice>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+      <xs:attribute name="resourceType" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="controllerNavItem">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="url" type="urlNavItem"/>
+      <xs:element name="separator" type="separatorItem"/>
+      <xs:element name="controller" type="controllerNavItem"/>
+    </xs:choice>
+    <xs:attribute name="controller" type="xs:string" use="required"/>
+    <xs:attribute name="action" type="xs:string" use="optional"/>
+    <xs:attribute name="area" type="xs:string" use="optional"/>
+    <xs:attribute name="caption" type="xs:string" use="required"/>
+    <xs:attribute name="icon" type="xs:string" use="optional"/>
+    <xs:attribute name="roles" type="xs:string" use="optional"/>
+    <xs:attribute name="tooltip" type="xs:string" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="urlNavItem">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="url" type="urlNavItem"/>
+      <xs:element name="separator" type="separatorItem"/>
+      <xs:element name="controller" type="controllerNavItem"/>
+    </xs:choice>
+    <xs:attribute name="url" type="xs:string" use="required"/>
+    <xs:attribute name="caption" type="xs:string" use="required"/>
+    <xs:attribute name="icon" type="xs:string" use="optional"/>
+    <xs:attribute name="roles" type="xs:string" use="optional"/>
+    <xs:attribute name="tooltip" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <xs:complexType name="separatorItem"/>
+
+</xs:schema>
