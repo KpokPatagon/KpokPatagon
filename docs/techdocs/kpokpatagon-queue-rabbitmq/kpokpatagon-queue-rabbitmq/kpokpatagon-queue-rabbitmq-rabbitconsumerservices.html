@@ -1,0 +1,273 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>RabbitConsumerServices - Kpok Patagon Framework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mb-4 navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="navbar navbar-light bg-secondary">
+            <a class="navbar-brand" href="#">Kpok Patagon Framework</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="https://kpokpatagon.github.io/KpokPatagon/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Index</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../kpokpatagon-queue-rabbitmq/toc.html">Table of Contents</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-9">
+<h1>RabbitConsumerServices</h1>
+<p class="lead">Provides consumer services for <b>RabbitMQ</b>.</p>
+<dl class="row mt-4">
+<dt class="text-truncate col-3">Namespace:</dt><dd class="col-9">KpokPatagon.Queue.RabbitMQ</dd>
+<dt class="text-truncate col-3">Type:</dt><dd class="col-9">Class</dd>
+</dl>
+<dl class="row mt-4">
+    <dt class="text-truncate col-3">Public:</dt><dd class="col-9">Yes</dd>
+    <dt class="text-truncate col-3">Protected:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Sealed:</dt><dd class="col-9">No</dd>
+    <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">No</dd>
+<dt class="text-truncate col-sm-3">Inherits from:</dt>
+<dd class="col-sm-9">KpokPatagon.Queue.RabbitMQ.ServicesBase</dd>
+<dt class="text-truncate col-sm-3">Implements:</dt>
+<dd class="col-sm-9">KpokPatagon.Queue.IConsumerServices, System.IAsyncDisposable</dd>
+</dl>
+<h2 id="constructors" class="mt-5">Constructors</h2>
+<div id="M:KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices.#ctor(Microsoft.Extensions.Logging.ILogger{KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices},Microsoft.Extensions.Options.IOptions{KpokPatagon.Queue.QueueConnectionOptions})" class="mb-5">
+    <h3 class="lead text-info">RabbitConsumerServices</h3>
+    <p>Initializes an instance of <code>RabbitConsumerServices</code>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Void">Void</span> RabbitConsumerServices(logger, options)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>logger</td>
+        <td><span class="text-info" title="ILogger&lt;RabbitConsumerServices&gt;">ILogger&lt;RabbitConsumerServices&gt;</span></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>options</td>
+        <td><span class="text-info" title="IOptions&lt;QueueConnectionOptions&gt;">IOptions&lt;QueueConnectionOptions&gt;</span></td>
+        <td></td>
+    </tr>
+</tbody></table>
+</div>
+<h2 id="methods" class="mt-5">Methods</h2>
+<div id="M:KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices.ConsumeFanoutAsync(System.String,System.Action{System.Byte[],System.Collections.Generic.IDictionary{System.String,System.String}},System.Func{System.Exception,System.Boolean},System.Threading.CancellationToken)" class="mb-5">
+    <h3 class="lead text-info">ConsumeFanoutAsync</h3>
+    <p><p>Setup a callback to be invoked when a message is available on the queue.</p><p>The <b>onMessage</b> callback is executed with the message body as a <code>byte[]</code>
+                and the message headers as a dictionary, then the message is Ack; If an error occurred the
+                <b>onError</b> callback is executed if provided, then the message is Nack and requeued only
+                if the <b>onError</b> callback returned true.</p></p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ConsumeFanoutAsync(fanout, onMessage, onError, cancellationToken)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fanout</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the fanout.</td>
+    </tr>
+    <tr>
+        <td>onMessage</td>
+        <td><span class="text-info" title="Action&lt;Byte[], IDictionary&gt;">Action&lt;Byte[], IDictionary&gt;</span></td>
+        <td>The callback action to process the message.</td>
+    </tr>
+    <tr>
+        <td>onError</td>
+        <td><span class="text-info" title="Func&lt;Exception, Boolean&gt;">Func&lt;Exception, Boolean&gt;</span></td>
+        <td>An error callback action called when an error occurred while processing a message.</td>
+    </tr>
+    <tr>
+        <td>cancellationToken</td>
+        <td><span class="text-info" title="CancellationToken">CancellationToken</span></td>
+        <td>A cancellation token.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices.ConsumeFanoutAsync``1(System.String,System.Action{``0,System.Collections.Generic.IDictionary{System.String,System.String}},System.Func{System.Exception,System.Boolean},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)" class="mb-5">
+    <h3 class="lead text-info">ConsumeFanoutAsync</h3>
+    <p><p>Setup a callback to be invoked when a message is available on the queue.</p><p>If the message is successfully deserialized the <b>onMessage</b> callback is executed 
+                then the message is Ack; If an error occurred the <b>onError</b> callback is executed if 
+                provided, then the message is Nack and requeued only if the <b>onError</b> callback 
+                returned true.</p></p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ConsumeFanoutAsync&lt;T&gt;(fanout, onMessage, onError, serializer, cancellationToken)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>fanout</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the fanout.</td>
+    </tr>
+    <tr>
+        <td>onMessage</td>
+        <td><span class="text-info" title="Action&lt;T, IDictionary&gt;">Action&lt;T, IDictionary&gt;</span></td>
+        <td>The callback action to process the message.</td>
+    </tr>
+    <tr>
+        <td>onError</td>
+        <td><span class="text-info" title="Func&lt;Exception, Boolean&gt;">Func&lt;Exception, Boolean&gt;</span></td>
+        <td>An error callback action called when an error occurred while processing a message.</td>
+    </tr>
+    <tr>
+        <td>serializer</td>
+        <td><span class="text-info" title="IMessageSerializer">IMessageSerializer</span></td>
+        <td>A service to serialize the message.</td>
+    </tr>
+    <tr>
+        <td>cancellationToken</td>
+        <td><span class="text-info" title="CancellationToken">CancellationToken</span></td>
+        <td>A cancellation token.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices.ConsumeWorkQueueAsync(System.String,System.Action{System.Byte[],System.Collections.Generic.IDictionary{System.String,System.String}},System.Func{System.Exception,System.Boolean},System.Threading.CancellationToken)" class="mb-5">
+    <h3 class="lead text-info">ConsumeWorkQueueAsync</h3>
+    <p><p>Setup a callback to be invoked when a message is available on the queue.</p><p>The <b>onMessage</b> callback is executed with the message body as a <code>byte[]</code>
+                and the message headers as a dictionary, then the message is Ack; If an error occurred the
+                <b>onError</b> callback is executed if provided, then the message is Nack and requeued only
+                if the <b>onError</b> callback returned true.</p></p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ConsumeWorkQueueAsync(queue, onMessage, onError, cancellationToken)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>queue</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the queue.</td>
+    </tr>
+    <tr>
+        <td>onMessage</td>
+        <td><span class="text-info" title="Action&lt;Byte[], IDictionary&gt;">Action&lt;Byte[], IDictionary&gt;</span></td>
+        <td>The callback action to process the message.</td>
+    </tr>
+    <tr>
+        <td>onError</td>
+        <td><span class="text-info" title="Func&lt;Exception, Boolean&gt;">Func&lt;Exception, Boolean&gt;</span></td>
+        <td>An error callback action called when an error occurred while processing a message.</td>
+    </tr>
+    <tr>
+        <td>cancellationToken</td>
+        <td><span class="text-info" title="CancellationToken">CancellationToken</span></td>
+        <td>A cancellation token.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices.ConsumeWorkQueueAsync``1(System.String,System.Action{``0,System.Collections.Generic.IDictionary{System.String,System.String}},System.Func{System.Exception,System.Boolean},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)" class="mb-5">
+    <h3 class="lead text-info">ConsumeWorkQueueAsync</h3>
+    <p><p>Setup a callback to be invoked when a message is available on the queue.</p><p>If the message is successfully deserialized the <b>onMessage</b> callback is executed 
+                then the message is Ack; If an error occurred the <b>onError</b> callback is executed if 
+                provided, then the message is Nack and requeued only if the <b>onError</b> callback 
+                returned true.</p></p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="Task">Task</span> ConsumeWorkQueueAsync&lt;T&gt;(queue, onMessage, onError, serializer, cancellationToken)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>queue</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The name of the queue.</td>
+    </tr>
+    <tr>
+        <td>onMessage</td>
+        <td><span class="text-info" title="Action&lt;T, IDictionary&gt;">Action&lt;T, IDictionary&gt;</span></td>
+        <td>The callback action to process the message.</td>
+    </tr>
+    <tr>
+        <td>onError</td>
+        <td><span class="text-info" title="Func&lt;Exception, Boolean&gt;">Func&lt;Exception, Boolean&gt;</span></td>
+        <td>An error callback action called when an error occurred while processing a message.</td>
+    </tr>
+    <tr>
+        <td>serializer</td>
+        <td><span class="text-info" title="IMessageSerializer">IMessageSerializer</span></td>
+        <td>A service to serialize the message.</td>
+    </tr>
+    <tr>
+        <td>cancellationToken</td>
+        <td><span class="text-info" title="CancellationToken">CancellationToken</span></td>
+        <td>A cancellation token.</td>
+    </tr>
+</tbody></table>
+</div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+<p><strong>In this document</strong></p>
+<ul class="list-unstyled">
+<li><a href="#constructors">Constructors</a></li>
+<li><a href="#methods">Methods</a></li>
+<li>
+    <ul style="font-size:0.8em;">
+        <li><a href="#M:KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices.ConsumeFanoutAsync(System.String,System.Action{System.Byte[],System.Collections.Generic.IDictionary{System.String,System.String}},System.Func{System.Exception,System.Boolean},System.Threading.CancellationToken)">ConsumeFanoutAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices.ConsumeFanoutAsync``1(System.String,System.Action{``0,System.Collections.Generic.IDictionary{System.String,System.String}},System.Func{System.Exception,System.Boolean},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)">ConsumeFanoutAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices.ConsumeWorkQueueAsync(System.String,System.Action{System.Byte[],System.Collections.Generic.IDictionary{System.String,System.String}},System.Func{System.Exception,System.Boolean},System.Threading.CancellationToken)">ConsumeWorkQueueAsync</a></li>
+        <li><a href="#M:KpokPatagon.Queue.RabbitMQ.RabbitConsumerServices.ConsumeWorkQueueAsync``1(System.String,System.Action{``0,System.Collections.Generic.IDictionary{System.String,System.String}},System.Func{System.Exception,System.Boolean},KpokPatagon.Queue.IMessageSerializer,System.Threading.CancellationToken)">ConsumeWorkQueueAsync</a></li>
+    </ul>
+</li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

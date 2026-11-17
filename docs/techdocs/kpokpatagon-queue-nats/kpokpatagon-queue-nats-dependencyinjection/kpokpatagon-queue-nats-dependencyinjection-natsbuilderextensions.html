@@ -38,14 +38,14 @@
     <dt class="text-truncate col-3">Abstract:</dt><dd class="col-9">Yes</dd>
 </dl>
 <h2 id="methods" class="mt-5">Methods</h2>
-<div id="M:KpokPatagon.Queue.Nats.DependencyInjection.NatsBuilderExtensions.AddKpokNatsQueueService(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,Microsoft.Extensions.DependencyInjection.ServiceLifetime)" class="mb-5">
-    <h3 class="lead text-info">AddKpokNatsQueueService</h3>
-    <p>Adds a <a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-iqueueservice.html">IQueueService</a> implemented by <a href="../../kpokpatagon-queue-nats/kpokpatagon-queue-nats/kpokpatagon-queue-nats-natsqueueservice.html">NatsQueueService</a> using the
-            specified <strong class="text-info">configurationKey</strong> to add the service required
+<div id="M:KpokPatagon.Queue.Nats.DependencyInjection.NatsBuilderExtensions.AddKpokNatsConsumerServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,Microsoft.Extensions.DependencyInjection.ServiceLifetime)" class="mb-5">
+    <h3 class="lead text-info">AddKpokNatsConsumerServices</h3>
+    <p>Adds a <a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-iconsumerservices.html">IConsumerServices</a> implemented by <a href="../../kpokpatagon-queue-nats/kpokpatagon-queue-nats/kpokpatagon-queue-nats-natsconsumerservices.html">NatsConsumerServices</a> 
+            using the specified <strong class="text-info">configurationKey</strong> to add the service required
             <a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-queueconnectionoptions.html">QueueConnectionOptions</a>.</p>
 <dl class="row">
     <dt class="text-truncate col-2">Signature:</dt>
-    <dd class="col-10"><code>public <span class="text-info" title="IServiceCollection">IServiceCollection</span> AddKpokNatsQueueService(services, configuration, configurationKey, lifetime)</code></dd>
+    <dd class="col-10"><code>public <span class="text-info" title="IServiceCollection">IServiceCollection</span> AddKpokNatsConsumerServices(services, configuration, configurationKey, lifetime)</code></dd>
 </dl>
 <h6 class="mt-1">Parameters</h6>
 <table class="table table-sm table-bordered">
@@ -70,7 +70,89 @@
     <tr>
         <td>configurationKey</td>
         <td><span class="text-info" title="String">String</span></td>
-        <td>The key for the cache configuration section.</td>
+        <td>The key of the queue configuration section.</td>
+    </tr>
+    <tr>
+        <td>lifetime</td>
+        <td><span class="text-info" title="ServiceLifetime">ServiceLifetime</span></td>
+        <td>The service lifetime.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.Nats.DependencyInjection.NatsBuilderExtensions.AddKpokNatsPublisherServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,Microsoft.Extensions.DependencyInjection.ServiceLifetime)" class="mb-5">
+    <h3 class="lead text-info">AddKpokNatsPublisherServices</h3>
+    <p>Adds a <a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-ipublisherservices.html">IPublisherServices</a> implemented by <a href="../../kpokpatagon-queue-nats/kpokpatagon-queue-nats/kpokpatagon-queue-nats-natspublisherservices.html">NatsPublisherServices</a> 
+            using the specified <strong class="text-info">configurationKey</strong> to add the service required
+            <a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-queueconnectionoptions.html">QueueConnectionOptions</a>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="IServiceCollection">IServiceCollection</span> AddKpokNatsPublisherServices(services, configuration, configurationKey, lifetime)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>services</td>
+        <td><span class="text-info" title="IServiceCollection">IServiceCollection</span></td>
+        <td>The service collection.</td>
+    </tr>
+    <tr>
+        <td>configuration</td>
+        <td><span class="text-info" title="IConfiguration">IConfiguration</span></td>
+        <td>The configuration for the application.</td>
+    </tr>
+    <tr>
+        <td>configurationKey</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The key of the queue configuration section.</td>
+    </tr>
+    <tr>
+        <td>lifetime</td>
+        <td><span class="text-info" title="ServiceLifetime">ServiceLifetime</span></td>
+        <td>The service lifetime.</td>
+    </tr>
+</tbody></table>
+</div>
+<div id="M:KpokPatagon.Queue.Nats.DependencyInjection.NatsBuilderExtensions.AddKpokNatsQueueServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,Microsoft.Extensions.DependencyInjection.ServiceLifetime)" class="mb-5">
+    <h3 class="lead text-info">AddKpokNatsQueueServices</h3>
+    <p>Adds a <a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-iqueueservices.html">IQueueServices</a> implemented by <a href="../../kpokpatagon-queue-nats/kpokpatagon-queue-nats/kpokpatagon-queue-nats-natsqueueservices.html">NatsQueueServices</a> using the
+            specified <strong class="text-info">configurationKey</strong> to add the service required
+            <a href="../../kpokpatagon-queue/kpokpatagon-queue/kpokpatagon-queue-queueconnectionoptions.html">QueueConnectionOptions</a>.</p>
+<dl class="row">
+    <dt class="text-truncate col-2">Signature:</dt>
+    <dd class="col-10"><code>public <span class="text-info" title="IServiceCollection">IServiceCollection</span> AddKpokNatsQueueServices(services, configuration, configurationKey, lifetime)</code></dd>
+</dl>
+<h6 class="mt-1">Parameters</h6>
+<table class="table table-sm table-bordered">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Summary</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>services</td>
+        <td><span class="text-info" title="IServiceCollection">IServiceCollection</span></td>
+        <td>The service collection.</td>
+    </tr>
+    <tr>
+        <td>configuration</td>
+        <td><span class="text-info" title="IConfiguration">IConfiguration</span></td>
+        <td>The configuration for the application.</td>
+    </tr>
+    <tr>
+        <td>configurationKey</td>
+        <td><span class="text-info" title="String">String</span></td>
+        <td>The key of the queue configuration section.</td>
     </tr>
     <tr>
         <td>lifetime</td>
@@ -86,7 +168,9 @@
 <li><a href="#methods">Methods</a></li>
 <li>
     <ul style="font-size:0.8em;">
-        <li><a href="#M:KpokPatagon.Queue.Nats.DependencyInjection.NatsBuilderExtensions.AddKpokNatsQueueService(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">AddKpokNatsQueueService</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.DependencyInjection.NatsBuilderExtensions.AddKpokNatsConsumerServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">AddKpokNatsConsumerServices</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.DependencyInjection.NatsBuilderExtensions.AddKpokNatsPublisherServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">AddKpokNatsPublisherServices</a></li>
+        <li><a href="#M:KpokPatagon.Queue.Nats.DependencyInjection.NatsBuilderExtensions.AddKpokNatsQueueServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">AddKpokNatsQueueServices</a></li>
     </ul>
 </li>
 </ul>
